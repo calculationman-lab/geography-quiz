@@ -36,6 +36,7 @@
         <div class="section-heading"><h2>これまでの記録</h2><button id="clear-history-button" class="text-button">記録を消す</button></div>
         <div id="history-list" class="history-list"></div>
       </section>
+      <p class="app-version">更新版 v5</p>
     </section>
     <section id="quiz-screen" class="screen hidden" aria-live="polite">
       <div class="quiz-card">
@@ -53,6 +54,6 @@
     </section>
   </main>
   <script src="./questions.js"></script><script src="./app.js"></script>
-  <script>if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(console.error))}</script>
+  <script>if("serviceWorker" in navigator){let reloading=false;navigator.serviceWorker.addEventListener("controllerchange",()=>{if(reloading)return;reloading=true;location.reload()});window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js",{updateViaCache:"none"}).then(registration=>registration.update()).catch(console.error))}</script>
 </body>
 </html>

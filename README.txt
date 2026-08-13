@@ -23,5 +23,6 @@ TOPページには、将来ほかの分野やゲームモードを追加でき�
 
 【重要】
 効果音を変更するときは、同じファイル名のMP3へ差し替えてください。
-更新時は sw.js の CACHE 名を変更してください。今回は social-quiz-v4 です。
+MP3はオンライン時に最新版を優先取得し、オフライン時は保存済み音声を使用します。
+更新時は sw.js の CACHE 名と app.js / sw.js の AUDIO_REVISIONを変更してください。今回は social-quiz-v5 / 20260813-v5 です。
 履歴は localStorage の social-quiz-progress-v1 に保存され、復習では本番履歴を追加しません。

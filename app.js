@@ -14,7 +14,8 @@
   function loadSettings(){try{const value=JSON.parse(localStorage.getItem(SETTINGS_KEY));return{soundEnabled:value?.soundEnabled!==false,soundVolume:Number.isFinite(value?.soundVolume)?Math.max(0,Math.min(1,value.soundVolume)):0.7}}catch{return{soundEnabled:true,soundVolume:0.7}}}
   function saveSettings(){localStorage.setItem(SETTINGS_KEY,JSON.stringify(settings))}
   const settings=loadSettings();
-  const resultSounds={correct:new Audio("./se-correct.mp3"),wrong:new Audio("./se-wrong.mp3")};
+  const AUDIO_REVISION="20260813-v5";
+  const resultSounds={correct:new Audio(`./se-correct.mp3?v=${AUDIO_REVISION}`),wrong:new Audio(`./se-wrong.mp3?v=${AUDIO_REVISION}`)};
   Object.values(resultSounds).forEach(sound=>{sound.preload="auto"});
   function playResultSound(correct){if(!settings.soundEnabled||settings.soundVolume<=0)return;const sound=correct?resultSounds.correct:resultSounds.wrong;sound.pause();sound.currentTime=0;sound.volume=settings.soundVolume;const playback=sound.play();if(playback?.catch)playback.catch(()=>{})}
   function renderSoundSettings(){$("sound-enabled").checked=settings.soundEnabled;$("sound-enabled").nextElementSibling.textContent=settings.soundEnabled?"効果音 ON":"効果音 OFF";$("sound-volume").value=Math.round(settings.soundVolume*100);$("sound-volume-value").textContent=`${Math.round(settings.soundVolume*100)}%`}

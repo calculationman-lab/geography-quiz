@@ -1,19 +1,24 @@
-地理ランダムクイズ PWA版
+小4社会 学習クイズ（4択・自動採点版）
 
-GitHub Pagesへ、このフォルダ内の5ファイルをそのままアップロードしてください。
+【GitHub Pagesへの更新方法】
+このZIPを展開し、中にあるファイルを geography-quiz リポジトリのルートへ上書きしてください。
+公開URLは変わりません。
 
-・index.html
-・manifest.webmanifest
-・sw.js
-・icon-192.png
-・icon-512.png
+【主な機能】
+・TOPページ
+・全139問からランダム20問
+・問題ごとに選定した、混同しやすい4択
+・自動採点、正答率、所要時間
+・誤答一覧と誤答だけの復習
+・端末内の過去100回分の履歴
+・今日の実施状況
+・PWA、オフライン対応
 
-GitHub Pages公開後、スマホで公開URLを開きます。
+【拡張方法】
+問題は questions.js、出題・採点は app.js、画面は index.html、デザインは styles.css に分離しています。
+新しい問題は questions.js の問題母集団と誤答候補へ追加してください。
+TOPページには、将来ほかの分野やゲームモードを追加できます。
 
-iPhone / iPad:
-Safari → 共有 →「ホーム画面に追加」
-
-Android:
-Chrome → メニュー →「ホーム画面に追加」または「アプリをインストール」
-
-一度読み込めば、Service Workerのキャッシュによりオフラインでも利用できる構成です。
+【重要】
+更新時は sw.js の CACHE 名を変更してください。今回は social-quiz-v2 です。
+履歴は localStorage の social-quiz-progress-v1 に保存され、復習では本番履歴を追加しません。

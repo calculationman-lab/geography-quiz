@@ -1,12 +1,12 @@
 {
-  "name": "地理ランダムクイズ",
-  "short_name": "地理クイズ",
-  "description": "日本地理を全地域からランダムに学習する一問一答クイズ",
+  "name": "小4社会 学習クイズ",
+  "short_name": "社会クイズ",
+  "description": "日本地理を4択で学習し、自動採点・復習できるクイズ",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f3f5f7",
-  "theme_color": "#17202a",
+  "theme_color": "#2457a7",
   "lang": "ja",
   "icons": [
     {

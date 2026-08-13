@@ -20,8 +20,16 @@
       <div class="mode-grid">
         <article class="mode-card geography-card">
           <div class="mode-icon" aria-hidden="true">🗾</div>
-          <div><p class="mode-label">地理</p><h2>日本の地理クイズ</h2><p><span id="question-total">139</span>問からランダムに20問出題</p></div>
-          <button id="start-button" class="primary">20問スタート</button>
+          <div><p class="mode-label">地理</p><h2>日本の地理クイズ</h2><p>全<span id="question-total">139</span>問から挑戦する問題数を選ぼう</p></div>
+          <div class="challenge-options" aria-label="挑戦する問題数">
+            <button class="challenge-button primary" data-question-count="20"><strong>20問</strong><span>毎日の学習に</span></button>
+            <button class="challenge-button primary" data-question-count="50"><strong>50問</strong><span>しっかり練習</span></button>
+            <button class="challenge-button primary full-challenge" data-question-count="all"><strong>全問チャレンジ</strong><span id="all-question-label">139問すべて</span></button>
+          </div>
+          <div class="sound-settings">
+            <label class="sound-toggle"><input id="sound-enabled" type="checkbox" checked><span>効果音 ON</span></label>
+            <label class="volume-control"><span>音量</span><input id="sound-volume" type="range" min="0" max="100" value="70" step="5"><output id="sound-volume-value">70%</output></label>
+          </div>
         </article>
       </div>
       <section class="history-section">

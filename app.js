@@ -13,10 +13,10 @@
   function saveProgress(value){localStorage.setItem(STORAGE_KEY,JSON.stringify(value))}
   function loadSettings(){try{const value=JSON.parse(localStorage.getItem(SETTINGS_KEY));return{soundEnabled:value?.soundEnabled!==false,soundVolume:Number.isFinite(value?.soundVolume)?Math.max(0,Math.min(1,value.soundVolume)):0.7}}catch{return{soundEnabled:true,soundVolume:0.7}}}
   function saveSettings(){localStorage.setItem(SETTINGS_KEY,JSON.stringify(settings))}
-  const settings=loadSettings();let audioContext=null;
-  function getAudioContext(){const AudioContext=window.AudioContext||window.webkitAudioContext;if(!AudioContext)return null;if(!audioContext)audioContext=new AudioContext();if(audioContext.state==="suspended")audioContext.resume();return audioContext}
-  function tone(context,frequency,start,duration,type,gainValue){const oscillator=context.createOscillator();const gain=context.createGain();oscillator.type=type;oscillator.frequency.setValueAtTime(frequency,start);gain.gain.setValueAtTime(0.0001,start);gain.gain.exponentialRampToValueAtTime(Math.max(0.0001,gainValue),start+0.015);gain.gain.exponentialRampToValueAtTime(0.0001,start+duration);oscillator.connect(gain);gain.connect(context.destination);oscillator.start(start);oscillator.stop(start+duration+0.02)}
-  function playResultSound(correct){if(!settings.soundEnabled||settings.soundVolume<=0)return;const context=getAudioContext();if(!context)return;const now=context.currentTime+0.01;const level=0.22*settings.soundVolume;if(correct){tone(context,784,now,0.2,"sine",level);tone(context,1046.5,now+0.2,0.38,"sine",level)}else{tone(context,145,now,0.23,"sawtooth",level*0.75);tone(context,105,now+0.22,0.4,"sawtooth",level*0.75)}}
+  const settings=loadSettings();
+  const resultSounds={correct:new Audio("./se-correct.mp3"),wrong:new Audio("./se-wrong.mp3")};
+  Object.values(resultSounds).forEach(sound=>{sound.preload="auto"});
+  function playResultSound(correct){if(!settings.soundEnabled||settings.soundVolume<=0)return;const sound=correct?resultSounds.correct:resultSounds.wrong;sound.pause();sound.currentTime=0;sound.volume=settings.soundVolume;const playback=sound.play();if(playback?.catch)playback.catch(()=>{})}
   function renderSoundSettings(){$("sound-enabled").checked=settings.soundEnabled;$("sound-enabled").nextElementSibling.textContent=settings.soundEnabled?"効果音 ON":"効果音 OFF";$("sound-volume").value=Math.round(settings.soundVolume*100);$("sound-volume-value").textContent=`${Math.round(settings.soundVolume*100)}%`}
   function showScreen(name){Object.entries(screens).forEach(([key,node])=>node.classList.toggle("hidden",key!==name));window.scrollTo({top:0,behavior:"smooth"})}
   function formatDuration(seconds){const min=Math.floor(seconds/60);const sec=seconds%60;return min?`${min}分${String(sec).padStart(2,"0")}秒`:`${sec}秒`}

@@ -10,12 +10,24 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="社会マスター">
-  <link rel="apple-touch-icon" href="./apple-touch-icon.png?v=20260814-v8">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png?v=20260814-v9-1">
 </head>
 <body>
   <main class="app-shell">
     <section id="home-screen" class="screen">
       <header class="hero"><h1>社会マスター</h1><p>4択と記述で社会をマスターしよう！</p></header>
+      <section class="rank-card" aria-labelledby="rank-heading">
+        <div class="rank-emblem" id="rank-emblem" aria-hidden="true">🧭</div>
+        <div class="rank-main"><p id="rank-heading">現在のランク</p><h2 id="current-rank">はじまりの旅人</h2><p id="rank-progress"></p></div>
+        <div class="mastery-counts"><span id="choice-mastery-count">前期4択 0／17</span><span id="written-mastery-count">前期記述 0／17</span><span id="summer-choice-mastery-count">夏期4択 0／7</span><span id="summer-written-mastery-count">夏期記述 0／7</span></div>
+        <div class="rank-next" id="next-rank"></div>
+        <h3 class="mastery-grid-heading">前期17単元</h3>
+        <div class="unit-mastery-grid" id="unit-mastery-grid" aria-label="17単元の攻略状況"></div>
+        <h3 class="mastery-grid-heading summer-heading">夏期講習7地域</h3>
+        <div class="summer-mastery-grid" id="summer-mastery-grid" aria-label="夏期講習7地域の攻略状況"></div>
+        <div class="unit-mastery-detail" id="unit-mastery-detail">単元マークを押すと最高記録と称号を確認できます。</div>
+        <div class="recent-title" id="recent-title"></div>
+      </section>
       <div class="today-card" id="today-status"></div>
       <div class="mode-grid">
         <article class="mode-card geography-card">
@@ -41,6 +53,11 @@
             <div class="unit-actions"><button type="button" id="select-all-units" class="text-button">すべて選択</button><button type="button" id="clear-units" class="text-button">選択解除</button></div>
             <div id="unit-options" class="unit-options" aria-label="出題する単元"></div>
           </section>
+          <section id="summer-region-selector" class="unit-selector hidden">
+            <div class="unit-heading"><h3>夏期講習の地域を選ぶ</h3><span id="summer-region-selection-summary"></span></div>
+            <div class="unit-actions"><button type="button" id="select-all-summer-regions" class="text-button">すべて選択</button><button type="button" id="clear-summer-regions" class="text-button">選択解除</button></div>
+            <div id="summer-region-options" class="unit-options summer-region-options" aria-label="出題する夏期講習の地域"></div>
+          </section>
           <div id="choice-challenge-options" class="challenge-options" aria-label="4択で挑戦する問題数">
             <button class="challenge-button primary" data-question-count="20"><strong>20問</strong><span>毎日の学習に</span></button>
             <button class="challenge-button primary" data-question-count="50"><strong>50問</strong><span>しっかり練習</span></button>
@@ -61,8 +78,18 @@
         <div class="section-heading"><h2>これまでの記録</h2><button id="clear-history-button" class="text-button">記録を消す</button></div>
         <h3 class="history-subheading">4択の記録</h3><div id="history-list" class="history-list"></div>
         <h3 class="history-subheading written-heading">記述の記録</h3><div id="written-history-list" class="history-list"></div>
+        <div class="backup-panel">
+          <h3>セーブデータのバックアップ</h3>
+          <p>アイコンの追加し直しや端末変更の前に、記録と設定をファイルへ保存できます。</p>
+          <div class="backup-actions">
+            <button id="export-save-button" type="button" class="secondary">バックアップを保存</button>
+            <button id="import-save-button" type="button" class="secondary">バックアップを読み込む</button>
+            <input id="import-save-file" class="visually-hidden" type="file" accept="application/json,.json">
+          </div>
+          <p id="backup-status" class="backup-status" role="status" aria-live="polite"></p>
+        </div>
       </section>
-      <p class="app-version">更新版 v8</p>
+      <p class="app-version">更新版 v9.1</p>
     </section>
     <section id="quiz-screen" class="screen hidden" aria-live="polite">
       <div class="quiz-card">
@@ -77,11 +104,12 @@
     <section id="result-screen" class="screen hidden">
       <div class="result-card">
         <p class="eyebrow">結果発表</p><h1 id="result-title"></h1><div class="score-ring"><strong id="result-score"></strong><span id="result-rate"></span></div><div id="written-result-summary" class="written-result-summary hidden"></div><p id="result-time" class="result-time"></p>
+        <div id="achievement-banner" class="achievement-banner hidden"></div>
         <div id="wrong-section" class="wrong-section"></div><button id="review-button" class="secondary hidden"></button><button id="home-button" class="primary">TOPへ戻る</button>
       </div>
     </section>
   </main>
-  <script src="./questions.js?v=20260814-v8"></script><script src="./app.js?v=20260814-v8"></script>
+  <script src="./questions.js?v=20260814-v9-1"></script><script src="./app.js?v=20260814-v9-1"></script>
   <script>if("serviceWorker" in navigator){let reloading=false;navigator.serviceWorker.addEventListener("controllerchange",()=>{if(reloading)return;reloading=true;location.reload()});window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js",{updateViaCache:"none"}).then(registration=>registration.update()).catch(console.error))}</script>
 </body>
 </html>

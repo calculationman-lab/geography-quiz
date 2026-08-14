@@ -49,6 +49,24 @@ body {
   color: var(--muted);
   font-weight: 700;
 }
+.rank-card { display: grid; grid-template-columns: auto 1fr auto; gap: 8px 16px; align-items: center; margin: 4px 0 18px; padding: 20px; overflow: hidden; border: 2px solid #d8b950; border-radius: 24px; background: linear-gradient(145deg,#122b52,#1e4d88 62%,#173764); color: #fff; box-shadow: 0 10px 28px #173d7835; }
+.rank-emblem { display: grid; place-items: center; width: 66px; height: 66px; border: 3px solid #f4d673; border-radius: 50%; background: #0b203f; font-size: 35px; box-shadow: 0 0 18px #ffd85a55; }
+.rank-main p { margin: 0; color: #c9dbef; font-size: 13px; font-weight: 900; letter-spacing: .12em; }
+.rank-main h2 { margin: 2px 0; color: #ffe080; font-size: clamp(24px,5vw,36px); }
+.rank-main #rank-progress { letter-spacing: 0; }
+.mastery-counts { display: grid; gap: 5px; justify-items: end; font-weight: 900; }
+.mastery-counts span { padding: 6px 10px; border-radius: 999px; background: #ffffff18; white-space: nowrap; }
+.rank-next { grid-column: 1/-1; padding: 9px 12px; border-radius: 11px; background: #ffffff12; color: #e5eef8; text-align: center; font-weight: 800; }
+.mastery-grid-heading { grid-column: 1/-1; margin: 3px 0 -2px; color: #d9e7f7; font-size: 14px; }
+.mastery-grid-heading.summer-heading { margin-top: 5px; }
+.unit-mastery-grid { grid-column: 1/-1; display: grid; grid-template-columns: repeat(17,minmax(28px,1fr)); gap: 5px; }
+.summer-mastery-grid { grid-column: 1/-1; display: grid; grid-template-columns: repeat(7,minmax(50px,1fr)); gap: 6px; }
+.summer-mastery-grid .mastery-unit { aspect-ratio: auto; min-height: 40px; padding: 5px 3px; font-size: 11px; }
+.mastery-unit { aspect-ratio: 1; min-width: 0; border: 1px solid #ffffff33; border-radius: 8px; background: #ffffff16; color: #aebfd2; font-size: 13px; font-weight: 900; }
+.mastery-unit.choice-mastered { border-color: #ffde69; background: linear-gradient(#f7d66d,#9a6f13); color: #261a00; }
+.mastery-unit.full-mastered { border-color: #79dfff; background: linear-gradient(145deg,#ffd95e,#2679bc); color: #fff; box-shadow: 0 0 9px #45cfffaa; }
+.unit-mastery-detail { grid-column: 1/-1; min-height: 2.8em; padding: 10px 12px; border-radius: 11px; background: #081b3475; color: #eaf3ff; font-size: 14px; line-height: 1.55; text-align: center; }
+.recent-title { grid-column: 1/-1; color: #ffe596; font-weight: 900; text-align: center; }
 .eyebrow {
   margin: 0;
   color: var(--blue);
@@ -304,6 +322,14 @@ button {
   gap: 9px;
 }
 .history-subheading { margin: 16px 0 8px; color: var(--blue-dark); font-size: 17px; }
+.backup-panel { margin-top: 22px; padding-top: 18px; border-top: 1px solid #d8e1ed; }
+.backup-panel h3 { margin: 0 0 6px; color: var(--blue-dark); font-size: 17px; }
+.backup-panel p { margin: 0 0 12px; color: var(--muted); line-height: 1.6; }
+.backup-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.backup-actions .secondary { flex: 1 1 180px; margin: 0; }
+.backup-status { min-height: 1.6em; margin-top: 10px !important; color: #17653a !important; font-weight: 700; }
+.backup-status.error { color: #a52525 !important; }
+.visually-hidden { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0,0,0,0) !important; white-space: nowrap !important; border: 0 !important; }
 .written-heading { margin-top: 24px; color: #69338e; }
 .written-panel { display: grid; gap: 14px; margin-top: 10px; text-align: center; }
 .written-panel > p { margin: 0; color: var(--muted); font-weight: 800; }
@@ -317,6 +343,10 @@ button {
 .grade-wrong { border-color: var(--red); color: var(--red); background: #fff0f0; }
 .feedback.partial { border-color: #d18a00; background: #fff8e5; color: #704900; }
 .written-result-summary { margin: 14px 0; padding: 14px; border-radius: 14px; background: #f3eaff; color: #542377; font-size: 20px; font-weight: 900; }
+.achievement-banner { margin: 18px 0; padding: 20px; border: 3px solid #e3b52f; border-radius: 18px; background: linear-gradient(145deg,#fff8cf,#ffe38a); color: #5e3b00; box-shadow: 0 8px 22px #b77d2233; }
+.achievement-banner p { margin: 0 0 5px; font-weight: 900; letter-spacing: .08em; }
+.achievement-banner strong { display: block; margin: 4px 0 12px; font-size: clamp(23px,5vw,32px); }
+.achievement-banner strong:last-child { margin-bottom: 0; }
 .app-version {
   margin: 20px 0 0;
   color: #98a2b3;
@@ -498,6 +528,11 @@ button {
   margin-top: 12px;
 }
 @media (max-width: 600px) {
+  .rank-card { grid-template-columns: auto 1fr; padding: 16px; }
+  .rank-emblem { width: 56px; height: 56px; font-size: 29px; }
+  .mastery-counts { grid-column: 1/-1; grid-template-columns: repeat(2,minmax(0,1fr)); justify-items: stretch; text-align: center; font-size: 13px; }
+  .unit-mastery-grid { grid-template-columns: repeat(6,minmax(0,1fr)); }
+  .summer-mastery-grid { grid-template-columns: repeat(4,minmax(0,1fr)); }
   .quiz-type-options { grid-template-columns: 1fr; }
   .self-grade-buttons { grid-template-columns: 1fr; }
   .grade-button { grid-template-columns: auto 1fr; align-items: center; text-align: left; padding: 10px 16px; }

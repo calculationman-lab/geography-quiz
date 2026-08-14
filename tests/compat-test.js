@@ -6,10 +6,10 @@ class Element{
   addEventListener(type,fn){this.listeners[type]=fn}
   setAttribute(name,value){this[name]=value}
   replaceChildren(){this.children=[];this.innerHTML=""}
-  append(child){this.children.push(child)}
+  append(...children){this.children.push(...children)}
   click(){this.listeners.click?.({target:this})}
 }
-const ids=["home-screen","quiz-screen","result-screen","sound-enabled","sound-volume","sound-volume-value","question-total","all-question-label","written-all-question-label","today-status","history-list","written-history-list","choices","written-panel","written-instruction","reveal-answer-button","written-answer","self-grade-buttons","region","progress","progress-bar","question","feedback","next-button","review-button","result-title","result-score","result-rate","written-result-summary","result-time","wrong-section","home-button","quit-button","clear-history-button","unit-selector","unit-selection-summary","select-all-units","clear-units","unit-options","choice-challenge-options","written-challenge-options"];
+const ids=["home-screen","quiz-screen","result-screen","sound-enabled","sound-volume","sound-volume-value","question-total","all-question-label","written-all-question-label","today-status","history-list","written-history-list","choices","written-panel","written-instruction","reveal-answer-button","written-answer","self-grade-buttons","region","progress","progress-bar","question","feedback","next-button","review-button","result-title","result-score","result-rate","written-result-summary","result-time","wrong-section","home-button","quit-button","clear-history-button","unit-selector","unit-selection-summary","select-all-units","clear-units","unit-options","summer-region-selector","summer-region-selection-summary","select-all-summer-regions","clear-summer-regions","summer-region-options","choice-challenge-options","written-challenge-options","rank-emblem","current-rank","rank-progress","choice-mastery-count","written-mastery-count","summer-choice-mastery-count","summer-written-mastery-count","next-rank","unit-mastery-grid","summer-mastery-grid","unit-mastery-detail","recent-title","achievement-banner","export-save-button","import-save-button","import-save-file","backup-status"];
 const elements=Object.fromEntries(ids.map(id=>[id,new Element(id)]));
 const scopeButtons=["first","summer","all"].map(scope=>{const el=new Element();el.dataset.scope=scope;return el});
 const countButtons=["20","50","all"].map(count=>{const el=new Element();el.dataset.questionCount=count;return el});
@@ -63,7 +63,7 @@ for(let index=0;index<20;index++){
 }
 const savedProgress=JSON.parse(store.get("social-quiz-progress-v1"));
 assert.strictEqual(savedProgress.history.length,2,"旧履歴へv7結果を追記");
-assert.strictEqual(savedProgress.history[1].scopeLabel,"夏期講習","履歴へ範囲名を保存");
+assert.strictEqual(savedProgress.history[1].scopeLabel,"夏期講習・全地域","履歴へ範囲名を保存");
 assert(!elements["review-button"].classList.values.has("hidden"),"誤答復習を表示");
 elements["review-button"].click();
 assert.strictEqual(elements.progress.textContent,"1 / 20","誤答20問の復習を開始");
@@ -91,4 +91,63 @@ assert.strictEqual(writtenRecord.wrongCount,8,"×を記録");
 assert.strictEqual(elements["written-history-list"].children.length,0,"結果画面では履歴未再描画");
 elements["home-button"].click();
 assert.strictEqual(elements["written-history-list"].children.length,1,"TOPで記述履歴を別表示");
-console.log("PASS: v5/v6/v7互換、4択、記述○△×、履歴分離、全範囲を検証");
+
+// v9: 1単元の全問チャレンジだけが制覇対象
+scopeButtons.find(x=>x.dataset.scope==="first").click();
+elements["clear-units"].click();elements["unit-options"].children[0].click();
+typeButtons.find(x=>x.dataset.quizType==="choice").click();
+countButtons.find(x=>x.dataset.questionCount==="20").click();
+for(let index=0;index<20;index++){
+  const source=context.window.GEOGRAPHY_QUESTIONS.find(q=>q.question===elements.question.textContent);
+  elements.choices.children.find(choice=>choice.textContent===source.answer).click();elements["next-button"].click();
+}
+assert.strictEqual(store.has("social-quiz-mastery-v1"),false,"20問では制覇判定しない");
+elements["home-button"].click();countButtons.find(x=>x.dataset.questionCount==="all").click();
+for(let index=0;index<25;index++){
+  const source=context.window.GEOGRAPHY_QUESTIONS.find(q=>q.question===elements.question.textContent);
+  elements.choices.children.find(choice=>choice.textContent===source.answer).click();elements["next-button"].click();
+}
+let mastery=JSON.parse(store.get("social-quiz-mastery-v1"));
+assert.strictEqual(mastery.units["1"].choiceMastered,true,"単元1の4択全問正解で制覇");
+assert.strictEqual(mastery.units["1"].choiceBest,25,"4択最高正解数");
+assert.strictEqual(mastery.units["1"].choiceBestRate,100,"4択最高正答率");
+assert(!elements["achievement-banner"].classList.values.has("hidden"),"称号獲得演出を表示");
+elements["home-button"].click();
+assert.strictEqual(elements["current-rank"].textContent,"知識の冒険者","1単元制覇でランクアップ");
+typeButtons.find(x=>x.dataset.quizType==="written").click();writtenCountButtons.find(x=>x.dataset.writtenCount==="all").click();
+for(let index=0;index<25;index++){elements["reveal-answer-button"].click();gradeButtons[0].click();elements["next-button"].click()}
+mastery=JSON.parse(store.get("social-quiz-mastery-v1"));
+assert.strictEqual(mastery.units["1"].writtenMastered,true,"単元1の記述全問○で制覇");
+assert.strictEqual(mastery.units["1"].writtenBestRate,100,"記述最高○率");
+assert(elements["achievement-banner"].children.some(x=>x.textContent.includes("極称号獲得")),"極称号獲得演出を表示");
+
+// v9.1: 夏期講習も1地域の全問チャレンジで称号対象
+elements["home-button"].click();scopeButtons.find(x=>x.dataset.scope==="summer").click();
+assert.strictEqual(elements["summer-region-options"].children.length,7,"夏期7地域を表示");
+elements["clear-summer-regions"].click();elements["summer-region-options"].children[0].click();
+assert.strictEqual(elements["question-total"].textContent,19,"北海道・東北だけを選択");
+mastery=JSON.parse(store.get("social-quiz-mastery-v1"));
+for(const region of ["関東","中部","近畿","中国","四国","九州・沖縄"]){mastery.summerRegions[region]={choiceMastered:true,writtenMastered:true,choiceMasteredAt:"2026-08-14T01:00:00.000Z",writtenMasteredAt:"2026-08-14T01:01:00.000Z",fullMasteredAt:"2026-08-14T01:01:00.000Z"}}
+store.set("social-quiz-mastery-v1",JSON.stringify(mastery));
+typeButtons.find(x=>x.dataset.quizType==="choice").click();countButtons.find(x=>x.dataset.questionCount==="all").click();
+for(let index=0;index<19;index++){
+  const source=context.window.GEOGRAPHY_QUESTIONS.find(q=>q.question===elements.question.textContent);
+  elements.choices.children.find(choice=>choice.textContent===source.answer).click();elements["next-button"].click();
+}
+mastery=JSON.parse(store.get("social-quiz-mastery-v1"));
+assert.strictEqual(mastery.summerRegions["北海道・東北"].choiceMastered,true,"夏期地域の4択全問正解で制覇");
+assert(elements["achievement-banner"].children.some(x=>x.textContent.includes("北国の覇者")),"夏期地域称号を表示");
+assert(elements["achievement-banner"].children.some(x=>x.textContent.includes("七地方の覇者")),"夏期7地域制覇称号を表示");
+elements["home-button"].click();
+assert.strictEqual(elements["summer-choice-mastery-count"].textContent,"夏期4択 7／7","夏期4択制覇数をTOP表示");
+assert.strictEqual(elements["summer-written-mastery-count"].textContent,"夏期記述 6／7","夏期記述制覇数をTOP表示");
+typeButtons.find(x=>x.dataset.quizType==="written").click();writtenCountButtons.find(x=>x.dataset.writtenCount==="all").click();
+for(let index=0;index<19;index++){elements["reveal-answer-button"].click();gradeButtons[0].click();elements["next-button"].click()}
+mastery=JSON.parse(store.get("social-quiz-mastery-v1"));
+assert.strictEqual(mastery.summerRegions["北海道・東北"].writtenMastered,true,"夏期地域の記述全問○で制覇");
+assert(elements["achievement-banner"].children.some(x=>x.textContent.includes("極・北国の覇者")),"夏期地域の極称号を表示");
+assert(elements["achievement-banner"].children.some(x=>x.textContent.includes("極・七地方の覇者")),"夏期7地域の極称号を表示");
+for(let unit=2;unit<=17;unit++)mastery.units[String(unit)]={choiceMastered:true,writtenMastered:true,choiceMasteredAt:"2026-08-14T02:00:00.000Z",writtenMasteredAt:"2026-08-14T02:01:00.000Z",fullMasteredAt:"2026-08-14T02:01:00.000Z"};
+store.set("social-quiz-mastery-v1",JSON.stringify(mastery));elements["home-button"].click();
+assert.strictEqual(elements["current-rank"].textContent,"真・社会マスター","前期17単元と夏期7地域の完全制覇で最高位");
+console.log("PASS: 旧版互換、前期・夏期の4択／記述制覇、称号・極称号・ランクを検証");

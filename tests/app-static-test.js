@@ -25,6 +25,13 @@ for(const count of ["10","20","all"]){assert(html.includes(`data-written-count="
 for(const grade of ["correct","partial","wrong"]){assert(html.includes(`data-self-grade="${grade}"`),`${grade}: 自己判定`)}
 assert(app.includes('quizType:state.quizType'),"4択と記述を履歴で分離");
 assert(app.includes('partialCount'),"漢字・表記ミスを独立記録");
-assert(sw.includes('social-quiz-v8'),"v8キャッシュ");
-assert(sw.includes('20260814-v8'),"v8更新識別子");
-console.log("PASS: v8記述、単元選択、履歴分離、重複防止、PWA更新を検証");
+assert(app.includes('social-quiz-mastery-v1'),"v9攻略データを分離保存");
+assert(app.includes('requested==="all"&&state.scope==="first"&&state.selectedUnits.length===1'),"1単元全問だけを制覇判定");
+assert(app.includes('requested==="all"&&state.scope==="summer"&&state.selectedSummerRegions.length===1'),"夏期1地域全問だけを制覇判定");
+assert(app.includes('choiceMastered')&&app.includes('writtenMastered'),"4択と記述を別々に制覇判定");
+assert(app.includes('UNIT_TITLES')&&app.includes('SUMMER_TITLES')&&app.includes('RANKS'),"前期・夏期称号と総合ランク");
+assert(app.includes('mastery:loadMastery()'),"攻略データをバックアップ");
+for(const id of ["current-rank","unit-mastery-grid","summer-mastery-grid","summer-region-selector","achievement-banner"]){assert(html.includes(`id="${id}"`),`${id}: v9表示`)}
+assert(sw.includes('social-quiz-v9-1'),"v9.1キャッシュ");
+assert(sw.includes('20260814-v9-1'),"v9.1更新識別子");
+console.log("PASS: v9.1前期・夏期称号、ランク、制覇条件、バックアップ、PWA更新を検証");

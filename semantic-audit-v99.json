@@ -1,0 +1,8 @@
+{
+  "reviewedQuestions": 589,
+  "reviewedDistractors": 2945,
+  "reconstructedQuestions": 260,
+  "changedQuestions": 260,
+  "reviewedAt": "2026-08-15",
+  "method": "設問文へ各候補を代入し、回答形式・種類・粒度・唯一正解性を確認"
+}

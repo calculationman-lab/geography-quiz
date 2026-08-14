@@ -34,6 +34,6 @@ assert(app.includes('mastery:loadMastery()'),"攻略データをバックアッ�
 for(const id of ["current-rank","unit-mastery-grid","summer-mastery-grid","summer-region-selector","achievement-banner","rank-toggle","rank-details"]){assert(html.includes(`id="${id}"`),`${id}: v9表示`)}
 assert(html.includes('id="rank-details" class="rank-details hidden"'),"ランク詳細は初期状態で閉じる");
 assert(app.includes('function toggleRankDetails()'),"ランク詳細の開閉処理");
-assert(sw.includes('social-quiz-v9-8'),"v9.8キャッシュ");
-assert(sw.includes('20260814-v9-8'),"v9.8更新識別子");
-console.log("PASS: v9.8ランク折りたたみ、前期・夏期称号、バックアップ、PWA更新を検証");
+assert(sw.includes('social-quiz-v9-9'),"v9.9キャッシュ");
+assert(sw.includes('20260815-v9-9'),"v9.9更新識別子");
+console.log("PASS: v9.9ランク折りたたみ、前期・夏期称号、バックアップ、PWA更新を検証");

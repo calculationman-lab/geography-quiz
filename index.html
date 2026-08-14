@@ -10,7 +10,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="社会マスター">
-  <link rel="apple-touch-icon" href="./apple-touch-icon.png?v=20260814-v9-1">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png?v=20260814-v9-2">
 </head>
 <body>
   <main class="app-shell">
@@ -18,15 +18,17 @@
       <header class="hero"><h1>社会マスター</h1><p>4択と記述で社会をマスターしよう！</p></header>
       <section class="rank-card" aria-labelledby="rank-heading">
         <div class="rank-emblem" id="rank-emblem" aria-hidden="true">🧭</div>
-        <div class="rank-main"><p id="rank-heading">現在のランク</p><h2 id="current-rank">はじまりの旅人</h2><p id="rank-progress"></p></div>
-        <div class="mastery-counts"><span id="choice-mastery-count">前期4択 0／17</span><span id="written-mastery-count">前期記述 0／17</span><span id="summer-choice-mastery-count">夏期4択 0／7</span><span id="summer-written-mastery-count">夏期記述 0／7</span></div>
-        <div class="rank-next" id="next-rank"></div>
-        <h3 class="mastery-grid-heading">前期17単元</h3>
-        <div class="unit-mastery-grid" id="unit-mastery-grid" aria-label="17単元の攻略状況"></div>
-        <h3 class="mastery-grid-heading summer-heading">夏期講習7地域</h3>
-        <div class="summer-mastery-grid" id="summer-mastery-grid" aria-label="夏期講習7地域の攻略状況"></div>
-        <div class="unit-mastery-detail" id="unit-mastery-detail">単元マークを押すと最高記録と称号を確認できます。</div>
-        <div class="recent-title" id="recent-title"></div>
+        <div class="rank-main"><p id="rank-heading">現在のランク</p><h2 id="current-rank">はじまりの旅人</h2><button id="rank-toggle" class="rank-toggle" type="button" aria-expanded="false" aria-controls="rank-details"><span id="rank-progress">日本地理 攻略ランク</span><span id="rank-toggle-icon" aria-hidden="true">▼</span></button></div>
+        <div id="rank-details" class="rank-details hidden">
+          <div class="mastery-counts"><span id="choice-mastery-count">前期4択 0／17</span><span id="written-mastery-count">前期記述 0／17</span><span id="summer-choice-mastery-count">夏期4択 0／7</span><span id="summer-written-mastery-count">夏期記述 0／7</span></div>
+          <div class="rank-next" id="next-rank"></div>
+          <h3 class="mastery-grid-heading">前期17単元</h3>
+          <div class="unit-mastery-grid" id="unit-mastery-grid" aria-label="17単元の攻略状況"></div>
+          <h3 class="mastery-grid-heading summer-heading">夏期講習7地域</h3>
+          <div class="summer-mastery-grid" id="summer-mastery-grid" aria-label="夏期講習7地域の攻略状況"></div>
+          <div class="unit-mastery-detail" id="unit-mastery-detail">単元マークを押すと最高記録と称号を確認できます。</div>
+          <div class="recent-title" id="recent-title"></div>
+        </div>
       </section>
       <div class="today-card" id="today-status"></div>
       <div class="mode-grid">
@@ -89,7 +91,7 @@
           <p id="backup-status" class="backup-status" role="status" aria-live="polite"></p>
         </div>
       </section>
-      <p class="app-version">更新版 v9.1</p>
+      <p class="app-version">更新版 v9.2</p>
     </section>
     <section id="quiz-screen" class="screen hidden" aria-live="polite">
       <div class="quiz-card">
@@ -109,7 +111,7 @@
       </div>
     </section>
   </main>
-  <script src="./questions.js?v=20260814-v9-1"></script><script src="./app.js?v=20260814-v9-1"></script>
+  <script src="./questions.js?v=20260814-v9-2"></script><script src="./app.js?v=20260814-v9-2"></script>
   <script>if("serviceWorker" in navigator){let reloading=false;navigator.serviceWorker.addEventListener("controllerchange",()=>{if(reloading)return;reloading=true;location.reload()});window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js",{updateViaCache:"none"}).then(registration=>registration.update()).catch(console.error))}</script>
 </body>
 </html>

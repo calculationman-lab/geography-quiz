@@ -1,6 +1,6 @@
 const fs=require("fs"),vm=require("vm"),assert=require("assert"),path=require("path");
 
-class ClassList{constructor(){this.values=new Set()}toggle(name,on){on?this.values.add(name):this.values.delete(name)}add(name){this.values.add(name)}remove(name){this.values.delete(name)}}
+class ClassList{constructor(){this.values=new Set()}toggle(name,on){on?this.values.add(name):this.values.delete(name)}add(name){this.values.add(name)}remove(name){this.values.delete(name)}contains(name){return this.values.has(name)}}
 class Element{
   constructor(id=""){this.id=id;this.dataset={};this.classList=new ClassList();this.style={};this.children=[];this.textContent="";this.innerHTML="";this.value="";this.checked=false;this.nextElementSibling={textContent:""};this.listeners={}}
   addEventListener(type,fn){this.listeners[type]=fn}
@@ -9,8 +9,9 @@ class Element{
   append(...children){this.children.push(...children)}
   click(){this.listeners.click?.({target:this})}
 }
-const ids=["home-screen","quiz-screen","result-screen","sound-enabled","sound-volume","sound-volume-value","question-total","all-question-label","written-all-question-label","today-status","history-list","written-history-list","choices","written-panel","written-instruction","reveal-answer-button","written-answer","self-grade-buttons","region","progress","progress-bar","question","feedback","next-button","review-button","result-title","result-score","result-rate","written-result-summary","result-time","wrong-section","home-button","quit-button","clear-history-button","unit-selector","unit-selection-summary","select-all-units","clear-units","unit-options","summer-region-selector","summer-region-selection-summary","select-all-summer-regions","clear-summer-regions","summer-region-options","choice-challenge-options","written-challenge-options","rank-emblem","current-rank","rank-progress","choice-mastery-count","written-mastery-count","summer-choice-mastery-count","summer-written-mastery-count","next-rank","unit-mastery-grid","summer-mastery-grid","unit-mastery-detail","recent-title","achievement-banner","export-save-button","import-save-button","import-save-file","backup-status"];
+const ids=["home-screen","quiz-screen","result-screen","sound-enabled","sound-volume","sound-volume-value","question-total","all-question-label","written-all-question-label","today-status","history-list","written-history-list","choices","written-panel","written-instruction","reveal-answer-button","written-answer","self-grade-buttons","region","progress","progress-bar","question","feedback","next-button","review-button","result-title","result-score","result-rate","written-result-summary","result-time","wrong-section","home-button","quit-button","clear-history-button","unit-selector","unit-selection-summary","select-all-units","clear-units","unit-options","summer-region-selector","summer-region-selection-summary","select-all-summer-regions","clear-summer-regions","summer-region-options","choice-challenge-options","written-challenge-options","rank-emblem","current-rank","rank-progress","rank-toggle","rank-toggle-icon","rank-details","choice-mastery-count","written-mastery-count","summer-choice-mastery-count","summer-written-mastery-count","next-rank","unit-mastery-grid","summer-mastery-grid","unit-mastery-detail","recent-title","achievement-banner","export-save-button","import-save-button","import-save-file","backup-status"];
 const elements=Object.fromEntries(ids.map(id=>[id,new Element(id)]));
+elements["rank-details"].classList.add("hidden");
 const scopeButtons=["first","summer","all"].map(scope=>{const el=new Element();el.dataset.scope=scope;return el});
 const countButtons=["20","50","all"].map(count=>{const el=new Element();el.dataset.questionCount=count;return el});
 const writtenCountButtons=["10","20","all"].map(count=>{const el=new Element();el.dataset.writtenCount=count;return el});
@@ -35,6 +36,12 @@ assert.strictEqual(elements["sound-enabled"].checked,false,"v5効果音設定を
 assert.strictEqual(elements["sound-volume"].value,35,"v5音量設定を維持");
 assert.strictEqual(elements["question-total"].textContent,450,"初期範囲は前期");
 assert.strictEqual(elements["unit-options"].children.length,17,"前期17単元を表示");
+assert(elements["rank-details"].classList.contains("hidden"),"攻略詳細は初期状態で閉じる");
+elements["rank-toggle"].click();
+assert(!elements["rank-details"].classList.contains("hidden"),"攻略ランクを押すと詳細を開く");
+assert.strictEqual(elements["rank-toggle-icon"].textContent,"▲","展開中の矢印");
+elements["rank-toggle"].click();
+assert(elements["rank-details"].classList.contains("hidden"),"もう一度押すと詳細を閉じる");
 elements["clear-units"].click();
 assert.strictEqual(elements["question-total"].textContent,0,"全解除で0問");
 assert.strictEqual(countButtons.every(button=>button.disabled),true,"0問では開始不可");

@@ -31,7 +31,9 @@ assert(app.includes('requested==="all"&&state.scope==="summer"&&state.selectedSu
 assert(app.includes('choiceMastered')&&app.includes('writtenMastered'),"4択と記述を別々に制覇判定");
 assert(app.includes('UNIT_TITLES')&&app.includes('SUMMER_TITLES')&&app.includes('RANKS'),"前期・夏期称号と総合ランク");
 assert(app.includes('mastery:loadMastery()'),"攻略データをバックアップ");
-for(const id of ["current-rank","unit-mastery-grid","summer-mastery-grid","summer-region-selector","achievement-banner"]){assert(html.includes(`id="${id}"`),`${id}: v9表示`)}
-assert(sw.includes('social-quiz-v9-1'),"v9.1キャッシュ");
-assert(sw.includes('20260814-v9-1'),"v9.1更新識別子");
-console.log("PASS: v9.1前期・夏期称号、ランク、制覇条件、バックアップ、PWA更新を検証");
+for(const id of ["current-rank","unit-mastery-grid","summer-mastery-grid","summer-region-selector","achievement-banner","rank-toggle","rank-details"]){assert(html.includes(`id="${id}"`),`${id}: v9表示`)}
+assert(html.includes('id="rank-details" class="rank-details hidden"'),"ランク詳細は初期状態で閉じる");
+assert(app.includes('function toggleRankDetails()'),"ランク詳細の開閉処理");
+assert(sw.includes('social-quiz-v9-2'),"v9.2キャッシュ");
+assert(sw.includes('20260814-v9-2'),"v9.2更新識別子");
+console.log("PASS: v9.2ランク折りたたみ、前期・夏期称号、バックアップ、PWA更新を検証");

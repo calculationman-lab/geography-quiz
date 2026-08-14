@@ -1,4 +1,4 @@
-/* v9.6統合問題データ: 夏期講習139問 + 小4前期450問／各問 正解1＋誤答5 */
+/* v9.8統合問題データ: 夏期講習139問 + 小4前期450問／各問 正解1＋誤答5 */
 window.GEOGRAPHY_QUESTIONS = [
   {
     "id": "summer-001",
@@ -12,7 +12,7 @@ window.GEOGRAPHY_QUESTIONS = [
       "リアス海岸",
       "砂浜海岸",
       "隆起海岸",
-      "フィヨルド",
+      "サンゴ礁海岸",
       "岩石海岸",
       "沈水海岸"
     ],
@@ -316,8 +316,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "小笠原諸島",
       "伊豆諸島",
       "屋久島",
-      "知床",
-      "白神山地",
+      "南西諸島",
+      "奄美大島",
       "奄美大島・徳之島・沖縄島北部及び西表島"
     ],
     "answerIndex": 0,
@@ -507,8 +507,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "松本城",
       "犬山城",
       "彦根城",
-      "平泉",
-      "石見銀山"
+      "熊本城",
+      "大阪城"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -583,8 +583,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "キャベツ",
       "ねぎ",
       "だいこん",
-      "もも",
-      "りんご"
+      "きゅうり",
+      "はくさい"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -640,8 +640,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "萩焼",
       "九谷焼",
       "有田焼",
-      "伝統的工芸品",
-      "特産品"
+      "信楽焼",
+      "瀬戸焼"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -697,8 +697,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "備前焼",
       "九谷焼",
       "有田焼",
-      "伝統的工芸品",
-      "特産品"
+      "信楽焼",
+      "瀬戸焼"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -773,8 +773,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "明石海峡大橋",
       "大鳴門橋",
       "関門橋",
-      "北海道",
-      "造船業"
+      "多々羅大橋",
+      "来島海峡大橋"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -830,8 +830,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "よさこい祭り",
       "ねぶた祭",
       "花笠まつり",
-      "水力発電",
-      "地熱発電"
+      "竿燈まつり",
+      "祇園祭"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -849,8 +849,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "きしめん",
       "わんこそば",
       "ほうとう",
-      "さとうきび",
-      "かつおのたたき"
+      "稲庭うどん",
+      "沖縄そば"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -906,8 +906,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "ますずし",
       "ふなずし",
       "いかめし",
-      "讃岐うどん",
-      "花笠まつり"
+      "さばずし",
+      "ぶり大根"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1115,8 +1115,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "IC工場",
       "製紙工場",
       "造船所",
-      "石油化学工業",
-      "ろ過池"
+      "化学工場",
+      "食品工場"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1134,8 +1134,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "会津塗",
       "津軽塗",
       "春慶塗",
-      "伝統的工芸品",
-      "特産品"
+      "山中漆器",
+      "若狭塗"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1324,8 +1324,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "明石海峡大橋",
       "瀬戸大橋",
       "来島海峡大橋",
-      "キャベツ",
-      "たまねぎ"
+      "関門橋",
+      "多々羅大橋"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1400,8 +1400,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "自動車工業",
       "鉄鋼業",
       "石油化学工業",
-      "自動車",
-      "船舶"
+      "セメント工業",
+      "製紙工業"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1455,8 +1455,8 @@ window.GEOGRAPHY_QUESTIONS = [
     "choices": [
       "促成栽培",
       "抑制栽培",
-      "近郊農業",
-      "二毛作",
+      "果樹栽培",
+      "マルチ栽培",
       "水耕栽培",
       "露地栽培"
     ],
@@ -1515,7 +1515,7 @@ window.GEOGRAPHY_QUESTIONS = [
       "製鉄所",
       "石油化学工場",
       "化学工場",
-      "8県"
+      "食品工場"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1644,11 +1644,11 @@ window.GEOGRAPHY_QUESTIONS = [
     "answer": "南部鉄器",
     "choices": [
       "南部鉄器",
-      "津軽塗",
-      "会津塗",
-      "雄勝硯",
-      "伝統的工芸品",
-      "特産品"
+      "山形鋳物",
+      "高岡銅器",
+      "燕鎚起銅器",
+      "肥後象嵌",
+      "東京銀器"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1666,8 +1666,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "こけし",
       "曲げわっぱ",
       "赤べこ",
-      "ぶどう",
-      "もも"
+      "箱根寄木細工",
+      "木彫り熊"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1739,11 +1739,11 @@ window.GEOGRAPHY_QUESTIONS = [
     "answer": "金箔",
     "choices": [
       "金箔",
-      "銀線細工",
-      "竹細工",
-      "ガラス玉",
-      "伝統的工芸品",
-      "特産品"
+      "銀箔",
+      "金糸",
+      "銀糸",
+      "漆",
+      "螺鈿"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1951,8 +1951,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "レタス",
       "はくさい",
       "だいこん",
-      "ぶどう",
-      "りんご"
+      "きゅうり",
+      "たまねぎ"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1989,8 +1989,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "大島紬",
       "西陣織",
       "結城紬",
-      "伝統的工芸品",
-      "特産品"
+      "博多織",
+      "久留米絣"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2141,8 +2141,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "博多織",
       "結城紬",
       "大島紬",
-      "伝統的工芸品",
-      "特産品"
+      "黄八丈",
+      "久留米絣"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2236,8 +2236,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "瀬戸大橋",
       "大鳴門橋",
       "関門橋",
-      "キャベツ",
-      "たまねぎ"
+      "来島海峡大橋",
+      "多々羅大橋"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2369,8 +2369,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "赤間硯",
       "奈良筆",
       "播州そろばん",
-      "伝統的工芸品",
-      "特産品"
+      "豊橋筆",
+      "雄勝硯"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2442,11 +2442,11 @@ window.GEOGRAPHY_QUESTIONS = [
     "answer": "ビニールハウス",
     "choices": [
       "ビニールハウス",
-      "雪室",
-      "サイロ",
-      "養殖いかだ",
-      "キャベツ",
-      "さくらんぼ"
+      "ガラス温室",
+      "ビニールトンネル",
+      "育苗ハウス",
+      "冷蔵施設",
+      "選果場"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2578,8 +2578,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "自動車工業",
       "鉄鋼業",
       "石油化学工業",
-      "自動車",
-      "船舶"
+      "セメント工業",
+      "製紙工業"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3126,11 +3126,11 @@ window.GEOGRAPHY_QUESTIONS = [
     "answer": "清掃工場",
     "choices": [
       "清掃工場",
-      "排水機場",
-      "浄水場",
-      "配水池",
-      "取水口",
-      "リユース"
+      "最終処分場",
+      "資源化センター",
+      "リサイクルセンター",
+      "ごみ集積所",
+      "粗大ごみ処理施設"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3659,10 +3659,10 @@ window.GEOGRAPHY_QUESTIONS = [
     "choices": [
       "250m",
       "500m",
-      "1km",
-      "2.5km",
-      "10m",
-      "50m"
+      "1000m",
+      "2500m",
+      "50m",
+      "100m"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3678,10 +3678,10 @@ window.GEOGRAPHY_QUESTIONS = [
     "choices": [
       "500m",
       "250m",
-      "1km",
-      "5km",
-      "10m",
-      "50m"
+      "1000m",
+      "5000m",
+      "50m",
+      "100m"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3905,7 +3905,7 @@ window.GEOGRAPHY_QUESTIONS = [
     "answer": "1km",
     "choices": [
       "1km",
-      "500m",
+      "0.5km",
       "2km",
       "4km",
       "5km",
@@ -3924,7 +3924,7 @@ window.GEOGRAPHY_QUESTIONS = [
     "answer": "1km",
     "choices": [
       "1km",
-      "500m",
+      "0.5km",
       "2km",
       "5km",
       "4km",
@@ -4665,7 +4665,7 @@ window.GEOGRAPHY_QUESTIONS = [
     "answer": "琵琶湖",
     "choices": [
       "琵琶湖",
-      "霞ヶ浦",
+      "宍道湖",
       "サロマ湖",
       "猪苗代湖",
       "洞爺湖",
@@ -5123,9 +5123,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "東経135度",
       "東経90度",
       "東経150度",
-      "西経135度",
-      "本初子午線",
-      "日付変更線"
+      "東経45度",
+      "東経120度",
+      "東経180度"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5539,11 +5539,11 @@ window.GEOGRAPHY_QUESTIONS = [
     "answer": "1時間",
     "choices": [
       "1時間",
-      "30分",
       "2時間",
-      "15時間",
       "3時間",
-      "4時間"
+      "4時間",
+      "6時間",
+      "12時間"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7079,10 +7079,10 @@ window.GEOGRAPHY_QUESTIONS = [
     "choices": [
       "パイナップル",
       "さくらんぼ",
-      "さとうきび",
-      "じゃがいも",
+      "キウイフルーツ",
+      "日本なし",
       "みかん",
-      "レタス"
+      "ぶどう"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7344,9 +7344,9 @@ window.GEOGRAPHY_QUESTIONS = [
     "answer": "促成栽培",
     "choices": [
       "促成栽培",
-      "近郊農業",
-      "施設園芸農業",
-      "二期作",
+      "果樹栽培",
+      "露地栽培",
+      "マルチ栽培",
       "抑制栽培",
       "水耕栽培"
     ],
@@ -7364,10 +7364,10 @@ window.GEOGRAPHY_QUESTIONS = [
     "choices": [
       "防風林",
       "防潮林",
-      "街路樹",
-      "果樹園",
-      "さくらんぼ",
-      "じゃがいも"
+      "人工林",
+      "水源林",
+      "保安林",
+      "防砂林"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8162,10 +8162,10 @@ window.GEOGRAPHY_QUESTIONS = [
     "choices": [
       "雪室",
       "冷蔵倉庫",
-      "温室",
-      "貯水池",
-      "キャベツ",
-      "レタス"
+      "氷室",
+      "地下貯蔵庫",
+      "低温倉庫",
+      "保冷庫"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8218,11 +8218,11 @@ window.GEOGRAPHY_QUESTIONS = [
     "answer": "3m",
     "choices": [
       "3m",
-      "30cm",
+      "0.3m",
       "1m",
       "10m",
       "20m",
-      "50m"
+      "5m"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8712,11 +8712,11 @@ window.GEOGRAPHY_QUESTIONS = [
     "answer": "木曽三川",
     "choices": [
       "木曽三川",
-      "利根川水系",
-      "淀川水系",
-      "北上川水系",
-      "木曽川",
-      "信濃川"
+      "利根川・荒川・多摩川",
+      "北上川・阿武隈川・最上川",
+      "信濃川・阿賀野川・関川",
+      "淀川・大和川・紀の川",
+      "吉野川・四万十川・仁淀川"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9094,7 +9094,7 @@ window.GEOGRAPHY_QUESTIONS = [
       "リアス海岸",
       "岩石海岸",
       "砂浜海岸",
-      "フィヨルド",
+      "サンゴ礁海岸",
       "隆起海岸",
       "沈水海岸"
     ],
@@ -9225,11 +9225,11 @@ window.GEOGRAPHY_QUESTIONS = [
     "answer": "防波堤",
     "choices": [
       "防波堤",
-      "いかだ",
+      "輪中堤",
       "防潮堤",
-      "防砂林",
-      "防潮林",
-      "避難タワー"
+      "霞堤",
+      "堤防",
+      "スーパー堤防"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9322,7 +9322,7 @@ window.GEOGRAPHY_QUESTIONS = [
       "岩石海岸",
       "砂浜海岸",
       "沈水海岸",
-      "フィヨルド",
+      "離水海岸",
       "リアス海岸",
       "隆起海岸"
     ],
@@ -9475,8 +9475,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "沿岸漁業",
       "沖合漁業",
       "遠洋漁業",
-      "砂浜海岸",
-      "促成栽培"
+      "栽培漁業",
+      "巻き網漁業"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9532,8 +9532,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "防風林",
       "防潮林",
       "保安林",
-      "砂浜海岸",
-      "季節風"
+      "人工林",
+      "水源林"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9551,8 +9551,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "日本海側",
       "瀬戸内海側",
       "東シナ海側",
-      "ほぼ同じ",
-      "どちらともいえない"
+      "南西",
+      "南東"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9587,9 +9587,9 @@ window.GEOGRAPHY_QUESTIONS = [
     "choices": [
       "防潮堤",
       "防波堤",
-      "砂防ダム",
-      "防雪柵",
-      "防潮林",
+      "輪中堤",
+      "霞堤",
+      "スーパー堤防",
       "堤防"
     ],
     "answerIndex": 0,
@@ -9742,7 +9742,7 @@ window.GEOGRAPHY_QUESTIONS = [
       "もも",
       "みかん",
       "さくらんぼ",
-      "だいこん"
+      "かき"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9932,7 +9932,7 @@ window.GEOGRAPHY_QUESTIONS = [
       "さくらんぼ",
       "みかん",
       "ぶどう",
-      "だいこん"
+      "かき"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -10101,9 +10101,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "選果場",
       "集荷場",
       "市場",
-      "貯水池",
-      "みかん",
-      "りんご"
+      "共同選果施設",
+      "出荷場",
+      "農産物倉庫"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -10175,10 +10175,10 @@ window.GEOGRAPHY_QUESTIONS = [
     "answer": "レタス",
     "choices": [
       "レタス",
-      "さとうきび",
+      "キャベツ",
       "れんこん",
-      "みかん",
-      "さくらんぼ",
+      "きゅうり",
+      "だいこん",
       "じゃがいも"
     ],
     "answerIndex": 0,
@@ -10195,8 +10195,8 @@ window.GEOGRAPHY_QUESTIONS = [
     "choices": [
       "抑制栽培",
       "促成栽培",
-      "二期作",
-      "輪作",
+      "露地栽培",
+      "マルチ栽培",
       "果樹栽培",
       "水耕栽培"
     ],
@@ -10213,11 +10213,11 @@ window.GEOGRAPHY_QUESTIONS = [
     "answer": "ビニールハウス",
     "choices": [
       "ビニールハウス",
-      "防風林",
-      "防雪柵",
-      "選果場",
-      "キャベツ",
-      "レタス"
+      "ビニールトンネル",
+      "ガラス温室",
+      "育苗ハウス",
+      "防霜ファン",
+      "保温シート"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -10235,8 +10235,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "正午",
       "夕方",
       "深夜",
-      "キャベツ",
-      "レタス"
+      "午後",
+      "午前"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -10271,10 +10271,10 @@ window.GEOGRAPHY_QUESTIONS = [
     "choices": [
       "スキー場",
       "キャンプ場",
-      "海水浴場",
-      "遊園地",
-      "消雪パイプ",
-      "取水口"
+      "スケート場",
+      "スノーパーク",
+      "温泉施設",
+      "リゾートホテル"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -10292,8 +10292,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "選果場",
       "市場",
       "農業試験場",
-      "だいこん",
-      "じゃがいも"
+      "共同出荷場",
+      "農産物直売所"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -10349,8 +10349,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "那須高原",
       "清里高原",
       "美ヶ原高原",
-      "抑制栽培",
-      "レタス"
+      "志賀高原",
+      "軽井沢高原"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -10425,8 +10425,8 @@ window.GEOGRAPHY_QUESTIONS = [
       "冬",
       "春",
       "秋",
-      "レタス",
-      "キャベツ"
+      "初夏",
+      "真冬"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -10784,7 +10784,7 @@ window.GEOGRAPHY_QUESTIONS = [
     "choices": [
       "高原野菜栽培",
       "促成栽培",
-      "稲作",
+      "施設園芸栽培",
       "果樹栽培",
       "抑制栽培",
       "水耕栽培"

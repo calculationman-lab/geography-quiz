@@ -1,4 +1,4 @@
-/* v6統合問題データ: 夏期講習139問 + 小4前期450問 */
+/* v9.5統合問題データ: 夏期講習139問 + 小4前期450問／各問 正解1＋誤答5 */
 window.GEOGRAPHY_QUESTIONS = [
   {
     "id": "summer-001",
@@ -12,7 +12,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "リアス海岸",
       "砂浜海岸",
       "隆起海岸",
-      "フィヨルド"
+      "フィヨルド",
+      "岩石海岸",
+      "沈水海岸"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -29,7 +31,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "白神山地",
       "知床",
       "屋久島",
-      "小笠原諸島"
+      "小笠原諸島",
+      "天塩山地",
+      "北見山地"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -46,7 +50,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "青函トンネル",
       "関門トンネル",
       "新神戸トンネル",
-      "飛騨トンネル"
+      "飛騨トンネル",
+      "関越トンネル",
+      "清水トンネル"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -63,7 +69,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "知床",
       "白神山地",
       "屋久島",
-      "小笠原諸島"
+      "小笠原諸島",
+      "平泉",
+      "北海道"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -80,7 +88,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "石狩平野",
       "十勝平野",
       "津軽平野",
-      "庄内平野"
+      "庄内平野",
+      "筑紫平野",
+      "秋田平野"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -97,7 +107,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "りんご",
       "さくらんぼ",
       "ぶどう",
-      "もも"
+      "もも",
+      "だいこん",
+      "みかん"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -114,7 +126,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "庄内平野",
       "津軽平野",
       "仙台平野",
-      "秋田平野"
+      "秋田平野",
+      "石狩平野",
+      "筑紫平野"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -131,7 +145,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "最上川",
       "北上川",
       "阿武隈川",
-      "雄物川"
+      "雄物川",
+      "吉野川",
+      "木曽川"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -148,7 +164,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "越後平野",
       "庄内平野",
       "石狩平野",
-      "筑紫平野"
+      "筑紫平野",
+      "津軽平野",
+      "秋田平野"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -165,7 +183,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "黒部ダム",
       "矢木沢ダム",
       "奥只見ダム",
-      "御母衣ダム"
+      "御母衣ダム",
+      "宮ヶ瀬ダム",
+      "緑のダム"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -182,7 +202,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "兼六園",
       "偕楽園",
       "後楽園",
-      "栗林公園"
+      "栗林公園",
+      "北海道",
+      "秋田杉"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -199,7 +221,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "日本アルプス",
       "奥羽山脈",
       "中国山地",
-      "九州山地"
+      "九州山地",
+      "高原野菜",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -216,7 +240,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "富士山",
       "立山",
       "白山",
-      "浅間山"
+      "浅間山",
+      "佐渡金山",
+      "足尾銅山"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -233,7 +259,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "中部国際空港",
       "関西国際空港",
       "成田国際空港",
-      "新千歳空港"
+      "新千歳空港",
+      "大阪国際空港",
+      "神戸空港"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -250,7 +278,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "眼鏡フレーム",
       "刃物",
       "洋食器",
-      "時計"
+      "時計",
+      "自動車",
+      "船舶"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -267,7 +297,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "牧之原台地",
       "三方原台地",
       "笠野原台地",
-      "シラス台地"
+      "シラス台地",
+      "武蔵野台地",
+      "下総台地"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -284,7 +316,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "小笠原諸島",
       "伊豆諸島",
       "屋久島",
-      "知床"
+      "知床",
+      "白神山地",
+      "奄美大島・徳之島・沖縄島北部及び西表島"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -301,7 +335,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "利根川",
       "信濃川",
       "荒川",
-      "多摩川"
+      "多摩川",
+      "吉野川",
+      "四万十川"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -318,7 +354,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "霞ヶ浦",
       "琵琶湖",
       "サロマ湖",
-      "猪苗代湖"
+      "猪苗代湖",
+      "北海道",
+      "年較差"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -335,7 +373,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "偕楽園",
       "兼六園",
       "後楽園",
-      "栗林公園"
+      "栗林公園",
+      "北海道",
+      "九州"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -352,7 +392,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "富岡製糸場",
       "足尾銅山",
       "八幡製鉄所",
-      "佐渡金山"
+      "佐渡金山",
+      "平泉",
+      "石見銀山"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -369,7 +411,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "日光の社寺",
       "平泉",
       "法隆寺",
-      "古都京都の文化財"
+      "古都京都の文化財",
+      "富岡製糸場",
+      "石見銀山"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -386,7 +430,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "近郊農業",
       "高冷地農業",
       "促成栽培",
-      "抑制栽培"
+      "抑制栽培",
+      "キャベツ",
+      "だいこん"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -403,7 +449,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "嬬恋村",
       "昭和村",
       "川場村",
-      "片品村"
+      "片品村",
+      "酪農",
+      "畑作"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -420,7 +468,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "瀬田川",
       "木曽川",
       "吉野川",
-      "利根川"
+      "利根川",
+      "信濃川",
+      "四万十川"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -437,7 +487,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "天橋立",
       "松島",
       "宮島",
-      "三保松原"
+      "三保松原",
+      "兼六園",
+      "偕楽園"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -454,7 +506,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "姫路城",
       "松本城",
       "犬山城",
-      "彦根城"
+      "彦根城",
+      "平泉",
+      "石見銀山"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -471,7 +525,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "関西国際空港",
       "大阪国際空港",
       "中部国際空港",
-      "神戸空港"
+      "神戸空港",
+      "成田国際空港",
+      "新千歳空港"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -488,7 +544,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "平城京",
       "平安京",
       "藤原京",
-      "長岡京"
+      "長岡京",
+      "法隆寺",
+      "シーサー"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -505,7 +563,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "法隆寺",
       "東大寺",
       "薬師寺",
-      "唐招提寺"
+      "唐招提寺",
+      "屋久島",
+      "小笠原諸島"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -522,7 +582,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "たまねぎ",
       "キャベツ",
       "ねぎ",
-      "だいこん"
+      "だいこん",
+      "もも",
+      "りんご"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -539,7 +601,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "天下の台所",
       "日本の台所",
       "商人の都",
-      "水の都"
+      "水の都",
+      "市原市",
+      "石油化学工業"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -556,7 +620,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "日本なし",
       "りんご",
       "もも",
-      "ぶどう"
+      "ぶどう",
+      "だいこん",
+      "キャベツ"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -573,7 +639,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "備前焼",
       "萩焼",
       "九谷焼",
-      "有田焼"
+      "有田焼",
+      "伝統的工芸品",
+      "特産品"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -590,7 +658,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "自動車",
       "船舶",
       "鉄鋼製品",
-      "繊維製品"
+      "繊維製品",
+      "鉄鋼",
+      "化学製品"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -607,7 +677,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "しじみ",
       "かき",
       "あさり",
-      "のり"
+      "のり",
+      "自動車",
+      "もも"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -624,7 +696,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "萩焼",
       "備前焼",
       "九谷焼",
-      "有田焼"
+      "有田焼",
+      "伝統的工芸品",
+      "特産品"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -641,7 +715,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "セメント工業",
       "石油化学工業",
       "鉄鋼業",
-      "製紙工業"
+      "製紙工業",
+      "自動車",
+      "船舶"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -658,7 +734,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "石油化学工業",
       "鉄鋼業",
       "造船業",
-      "自動車工業"
+      "自動車工業",
+      "セメント工業",
+      "製紙工業"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -675,7 +753,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "倉敷市",
       "岡山市",
       "玉野市",
-      "福山市"
+      "福山市",
+      "呉市",
+      "川崎市"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -692,7 +772,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "瀬戸大橋",
       "明石海峡大橋",
       "大鳴門橋",
-      "関門橋"
+      "関門橋",
+      "北海道",
+      "造船業"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -709,7 +791,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "ため池",
       "用水路",
       "ダム",
-      "井戸"
+      "井戸",
+      "促成栽培",
+      "防風林"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -726,7 +810,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "四万十川",
       "吉野川",
       "仁淀川",
-      "物部川"
+      "物部川",
+      "木曽川",
+      "利根川"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -743,7 +829,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "阿波おどり",
       "よさこい祭り",
       "ねぶた祭",
-      "花笠まつり"
+      "花笠まつり",
+      "水力発電",
+      "地熱発電"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -760,7 +848,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "讃岐うどん",
       "きしめん",
       "わんこそば",
-      "ほうとう"
+      "ほうとう",
+      "さとうきび",
+      "かつおのたたき"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -777,7 +867,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "小豆島",
       "淡路島",
       "大三島",
-      "因島"
+      "因島",
+      "択捉島",
+      "南鳥島"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -794,7 +886,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "タオル",
       "うちわ",
       "手袋",
-      "足袋"
+      "足袋",
+      "ぶどう",
+      "もも"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -811,7 +905,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "かつおのたたき",
       "ますずし",
       "ふなずし",
-      "いかめし"
+      "いかめし",
+      "讃岐うどん",
+      "花笠まつり"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -828,7 +924,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "北九州市",
       "久留米市",
       "大牟田市",
-      "佐世保市"
+      "佐世保市",
+      "玉野市",
+      "岡山市"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -845,7 +943,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "筑紫平野",
       "八代平野",
       "宮崎平野",
-      "熊本平野"
+      "熊本平野",
+      "石狩平野",
+      "庄内平野"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -862,7 +962,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "地熱発電",
       "水力発電",
       "火力発電",
-      "風力発電"
+      "風力発電",
+      "果樹栽培",
+      "酪農"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -879,7 +981,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "阿蘇山",
       "桜島",
       "雲仙普賢岳",
-      "霧島山"
+      "霧島山",
+      "富士山",
+      "浅間山"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -896,7 +1000,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "水俣病",
       "イタイイタイ病",
       "四日市ぜんそく",
-      "新潟水俣病"
+      "新潟水俣病",
+      "筑紫平野",
+      "北西の季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -913,7 +1019,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "シラス台地",
       "牧之原台地",
       "笠野原台地",
-      "三方原台地"
+      "三方原台地",
+      "武蔵野台地",
+      "下総台地"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -930,7 +1038,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "屋久島",
       "奄美大島",
       "種子島",
-      "小笠原諸島"
+      "小笠原諸島",
+      "択捉島",
+      "南鳥島"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -947,7 +1057,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "さんご礁",
       "干潟",
       "砂丘",
-      "リアス海岸"
+      "リアス海岸",
+      "太平洋",
+      "東シナ海"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -964,7 +1076,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "苫小牧",
       "室蘭",
       "旭川",
-      "函館"
+      "函館",
+      "自動車",
+      "船舶"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -981,7 +1095,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "秋田杉",
       "青森ひば",
       "木曽ひのき",
-      "吉野杉"
+      "吉野杉",
+      "兼六園",
+      "偕楽園"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -998,7 +1114,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "自動車工場",
       "IC工場",
       "製紙工場",
-      "造船所"
+      "造船所",
+      "石油化学工業",
+      "ろ過池"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1015,7 +1133,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "輪島塗",
       "会津塗",
       "津軽塗",
-      "春慶塗"
+      "春慶塗",
+      "伝統的工芸品",
+      "特産品"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1032,7 +1152,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "自動車",
       "船舶",
       "鉄鋼製品",
-      "繊維製品"
+      "繊維製品",
+      "化学製品",
+      "鉄鋼"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1049,7 +1171,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "川崎市",
       "横浜市",
       "千葉市",
-      "市原市"
+      "市原市",
+      "鹿嶋市",
+      "玉野市"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1066,7 +1190,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "早場米",
       "新米",
       "二期作米",
-      "もち米"
+      "もち米",
+      "促成栽培",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1083,7 +1209,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "高原野菜",
       "近郊野菜",
       "京野菜",
-      "促成野菜"
+      "促成野菜",
+      "キャベツ",
+      "だいこん"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1100,7 +1228,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "中京工業地帯",
       "阪神工業地帯",
       "京浜工業地帯",
-      "瀬戸内工業地域"
+      "瀬戸内工業地域",
+      "京葉工業地域",
+      "四日市ぜんそく"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1117,7 +1247,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "玉野市",
       "岡山市",
       "福山市",
-      "呉市"
+      "呉市",
+      "倉敷市",
+      "川崎市"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1134,7 +1266,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "ジーンズ",
       "タオル",
       "眼鏡フレーム",
-      "将棋駒"
+      "将棋駒",
+      "ぶどう",
+      "りんご"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1151,7 +1285,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "宇和海",
       "燧灘",
       "土佐湾",
-      "伊予灘"
+      "伊予灘",
+      "日本海",
+      "東シナ海"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1168,7 +1304,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "今治市",
       "松山市",
       "新居浜市",
-      "宇和島市"
+      "宇和島市",
+      "岡山市",
+      "福山市"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1185,7 +1323,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "大鳴門橋",
       "明石海峡大橋",
       "瀬戸大橋",
-      "来島海峡大橋"
+      "来島海峡大橋",
+      "キャベツ",
+      "たまねぎ"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1202,7 +1342,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "吉野川",
       "四万十川",
       "仁淀川",
-      "重信川"
+      "重信川",
+      "利根川",
+      "木曽川"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1219,7 +1361,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "松山市",
       "高松市",
       "徳島市",
-      "高知市"
+      "高知市",
+      "仙台市",
+      "横浜市"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1236,7 +1380,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "鳴門金時",
       "安納いも",
       "紅あずま",
-      "五郎島金時"
+      "五郎島金時",
+      "さくらんぼ",
+      "じゃがいも"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1253,7 +1399,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "造船業",
       "自動車工業",
       "鉄鋼業",
-      "石油化学工業"
+      "石油化学工業",
+      "自動車",
+      "船舶"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1270,7 +1418,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "たい",
       "ぶり",
       "かき",
-      "のり"
+      "のり",
+      "もも",
+      "うなぎの養殖"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1287,7 +1437,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "八代平野",
       "筑紫平野",
       "熊本平野",
-      "宮崎平野"
+      "宮崎平野",
+      "庄内平野",
+      "石狩平野"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1304,7 +1456,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "促成栽培",
       "抑制栽培",
       "近郊農業",
-      "二毛作"
+      "二毛作",
+      "水耕栽培",
+      "露地栽培"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1321,7 +1475,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "さつまいも",
       "じゃがいも",
       "さとうきび",
-      "だいこん"
+      "だいこん",
+      "もも",
+      "りんご"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1338,7 +1494,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "沖縄本島",
       "石垣島",
       "宮古島",
-      "西表島"
+      "西表島",
+      "沖ノ鳥島",
+      "与那国島"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1355,7 +1513,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "IC工場",
       "自動車工場",
       "製鉄所",
-      "石油化学工場"
+      "石油化学工場",
+      "歯車",
+      "8県"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1372,7 +1532,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "平泉",
       "日光",
       "鎌倉",
-      "白川郷"
+      "白川郷",
+      "石見銀山",
+      "富岡製糸場"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1389,7 +1551,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "有珠山",
       "羊蹄山",
       "大雪山",
-      "十勝岳"
+      "十勝岳",
+      "富士山",
+      "佐渡金山"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1406,7 +1570,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "日高山脈",
       "北見山地",
       "天塩山地",
-      "夕張山地"
+      "夕張山地",
+      "越後山脈",
+      "赤石山脈"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1423,7 +1589,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "ねぶた祭",
       "竿燈まつり",
       "花笠まつり",
-      "仙台七夕まつり"
+      "仙台七夕まつり",
+      "阿波おどり",
+      "よさこい祭り"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1440,7 +1608,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "竿燈まつり",
       "ねぶた祭",
       "花笠まつり",
-      "仙台七夕まつり"
+      "仙台七夕まつり",
+      "阿波おどり",
+      "よさこい祭り"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1457,7 +1627,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "花笠まつり",
       "ねぶた祭",
       "竿燈まつり",
-      "仙台七夕まつり"
+      "仙台七夕まつり",
+      "阿波おどり",
+      "よさこい祭り"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1474,7 +1646,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "南部鉄器",
       "津軽塗",
       "会津塗",
-      "雄勝硯"
+      "雄勝硯",
+      "伝統的工芸品",
+      "特産品"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1491,7 +1665,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "将棋駒",
       "こけし",
       "曲げわっぱ",
-      "赤べこ"
+      "赤べこ",
+      "ぶどう",
+      "もも"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1508,7 +1684,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "千曲川",
       "天竜川",
       "木曽川",
-      "富士川"
+      "富士川",
+      "吉野川",
+      "信濃川"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1525,7 +1703,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "甲府市",
       "長野市",
       "静岡市",
-      "前橋市"
+      "前橋市",
+      "仙台市",
+      "横浜市"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1542,7 +1722,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "ワイン",
       "日本酒",
       "ビール",
-      "牛乳"
+      "牛乳",
+      "りんご",
+      "ぶどう"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1559,7 +1741,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "金箔",
       "銀線細工",
       "竹細工",
-      "ガラス玉"
+      "ガラス玉",
+      "伝統的工芸品",
+      "特産品"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1576,7 +1760,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "電照菊",
       "チューリップ",
       "カーネーション",
-      "ラベンダー"
+      "ラベンダー",
+      "もも",
+      "だいこん"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1593,7 +1779,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "水力発電",
       "地熱発電",
       "火力発電",
-      "風力発電"
+      "風力発電",
+      "果樹栽培",
+      "木曽川"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1610,7 +1798,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "飛騨山脈",
       "木曽山脈",
       "赤石山脈",
-      "越後山脈"
+      "越後山脈",
+      "奥羽山脈",
+      "日高山脈"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1627,7 +1817,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "木曽山脈",
       "飛騨山脈",
       "赤石山脈",
-      "越後山脈"
+      "越後山脈",
+      "奥羽山脈",
+      "日高山脈"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1644,7 +1836,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "赤石山脈",
       "飛騨山脈",
       "木曽山脈",
-      "越後山脈"
+      "越後山脈",
+      "奥羽山脈",
+      "日高山脈"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1661,7 +1855,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "うなぎの養殖",
       "あゆの養殖",
       "のりの養殖",
-      "真珠の養殖"
+      "真珠の養殖",
+      "かき",
+      "石油化学工業"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1678,7 +1874,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "ピアノ",
       "三線",
       "琴",
-      "和太鼓"
+      "和太鼓",
+      "三味線",
+      "尺八"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1695,7 +1893,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "鉄鋼",
       "自動車",
       "半導体",
-      "陶磁器"
+      "陶磁器",
+      "ぶどう",
+      "タオル"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1712,7 +1912,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "矢木沢ダム",
       "黒部ダム",
       "奥只見ダム",
-      "宮ヶ瀬ダム"
+      "宮ヶ瀬ダム",
+      "御母衣ダム",
+      "緑のダム"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1729,7 +1931,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "利根川",
       "信濃川",
       "荒川",
-      "多摩川"
+      "多摩川",
+      "吉野川",
+      "木曽川"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1746,7 +1950,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "キャベツ",
       "レタス",
       "はくさい",
-      "だいこん"
+      "だいこん",
+      "ぶどう",
+      "りんご"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1763,7 +1969,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "市原市",
       "千葉市",
       "川崎市",
-      "鹿嶋市"
+      "鹿嶋市",
+      "横浜市",
+      "玉野市"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1780,7 +1988,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "黄八丈",
       "大島紬",
       "西陣織",
-      "結城紬"
+      "結城紬",
+      "伝統的工芸品",
+      "特産品"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1797,7 +2007,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "Y字型",
       "X字型",
       "T字型",
-      "L字型"
+      "L字型",
+      "京葉工業地域",
+      "自動車"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1814,7 +2026,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "京浜工業地帯",
       "京葉工業地域",
       "中京工業地帯",
-      "阪神工業地帯"
+      "阪神工業地帯",
+      "北関東工業地域",
+      "川崎市"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1831,7 +2045,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "京葉工業地域",
       "京浜工業地帯",
       "北関東工業地域",
-      "瀬戸内工業地域"
+      "瀬戸内工業地域",
+      "東海工業地域",
+      "大分臨海工業地域"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1848,7 +2064,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "北関東工業地域",
       "京葉工業地域",
       "東海工業地域",
-      "瀬戸内工業地域"
+      "瀬戸内工業地域",
+      "大分臨海工業地域",
+      "鹿島臨海工業地域"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1865,7 +2083,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "宇治茶",
       "静岡茶",
       "狭山茶",
-      "八女茶"
+      "八女茶",
+      "りんご",
+      "みかん"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1882,7 +2102,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "近江盆地",
       "京都盆地",
       "奈良盆地",
-      "甲府盆地"
+      "甲府盆地",
+      "山形盆地",
+      "松本盆地"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1899,7 +2121,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "京野菜",
       "高原野菜",
       "近郊野菜",
-      "加賀野菜"
+      "加賀野菜",
+      "キャベツ",
+      "さくらんぼ"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1916,7 +2140,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "西陣織",
       "博多織",
       "結城紬",
-      "大島紬"
+      "大島紬",
+      "伝統的工芸品",
+      "特産品"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1933,7 +2159,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "四日市ぜんそく",
       "水俣病",
       "イタイイタイ病",
-      "新潟水俣病"
+      "新潟水俣病",
+      "京浜工業地帯",
+      "阪神工業地帯"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1950,7 +2178,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "阪神工業地帯",
       "中京工業地帯",
       "京浜工業地帯",
-      "瀬戸内工業地域"
+      "瀬戸内工業地域",
+      "自動車",
+      "船舶"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1967,7 +2197,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "かき",
       "キウイフルーツ",
       "もも",
-      "なし"
+      "なし",
+      "りんご",
+      "ぶどう"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -1984,7 +2216,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "真珠の養殖",
       "のりの養殖",
       "かきの養殖",
-      "うなぎの養殖"
+      "うなぎの養殖",
+      "石油化学工業",
+      "かき"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2001,7 +2235,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "明石海峡大橋",
       "瀬戸大橋",
       "大鳴門橋",
-      "関門橋"
+      "関門橋",
+      "キャベツ",
+      "たまねぎ"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2018,7 +2254,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "淀川",
       "大和川",
       "紀の川",
-      "木津川"
+      "木津川",
+      "吉野川",
+      "木曽川"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2035,7 +2273,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "らっきょう",
       "れんこん",
       "さとうきび",
-      "てんさい"
+      "てんさい",
+      "さくらんぼ",
+      "りんご"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2052,7 +2292,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "石見銀山",
       "佐渡金山",
       "足尾銅山",
-      "別子銅山"
+      "別子銅山",
+      "富士山",
+      "浅間山"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2069,7 +2311,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "かき（貝）",
       "真珠貝",
       "あさり",
-      "しじみ"
+      "しじみ",
+      "うなぎの養殖",
+      "酪農"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2086,7 +2330,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "ふぐ",
       "かつお",
       "さけ",
-      "にしん"
+      "にしん",
+      "リアス海岸",
+      "讃岐うどん"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2103,7 +2349,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "白壁の蔵屋敷",
       "合掌造りの集落",
       "赤瓦の住宅",
-      "雁木の通路"
+      "雁木の通路",
+      "眼鏡フレーム",
+      "玉野市"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2120,7 +2368,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "熊野筆",
       "赤間硯",
       "奈良筆",
-      "播州そろばん"
+      "播州そろばん",
+      "伝統的工芸品",
+      "特産品"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2137,7 +2387,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "カルスト地形",
       "リアス海岸",
       "扇状地",
-      "三角州"
+      "三角州",
+      "地形図",
+      "盆地"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2154,7 +2406,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "高松市",
       "松山市",
       "徳島市",
-      "高知市"
+      "高知市",
+      "仙台市",
+      "横浜市"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2171,7 +2425,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "なす",
       "きゅうり",
       "トマト",
-      "キャベツ"
+      "キャベツ",
+      "だいこん",
+      "ぶどう"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2188,7 +2444,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "ビニールハウス",
       "雪室",
       "サイロ",
-      "養殖いかだ"
+      "養殖いかだ",
+      "キャベツ",
+      "さくらんぼ"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2205,7 +2463,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "室戸岬",
       "足摺岬",
       "佐田岬",
-      "潮岬"
+      "潮岬",
+      "吉野川",
+      "四万十川"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2222,7 +2482,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "うず潮",
       "流氷",
       "海霧",
-      "赤潮"
+      "赤潮",
+      "瀬戸大橋",
+      "大鳴門橋"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2239,7 +2501,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "長崎県",
       "佐賀県",
       "熊本県",
-      "宮崎県"
+      "宮崎県",
+      "兵庫県",
+      "山梨県"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2256,7 +2520,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "宮崎牛",
       "松阪牛",
       "米沢牛",
-      "神戸牛"
+      "神戸牛",
+      "ぶどう",
+      "さとうきび"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2273,7 +2539,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "二毛作",
       "二期作",
       "輪作",
-      "促成栽培"
+      "促成栽培",
+      "稲作",
+      "畑作"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2290,7 +2558,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "のりの養殖",
       "かきの養殖",
       "真珠の養殖",
-      "うなぎの養殖"
+      "うなぎの養殖",
+      "かき",
+      "石油化学工業"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2307,7 +2577,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "造船業",
       "自動車工業",
       "鉄鋼業",
-      "石油化学工業"
+      "石油化学工業",
+      "自動車",
+      "船舶"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2324,7 +2596,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "大分県",
       "宮崎県",
       "熊本県",
-      "鹿児島県"
+      "鹿児島県",
+      "兵庫県",
+      "山梨県"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2341,7 +2615,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "大分臨海工業地域",
       "北九州工業地域",
       "鹿島臨海工業地域",
-      "瀬戸内工業地域"
+      "瀬戸内工業地域",
+      "京葉工業地域",
+      "北関東工業地域"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2358,7 +2634,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "地産地消",
       "産地直送",
       "食料自給",
-      "地場産業"
+      "地場産業",
+      "だいこん",
+      "じゃがいも"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2375,7 +2653,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "110番",
       "118番",
       "119番",
-      "171番"
+      "171番",
+      "117番",
+      "177番"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2392,7 +2672,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "119番",
       "110番",
       "118番",
-      "171番"
+      "171番",
+      "117番",
+      "177番"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2409,7 +2691,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "警察官",
       "消防士",
       "救急隊員",
-      "消防団員"
+      "消防団員",
+      "110番",
+      "119番"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2426,7 +2710,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "消防士",
       "警察官",
       "救急隊員",
-      "消防団員"
+      "消防団員",
+      "消火栓",
+      "110番"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2443,7 +2729,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "浄水場",
       "ろ過池",
       "下水管",
-      "取水口"
+      "取水口",
+      "地形図",
+      "下水処理場"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2460,7 +2748,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "下水処理場",
       "ろ過池",
       "下水管",
-      "取水口"
+      "取水口",
+      "浄水場",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2477,7 +2767,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "配水池",
       "ろ過池",
       "下水管",
-      "取水口"
+      "取水口",
+      "浄水場",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2494,7 +2786,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "風呂",
       "トイレ",
       "炊事",
-      "洗濯"
+      "洗濯",
+      "北海道",
+      "九州"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2511,7 +2805,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "緑のダム",
       "水の工場",
       "雨の倉庫",
-      "川のポンプ"
+      "川のポンプ",
+      "砂防ダム",
+      "黒部ダム"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2528,7 +2824,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "消防団",
       "町内会",
       "警察署",
-      "水防団"
+      "水防団",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2545,7 +2843,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "通信指令室",
       "下水処理場",
       "最終処分場",
-      "排水機場"
+      "排水機場",
+      "取水口",
+      "下水管"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2562,7 +2862,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "消防指令センター",
       "下水処理場",
       "最終処分場",
-      "通信指令室"
+      "通信指令室",
+      "取水口",
+      "下水管"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2579,7 +2881,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "救急車",
       "消防車",
       "給水車",
-      "パトカー"
+      "パトカー",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2596,7 +2900,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "消火栓",
       "防火水槽",
       "火災報知器",
-      "スプリンクラー"
+      "スプリンクラー",
+      "取水口",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2613,7 +2919,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "立入検査",
       "消火訓練",
       "救助訓練",
-      "避難訓練"
+      "避難訓練",
+      "定期検査",
+      "防火検査"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2630,7 +2938,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "防火訓練",
       "交通安全教室",
       "救命講習",
-      "防犯パトロール"
+      "防犯パトロール",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2647,7 +2957,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "信号機",
       "消火栓",
       "防火水槽",
-      "街路灯"
+      "街路灯",
+      "防雪柵",
+      "防潮堤"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2664,7 +2976,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "水源",
       "ろ過池",
       "下水管",
-      "取水口"
+      "取水口",
+      "地形図",
+      "浄水場"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2681,7 +2995,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "取水口",
       "ろ過池",
       "下水管",
-      "浄水場"
+      "浄水場",
+      "地形図",
+      "下水処理場"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2698,7 +3014,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "ろ過池",
       "下水管",
       "取水口",
-      "浄水場"
+      "浄水場",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2715,7 +3033,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "塩素",
       "酸素",
       "二酸化炭素",
-      "窒素"
+      "窒素",
+      "取水口",
+      "ろ過池"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2732,7 +3052,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "下水管",
       "ろ過池",
       "取水口",
-      "浄水場"
+      "浄水場",
+      "取水管",
+      "送水管"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2749,7 +3071,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "下水処理場",
       "ろ過池",
       "下水管",
-      "取水口"
+      "取水口",
+      "浄水場",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2766,7 +3090,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "渇水",
       "地震",
       "津波",
-      "噴火"
+      "噴火",
+      "防風林",
+      "ダム"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2783,7 +3109,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "水源涵養",
       "水質浄化",
       "土砂流出防止",
-      "木材生産"
+      "木材生産",
+      "取水口",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2800,7 +3128,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "清掃工場",
       "排水機場",
       "浄水場",
-      "配水池"
+      "配水池",
+      "取水口",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2817,7 +3147,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "リサイクル",
       "リデュース",
       "リユース",
-      "再生利用"
+      "再生利用",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2834,7 +3166,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "リユース",
       "再生利用",
       "最終処分",
-      "リサイクル"
+      "リサイクル",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2851,7 +3185,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "リデュース",
       "リサイクル",
       "リユース",
-      "再生利用"
+      "再生利用",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2868,7 +3204,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "3R",
       "分別",
       "リユース",
-      "再生利用"
+      "再生利用",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2885,7 +3223,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "紙製容器包装識別表示マーク",
       "PETボトル識別表示マーク",
       "プラスチック製容器包装識別表示マーク",
-      "アルミ缶識別マーク"
+      "アルミ缶識別マーク",
+      "ガラス",
+      "紙"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2902,7 +3242,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "伝統的工芸品",
       "南部鉄器",
       "江戸切子",
-      "備前焼"
+      "備前焼",
+      "郷土工芸品",
+      "特産品"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2919,7 +3261,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "100年以上",
       "50年以上",
       "30年以上",
-      "10年以上"
+      "10年以上",
+      "伝統的工芸品",
+      "郷土工芸品"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2936,7 +3280,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "こどもの日",
       "成人の日",
       "敬老の日",
-      "文化の日"
+      "文化の日",
+      "スポーツの日",
+      "海の日"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2953,7 +3299,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "文化の日",
       "成人の日",
       "敬老の日",
-      "山の日"
+      "山の日",
+      "こどもの日",
+      "海の日"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2970,7 +3318,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "灰",
       "資源ごみ",
       "粗大ごみ",
-      "生ごみ"
+      "生ごみ",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -2987,7 +3337,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "最終処分場",
       "下水処理場",
       "通信指令室",
-      "排水機場"
+      "排水機場",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3004,7 +3356,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "電気",
       "ガス",
       "石油",
-      "水道水"
+      "水道水",
+      "リユース",
+      "果樹栽培"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3021,7 +3375,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "分別",
       "リユース",
       "再生利用",
-      "最終処分"
+      "最終処分",
+      "季節風",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3038,7 +3394,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "PET",
       "PAP",
       "AL",
-      "STEEL"
+      "STEEL",
+      "JA",
+      "トラック"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3055,7 +3413,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "再生利用するため",
       "燃やしやすくするため",
       "埋め立てやすくするため",
-      "重くするため"
+      "重くするため",
+      "暑さをやわらげるため",
+      "歯車"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3072,7 +3432,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "紙",
       "鉄",
       "木材",
-      "ガラス"
+      "ガラス",
+      "紙製容器包装識別表示マーク",
+      "歯車"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3089,7 +3451,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "鉄",
       "紙",
       "木材",
-      "ガラス"
+      "ガラス",
+      "鉄筋コンクリート",
+      "歯車"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3106,7 +3470,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "マイバッグ",
       "リサイクル",
       "リデュース",
-      "リユース"
+      "リユース",
+      "再生利用",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3123,7 +3489,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "再生利用",
       "リユース",
       "最終処分",
-      "リサイクル"
+      "リサイクル",
+      "季節風",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3140,7 +3508,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "経済産業省",
       "環境省",
       "農林水産省",
-      "国土交通省"
+      "国土交通省",
+      "伝統的工芸品",
+      "郷土工芸品"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3157,7 +3527,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "ガラス",
       "断熱材",
       "木材",
-      "紙"
+      "紙",
+      "伝統的工芸品",
+      "特産品"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3174,7 +3546,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "鉄",
       "紙",
       "木材",
-      "ガラス"
+      "ガラス",
+      "歯車",
+      "卍"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3191,7 +3565,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "成人の日",
       "敬老の日",
       "文化の日",
-      "山の日"
+      "山の日",
+      "こどもの日",
+      "海の日"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3208,7 +3584,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "敬老の日",
       "成人の日",
       "文化の日",
-      "山の日"
+      "山の日",
+      "こどもの日",
+      "海の日"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3225,7 +3603,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "北",
       "南",
       "東",
-      "西"
+      "西",
+      "南西",
+      "南東"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3242,7 +3622,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "南東",
       "北東",
       "北西",
-      "南西"
+      "南西",
+      "南",
+      "北"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3259,7 +3641,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "縮尺",
       "標高",
       "地形図",
-      "平面図"
+      "平面図",
+      "季節風",
+      "等高線"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3276,7 +3660,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "250m",
       "500m",
       "1km",
-      "2.5km"
+      "2.5km",
+      "10m",
+      "50m"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3293,7 +3679,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "500m",
       "250m",
       "1km",
-      "5km"
+      "5km",
+      "10m",
+      "50m"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3310,7 +3698,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "等高線",
       "地形図",
       "平面図",
-      "鳥瞰図"
+      "鳥瞰図",
+      "季節風",
+      "三角州"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3327,7 +3717,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "急",
       "垂直",
       "水平",
-      "緩やか"
+      "緩やか",
+      "ほぼ同じ",
+      "どちらともいえない"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3344,7 +3736,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "平面図",
       "地形図",
       "等高線",
-      "鳥瞰図"
+      "鳥瞰図",
+      "季節風",
+      "三角州"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3361,7 +3755,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "地形図",
       "平面図",
       "等高線",
-      "鳥瞰図"
+      "鳥瞰図",
+      "季節風",
+      "三角州"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3378,7 +3774,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "国土地理院",
       "気象庁",
       "国税庁",
-      "文化庁"
+      "文化庁",
+      "京都府",
+      "北海道"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3395,7 +3793,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "北東",
       "北西",
       "南東",
-      "南西"
+      "南西",
+      "南",
+      "北"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3412,7 +3812,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "南西",
       "北東",
       "北西",
-      "南東"
+      "南東",
+      "南",
+      "北"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3429,7 +3831,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "北西",
       "北東",
       "南東",
-      "南西"
+      "南西",
+      "南",
+      "北"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3446,7 +3850,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "方位記号",
       "地図記号",
       "地形図",
-      "平面図"
+      "平面図",
+      "線状記号",
+      "面状記号"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3463,7 +3869,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "縮尺が大きい地図",
       "縮尺が小さい地図",
       "どちらも同じ",
-      "地図の大きさだけでは決まらない"
+      "地図の大きさだけでは決まらない",
+      "資料だけでは判断できない",
+      "どちらともいえない"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3480,7 +3888,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "5万分の1の地図",
       "2万5000分の1の地図",
       "どちらも同じ",
-      "地図の紙の大きさで決まる"
+      "地図の紙の大きさで決まる",
+      "どちらともいえない",
+      "資料だけでは判断できない"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3497,7 +3907,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "1km",
       "500m",
       "2km",
-      "4km"
+      "4km",
+      "5km",
+      "2.5km"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3514,7 +3926,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "1km",
       "500m",
       "2km",
-      "5km"
+      "5km",
+      "4km",
+      "2.5km"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3531,7 +3945,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "地形図",
       "平面図",
       "等高線",
-      "鳥瞰図"
+      "鳥瞰図",
+      "季節風",
+      "三角州"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3548,7 +3964,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "山",
       "谷",
       "平地",
-      "海面"
+      "海面",
+      "富士山",
+      "阿蘇山"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3565,7 +3983,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "V字形",
       "U字形",
       "O字形",
-      "X字形"
+      "X字形",
+      "山",
+      "緩やか"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3582,7 +4002,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "土地の高さ・道路・建物",
       "翌日の天気予報",
       "商品の値段",
-      "学校の時間割"
+      "学校の時間割",
+      "水はけがよい",
+      "水はけが悪い"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3599,7 +4021,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "縮小",
       "標高",
       "縮尺",
-      "地形図"
+      "地形図",
+      "平面図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3616,7 +4040,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "縮尺",
       "標高",
       "地形図",
-      "平面図"
+      "平面図",
+      "1km",
+      "500m"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3633,7 +4059,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "三角点",
       "地形図",
       "平面図",
-      "等高線"
+      "等高線",
+      "三角州",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3650,7 +4078,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "地図記号",
       "方位記号",
       "地形図",
-      "平面図"
+      "平面図",
+      "線状記号",
+      "面状記号"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3667,7 +4097,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "鳥居",
       "歯車",
       "卍",
-      "文"
+      "文",
+      "地図記号",
+      "等高線"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3684,7 +4116,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "卍",
       "文",
       "歯車",
-      "鳥居"
+      "鳥居",
+      "地図記号",
+      "等高線"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3701,7 +4135,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "りんごの実",
       "稲の切り株",
       "杉の木",
-      "歯車"
+      "歯車",
+      "地図記号",
+      "等高線"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3718,7 +4154,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "杉の木",
       "歯車",
       "鳥居",
-      "卍"
+      "卍",
+      "地図記号",
+      "等高線"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3735,7 +4173,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "互いに異なる記号を使う",
       "まったく同じ記号を使う",
       "市役所にだけ記号がある",
-      "町村役場にだけ記号がある"
+      "町村役場にだけ記号がある",
+      "地図記号",
+      "線状記号"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3752,7 +4192,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "緩やか",
       "垂直",
       "水平",
-      "急"
+      "急",
+      "ほぼ同じ",
+      "どちらともいえない"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3769,7 +4211,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "高さ",
       "広さ",
       "人口",
-      "気温"
+      "気温",
+      "地形図",
+      "平面図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3786,7 +4230,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "鳥瞰図",
       "地形図",
       "平面図",
-      "等高線"
+      "等高線",
+      "季節風",
+      "三角州"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3803,7 +4249,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "土地利用の変化",
       "一日の気温変化",
       "人の年齢変化",
-      "天気の変化"
+      "天気の変化",
+      "歯車",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3820,7 +4268,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "稲の切り株",
       "りんごの実",
       "杉の木",
-      "歯車"
+      "歯車",
+      "地図記号",
+      "等高線"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3837,7 +4287,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "蚕",
       "牛",
       "羊",
-      "にわとり"
+      "にわとり",
+      "地図記号",
+      "等高線"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3854,7 +4306,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "歯車",
       "鳥居",
       "卍",
-      "文"
+      "文",
+      "地図記号",
+      "等高線"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3871,7 +4325,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "歯車",
       "鳥居",
       "卍",
-      "文"
+      "文",
+      "地図記号",
+      "等高線"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3888,7 +4344,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "文",
       "卍",
       "歯車",
-      "鳥居"
+      "鳥居",
+      "地図記号",
+      "等高線"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3905,7 +4363,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "逓信省",
       "文部省",
       "大蔵省",
-      "農商務省"
+      "農商務省",
+      "地図記号",
+      "等高線"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3922,7 +4382,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "病院の「病」",
       "医者の「医」",
       "薬局の「薬」",
-      "救急の「救」"
+      "救急の「救」",
+      "地図記号",
+      "等高線"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3939,7 +4401,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "交差させた形",
       "平行に並べた形",
       "円で囲んだ形",
-      "三角形に並べた形"
+      "三角形に並べた形",
+      "地図記号",
+      "等高線"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3956,7 +4420,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "互いに異なる記号を使う",
       "まったく同じ記号を使う",
       "博物館にだけ記号がある",
-      "図書館にだけ記号がある"
+      "図書館にだけ記号がある",
+      "地図記号",
+      "線状記号"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3973,7 +4439,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "地図を簡潔で分かりやすく表せること",
       "地図を実物と同じ大きさにできること",
       "未来の土地利用を決められること",
-      "すべての建物名を書けること"
+      "すべての建物名を書けること",
+      "地図記号",
+      "線状記号"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -3990,7 +4458,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "5本ごと",
       "2本ごと",
       "10本ごと",
-      "20本ごと"
+      "20本ごと",
+      "20m",
+      "10m"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4007,7 +4477,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "10m",
       "5m",
       "20m",
-      "50m"
+      "50m",
+      "500m",
+      "25m"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4024,7 +4496,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "20m",
       "10m",
       "25m",
-      "50m"
+      "50m",
+      "500m",
+      "5m"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4041,7 +4515,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "線状記号",
       "地図記号",
       "方位記号",
-      "地形図"
+      "地形図",
+      "面状記号",
+      "点状記号"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4058,7 +4534,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "面状記号",
       "地図記号",
       "方位記号",
-      "地形図"
+      "地形図",
+      "線状記号",
+      "点状記号"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4075,7 +4553,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "本州",
       "九州",
       "四国",
-      "北海道"
+      "北海道",
+      "京都府",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4092,7 +4572,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "北海道",
       "九州",
       "四国",
-      "本州"
+      "本州",
+      "東京都と北海道",
+      "地下道"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4109,7 +4591,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "九州",
       "四国",
       "本州",
-      "北海道"
+      "北海道",
+      "京都府",
+      "択捉島"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4126,7 +4610,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "38万平方km",
       "18万平方km",
       "58万平方km",
-      "78万平方km"
+      "78万平方km",
+      "北海道",
+      "約5分の1"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4143,7 +4629,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "富士山",
       "北岳",
       "奥穂高岳",
-      "間ノ岳"
+      "間ノ岳",
+      "浅間山",
+      "白山"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4160,7 +4648,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "信濃川",
       "利根川",
       "吉野川",
-      "最上川"
+      "最上川",
+      "木曽川",
+      "四万十川"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4177,7 +4667,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "琵琶湖",
       "霞ヶ浦",
       "サロマ湖",
-      "猪苗代湖"
+      "猪苗代湖",
+      "北海道",
+      "九州"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4194,7 +4686,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "太平洋",
       "日本海",
       "東シナ海",
-      "オホーツク海"
+      "オホーツク海",
+      "北海道",
+      "九州"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4211,7 +4705,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "日本海",
       "太平洋",
       "東シナ海",
-      "オホーツク海"
+      "オホーツク海",
+      "領海",
+      "宇和海"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4228,7 +4724,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "排他的経済水域",
       "領土",
       "領域",
-      "領海"
+      "領海",
+      "地形図",
+      "促成栽培"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4245,7 +4743,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "四国",
       "九州",
       "本州",
-      "北海道"
+      "北海道",
+      "京都府",
+      "韓国"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4262,7 +4762,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "南北",
       "東西",
       "北東から南西",
-      "北西から南東"
+      "北西から南東",
+      "ほぼ同じ",
+      "どちらともいえない"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4279,7 +4781,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "山地",
       "盆地",
       "輪中",
-      "高原"
+      "高原",
+      "日本列島の中央部の山地",
+      "白神山地"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4296,7 +4800,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "急",
       "緩やか",
       "ほとんど流れない",
-      "場所によらず一定"
+      "場所によらず一定",
+      "北海道",
+      "低いから"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4313,7 +4819,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "山地",
       "海上",
       "砂浜",
-      "都市中心部"
+      "都市中心部",
+      "日本海側の山地",
+      "日本列島の中央部の山地"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4330,7 +4838,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "オホーツク海",
       "東シナ海",
       "太平洋",
-      "日本海"
+      "日本海",
+      "領海",
+      "宇和海"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4347,7 +4857,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "東シナ海",
       "太平洋",
       "日本海",
-      "オホーツク海"
+      "オホーツク海",
+      "領海",
+      "宇和海"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4364,7 +4876,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "領海",
       "領土",
       "領域",
-      "領空"
+      "領空",
+      "日本海",
+      "東シナ海"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4381,7 +4895,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "領空",
       "領土",
       "領域",
-      "領海"
+      "領海",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4398,7 +4914,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "領域",
       "領土",
       "領海",
-      "領空"
+      "領空",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4415,7 +4933,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "南鳥島",
       "択捉島",
       "与那国島",
-      "沖ノ鳥島"
+      "沖ノ鳥島",
+      "屋久島",
+      "小豆島"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4432,7 +4952,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "沖ノ鳥島",
       "与那国島",
       "南鳥島",
-      "択捉島"
+      "択捉島",
+      "屋久島",
+      "小豆島"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4449,7 +4971,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "与那国島",
       "沖ノ鳥島",
       "南鳥島",
-      "択捉島"
+      "択捉島",
+      "屋久島",
+      "小豆島"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4466,7 +4990,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "択捉島",
       "南鳥島",
       "与那国島",
-      "沖ノ鳥島"
+      "沖ノ鳥島",
+      "屋久島",
+      "小豆島"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4483,7 +5009,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "国土面積より広い",
       "国土面積より狭い",
       "国土面積と同じ",
-      "領海より狭い"
+      "領海より狭い",
+      "互いに平行である",
+      "互いに異なる記号を使う"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4500,7 +5028,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "緯線",
       "経線",
       "赤道",
-      "日付変更線"
+      "日付変更線",
+      "地形図",
+      "平面図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4517,7 +5047,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "経線",
       "緯線",
       "赤道",
-      "日付変更線"
+      "日付変更線",
+      "地形図",
+      "平面図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4534,7 +5066,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "赤道",
       "経線",
       "緯線",
-      "日付変更線"
+      "日付変更線",
+      "地下道",
+      "山頂の登山道"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4551,7 +5085,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "本初子午線",
       "日付変更線",
       "経線",
-      "緯線"
+      "緯線",
+      "地形図",
+      "赤道"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4568,7 +5104,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "グリニッジ",
       "ロンドン中心部",
       "パリ",
-      "ローマ"
+      "ローマ",
+      "京都府",
+      "北海道"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4585,7 +5123,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "東経135度",
       "東経90度",
       "東経150度",
-      "西経135度"
+      "西経135度",
+      "本初子午線",
+      "日付変更線"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4602,7 +5142,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "明石市",
       "神戸市",
       "姫路市",
-      "大阪市"
+      "大阪市",
+      "横浜市",
+      "川崎市"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4619,7 +5161,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "北半球",
       "南半球",
       "東半球",
-      "西半球"
+      "西半球",
+      "西経",
+      "東経"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4636,7 +5180,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "東半球",
       "西半球",
       "北半球",
-      "南半球"
+      "南半球",
+      "西経",
+      "東経"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4653,7 +5199,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "環太平洋地域",
       "東アジア地域",
       "地中海地域",
-      "北極地域"
+      "北極地域",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4670,7 +5218,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "北緯",
       "南緯",
       "東経",
-      "西経"
+      "西経",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4687,7 +5237,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "南緯",
       "北緯",
       "東経",
-      "西経"
+      "西経",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4704,7 +5256,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "東経",
       "北緯",
       "南緯",
-      "西経"
+      "西経",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4721,7 +5275,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "西経",
       "北緯",
       "南緯",
-      "東経"
+      "東経",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4738,7 +5294,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "90度",
       "45度",
       "180度",
-      "360度"
+      "360度",
+      "135度",
+      "10度"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4755,7 +5313,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "180度",
       "90度",
       "135度",
-      "360度"
+      "360度",
+      "45度",
+      "10度"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4772,7 +5332,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "互いに平行である",
       "北極で交わる",
       "南極で交わる",
-      "すべて同じ長さである"
+      "すべて同じ長さである",
+      "互いに異なる記号を使う",
+      "北極と南極で交わる"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4789,7 +5351,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "北極と南極で交わる",
       "互いに平行である",
       "赤道と交わらない",
-      "すべて東西方向に延びる"
+      "すべて東西方向に延びる",
+      "互いに異なる記号を使う",
+      "水はけがよい"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4806,7 +5370,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "北緯20度から46度",
       "北緯0度から20度",
       "南緯20度から46度",
-      "北緯50度から70度"
+      "北緯50度から70度",
+      "東経123度から154度",
+      "北海道"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4823,7 +5389,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "東経123度から154度",
       "東経80度から110度",
       "西経123度から154度",
-      "東経160度から180度"
+      "東経160度から180度",
+      "北緯20度から46度",
+      "北海道"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4840,7 +5408,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "韓国",
       "中国",
       "日本",
-      "ロシア"
+      "ロシア",
+      "さとうきび",
+      "東側"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4857,7 +5427,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "中国",
       "日本",
       "韓国",
-      "ロシア"
+      "ロシア",
+      "北海道",
+      "京都府"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4874,7 +5446,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "ロシア",
       "中国",
       "日本",
-      "韓国"
+      "韓国",
+      "北海道",
+      "京都府"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4891,7 +5465,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "太平洋",
       "日本海",
       "東シナ海",
-      "オホーツク海"
+      "オホーツク海",
+      "小笠原諸島",
+      "北海道"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4908,7 +5484,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "東側",
       "西側",
       "北側",
-      "南側"
+      "南側",
+      "ほぼ同じ",
+      "どちらともいえない"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4925,7 +5503,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "南",
       "北",
       "東",
-      "西"
+      "西",
+      "南西",
+      "南東"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4942,7 +5522,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "西から東",
       "東から西",
       "北から南",
-      "南から北"
+      "南から北",
+      "ほぼ同じ",
+      "どちらともいえない"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4959,7 +5541,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "1時間",
       "30分",
       "2時間",
-      "15時間"
+      "15時間",
+      "3時間",
+      "4時間"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4976,7 +5560,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "標準時",
       "南中",
       "時差",
-      "自転"
+      "自転",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -4993,7 +5579,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "時差",
       "南中",
       "自転",
-      "標準時"
+      "標準時",
+      "季節風",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5010,7 +5598,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "日付変更線",
       "本初子午線",
       "経線",
-      "緯線"
+      "緯線",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5027,7 +5617,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "1日戻す",
       "1日進める",
       "日付を変えない",
-      "1週間戻す"
+      "1週間戻す",
+      "日付変更線",
+      "経線"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5044,7 +5636,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "9時間",
       "6時間",
       "12時間",
-      "15時間"
+      "15時間",
+      "2時間",
+      "1時間"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5061,7 +5655,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "日本の方が9時間進んでいる",
       "日本の方が9時間遅れている",
       "同じ時刻である",
-      "日本の方が1日進んでいる"
+      "日本の方が1日進んでいる",
+      "水はけがよい",
+      "水はけが悪い"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5078,7 +5674,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "15",
       "24",
       "60",
-      "360"
+      "360",
+      "1",
+      "2"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5095,7 +5693,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "自転",
       "南中",
       "時差",
-      "標準時"
+      "標準時",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5112,7 +5712,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "24時間",
       "12時間",
       "36時間",
-      "48時間"
+      "48時間",
+      "2時間",
+      "1時間"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5129,7 +5731,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "15度",
       "10度",
       "20度",
-      "30度"
+      "30度",
+      "90度",
+      "180度"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5146,7 +5750,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "東から西",
       "西から東",
       "北から南",
-      "南から北"
+      "南から北",
+      "ほぼ同じ",
+      "どちらともいえない"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5163,7 +5769,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "太陽が南中する時刻がほぼ同じ",
       "緯度が必ず同じ",
       "気温が必ず同じ",
-      "日付が必ず異なる"
+      "日付が必ず異なる",
+      "互いに平行である",
+      "互いに異なる記号を使う"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5180,7 +5788,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "東にある地域",
       "西にある地域",
       "どちらも同時",
-      "緯度が高い地域"
+      "緯度が高い地域",
+      "地域によって異なる",
+      "どちらともいえない"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5197,7 +5807,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "日本標準時子午線",
       "日付変更線",
       "本初子午線",
-      "経線"
+      "経線",
+      "季節風",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5214,7 +5826,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "午前3時",
       "午前9時",
       "午後3時",
-      "午後9時"
+      "午後9時",
+      "1月1日午前0時",
+      "9時間"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5231,7 +5845,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "1月1日午前0時",
       "12月31日午前0時",
       "1月1日午後6時",
-      "1月2日午前0時"
+      "1月2日午前0時",
+      "午前3時",
+      "敬老の日"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5248,7 +5864,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "日本より進む",
       "日本より遅れる",
       "日本と必ず同じ",
-      "経度に関係なく決まる"
+      "経度に関係なく決まる",
+      "北海道",
+      "1時間"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5265,7 +5883,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "日本より遅れる",
       "日本より進む",
       "日本と必ず同じ",
-      "緯度だけで決まる"
+      "緯度だけで決まる",
+      "北海道",
+      "1時間"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5282,7 +5902,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "同じ国や島で日付が分かれないようにするため",
       "赤道に沿わせるため",
       "すべての海を避けるため",
-      "本初子午線と重ねるため"
+      "本初子午線と重ねるため",
+      "1日進める",
+      "1日戻す"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5299,7 +5921,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "1日進める",
       "1日戻す",
       "日付を変えない",
-      "1週間進める"
+      "1週間進める",
+      "日付変更線",
+      "経線"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5316,7 +5940,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "2時間",
       "1時間",
       "3時間",
-      "4時間"
+      "4時間",
+      "15時間",
+      "12時間"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5333,7 +5959,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "3時間",
       "1時間",
       "2時間",
-      "4時間"
+      "4時間",
+      "15時間",
+      "12時間"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5350,7 +5978,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "47",
       "43",
       "45",
-      "49"
+      "49",
+      "1",
+      "2"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5367,7 +5997,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "1",
       "2",
       "3",
-      "4"
+      "4",
+      "43",
+      "47"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5384,7 +6016,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "1",
       "2",
       "3",
-      "4"
+      "4",
+      "43",
+      "47"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5401,7 +6035,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "2",
       "1",
       "3",
-      "4"
+      "4",
+      "43",
+      "47"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5418,7 +6054,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "43",
       "42",
       "44",
-      "47"
+      "47",
+      "1",
+      "2"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5435,7 +6073,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "東京都",
       "京都府",
       "兵庫県",
-      "北海道"
+      "北海道",
+      "首都",
+      "水の都"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5452,7 +6092,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "大阪府と京都府",
       "東京都と北海道",
       "神奈川県と兵庫県",
-      "福岡県と沖縄県"
+      "福岡県と沖縄県",
+      "京都府",
+      "大阪府"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5469,7 +6111,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "北海道",
       "京都府",
       "兵庫県",
-      "千葉県"
+      "千葉県",
+      "東京都と北海道",
+      "地下道"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5486,7 +6130,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "香川県",
       "京都府",
       "兵庫県",
-      "北海道"
+      "北海道",
+      "千葉県",
+      "長野県"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5503,7 +6149,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "8",
       "6",
       "10",
-      "12"
+      "12",
+      "1",
+      "2"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5520,7 +6168,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "北海道",
       "京都府",
       "兵庫県",
-      "千葉県"
+      "千葉県",
+      "東京都と北海道",
+      "地下道"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5537,7 +6187,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "6県",
       "5県",
       "7県",
-      "8県"
+      "8県",
+      "4県",
+      "9県"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5554,7 +6206,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "7都県",
       "6都県",
       "8都県",
-      "9都県"
+      "9都県",
+      "5県",
+      "6県"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5571,7 +6225,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "9県",
       "7県",
       "8県",
-      "10県"
+      "10県",
+      "5県",
+      "6県"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5588,7 +6244,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "7府県",
       "6府県",
       "8府県",
-      "9府県"
+      "9府県",
+      "5県",
+      "6県"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5605,7 +6263,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "5県",
       "4県",
       "6県",
-      "7県"
+      "7県",
+      "8県",
+      "9県"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5622,7 +6282,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "4県",
       "3県",
       "5県",
-      "6県"
+      "6県",
+      "7県",
+      "8県"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5639,7 +6301,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "8県",
       "7県",
       "9県",
-      "10県"
+      "10県",
+      "5県",
+      "6県"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5656,7 +6320,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "岩手県",
       "京都府",
       "兵庫県",
-      "北海道"
+      "北海道",
+      "千葉県",
+      "長野県"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5673,7 +6339,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "都道府県庁所在地",
       "政令指定都市",
       "中核市",
-      "首都"
+      "首都",
+      "京都府",
+      "北海道"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5690,7 +6358,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "神奈川県",
       "千葉県",
       "青森県",
-      "長野県"
+      "長野県",
+      "兵庫県",
+      "香川県"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5707,7 +6377,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "横浜市",
       "川崎市",
       "相模原市",
-      "横須賀市"
+      "横須賀市",
+      "仙台市",
+      "札幌市"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5724,7 +6396,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "神戸市",
       "姫路市",
       "尼崎市",
-      "西宮市"
+      "西宮市",
+      "仙台市",
+      "横浜市"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5741,7 +6415,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "名古屋市",
       "豊田市",
       "岡崎市",
-      "豊橋市"
+      "豊橋市",
+      "仙台市",
+      "横浜市"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5758,7 +6434,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "仙台市",
       "石巻市",
       "気仙沼市",
-      "大崎市"
+      "大崎市",
+      "横浜市",
+      "札幌市"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5775,7 +6453,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "雨温図",
       "季節風",
       "年較差",
-      "日較差"
+      "日較差",
+      "地形図",
+      "平面図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5792,7 +6472,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "季節風",
       "年較差",
       "日較差",
-      "雨温図"
+      "雨温図",
+      "地形図",
+      "三角州"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5809,7 +6491,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "前線",
       "台風",
       "梅雨",
-      "季節風"
+      "季節風",
+      "地形図",
+      "年較差"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5826,7 +6510,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "梅雨",
       "前線",
       "台風",
-      "季節風"
+      "季節風",
+      "地形図",
+      "促成栽培"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5843,7 +6529,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "台風",
       "前線",
       "梅雨",
-      "季節風"
+      "季節風",
+      "地形図",
+      "年較差"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5860,7 +6548,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "北西の季節風",
       "南東の季節風",
       "偏西風",
-      "海風"
+      "海風",
+      "越後山脈",
+      "赤石山脈"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5877,7 +6567,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "一年を通して少ない",
       "一年を通して非常に多い",
       "冬だけ非常に多い",
-      "毎月まったく同じ"
+      "毎月まったく同じ",
+      "一年を通して高い",
+      "水はけがよい"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5894,7 +6586,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "年較差",
       "季節風",
       "日較差",
-      "雨温図"
+      "雨温図",
+      "地形図",
+      "平面図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5911,7 +6605,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "晴天の日が多い",
       "雪の日が一年中続く",
       "梅雨が長く続く",
-      "台風が毎週来る"
+      "台風が毎週来る",
+      "北海道の方が低い",
+      "北海道"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5928,7 +6624,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "梅雨の影響を受けにくい",
       "梅雨が日本で最も長い",
       "一年中梅雨である",
-      "沖縄と同じ時期に必ず梅雨入りする"
+      "沖縄と同じ時期に必ず梅雨入りする",
+      "互いに異なる記号を使う",
+      "互いに平行である"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5945,7 +6643,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "平均的な状態",
       "一日の変化",
       "その日の天気",
-      "一時的な現象"
+      "一時的な現象",
+      "年較差",
+      "雨温図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5962,7 +6662,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "温帯",
       "熱帯",
       "寒帯",
-      "乾燥帯"
+      "乾燥帯",
+      "北海道",
+      "九州"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5979,7 +6681,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "8月ごろ",
       "1月ごろ",
       "4月ごろ",
-      "11月ごろ"
+      "11月ごろ",
+      "5月ごろ",
+      "10月ごろ"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -5996,7 +6700,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "1月ごろ",
       "8月ごろ",
       "5月ごろ",
-      "10月ごろ"
+      "10月ごろ",
+      "11月ごろ",
+      "4月ごろ"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6013,7 +6719,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "水の深さ",
       "水の重さ",
       "雨の日数",
-      "雲の厚さ"
+      "雲の厚さ",
+      "季節風",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6030,7 +6738,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "梅雨前線",
       "秋雨前線",
       "季節風",
-      "年較差"
+      "年較差",
+      "地形図",
+      "促成栽培"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6047,7 +6757,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "秋雨前線",
       "梅雨前線",
       "季節風",
-      "年較差"
+      "年較差",
+      "地形図",
+      "梅雨"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6064,7 +6776,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "小笠原気団",
       "揚子江気団",
       "シベリア気団",
-      "オホーツク海気団"
+      "オホーツク海気団",
+      "赤道気団",
+      "南極気団"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6081,7 +6795,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "シベリア気団",
       "小笠原気団",
       "揚子江気団",
-      "オホーツク海気団"
+      "オホーツク海気団",
+      "赤道気団",
+      "南極気団"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6098,7 +6814,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "水蒸気を多く含む",
       "水蒸気をすべて失う",
       "気温が急に40度上がる",
-      "風向きが必ず南風になる"
+      "風向きが必ず南風になる",
+      "水蒸気",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6115,7 +6833,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "晴天",
       "大雪",
       "長雨",
-      "濃霧"
+      "濃霧",
+      "季節風",
+      "越後山脈"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6132,7 +6852,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "一年を通して高い",
       "一年を通して氷点下である",
       "夏でも北海道より低い",
-      "毎月まったく同じである"
+      "毎月まったく同じである",
+      "一年を通して少ない",
+      "水はけがよい"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6149,7 +6871,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "多い",
       "少ない",
       "0になる",
-      "全国で同じになる"
+      "全国で同じになる",
+      "大きい",
+      "小さい"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6166,7 +6890,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "夏",
       "冬",
       "春",
-      "秋"
+      "秋",
+      "ほぼ同じ",
+      "どちらともいえない"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6183,7 +6909,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "他地域より影響を受けにくい",
       "日本で最も多く上陸する",
       "一年中台風が発生する",
-      "台風の影響を必ず受けない"
+      "台風の影響を必ず受けない",
+      "互いに異なる記号を使う",
+      "互いに平行である"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6200,7 +6928,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "降水量",
       "気温",
       "風向",
-      "日照時間"
+      "日照時間",
+      "1月ごろ",
+      "8月ごろ"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6217,7 +6947,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "気温の年較差",
       "気温の日較差",
       "年降水量",
-      "平均気温"
+      "平均気温",
+      "季節風",
+      "年較差"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6234,7 +6966,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "日本の南の暖かい海上",
       "北海道の内陸",
       "日本海側の山地",
-      "冬のシベリア大陸"
+      "冬のシベリア大陸",
+      "京都府",
+      "北海道"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6251,7 +6985,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "南西諸島",
       "五島列島",
       "伊豆諸島",
-      "小笠原諸島"
+      "小笠原諸島",
+      "季節風",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6268,7 +7004,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "那覇市",
       "仙台市",
       "新潟市",
-      "札幌市"
+      "札幌市",
+      "横浜市",
+      "松山市"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6285,7 +7023,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "石垣",
       "防風林",
       "防潮堤",
-      "生け垣"
+      "生け垣",
+      "地形図",
+      "促成栽培"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6302,7 +7042,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "雨端",
       "縁側",
       "天窓",
-      "煙突"
+      "煙突",
+      "地形図",
+      "防風林"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6319,7 +7061,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "さとうきび",
       "さくらんぼ",
       "じゃがいも",
-      "てんさい"
+      "てんさい",
+      "りんご",
+      "もも"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6336,7 +7080,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "パイナップル",
       "さくらんぼ",
       "さとうきび",
-      "じゃがいも"
+      "じゃがいも",
+      "みかん",
+      "レタス"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6353,7 +7099,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "サンゴ礁",
       "砂丘",
       "干潟",
-      "リアス海岸"
+      "リアス海岸",
+      "三角州",
+      "扇状地"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6370,7 +7118,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "琉球王国",
       "江戸幕府",
       "大和朝廷",
-      "鎌倉幕府"
+      "鎌倉幕府",
+      "沖縄王国",
+      "薩摩王国"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6387,7 +7137,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "紅型",
       "友禅染",
       "藍染め",
-      "西陣織"
+      "西陣織",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6404,7 +7156,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "観光業",
       "林業",
       "酪農",
-      "鉄鋼業"
+      "鉄鋼業",
+      "畑作",
+      "漁業"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6421,7 +7175,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "160余り",
       "約40",
       "約80",
-      "約300"
+      "約300",
+      "北海道",
+      "5県"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6438,7 +7194,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "日本の都道府県で最も南にある",
       "日本の都道府県で最も北にある",
       "本州の中央にある",
-      "日本海側だけにある"
+      "日本海側だけにある",
+      "互いに平行である",
+      "互いに異なる記号を使う"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6455,7 +7213,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "沖縄県の方が高い",
       "東京の方が高い",
       "まったく同じ",
-      "年によらず両方0度である"
+      "年によらず両方0度である",
+      "北海道の方が低い",
+      "北海道"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6472,7 +7232,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "梅雨",
       "秋雨",
       "真冬",
-      "台風シーズン"
+      "台風シーズン",
+      "季節風",
+      "促成栽培"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6489,7 +7251,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "農作物の栽培",
       "流氷観光",
       "雪下ろし",
-      "てんさいの越冬栽培"
+      "てんさいの越冬栽培",
+      "促成栽培",
+      "抑制栽培"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6506,7 +7270,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "赤瓦",
       "石州瓦",
       "黒瓦",
-      "スレート瓦"
+      "スレート瓦",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6523,7 +7289,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "シーサー",
       "狛犬",
       "なまはげ",
-      "しゃちほこ"
+      "しゃちほこ",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6540,7 +7308,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "しっくい",
       "セメント",
       "粘土",
-      "木材"
+      "木材",
+      "防風林",
+      "鉄筋コンクリート"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6557,7 +7327,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "暑さをやわらげるため",
       "寒さを防ぐため",
       "雪の重みに耐えるため",
-      "火山灰を防ぐため"
+      "火山灰を防ぐため",
+      "北海道",
+      "ガラス"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6574,7 +7346,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "促成栽培",
       "人工授粉",
       "せん定",
-      "袋かけ"
+      "袋かけ",
+      "抑制栽培",
+      "水耕栽培"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6591,7 +7365,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "防風林",
       "防潮林",
       "街路樹",
-      "果樹園"
+      "果樹園",
+      "さくらんぼ",
+      "じゃがいも"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6608,7 +7384,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "ダム",
       "防風林",
       "石垣",
-      "灯台"
+      "灯台",
+      "緑のダム",
+      "砂防ダム"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6625,7 +7403,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "多くの海の生き物",
       "高山植物",
       "砂漠の動物",
-      "寒帯の動物"
+      "寒帯の動物",
+      "リアス海岸",
+      "砂丘"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6642,7 +7422,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "赤土の流出を防ぐ",
       "赤土を海へ流す",
       "サンゴをすべて取り除く",
-      "海岸の植物をすべて切る"
+      "海岸の植物をすべて切る",
+      "防風林",
+      "防潮堤"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6659,7 +7441,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "三線",
       "三味線",
       "琴",
-      "尺八"
+      "尺八",
+      "胡弓",
+      "太鼓"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6676,7 +7460,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "平和学習",
       "農業体験",
       "雪国体験",
-      "工場見学"
+      "工場見学",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6693,7 +7479,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "北海道",
       "京都府",
       "兵庫県",
-      "千葉県"
+      "千葉県",
+      "東京都と北海道",
+      "地下道"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6710,7 +7498,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "札幌市",
       "仙台市",
       "新潟市",
-      "横浜市"
+      "横浜市",
+      "松山市",
+      "高松市"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6727,7 +7517,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "二重窓",
       "天窓",
       "出窓",
-      "雨戸"
+      "雨戸",
+      "地形図",
+      "防風林"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6744,7 +7536,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "無落雪屋根",
       "急勾配屋根",
       "かやぶき屋根",
-      "赤瓦屋根"
+      "赤瓦屋根",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6761,7 +7555,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "やませ",
       "季節風",
       "海風",
-      "陸風"
+      "陸風",
+      "地形図",
+      "台風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6778,7 +7574,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "酪農",
       "畑作",
       "稲作",
-      "果樹栽培"
+      "果樹栽培",
+      "促成栽培",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6795,7 +7593,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "畑作",
       "酪農",
       "稲作",
-      "促成栽培"
+      "促成栽培",
+      "輪作",
+      "二毛作"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6812,7 +7612,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "輪作",
       "連作",
       "二毛作",
-      "促成栽培"
+      "促成栽培",
+      "稲作",
+      "畑作"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6829,7 +7631,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "海霧",
       "地吹雪",
       "やませ",
-      "台風"
+      "台風",
+      "季節風",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6846,7 +7650,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "本州より広い",
       "本州より狭い",
       "本州と必ず同じ",
-      "農地を持たない"
+      "農地を持たない",
+      "水はけがよい",
+      "水はけが悪い"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6863,7 +7669,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "約5分の1",
       "約10分の1",
       "約3分の1",
-      "約2分の1"
+      "約2分の1",
+      "北海道",
+      "38万平方km"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6880,7 +7688,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "本州より小さい",
       "本州より大きい",
       "本州と必ず同じ",
-      "一年中続く"
+      "一年中続く",
+      "水はけがよい",
+      "水はけが悪い"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6897,7 +7707,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "北海道の方が低い",
       "東京の方が低い",
       "必ず同じ",
-      "どちらも毎日0度である"
+      "どちらも毎日0度である",
+      "沖縄県の方が高い",
+      "北海道"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6914,7 +7726,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "日照不足や低温による冷害",
       "高温による干ばつ",
       "台風による塩害",
-      "大雪による雪害"
+      "大雪による雪害",
+      "さくらんぼ",
+      "りんご"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6931,7 +7745,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "冷たい空気が室内に入るのを防ぐため",
       "雪を室内に取り込むため",
       "日差しを強くするため",
-      "風通しをよくするため"
+      "風通しをよくするため",
+      "室内の熱を逃がさないため",
+      "保温するため"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6948,7 +7764,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "室内の熱を逃がさないため",
       "雪を窓から入れるため",
       "風を強く通すため",
-      "日光を完全に遮るため"
+      "日光を完全に遮るため",
+      "冷たい空気が室内に入るのを防ぐため",
+      "二重窓"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6965,7 +7783,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "凍結を防ぐため",
       "水温を高くするため",
       "工事を簡単にするため",
-      "雪どけ水を集めるため"
+      "雪どけ水を集めるため",
+      "北海道",
+      "自然条件を生かすため"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6982,7 +7802,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "視線誘導標",
       "道路境界標",
       "信号機",
-      "道路標識"
+      "道路標識",
+      "消雪パイプ",
+      "温風式消雪施設"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -6999,7 +7821,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "地吹雪",
       "雪崩",
       "吹雪",
-      "降霜"
+      "降霜",
+      "消雪パイプ",
+      "温風式消雪施設"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7016,7 +7840,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "防雪柵",
       "雪崩防止柵",
       "防風林",
-      "ガードレール"
+      "ガードレール",
+      "ロードヒーティング",
+      "消雪パイプ"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7033,7 +7859,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "砂糖",
       "でんぷん",
       "食用油",
-      "小麦粉"
+      "小麦粉",
+      "酪農",
+      "畑作"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7050,7 +7878,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "でんぷんの原料にする",
       "砂糖の原料だけにする",
       "木材の代わりにする",
-      "鉄の原料にする"
+      "鉄の原料にする",
+      "酪農",
+      "畑作"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7067,7 +7897,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "バター",
       "みそ",
       "しょうゆ",
-      "豆腐"
+      "豆腐",
+      "さとうきび",
+      "畑作"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7084,7 +7916,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "同じ作物を続けて作ることによる土地の力の低下を防ぐため",
       "一年中同じ作物だけを作るため",
       "農地を住宅地に変えるため",
-      "収穫を毎年一回減らすため"
+      "収穫を毎年一回減らすため",
+      "冷たい空気が室内に入るのを防ぐため",
+      "地温を保ち雑草を防ぐため"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7101,7 +7935,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "広い農地で大型機械を使う",
       "狭い屋内だけで行う",
       "大型機械をまったく使わない",
-      "すべて手作業だけで行う"
+      "すべて手作業だけで行う",
+      "少ない電力で低温を保てる",
+      "水はけがよい"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7118,7 +7954,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "酪農",
       "畑作",
       "稲作",
-      "果樹栽培"
+      "果樹栽培",
+      "促成栽培",
+      "りんご"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7135,7 +7973,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "畑作",
       "酪農",
       "稲作",
-      "近郊農業"
+      "近郊農業",
+      "二毛作",
+      "輪作"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7152,7 +7992,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "アイヌ民族",
       "大和民族",
       "琉球民族",
-      "マオリ民族"
+      "マオリ民族",
+      "季節風",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7169,7 +8011,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "シベリア大陸",
       "太平洋の南",
       "オーストラリア大陸",
-      "赤道付近"
+      "赤道付近",
+      "季節風",
+      "シベリア気団"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7186,7 +8030,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "新潟市",
       "仙台市",
       "札幌市",
-      "横浜市"
+      "横浜市",
+      "松山市",
+      "高松市"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7203,7 +8049,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "消雪パイプ",
       "ロードヒーティング",
       "温風式消雪施設",
-      "流雪溝"
+      "流雪溝",
+      "除雪車",
+      "融雪装置"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7220,7 +8068,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "ロードヒーティング",
       "温風式消雪施設",
       "消雪パイプ",
-      "雪崩防止柵"
+      "雪崩防止柵",
+      "流雪溝",
+      "除雪車"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7237,7 +8087,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "温風式消雪施設",
       "消雪パイプ",
       "雪崩防止柵",
-      "ロードヒーティング"
+      "ロードヒーティング",
+      "除雪施設",
+      "融雪施設"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7254,7 +8106,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "除雪車",
       "散水車",
       "消防車",
-      "清掃車"
+      "清掃車",
+      "消雪パイプ",
+      "温風式消雪施設"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7271,7 +8125,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "急勾配の屋根",
       "無落雪屋根",
       "陸屋根",
-      "赤瓦屋根"
+      "赤瓦屋根",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7288,7 +8144,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "雪下ろし",
       "除雪",
       "排雪",
-      "雪囲い"
+      "雪囲い",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7305,7 +8163,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "雪室",
       "冷蔵倉庫",
       "温室",
-      "貯水池"
+      "貯水池",
+      "キャベツ",
+      "レタス"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7322,7 +8182,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "越後山脈",
       "奥羽山脈",
       "木曽山脈",
-      "赤石山脈"
+      "赤石山脈",
+      "飛騨山脈",
+      "日高山脈"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7339,7 +8201,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "豪雪地帯",
       "多雪地帯",
       "乾燥地帯",
-      "台風常襲地帯"
+      "台風常襲地帯",
+      "季節風",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7356,7 +8220,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "3m",
       "30cm",
       "1m",
-      "10m"
+      "10m",
+      "20m",
+      "50m"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7373,7 +8239,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "積雪量",
       "降水量",
       "降雪日数",
-      "気温"
+      "気温",
+      "季節風",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7390,7 +8258,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "積雪で出入り口がふさがれるのを防ぐため",
       "屋根から雪を落としやすくするため",
       "地下水をくみ上げるため",
-      "冷気を室内に入れるため"
+      "冷気を室内に入れるため",
+      "冬でも水温が比較的高く雪をとかせるから",
+      "同じ国や島で日付が分かれないようにするため"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7407,7 +8277,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "流雪溝",
       "用水路",
       "排水路",
-      "側溝"
+      "側溝",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7424,7 +8296,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "水",
       "空気",
       "砂",
-      "油"
+      "油",
+      "消雪パイプ",
+      "温風式消雪施設"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7441,7 +8315,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "道路境界標",
       "視線誘導標",
       "信号機",
-      "道路案内標識"
+      "道路案内標識",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7458,7 +8334,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "雁木",
       "アーケード",
       "地下道",
-      "歩道橋"
+      "歩道橋",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7475,7 +8353,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "雪を道路脇へ吹き飛ばす",
       "道路に雪を積み上げる",
       "地下水を飲み水にする",
-      "屋根の雪だけをとかす"
+      "屋根の雪だけをとかす",
+      "水はけがよい",
+      "水はけが悪い"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7492,7 +8372,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "雪崩防止柵",
       "防雪柵",
       "砂防ダム",
-      "防潮堤"
+      "防潮堤",
+      "取水口",
+      "ろ過池"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7509,7 +8391,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "雪中貯蔵",
       "冷蔵保存",
       "常温保存",
-      "乾燥保存"
+      "乾燥保存",
+      "だいこん",
+      "じゃがいも"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7526,7 +8410,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "少ない電力で低温を保てる",
       "室温を高温に保つ",
       "雪を使わず冷やす",
-      "農産物を乾燥させるだけである"
+      "農産物を乾燥させるだけである",
+      "広い農地で大型機械を使う",
+      "水はけがよい"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7543,7 +8429,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "農業用水",
       "工業用水",
       "海水浴",
-      "発電だけ"
+      "発電だけ",
+      "横浜市",
+      "地下水"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7560,7 +8448,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "除雪",
       "排雪",
       "雪下ろし",
-      "融雪"
+      "融雪",
+      "消雪パイプ",
+      "温風式消雪施設"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7577,7 +8467,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "急勾配屋根",
       "無落雪屋根",
       "陸屋根",
-      "赤瓦屋根"
+      "赤瓦屋根",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7594,7 +8486,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "水蒸気",
       "砂ぼこり",
       "火山灰",
-      "乾いた土"
+      "乾いた土",
+      "水蒸気を多く含む",
+      "太平洋"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7611,7 +8505,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "雪",
       "火山灰",
       "黄砂",
-      "ひょうだけ"
+      "ひょうだけ",
+      "晴天",
+      "越後山脈"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7628,7 +8524,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "スキーなどの観光に利用する",
       "雪をすべて海へ捨てる",
       "冬は観光を全面的にやめる",
-      "雪を農地に入れないようにする"
+      "雪を農地に入れないようにする",
+      "赤土の流出を防ぐ",
+      "除雪"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7645,7 +8543,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "扇状地",
       "三角州",
       "盆地",
-      "輪中"
+      "輪中",
+      "季節風",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7662,7 +8562,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "三角州",
       "扇状地",
       "盆地",
-      "輪中"
+      "輪中",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7679,7 +8581,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "自然堤防",
       "後背湿地",
       "三角州",
-      "扇状地"
+      "扇状地",
+      "盆地",
+      "輪中"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7696,7 +8600,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "後背湿地",
       "自然堤防",
       "三角州",
-      "扇状地"
+      "扇状地",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7713,7 +8619,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "海抜ゼロメートル地帯",
       "後背湿地",
       "自然堤防",
-      "三角州"
+      "三角州",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7730,7 +8638,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "輪中",
       "盆地",
       "高原",
-      "三角州"
+      "三角州",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7747,7 +8657,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "水屋",
       "母屋",
       "高床倉庫",
-      "蔵"
+      "蔵",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7764,7 +8676,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "堤防",
       "排水機場",
       "水屋",
-      "水門"
+      "水門",
+      "防潮堤",
+      "防風林"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7781,7 +8695,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "排水機場",
       "浄水場",
       "発電所",
-      "取水口"
+      "取水口",
+      "地形図",
+      "ろ過池"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7798,7 +8714,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "木曽三川",
       "利根川水系",
       "淀川水系",
-      "北上川水系"
+      "北上川水系",
+      "木曽川",
+      "信濃川"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7815,7 +8733,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "遅くなる",
       "速くなる",
       "完全に止まる",
-      "必ず逆流する"
+      "必ず逆流する",
+      "三角州",
+      "扇状地"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7832,7 +8752,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "積もりやすくなる",
       "運ばれやすくなる",
       "すべて水に溶ける",
-      "空へ舞い上がる"
+      "空へ舞い上がる",
+      "三角州",
+      "扇状地"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7849,7 +8771,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "水はけがよい",
       "水はけが悪い",
       "一年中水没する",
-      "海水が満ち引きする"
+      "海水が満ち引きする",
+      "互いに異なる記号を使う",
+      "互いに平行である"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7866,7 +8790,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "湧水帯",
       "伏流水帯",
       "後背湿地",
-      "自然堤防"
+      "自然堤防",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7883,7 +8809,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "果樹栽培",
       "稲作",
       "酪農",
-      "施設園芸"
+      "施設園芸",
+      "促成栽培",
+      "高原野菜栽培"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7900,7 +8828,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "河口",
       "上流",
       "山頂",
-      "分水界"
+      "分水界",
+      "ほぼ同じ",
+      "どちらともいえない"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7917,7 +8847,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "水はけが悪い",
       "水はけがよい",
       "一年中乾燥している",
-      "海水だけが流れる"
+      "海水だけが流れる",
+      "互いに異なる記号を使う",
+      "互いに平行である"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7934,7 +8866,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "集落",
       "牧場",
       "漁港",
-      "ダム"
+      "ダム",
+      "三角州",
+      "後背湿地"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7951,7 +8885,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "水田",
       "果樹園",
       "牧場",
-      "茶畑"
+      "茶畑",
+      "ほぼ同じ",
+      "どちらともいえない"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7968,7 +8904,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "洪水や高潮の危険が高い",
       "洪水の危険がない",
       "津波だけを完全に防げる",
-      "標高が高いため水害がない"
+      "標高が高いため水害がない",
+      "水はけがよい",
+      "水はけが悪い"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -7985,7 +8923,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "濃尾平野",
       "関東平野",
       "石狩平野",
-      "筑紫平野"
+      "筑紫平野",
+      "八代平野",
+      "宮崎平野"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8002,7 +8942,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "木曽川",
       "信濃川",
       "利根川",
-      "吉野川"
+      "吉野川",
+      "揖斐川",
+      "長良川"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8019,7 +8961,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "揖斐川",
       "木曽川",
       "長良川",
-      "信濃川"
+      "信濃川",
+      "吉野川",
+      "利根川"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8036,7 +8980,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "河川改修",
       "土地改良",
       "区画整理",
-      "干拓"
+      "干拓",
+      "取水口",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8053,7 +8999,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "洪水",
       "高潮",
       "津波",
-      "土石流"
+      "土石流",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8070,7 +9018,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "川",
       "山地",
       "道路",
-      "住宅地"
+      "住宅地",
+      "瀬田川",
+      "木曽川"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8087,7 +9037,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "避難場所",
       "県庁所在地",
       "農産物の産地",
-      "鉄道路線だけ"
+      "鉄道路線だけ",
+      "地形図",
+      "ハザードマップ"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8104,7 +9056,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "水害を防ぐため",
       "地下水を増やすため",
       "川の流れを速くするため",
-      "農地を低くするため"
+      "農地を低くするため",
+      "日当たりをよくするため",
+      "冷たい空気が室内に入るのを防ぐため"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8121,7 +9075,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "大陸棚",
       "陸繋島",
       "潮目",
-      "砂丘"
+      "砂丘",
+      "季節風",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8138,7 +9094,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "リアス海岸",
       "岩石海岸",
       "砂浜海岸",
-      "大陸棚"
+      "大陸棚",
+      "隆起海岸",
+      "沈水海岸"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8155,7 +9113,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "養殖業",
       "沖合漁業",
       "遠洋漁業",
-      "畑作"
+      "畑作",
+      "いかだ",
+      "リアス海岸"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8172,7 +9132,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "わかめの養殖",
       "かきの養殖",
       "ほたての養殖",
-      "うなぎの養殖"
+      "うなぎの養殖",
+      "のりの養殖",
+      "真珠の養殖"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8189,7 +9151,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "砂",
       "火山灰",
       "溶岩",
-      "氷河"
+      "氷河",
+      "紙",
+      "鉄"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8206,7 +9170,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "約66km",
       "約20km",
       "約100km",
-      "約200km"
+      "約200km",
+      "約3500km",
+      "1km"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8223,7 +9189,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "陸繋島",
       "大陸棚",
       "潮目",
-      "砂丘"
+      "砂丘",
+      "択捉島",
+      "南鳥島"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8240,7 +9208,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "砂浜海岸",
       "岩石海岸",
       "リアス海岸",
-      "隆起海岸"
+      "隆起海岸",
+      "ほぼ同じ",
+      "どちらともいえない"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8257,7 +9227,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "防波堤",
       "いかだ",
       "防潮堤",
-      "防砂林"
+      "防砂林",
+      "防潮林",
+      "避難タワー"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8274,7 +9246,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "千葉県",
       "京都府",
       "兵庫県",
-      "北海道"
+      "北海道",
+      "長野県",
+      "奈良県"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8291,7 +9265,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "約3万5000km",
       "約3500km",
       "約1万km",
-      "約10万km"
+      "約10万km",
+      "約66km",
+      "1km"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8308,7 +9284,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "島が多く海岸線の出入りが複雑だから",
       "国土が一つの大陸だけでできているから",
       "海岸がすべて直線だから",
-      "川がまったくないから"
+      "川がまったくないから",
+      "北海道",
+      "周囲の山地から暖められた風が吹き下ろすため"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8325,7 +9303,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "比較的直線的な形",
       "細かな湾と岬が連続する形",
       "切り立った崖だけの形",
-      "島が砂州でつながる形だけ"
+      "島が砂州でつながる形だけ",
+      "リアス海岸",
+      "砂浜海岸"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8342,7 +9322,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "岩石海岸",
       "砂浜海岸",
       "大陸棚",
-      "陸繋島"
+      "陸繋島",
+      "リアス海岸",
+      "隆起海岸"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8359,7 +9341,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "約200m",
       "約50m",
       "約500m",
-      "約2000m"
+      "約2000m",
+      "10m",
+      "500m"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8376,7 +9360,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "潮目",
       "砂丘",
       "大陸棚",
-      "陸繋島"
+      "陸繋島",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8393,7 +9379,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "漁業",
       "林業",
       "畑作",
-      "酪農"
+      "酪農",
+      "遠洋漁業",
+      "沖合漁業"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8410,7 +9398,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "黒潮",
       "親潮",
       "対馬海流",
-      "リマン海流"
+      "リマン海流",
+      "季節風",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8427,7 +9417,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "親潮",
       "黒潮",
       "対馬海流",
-      "リマン海流"
+      "リマン海流",
+      "季節風",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8444,7 +9436,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "青森県から宮城県",
       "秋田県から山形県",
       "千葉県から神奈川県",
-      "鳥取県から島根県"
+      "鳥取県から島根県",
+      "長崎県",
+      "佐賀県"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8461,7 +9455,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "いかだ",
       "大型タンカー",
       "海上空港",
-      "風力発電所"
+      "風力発電所",
+      "畑作",
+      "養殖業"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8478,7 +9474,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "養殖漁業",
       "沿岸漁業",
       "沖合漁業",
-      "遠洋漁業"
+      "遠洋漁業",
+      "地形図",
+      "促成栽培"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8495,7 +9493,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "砂丘",
       "潮目",
       "大陸棚",
-      "陸繋島"
+      "陸繋島",
+      "三角州",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8512,7 +9512,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "鳥取県",
       "京都府",
       "兵庫県",
-      "北海道"
+      "北海道",
+      "千葉県",
+      "長野県"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8529,7 +9531,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "防砂林",
       "防風林",
       "防潮林",
-      "保安林"
+      "保安林",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8546,7 +9550,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "太平洋側",
       "日本海側",
       "瀬戸内海側",
-      "東シナ海側"
+      "東シナ海側",
+      "ほぼ同じ",
+      "どちらともいえない"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8563,7 +9569,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "砂浜と波",
       "海食崖と岩場",
       "干潟と潮だまり",
-      "サンゴ礁とマングローブ"
+      "サンゴ礁とマングローブ",
+      "酪農",
+      "果樹栽培"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8580,7 +9588,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "防潮堤",
       "防波堤",
       "砂防ダム",
-      "防雪柵"
+      "防雪柵",
+      "防潮林",
+      "堤防"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8597,7 +9607,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "盆地",
       "輪中",
       "高原",
-      "三角州"
+      "三角州",
+      "山形盆地",
+      "松本盆地"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8614,7 +9626,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "日較差",
       "季節風",
       "年較差",
-      "雨温図"
+      "雨温図",
+      "地形図",
+      "平面図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8631,7 +9645,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "周囲の山地から暖められた風が吹き下ろすため",
       "海風が一日中吹き込むため",
       "標高が高く雪が残るため",
-      "冷たい海流が流れ込むため"
+      "冷たい海流が流れ込むため",
+      "季節風",
+      "雨温図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8648,7 +9664,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "水はけがよいから",
       "水が一年中たまるから",
       "海水が流れ込むから",
-      "日光がほとんど当たらないから"
+      "日光がほとんど当たらないから",
+      "りんご",
+      "みかん"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8665,7 +9683,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "日当たりがよいから",
       "一年中水没しているから",
       "海風が強いから",
-      "土が常に凍っているから"
+      "土が常に凍っているから",
+      "りんご",
+      "みかん"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8682,7 +9702,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "ぶどう",
       "りんご",
       "なし",
-      "かき"
+      "かき",
+      "もも",
+      "みかん"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8699,7 +9721,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "さくらんぼ",
       "ぶどう",
       "みかん",
-      "パイナップル"
+      "パイナップル",
+      "りんご",
+      "もも"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8716,7 +9740,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "りんご",
       "ぶどう",
       "もも",
-      "みかん"
+      "みかん",
+      "さくらんぼ",
+      "だいこん"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8733,7 +9759,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "日当たりをよくするため",
       "実を雨から守るため",
       "花粉を人工的につけるため",
-      "収穫した実を大きさで分けるため"
+      "収穫した実を大きさで分けるため",
+      "室内の熱を逃がさないため",
+      "水害を防ぐため"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8750,7 +9778,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "促成栽培",
       "抑制栽培",
       "露地栽培",
-      "水耕栽培"
+      "水耕栽培",
+      "マルチ栽培",
+      "果樹栽培"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8767,7 +9797,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "山地",
       "海岸",
       "平野",
-      "砂丘"
+      "砂丘",
+      "白神山地",
+      "日本列島の中央部の山地"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8784,7 +9816,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "海から遠く影響を受けにくい",
       "海に囲まれ影響を強く受ける",
       "潮の満ち引きで気温が決まる",
-      "海流だけで降水量が決まる"
+      "海流だけで降水量が決まる",
+      "水はけがよい",
+      "水はけが悪い"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8801,7 +9835,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "年較差",
       "季節風",
       "日較差",
-      "雨温図"
+      "雨温図",
+      "地形図",
+      "平面図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8818,7 +9854,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "果物が甘くなりやすい",
       "果物が必ず凍る",
       "実が育たなくなる",
-      "日当たりがなくなる"
+      "日当たりがなくなる",
+      "さくらんぼ",
+      "みかん"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8835,7 +9873,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "逆転層",
       "フェーン現象",
       "海霧",
-      "季節風"
+      "季節風",
+      "地形図",
+      "年較差"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8852,7 +9892,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "冷たい空気が低い所にたまりやすいから",
       "海から強い風が吹き続けるから",
       "一年中気温が同じだから",
-      "周囲に山がないから"
+      "周囲に山がないから",
+      "水はけがよい",
+      "水はけが悪い"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8869,7 +9911,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "山梨県",
       "長野県",
       "山形県",
-      "奈良県"
+      "奈良県",
+      "兵庫県",
+      "千葉県"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8886,7 +9930,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "もも",
       "りんご",
       "さくらんぼ",
-      "みかん"
+      "みかん",
+      "ぶどう",
+      "だいこん"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8903,7 +9949,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "山形県",
       "山梨県",
       "長野県",
-      "福島県"
+      "福島県",
+      "兵庫県",
+      "奈良県"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8920,7 +9968,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "長野県",
       "山梨県",
       "群馬県",
-      "岐阜県"
+      "岐阜県",
+      "兵庫県",
+      "奈良県"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8937,7 +9987,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "奈良県",
       "京都府",
       "大阪府",
-      "滋賀県"
+      "滋賀県",
+      "兵庫県",
+      "長野県"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8954,7 +10006,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "京都府",
       "奈良県",
       "大阪府",
-      "滋賀県"
+      "滋賀県",
+      "大阪府と京都府",
+      "鎌倉幕府"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8971,7 +10025,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "摘果",
       "選果",
       "せん定",
-      "袋かけ"
+      "袋かけ",
+      "促成栽培",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -8988,7 +10044,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "袋かけ",
       "せん定",
       "摘果",
-      "選果"
+      "選果",
+      "みかん",
+      "りんご"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9005,7 +10063,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "人工授粉",
       "促成栽培",
       "せん定",
-      "袋かけ"
+      "袋かけ",
+      "摘果",
+      "選果"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9022,7 +10082,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "選果",
       "摘果",
       "せん定",
-      "袋かけ"
+      "袋かけ",
+      "さくらんぼ",
+      "みかん"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9039,7 +10101,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "選果場",
       "集荷場",
       "市場",
-      "貯水池"
+      "貯水池",
+      "みかん",
+      "りんご"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9056,7 +10120,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "価格を安定させるため",
       "果物をすぐ廃棄するため",
       "収穫量を減らすため",
-      "実を小さくするため"
+      "実を小さくするため",
+      "さくらんぼ",
+      "りんご"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9073,7 +10139,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "高原",
       "盆地",
       "輪中",
-      "三角州"
+      "三角州",
+      "清里高原",
+      "那須高原"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9090,7 +10158,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "高原野菜",
       "近郊野菜",
       "促成野菜",
-      "熱帯作物"
+      "熱帯作物",
+      "レタス",
+      "みかん"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9107,7 +10177,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "レタス",
       "さとうきび",
       "れんこん",
-      "みかん"
+      "みかん",
+      "さくらんぼ",
+      "じゃがいも"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9124,7 +10196,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "抑制栽培",
       "促成栽培",
       "二期作",
-      "輪作"
+      "輪作",
+      "果樹栽培",
+      "水耕栽培"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9141,7 +10215,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "ビニールハウス",
       "防風林",
       "防雪柵",
-      "選果場"
+      "選果場",
+      "キャベツ",
+      "レタス"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9158,7 +10234,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "早朝",
       "正午",
       "夕方",
-      "深夜"
+      "深夜",
+      "キャベツ",
+      "レタス"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9175,7 +10253,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "キャンプ場",
       "スキー場",
       "海水浴場",
-      "水族館"
+      "水族館",
+      "さとうきび",
+      "レタス"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9192,7 +10272,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "スキー場",
       "キャンプ場",
       "海水浴場",
-      "遊園地"
+      "遊園地",
+      "地形図",
+      "取水口"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9209,7 +10291,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "集荷場",
       "選果場",
       "市場",
-      "農業試験場"
+      "農業試験場",
+      "だいこん",
+      "じゃがいも"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9226,7 +10310,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "約0.6度",
       "約1.5度",
       "約1度",
-      "約2度"
+      "約2度",
+      "180度",
+      "90度"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9243,7 +10329,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "低くなる",
       "高くなる",
       "変わらない",
-      "必ず0度になる"
+      "必ず0度になる",
+      "季節風",
+      "年較差"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9260,7 +10348,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "野辺山原",
       "那須高原",
       "清里高原",
-      "美ヶ原高原"
+      "美ヶ原高原",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9277,7 +10367,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "約1300m",
       "約300m",
       "約800m",
-      "約2500m"
+      "約2500m",
+      "500m",
+      "10m"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9294,7 +10386,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "大きい",
       "小さい",
       "まったくない",
-      "一年中必ず同じ"
+      "一年中必ず同じ",
+      "少ない",
+      "多い"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9311,7 +10405,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "害虫がつきにくい",
       "必ず害虫が増える",
       "野菜が育たなくなる",
-      "水をまったく必要としない"
+      "水をまったく必要としない",
+      "レタス",
+      "みかん"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9328,7 +10424,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "夏",
       "冬",
       "春",
-      "秋"
+      "秋",
+      "レタス",
+      "キャベツ"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9345,7 +10443,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "平地の野菜が少ない時期に出荷できるから",
       "収穫後すぐ廃棄するから",
       "冬だけ収穫するから",
-      "市場へ運ばないから"
+      "市場へ運ばないから",
+      "レタス",
+      "キャベツ"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9362,7 +10462,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "マルチ栽培",
       "促成栽培",
       "抑制栽培",
-      "水耕栽培"
+      "水耕栽培",
+      "果樹栽培",
+      "露地栽培"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9379,7 +10481,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "地温を保ち雑草を防ぐため",
       "土を完全に乾燥させるため",
       "日光をすべて遮るため",
-      "収穫をできなくするため"
+      "収穫をできなくするため",
+      "さくらんぼ",
+      "りんご"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9396,7 +10500,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "新鮮なまま都市へ届けるため",
       "日中の暑さでしおれさせるため",
       "収穫後すぐ畑へ戻すため",
-      "市場への到着を遅らせるため"
+      "市場への到着を遅らせるため",
+      "レタス",
+      "キャベツ"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9413,7 +10519,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "選別",
       "摘果",
       "せん定",
-      "人工授粉"
+      "人工授粉",
+      "レタス",
+      "みかん"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9430,7 +10538,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "農業協同組合",
       "漁業協同組合",
       "森林組合",
-      "商工会議所"
+      "商工会議所",
+      "レタス",
+      "キャベツ"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9447,7 +10557,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "JA",
       "JR",
       "JAXA",
-      "JAS"
+      "JAS",
+      "PET",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9464,7 +10576,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "トラック",
       "航空機",
       "鉄道",
-      "船"
+      "船",
+      "レタス",
+      "みかん"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9481,7 +10595,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "遠くの都市へ短時間で運べるようになった",
       "都市へ運べなくなった",
       "鉄道をすべて廃止した",
-      "収穫時期が冬だけになった"
+      "収穫時期が冬だけになった",
+      "レタス",
+      "キャベツ"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9498,7 +10614,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "スキー",
       "サーフィン",
       "水泳",
-      "ヨット"
+      "ヨット",
+      "さとうきび",
+      "スキー場"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9515,7 +10633,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "観光業",
       "漁業",
       "鉱業",
-      "造船業"
+      "造船業",
+      "促成栽培",
+      "地形図"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9532,7 +10652,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "地域の収入源を増やせる",
       "農業を完全にやめられる",
       "観光客を減らせる",
-      "野菜を出荷しなくてよくなる"
+      "野菜を出荷しなくてよくなる",
+      "キャベツ",
+      "レタス"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9549,7 +10671,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "鉄筋コンクリート",
       "木材だけ",
       "かや",
-      "雪のブロック"
+      "雪のブロック",
+      "雨端",
+      "しっくい"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9566,7 +10690,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "断熱材",
       "吸音材",
       "防水材",
-      "石こう"
+      "石こう",
+      "地形図",
+      "無落雪屋根"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9583,7 +10709,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "冬でも水温が比較的高く雪をとかせるから",
       "海水より塩分が多いから",
       "必ず沸騰しているから",
-      "道路を凍らせやすいから"
+      "道路を凍らせやすいから",
+      "除雪車",
+      "流雪溝"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9600,7 +10728,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "食料や生活用品",
       "海水浴の道具",
       "大型農業機械だけ",
-      "魚をとる網だけ"
+      "魚をとる網だけ",
+      "ダム",
+      "集落"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9617,7 +10747,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "かきやわかめ",
       "小麦や大豆",
       "乳牛や羊",
-      "りんごやぶどう"
+      "りんごやぶどう",
+      "いかだ",
+      "防砂林"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9634,7 +10766,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "果樹栽培",
       "稲作",
       "酪農",
-      "畑作"
+      "畑作",
+      "促成栽培",
+      "高原野菜栽培"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9651,7 +10785,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "高原野菜栽培",
       "促成栽培",
       "稲作",
-      "果樹栽培"
+      "果樹栽培",
+      "抑制栽培",
+      "水耕栽培"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9668,7 +10804,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "自然環境に適応したくらし",
       "自然条件を無視したくらし",
       "すべての地域で同じくらし",
-      "自然をまったく利用しないくらし"
+      "自然をまったく利用しないくらし",
+      "地形図",
+      "季節風"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9685,7 +10823,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "沖縄",
       "北海道",
       "どちらも同じ",
-      "季節によって必ず逆になる"
+      "季節によって必ず逆になる",
+      "どちらともいえない",
+      "季節によって変わる"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9702,7 +10842,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "日本海側",
       "太平洋側",
       "どちらも同じ",
-      "瀬戸内だけ"
+      "瀬戸内だけ",
+      "どちらともいえない",
+      "ほぼ同じ"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9719,7 +10861,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "一年中暖かい気候",
       "一年中寒冷な気候",
       "夏でも霜が多い気候",
-      "一年中雨が降らない気候"
+      "一年中雨が降らない気候",
+      "一年中温暖な気候",
+      "冷涼な気候"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9736,7 +10880,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "冷涼な気候",
       "高温多湿な気候",
       "一年中温暖な気候",
-      "乾燥した砂漠気候"
+      "乾燥した砂漠気候",
+      "一年中寒冷な気候",
+      "一年中暖かい気候"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9753,7 +10899,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "日本列島の中央部の山地",
       "海岸の砂浜",
       "河口の三角州",
-      "平野の水田"
+      "平野の水田",
+      "白神山地",
+      "天塩山地"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9770,7 +10918,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "地下水",
       "海水",
       "雨水だけ",
-      "工業排水"
+      "工業排水",
+      "流雪溝",
+      "除雪車"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9787,7 +10937,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "低いから",
       "高いから",
       "同じ高さだから",
-      "山頂にあるから"
+      "山頂にあるから",
+      "三角州",
+      "後背湿地"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9804,7 +10956,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "洪水から守るため",
       "海水を田畑へ入れるため",
       "川の流れを止めるため",
-      "土地を低くするため"
+      "土地を低くするため",
+      "水屋",
+      "堤防"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9821,7 +10975,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "穏やかだから",
       "非常に荒いから",
       "一年中凍るから",
-      "潮の満ち引きがないから"
+      "潮の満ち引きがないから",
+      "低いから",
+      "うなぎの養殖"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9838,7 +10994,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "防潮堤",
       "防波堤",
       "防砂林",
-      "防雪柵"
+      "防雪柵",
+      "防潮林",
+      "堤防"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9855,7 +11013,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "気温差",
       "降水量",
       "風速",
-      "湿度"
+      "湿度",
+      "りんご",
+      "ぶどう"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9872,7 +11032,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "低いから",
       "高いから",
       "変わらないから",
-      "必ず氷点下だから"
+      "必ず氷点下だから",
+      "レタス",
+      "キャベツ"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9889,7 +11051,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "保温するため",
       "風通しをよくするため",
       "雪を室内に入れるため",
-      "日差しを強くするため"
+      "日差しを強くするため",
+      "室内の熱を逃がさないため",
+      "冷たい空気が室内に入るのを防ぐため"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9906,7 +11070,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "台風の強風を防ぐため",
       "雪の重みを支えるため",
       "冷気を室内に入れるため",
-      "海水をためるため"
+      "海水をためるため",
+      "保温するため",
+      "雨端"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9923,7 +11089,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "雪の日でも歩けるようにするため",
       "雪を屋根に積もらせるため",
       "道路を凍結させるため",
-      "家の中へ雪を入れるため"
+      "家の中へ雪を入れるため",
+      "冬でも水温が比較的高く雪をとかせるから",
+      "価格を安定させるため"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9940,7 +11108,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "ハザードマップ",
       "地形図",
       "土地利用図",
-      "路線図"
+      "路線図",
+      "平面図",
+      "等高線"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9957,7 +11127,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "住宅や農地",
       "沖合の漁船",
       "山頂の登山道",
-      "川の上流"
+      "川の上流",
+      "防風林",
+      "防潮堤"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9974,7 +11146,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "積雪",
       "高い海水温",
       "サンゴ礁",
-      "干潟"
+      "干潟",
+      "歯車",
+      "鳥居"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -9991,7 +11165,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "自然条件を生かすため",
       "すべての地域を同じ産業にするため",
       "気候や地形を無視するため",
-      "地域の産業をなくすため"
+      "地域の産業をなくすため",
+      "自然環境に適応したくらし",
+      "凍結を防ぐため"
     ],
     "answerIndex": 0,
     "explanation": ""
@@ -10008,7 +11184,9 @@ window.GEOGRAPHY_QUESTIONS = [
       "北海道",
       "沖縄",
       "どちらも同じ",
-      "年によって必ず逆になる"
+      "年によって必ず逆になる",
+      "どちらともいえない",
+      "季節によって変わる"
     ],
     "answerIndex": 0,
     "explanation": ""

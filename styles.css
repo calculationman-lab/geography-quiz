@@ -50,6 +50,9 @@ body {
   font-weight: 700;
 }
 .rank-card { display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; align-items: center; margin: 4px 0 18px; padding: 14px 18px; overflow: hidden; border: 2px solid #d8b950; border-radius: 20px; background: linear-gradient(145deg,#122b52,#1e4d88 62%,#173764); color: #fff; box-shadow: 0 10px 28px #173d7835; }
+.hero { position: relative; }
+.settings-button { position: absolute; top: 10px; right: 10px; display: grid; place-items: center; min-width: 54px; min-height: 54px; padding: 5px 8px; border: 1px solid #ffffff55; border-radius: 14px; background: #ffffff18; color: #fff; font-size: 25px; font-weight: 900; }
+.settings-button span { display: block; font-size: 11px; line-height: 1; }
 .rank-emblem { display: grid; place-items: center; width: 66px; height: 66px; border: 3px solid #f4d673; border-radius: 50%; background: #0b203f; font-size: 35px; box-shadow: 0 0 18px #ffd85a55; }
 .rank-main p { margin: 0; color: #c9dbef; font-size: 13px; font-weight: 900; letter-spacing: .12em; }
 .rank-main h2 { margin: 2px 0; color: #ffe080; font-size: clamp(24px,5vw,36px); }
@@ -70,6 +73,31 @@ body {
 .mastery-unit.full-mastered { border-color: #79dfff; background: linear-gradient(145deg,#ffd95e,#2679bc); color: #fff; box-shadow: 0 0 9px #45cfffaa; }
 .unit-mastery-detail { grid-column: 1/-1; min-height: 2.8em; padding: 10px 12px; border-radius: 11px; background: #081b3475; color: #eaf3ff; font-size: 14px; line-height: 1.55; text-align: center; }
 .recent-title { grid-column: 1/-1; color: #ffe596; font-weight: 900; text-align: center; }
+.parent-review-row { grid-column: 1/-1; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 12px; border-radius: 11px; background: #ffffff12; font-weight: 900; }
+.parent-review-row button { padding: 8px 12px; border: 1px solid #ffe183; border-radius: 10px; background: #fff2b8; color: #5f4200; font-weight: 900; }
+.mastery-unit.pending-approval { border-color: #ffb24d; box-shadow: 0 0 0 2px #ff9f2f88 inset; }
+.parent-panel { position: fixed; z-index: 50; inset: 0; display: grid; place-items: center; padding: 18px; background: #071427b8; }
+.parent-panel-card { width: min(620px,100%); max-height: 88vh; overflow-y: auto; padding: 22px; border-radius: 22px; background: #fff; box-shadow: 0 18px 60px #0005; }
+.parent-panel-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.parent-panel-heading h2 { margin: 0; color: var(--blue-dark); }
+.parent-panel-heading button { width: 42px; height: 42px; border: 0; border-radius: 50%; background: #eef2f7; color: #344054; font-size: 25px; }
+.parent-panel-status { min-height: 1.5em; color: #17653a; font-weight: 900; }
+.settings-panel-card { width: min(560px,100%); }
+.settings-section { padding: 16px 0; }
+.settings-section + .settings-section { border-top: 1px solid #d8e1ed; }
+.settings-section h3 { margin: 0 0 7px; color: var(--blue-dark); }
+.setting-status { display: inline-block; margin: 2px 0 8px; padding: 6px 10px; border-radius: 999px; background: #fff0d3; color: #835400; font-weight: 900; }
+.setting-status.configured { background: #e5f7ec; color: #17653a; }
+.setting-help { margin: 0 0 14px; color: var(--muted); line-height: 1.6; }
+.settings-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.settings-actions button { flex: 1 1 190px; margin: 0; }
+.parent-review-list { display: grid; gap: 10px; margin: 14px 0; }
+.parent-review-item { padding: 14px; border: 1px solid var(--line); border-radius: 14px; background: #f8fafc; }
+.parent-review-item strong { display: block; margin-bottom: 8px; }
+.parent-review-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.parent-review-actions button { flex: 1 1 100px; padding: 9px; border: 1px solid #b9c5d3; border-radius: 10px; background: #fff; font-weight: 900; }
+.parent-review-actions .approve { border-color: #69b78a; background: #eaf8f0; color: #126b3b; }
+.parent-review-actions .reject, .parent-review-actions .revoke { border-color: #e29a9a; background: #fff0f0; color: #9f2828; }
 .eyebrow {
   margin: 0;
   color: var(--blue);

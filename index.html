@@ -3,24 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <title>小4社会 学習クイズ</title>
+  <title>社会マスター</title>
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="stylesheet" href="./styles.css">
   <meta name="theme-color" content="#2457a7">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="社会クイズ">
-  <link rel="apple-touch-icon" href="./icon-192.png">
+  <meta name="apple-mobile-web-app-title" content="社会マスター">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png?v=20260814-v8">
 </head>
 <body>
   <main class="app-shell">
     <section id="home-screen" class="screen">
-      <header class="hero"><p class="eyebrow">小学4年生</p><h1>社会 学習クイズ</h1><p>4択問題で楽しく力だめし！</p></header>
+      <header class="hero"><h1>社会マスター</h1><p>4択と記述で社会をマスターしよう！</p></header>
       <div class="today-card" id="today-status"></div>
       <div class="mode-grid">
         <article class="mode-card geography-card">
           <div class="mode-icon" aria-hidden="true">🗾</div>
           <div><p class="mode-label">地理</p><h2>日本の地理クイズ</h2><p>選択範囲の<span id="question-total">450</span>問から挑戦する問題数を選ぼう</p></div>
+          <fieldset class="quiz-type-selector">
+            <legend>学習方法</legend>
+            <div class="quiz-type-options">
+              <button type="button" class="quiz-type-button selected" data-quiz-type="choice" aria-pressed="true"><strong>4択モード</strong><span>選んで自動採点</span></button>
+              <button type="button" class="quiz-type-button" data-quiz-type="written" aria-pressed="false"><strong>記述モード</strong><span>紙に書いて自己判定</span></button>
+            </div>
+          </fieldset>
           <fieldset class="scope-selector">
             <legend>出題範囲</legend>
             <div class="scope-options">
@@ -29,10 +36,20 @@
               <button type="button" class="scope-button" data-scope="all" aria-pressed="false"><strong>全範囲</strong><span data-scope-count="all">589問</span></button>
             </div>
           </fieldset>
-          <div class="challenge-options" aria-label="挑戦する問題数">
+          <section id="unit-selector" class="unit-selector">
+            <div class="unit-heading"><h3>前期の単元を選ぶ</h3><span id="unit-selection-summary"></span></div>
+            <div class="unit-actions"><button type="button" id="select-all-units" class="text-button">すべて選択</button><button type="button" id="clear-units" class="text-button">選択解除</button></div>
+            <div id="unit-options" class="unit-options" aria-label="出題する単元"></div>
+          </section>
+          <div id="choice-challenge-options" class="challenge-options" aria-label="4択で挑戦する問題数">
             <button class="challenge-button primary" data-question-count="20"><strong>20問</strong><span>毎日の学習に</span></button>
             <button class="challenge-button primary" data-question-count="50"><strong>50問</strong><span>しっかり練習</span></button>
             <button class="challenge-button primary full-challenge" data-question-count="all"><strong>全問チャレンジ</strong><span id="all-question-label">450問すべて</span></button>
+          </div>
+          <div id="written-challenge-options" class="challenge-options hidden" aria-label="記述で挑戦する問題数">
+            <button class="challenge-button primary written-start" data-written-count="10"><strong>10問</strong><span>短時間で記述練習</span></button>
+            <button class="challenge-button primary written-start" data-written-count="20"><strong>20問</strong><span>しっかり記述練習</span></button>
+            <button class="challenge-button primary full-challenge written-start" data-written-count="all"><strong>全問チャレンジ</strong><span id="written-all-question-label">450問すべて</span></button>
           </div>
           <div class="sound-settings">
             <label class="sound-toggle"><input id="sound-enabled" type="checkbox" checked><span>効果音 ON</span></label>
@@ -42,26 +59,29 @@
       </div>
       <section class="history-section">
         <div class="section-heading"><h2>これまでの記録</h2><button id="clear-history-button" class="text-button">記録を消す</button></div>
-        <div id="history-list" class="history-list"></div>
+        <h3 class="history-subheading">4択の記録</h3><div id="history-list" class="history-list"></div>
+        <h3 class="history-subheading written-heading">記述の記録</h3><div id="written-history-list" class="history-list"></div>
       </section>
-      <p class="app-version">更新版 v6</p>
+      <p class="app-version">更新版 v8</p>
     </section>
     <section id="quiz-screen" class="screen hidden" aria-live="polite">
       <div class="quiz-card">
         <div class="quiz-meta"><button id="quit-button" class="back-button" aria-label="クイズをやめてTOPへ戻る">← TOP</button><span id="region" class="tag"></span><span id="progress"></span></div>
         <div class="progress-track"><div id="progress-bar" class="progress-bar"></div></div>
-        <h1 id="question" class="question"></h1><div id="choices" class="choices"></div><div id="feedback" class="feedback hidden"></div>
+        <h1 id="question" class="question"></h1><div id="choices" class="choices"></div>
+        <div id="written-panel" class="written-panel hidden"><p id="written-instruction">紙やノートに答えを書いてから、答えを見てください。</p><button id="reveal-answer-button" class="primary">答えを見る</button><div id="written-answer" class="written-answer hidden"></div><div id="self-grade-buttons" class="self-grade-buttons hidden"><button data-self-grade="correct" class="grade-button grade-correct"><strong>○</strong><span>漢字まで正しい</span></button><button data-self-grade="partial" class="grade-button grade-partial"><strong>△</strong><span>漢字・表記ミス</span></button><button data-self-grade="wrong" class="grade-button grade-wrong"><strong>×</strong><span>思い出せなかった</span></button></div></div>
+        <div id="feedback" class="feedback hidden"></div>
         <button id="next-button" class="primary hidden">次の問題</button>
       </div>
     </section>
     <section id="result-screen" class="screen hidden">
       <div class="result-card">
-        <p class="eyebrow">結果発表</p><h1 id="result-title"></h1><div class="score-ring"><strong id="result-score"></strong><span id="result-rate"></span></div><p id="result-time" class="result-time"></p>
+        <p class="eyebrow">結果発表</p><h1 id="result-title"></h1><div class="score-ring"><strong id="result-score"></strong><span id="result-rate"></span></div><div id="written-result-summary" class="written-result-summary hidden"></div><p id="result-time" class="result-time"></p>
         <div id="wrong-section" class="wrong-section"></div><button id="review-button" class="secondary hidden"></button><button id="home-button" class="primary">TOPへ戻る</button>
       </div>
     </section>
   </main>
-  <script src="./questions.js?v=20260814-v6"></script><script src="./app.js?v=20260814-v6"></script>
+  <script src="./questions.js?v=20260814-v8"></script><script src="./app.js?v=20260814-v8"></script>
   <script>if("serviceWorker" in navigator){let reloading=false;navigator.serviceWorker.addEventListener("controllerchange",()=>{if(reloading)return;reloading=true;location.reload()});window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js",{updateViaCache:"none"}).then(registration=>registration.update()).catch(console.error))}</script>
 </body>
 </html>

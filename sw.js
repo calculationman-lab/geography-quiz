@@ -1,6 +1,6 @@
-const CACHE="social-quiz-v6";
-const AUDIO_REVISION="20260814-v6";
-const ASSETS=["./","./index.html","./styles.css","./questions.js?v=20260814-v6","./app.js?v=20260814-v6",`./se-correct.mp3?v=${AUDIO_REVISION}`,`./se-wrong.mp3?v=${AUDIO_REVISION}`,"./manifest.webmanifest","./icon-192.png","./icon-512.png"];
+const CACHE="social-quiz-v8";
+const AUDIO_REVISION="20260814-v8";
+const ASSETS=["./","./index.html","./styles.css","./questions.js?v=20260814-v8","./app.js?v=20260814-v8",`./se-correct.mp3?v=${AUDIO_REVISION}`,`./se-wrong.mp3?v=${AUDIO_REVISION}`,"./manifest.webmanifest","./icon-192.png?v=20260814-v8","./icon-512.png?v=20260814-v8","./apple-touch-icon.png?v=20260814-v8"];
 
 self.addEventListener("install",event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener("activate",event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));

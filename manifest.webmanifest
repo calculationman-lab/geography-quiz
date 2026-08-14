@@ -1,7 +1,7 @@
 {
-  "name": "小4社会 学習クイズ",
-  "short_name": "社会クイズ",
-  "description": "小4前期と夏期講習の社会を4択で学習し、自動採点・復習できるクイズ",
+  "name": "社会マスター",
+  "short_name": "社会マスター",
+  "description": "小4前期と夏期講習の社会を4択と紙に書く記述で学習できるクイズ",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
@@ -10,13 +10,13 @@
   "lang": "ja",
   "icons": [
     {
-      "src": "./icon-192.png",
+      "src": "./icon-192.png?v=20260814-v8",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "./icon-512.png",
+      "src": "./icon-512.png?v=20260814-v8",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"

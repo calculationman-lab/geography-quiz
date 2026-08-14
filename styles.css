@@ -68,6 +68,10 @@ body {
 .unit-mastery-grid { grid-column: 1/-1; display: grid; grid-template-columns: repeat(17,minmax(28px,1fr)); gap: 5px; }
 .summer-mastery-grid { grid-column: 1/-1; display: grid; grid-template-columns: repeat(7,minmax(50px,1fr)); gap: 6px; }
 .summer-mastery-grid .mastery-unit { aspect-ratio: auto; min-height: 40px; padding: 5px 3px; font-size: 11px; }
+.summer-mastery-grid .summer-overall-icon { display: grid; grid-template-columns: auto 1fr; gap: 3px; align-items: center; border-width: 2px; border-color: #d5a900; background: #fff8d7; color: #705300; }
+.summer-mastery-grid .summer-overall-icon span { font-size: 18px; }
+.summer-mastery-grid .summer-overall-icon.choice-mastered { background: linear-gradient(145deg,#ffe684,#f4bd32); color: #583b00; box-shadow: 0 0 14px #ffd45a88; }
+.summer-mastery-grid .summer-overall-icon.full-mastered { background: linear-gradient(145deg,#e7ddff,#a987ff); color: #32156e; box-shadow: 0 0 16px #a987ffaa; }
 .mastery-unit { aspect-ratio: 1; min-width: 0; border: 1px solid #ffffff33; border-radius: 8px; background: #ffffff16; color: #aebfd2; font-size: 13px; font-weight: 900; }
 .mastery-unit.choice-mastered { border-color: #ffde69; background: linear-gradient(#f7d66d,#9a6f13); color: #261a00; }
 .mastery-unit.full-mastered { border-color: #79dfff; background: linear-gradient(145deg,#ffd95e,#2679bc); color: #fff; box-shadow: 0 0 9px #45cfffaa; }

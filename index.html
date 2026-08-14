@@ -20,11 +20,19 @@
       <div class="mode-grid">
         <article class="mode-card geography-card">
           <div class="mode-icon" aria-hidden="true">🗾</div>
-          <div><p class="mode-label">地理</p><h2>日本の地理クイズ</h2><p>全<span id="question-total">139</span>問から挑戦する問題数を選ぼう</p></div>
+          <div><p class="mode-label">地理</p><h2>日本の地理クイズ</h2><p>選択範囲の<span id="question-total">450</span>問から挑戦する問題数を選ぼう</p></div>
+          <fieldset class="scope-selector">
+            <legend>出題範囲</legend>
+            <div class="scope-options">
+              <button type="button" class="scope-button selected" data-scope="first" aria-pressed="true"><strong>小4前期</strong><span data-scope-count="first">450問</span></button>
+              <button type="button" class="scope-button" data-scope="summer" aria-pressed="false"><strong>夏期講習</strong><span data-scope-count="summer">139問</span></button>
+              <button type="button" class="scope-button" data-scope="all" aria-pressed="false"><strong>全範囲</strong><span data-scope-count="all">589問</span></button>
+            </div>
+          </fieldset>
           <div class="challenge-options" aria-label="挑戦する問題数">
             <button class="challenge-button primary" data-question-count="20"><strong>20問</strong><span>毎日の学習に</span></button>
             <button class="challenge-button primary" data-question-count="50"><strong>50問</strong><span>しっかり練習</span></button>
-            <button class="challenge-button primary full-challenge" data-question-count="all"><strong>全問チャレンジ</strong><span id="all-question-label">139問すべて</span></button>
+            <button class="challenge-button primary full-challenge" data-question-count="all"><strong>全問チャレンジ</strong><span id="all-question-label">450問すべて</span></button>
           </div>
           <div class="sound-settings">
             <label class="sound-toggle"><input id="sound-enabled" type="checkbox" checked><span>効果音 ON</span></label>
@@ -36,7 +44,7 @@
         <div class="section-heading"><h2>これまでの記録</h2><button id="clear-history-button" class="text-button">記録を消す</button></div>
         <div id="history-list" class="history-list"></div>
       </section>
-      <p class="app-version">更新版 v5</p>
+      <p class="app-version">更新版 v6</p>
     </section>
     <section id="quiz-screen" class="screen hidden" aria-live="polite">
       <div class="quiz-card">
@@ -53,7 +61,7 @@
       </div>
     </section>
   </main>
-  <script src="./questions.js"></script><script src="./app.js"></script>
+  <script src="./questions.js?v=20260814-v6"></script><script src="./app.js?v=20260814-v6"></script>
   <script>if("serviceWorker" in navigator){let reloading=false;navigator.serviceWorker.addEventListener("controllerchange",()=>{if(reloading)return;reloading=true;location.reload()});window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js",{updateViaCache:"none"}).then(registration=>registration.update()).catch(console.error))}</script>
 </body>
 </html>

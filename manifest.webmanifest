@@ -1,7 +1,7 @@
 {
   "name": "小4社会 学習クイズ",
   "short_name": "社会クイズ",
-  "description": "日本地理を4択で学習し、自動採点・復習できるクイズ",
+  "description": "小4前期と夏期講習の社会を4択で学習し、自動採点・復習できるクイズ",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

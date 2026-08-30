@@ -1,4 +1,4 @@
-/* v9.9統合問題データ: 夏期講習139問 + 小4前期450問／各問 正解1＋誤答5 */
+/* v9.10統合問題データ: 夏期講習139問 + 小4前期450問／各問 正解1＋誤答5 */
 window.GEOGRAPHY_QUESTIONS = [
   {
     "id": "summer-001",
@@ -747,7 +747,7 @@ window.GEOGRAPHY_QUESTIONS = [
     "unit": null,
     "unitName": "夏期講習",
     "region": "中国",
-    "question": "瀬戸内工業地域に属する岡山県の代表的な工業都市はどこですか。",
+    "question": "岡山県倉敷市の水島地区を中心に工業が発達した都市はどこですか。",
     "answer": "倉敷市",
     "choices": [
       "倉敷市",
@@ -1545,7 +1545,7 @@ window.GEOGRAPHY_QUESTIONS = [
     "unit": null,
     "unitName": "夏期講習",
     "region": "北海道・東北",
-    "question": "北海道の代表的な山で、石狩平野の西側にある火山は何ですか。",
+    "question": "北海道の洞爺湖の南側にあり、2000年にも噴火した火山は何ですか。",
     "answer": "有珠山",
     "choices": [
       "有珠山",
@@ -5402,7 +5402,7 @@ window.GEOGRAPHY_QUESTIONS = [
     "unit": 6,
     "unitName": "日本の位置",
     "region": "東アジア",
-    "question": "日本と同じ大陸の東側に位置する国を1つ答えなさい。",
+    "question": "日本の西側に位置し、首都がソウルである国はどこですか。",
     "answer": "韓国",
     "choices": [
       "韓国",
@@ -6352,7 +6352,7 @@ window.GEOGRAPHY_QUESTIONS = [
     "unit": 8,
     "unitName": "日本のすがた・都道府県のまとめ",
     "region": "日本",
-    "question": "県名と県庁所在地名が異なる県を1つ答えなさい。",
+    "question": "県庁所在地が横浜市である県はどこですか。",
     "answer": "神奈川県",
     "choices": [
       "神奈川県",
@@ -7891,7 +7891,7 @@ window.GEOGRAPHY_QUESTIONS = [
     "unit": 11,
     "unitName": "寒い地域のくらし",
     "region": "北海道",
-    "question": "北海道で乳牛からしぼった生乳を加工して作る製品を1つ答えなさい。",
+    "question": "生乳から分離した脂肪分を練り固めて作る乳製品は何ですか。",
     "answer": "バター",
     "choices": [
       "バター",
@@ -7967,7 +7967,7 @@ window.GEOGRAPHY_QUESTIONS = [
     "unit": 11,
     "unitName": "寒い地域のくらし",
     "region": "北海道",
-    "question": "十勝平野で盛んな代表的な農業は何ですか。",
+    "question": "十勝平野で、じゃがいも・小麦・豆類などを栽培する農業は何ですか。",
     "answer": "畑作",
     "choices": [
       "畑作",
@@ -8518,7 +8518,7 @@ window.GEOGRAPHY_QUESTIONS = [
     "unit": 12,
     "unitName": "雪の多い地域のくらし",
     "region": "雪国",
-    "question": "雪国で雪を生かした取り組みはどれですか。",
+    "question": "雪の斜面を滑るスポーツを観光に利用する取り組みはどれですか。",
     "answer": "スキーなどの観光に利用する",
     "choices": [
       "スキーなどの観光に利用する",
@@ -8936,7 +8936,7 @@ window.GEOGRAPHY_QUESTIONS = [
     "unit": 13,
     "unitName": "低地のくらし",
     "region": "濃尾平野",
-    "question": "木曽三川を構成する川を1つ答えなさい。",
+    "question": "木曽三川のうち、最も東側を流れる川は何ですか。",
     "answer": "木曽川",
     "choices": [
       "木曽川",
@@ -10171,7 +10171,7 @@ window.GEOGRAPHY_QUESTIONS = [
     "unit": 16,
     "unitName": "高地のくらし",
     "region": "長野県",
-    "question": "長野県の高原で多く作られる代表的な高原野菜を1つ答えなさい。",
+    "question": "長野県川上村が全国有数の産地として知られる高原野菜は何ですか。",
     "answer": "レタス",
     "choices": [
       "レタス",
@@ -10247,7 +10247,7 @@ window.GEOGRAPHY_QUESTIONS = [
     "unit": 16,
     "unitName": "高地のくらし",
     "region": "日本",
-    "question": "高原で夏に観光客を集める代表的な施設を1つ答えなさい。",
+    "question": "高原でテントを張って宿泊や野外活動を楽しむ施設は何ですか。",
     "answer": "キャンプ場",
     "choices": [
       "キャンプ場",
@@ -10608,7 +10608,7 @@ window.GEOGRAPHY_QUESTIONS = [
     "unit": 16,
     "unitName": "高地のくらし",
     "region": "日本",
-    "question": "冬の高原で行われる代表的なスポーツを1つ答えなさい。",
+    "question": "2本の細長い板を両足につけて雪の斜面を滑るスポーツは何ですか。",
     "answer": "スキー",
     "choices": [
       "スキー",

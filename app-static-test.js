@@ -4,7 +4,7 @@ const html=fs.readFileSync(path.join(root,"index.html"),"utf8");
 const app=fs.readFileSync(path.join(root,"app.js"),"utf8");
 const sw=fs.readFileSync(path.join(root,"sw.js"),"utf8");
 
-for(const scope of ["first","summer","all"]){
+for(const scope of ["first","summer","second","all"]){
   assert(html.includes(`data-scope="${scope}"`),`${scope}: 範囲ボタン`);
   assert(html.includes(`data-scope-count="${scope}"`),`${scope}: 件数表示`);
 }
@@ -34,6 +34,6 @@ assert(app.includes('mastery:loadMastery()'),"攻略データをバックアッ�
 for(const id of ["current-rank","unit-mastery-grid","summer-mastery-grid","summer-region-selector","achievement-banner","rank-toggle","rank-details"]){assert(html.includes(`id="${id}"`),`${id}: v9表示`)}
 assert(html.includes('id="rank-details" class="rank-details hidden"'),"ランク詳細は初期状態で閉じる");
 assert(app.includes('function toggleRankDetails()'),"ランク詳細の開閉処理");
-assert(sw.includes('social-quiz-v9-10'),"v9.10キャッシュ");
-assert(sw.includes('20260830-v9-10'),"v9.10更新識別子");
-console.log("PASS: v9.10ランク折りたたみ、前期・夏期称号、バックアップ、PWA更新を検証");
+assert(sw.includes('social-quiz-v11-0'),"v11.0キャッシュ");
+assert(sw.includes('20260909-v11-0'),"v11.0更新識別子");
+console.log("PASS: v11.0ランク折りたたみ、前期・夏期称号、バックアップ、PWA更新を検証");

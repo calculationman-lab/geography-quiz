@@ -607,6 +607,11 @@ button {
     font-size: 40px;
   }
 }
+.scope-options { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.scope-note { font-size: .85rem; line-height: 1.65; color: #526178; margin: .5rem 0; }
+.feedback, #written-answer { white-space: pre-line; }
+#second-mastery-grid { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+#second-mastery-count { font-size: .9rem; margin: .4rem 0; }
 @media (prefers-reduced-motion: reduce) {
   * {
     scroll-behavior: auto !important;

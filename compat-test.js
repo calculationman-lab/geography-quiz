@@ -10,14 +10,15 @@ class Element{
   click(){this.listeners.click?.({target:this})}
 }
 const ids=["home-screen","quiz-screen","result-screen","sound-enabled","sound-volume","sound-volume-value","question-total","all-question-label","written-all-question-label","today-status","history-list","written-history-list","choices","written-panel","written-instruction","reveal-answer-button","written-answer","self-grade-buttons","region","progress","progress-bar","question","feedback","next-button","review-button","result-title","result-score","result-rate","written-result-summary","result-time","wrong-section","home-button","quit-button","clear-history-button","unit-selector","unit-selection-summary","select-all-units","clear-units","unit-options","summer-region-selector","summer-region-selection-summary","select-all-summer-regions","clear-summer-regions","summer-region-options","choice-challenge-options","written-challenge-options","rank-emblem","current-rank","rank-progress","rank-toggle","rank-toggle-icon","rank-details","choice-mastery-count","written-mastery-count","summer-choice-mastery-count","summer-written-mastery-count","next-rank","unit-mastery-grid","summer-mastery-grid","unit-mastery-detail","recent-title","achievement-banner","export-save-button","import-save-button","import-save-file","backup-status","parent-review-button","close-parent-panel","change-parent-pin","parent-review-summary","parent-pin-status","set-parent-pin","settings-parent-review","settings-status","settings-panel","parent-panel-status","parent-review-list","parent-panel","open-settings-button","close-settings-button","settings-export-save-button","settings-import-save-button"];
+ids.push(...[...fs.readFileSync(path.join(__dirname,"..","index.html"),"utf8").matchAll(/id="([^"]+)"/g)].map(m=>m[1]).filter(id=>!ids.includes(id)));
 const elements=Object.fromEntries(ids.map(id=>[id,new Element(id)]));
 elements["rank-details"].classList.add("hidden");
-const scopeButtons=["first","summer","all"].map(scope=>{const el=new Element();el.dataset.scope=scope;return el});
+const scopeButtons=["first","summer","second","all"].map(scope=>{const el=new Element();el.dataset.scope=scope;return el});
 const countButtons=["20","50","all"].map(count=>{const el=new Element();el.dataset.questionCount=count;return el});
 const writtenCountButtons=["10","20","all"].map(count=>{const el=new Element();el.dataset.writtenCount=count;return el});
 const typeButtons=["choice","written"].map(type=>{const el=new Element();el.dataset.quizType=type;return el});
 const gradeButtons=["correct","partial","wrong"].map(grade=>{const el=new Element();el.dataset.selfGrade=grade;return el});
-const scopeCounts=Object.fromEntries(["first","summer","all"].map(scope=>[scope,new Element()]));
+const scopeCounts=Object.fromEntries(["first","summer","second","all"].map(scope=>[scope,new Element()]));
 const oldProgress={version:1,history:[{completedAt:"2026-08-13T12:00:00.000Z",dateKey:"2026-08-13",score:18,total:20,rate:90,durationSeconds:120}]};
 const oldSettings={soundEnabled:false,soundVolume:0.35};
 const store=new Map([["social-quiz-progress-v1",JSON.stringify(oldProgress)],["social-quiz-settings-v1",JSON.stringify(oldSettings)]]);
@@ -29,7 +30,9 @@ const document={
 const context={window:{scrollTo(){},GEOGRAPHY_QUESTIONS:null},document,localStorage:{getItem:key=>store.get(key)||null,setItem:(key,value)=>store.set(key,value)},Audio:function(){return{preload:"",pause(){},play(){return{catch(){}}},currentTime:0,volume:0}},confirm:()=>true,prompt:()=>"1234",alert:()=>{},Date,Math,JSON,Number,Set,Array,Object,String,console};
 vm.createContext(context);
 vm.runInContext(fs.readFileSync(path.join(__dirname,"..","questions.js"),"utf8"),context);
-vm.runInContext(fs.readFileSync(path.join(__dirname,"..","app.js"),"utf8"),context);
+vm.runInContext(fs.readFileSync(path.join(__dirname,"..","lower-questions.js"),"utf8"),context);
+const appSource=fs.readFileSync(path.join(__dirname,"..","app.js"),"utf8");
+vm.runInContext(appSource.replace(/\}\)\(\);\s*$/, 'window.__test={makeRound,loadMastery,loadSettings,exportSave,importSave};})();'),context);
 
 assert.strictEqual(elements["history-list"].children.length,1,"v5履歴を表示");
 assert.strictEqual(elements["sound-enabled"].checked,false,"v5効果音設定を維持");
@@ -78,7 +81,7 @@ assert(elements.region.textContent.startsWith("復習・夏期・"),"復習タ�
 elements["quit-button"].click();
 scopeButtons.find(x=>x.dataset.scope==="all").click();
 countButtons.find(x=>x.dataset.questionCount==="all").click();
-assert.strictEqual(elements.progress.textContent,"1 / 589","全範囲589問を開始");
+assert.strictEqual(elements.progress.textContent,"1 / 729","全範囲729問を開始");
 elements["quit-button"].click();
 typeButtons.find(x=>x.dataset.quizType==="written").click();
 writtenCountButtons.find(x=>x.dataset.writtenCount==="10").click();
@@ -166,3 +169,125 @@ for(let unit=2;unit<=17;unit++)mastery.units[String(unit)]={choiceMastered:true,
 store.set("social-quiz-mastery-v1",JSON.stringify(mastery));elements["home-button"].click();
 assert.strictEqual(elements["current-rank"].textContent,"真・社会マスター","前期17単元と夏期7地域の完全制覇で最高位");
 console.log("PASS: 旧版互換、前期・夏期の4択／記述制覇、称号・極称号・ランクを検証");
+
+// v11: 下期の記録は前期・夏期と別に保存する。
+const legacyUnits=JSON.stringify(mastery.units),legacySummer=JSON.stringify(mastery.summerRegions),legacyPin=mastery.parentPinHash;
+scopeButtons.find(x=>x.dataset.scope==="second").click();
+assert.strictEqual(elements["question-total"].textContent,140);
+assert.strictEqual(elements["second-unit-options"].children.length,7);
+assert(!elements["second-unit-selector"].classList.contains("hidden"));
+assert(elements["unit-selector"].classList.contains("hidden"));
+elements["clear-second-units"].click();
+assert(countButtons.every(b=>b.disabled));
+assert(writtenCountButtons.every(b=>b.disabled));
+elements["second-unit-options"].children[0].click();
+assert.strictEqual(elements["question-total"].textContent,20);
+typeButtons.find(x=>x.dataset.quizType==="choice").click();
+
+function completeChoice(count,wrongFirst=false){
+  for(let i=0;i<count;i++){
+    const q=context.window.GEOGRAPHY_QUESTIONS.find(q=>q.question===elements.question.textContent);
+    assert(q,"表示した問題はデータに存在する");
+    const button=elements.choices.children.find(b=>wrongFirst&&i===0?b.textContent!==q.answer:b.textContent===q.answer);
+    button.click();
+    if(q.source==="小4下期")assert(elements.feedback.textContent.includes(q.explanation),"下期は解説表示");
+    elements["next-button"].click();
+  }
+}
+countButtons.find(x=>x.dataset.questionCount==="20").click();completeChoice(20);
+assert.strictEqual(context.window.__test.loadMastery().secondUnits["1"],undefined,"20問ボタンでは称号判定しない");
+elements["home-button"].click();
+countButtons.find(x=>x.dataset.questionCount==="all").click();completeChoice(20,true);
+assert(!context.window.__test.loadMastery().secondUnits["1"].choiceMastered,"1問不正解では称号なし");
+elements["review-button"].click();assert.strictEqual(elements.progress.textContent,"1 / 1");completeChoice(1);
+assert(!context.window.__test.loadMastery().secondUnits["1"].choiceMastered,"復習の正解で称号にしない");
+elements["home-button"].click();
+
+for(let unit=1;unit<=7;unit++){
+  elements["clear-second-units"].click();elements["second-unit-options"].children[unit-1].click();
+  typeButtons.find(x=>x.dataset.quizType==="choice").click();
+  countButtons.find(x=>x.dataset.questionCount==="all").click();
+  assert(elements.region.textContent.startsWith(`下期・単元${unit}・教材p.`));
+  completeChoice(20);
+  assert.strictEqual(context.window.__test.loadMastery().secondUnits[String(unit)].choiceMastered,true);
+  let h=JSON.parse(store.get("social-quiz-progress-v1")).history.at(-1);
+  assert.strictEqual(h.scope,"second");assert.deepStrictEqual(h.secondUnits,[unit]);
+  assert(h.scopeLabel.includes(`単元${unit}`));
+  elements["home-button"].click();
+  assert.strictEqual(elements["current-rank"].textContent,"真・社会マスター","下期追加で旧最高ランクを失わない");
+  elements["second-mastery-grid"].children[unit-1].click();
+  assert(elements["unit-mastery-detail"].textContent.includes(`下期 単元${unit}`));
+  typeButtons.find(x=>x.dataset.quizType==="written").click();
+  writtenCountButtons.find(x=>x.dataset.writtenCount==="all").click();
+  for(let i=0;i<20;i++){elements["reveal-answer-button"].click();assert(elements["written-answer"].textContent.includes("\n"),"記述の答えにも解説");gradeButtons[0].click();elements["next-button"].click()}
+  let r=context.window.__test.loadMastery().secondUnits[String(unit)];
+  assert(r.writtenPending&&!r.writtenMastered,"自己判定だけでは記述制覇しない");
+  elements["home-button"].click();assert(elements["parent-review-summary"].textContent.includes("1件"));
+  elements["parent-review-button"].click();
+  const box=elements["parent-review-list"].children.find(x=>x.innerHTML.includes(`下期 単元${unit} `));
+  assert(box,"下期の承認待ちを表示");box.children[0].children[0].click();
+  r=context.window.__test.loadMastery().secondUnits[String(unit)];
+  assert(r.writtenMastered&&!r.writtenPending&&r.fullMasteredAt);
+  assert(elements["parent-panel-status"].textContent.includes("極・"));
+  elements["home-button"].click();
+}
+mastery=context.window.__test.loadMastery();
+assert.strictEqual(JSON.stringify(mastery.units),legacyUnits);
+assert.strictEqual(JSON.stringify(mastery.summerRegions),legacySummer);
+assert.strictEqual(mastery.parentPinHash,legacyPin);
+assert.strictEqual(elements["second-mastery-count"].textContent,"下期4択 7／7・記述 7／7");
+assert.strictEqual(elements["summer-mastery-grid"].children.length,8,"夏期の総合アイコンも残る");
+elements["summer-mastery-grid"].children[7].click();assert(elements["unit-mastery-detail"].innerHTML.includes("極・七地方の覇者"));
+
+// 全問が同じ単元でも通常20問や複数単元選択は制覇判定しない。
+const secondSnapshot=JSON.stringify(mastery.secondUnits);
+elements["select-all-second-units"].click();typeButtons.find(x=>x.dataset.quizType==="choice").click();
+countButtons.find(x=>x.dataset.questionCount==="all").click();completeChoice(140);
+assert.strictEqual(JSON.stringify(context.window.__test.loadMastery().secondUnits),secondSnapshot);
+elements["home-button"].click();
+
+// 下期の親承認を取り消しても前期・夏期の承認を変更しない。
+elements["parent-review-button"].click();
+elements["parent-review-list"].children.find(x=>x.innerHTML.includes("下期 単元1 ")).children[0].children[0].click();
+assert.strictEqual(context.window.__test.loadMastery().secondUnits["1"].writtenMastered,false);
+assert.strictEqual(JSON.stringify(context.window.__test.loadMastery().units),legacyUnits);
+assert.strictEqual(JSON.stringify(context.window.__test.loadMastery().summerRegions),legacySummer);
+
+// アプリ本体の makeRound を全729問で100回ずつ検査する。
+for(const q of context.window.GEOGRAPHY_QUESTIONS){
+  for(let i=0;i<100;i++){
+    const round=context.window.__test.makeRound(q);
+    assert.strictEqual(round.choices.length,4);assert.strictEqual(new Set(round.choices).size,4);
+    assert.strictEqual(round.choices[round.correctIndex],q.answer);
+    assert.strictEqual(round.choices.filter(c=>c===q.answer).length,1);
+    assert(round.choices.every(c=>q.choices.includes(c)));
+  }
+}
+
+// 実際のバックアップ関数を使う。ダウンロード・再読み込みはモック化。
+let exportedBlob,reloaded=0;
+context.Blob=Blob;context.URL={createObjectURL(blob){exportedBlob=blob;return"blob:test"},revokeObjectURL(){}};
+context.setTimeout=fn=>fn();context.location={reload(){reloaded++}};
+document.body={append(){}};Element.prototype.remove=function(){};
+(async()=>{
+  context.window.__test.exportSave();
+  const backup=JSON.parse(await exportedBlob.text());
+  assert.strictEqual(backup.mastery.parentPinHash,legacyPin);
+  assert.strictEqual(Object.keys(backup.mastery.secondUnits).length,7);
+  assert.strictEqual(backup.settings.selectedSecondUnits.length,7);
+  const oldBackup={...backup,progress:oldProgress,settings:oldSettings,mastery:{version:1,units:backup.mastery.units,summerRegions:backup.mastery.summerRegions,parentPinHash:legacyPin}};
+  await context.window.__test.importSave({text:async()=>JSON.stringify(oldBackup)});
+  assert.strictEqual(reloaded,1);
+  assert.deepStrictEqual(JSON.parse(store.get("social-quiz-progress-v1")),oldProgress);
+  assert.strictEqual(context.window.__test.loadSettings().selectedSecondUnits.length,7,"旧バックアップには下期全選択を補完");
+  assert.strictEqual(Object.keys(context.window.__test.loadMastery().secondUnits).length,0,"旧バックアップに下期制覇を捏造しない");
+  await context.window.__test.importSave({text:async()=>JSON.stringify(backup)});
+  assert.strictEqual(reloaded,2);
+  assert.deepStrictEqual(JSON.parse(store.get("social-quiz-mastery-v1")),backup.mastery);
+  assert.deepStrictEqual(JSON.parse(store.get("social-quiz-settings-v1")),backup.settings);
+  assert.deepStrictEqual(JSON.parse(store.get("social-quiz-progress-v1")),backup.progress);
+  const saved=JSON.stringify([...store]);
+  await context.window.__test.importSave({text:async()=>"not json"});
+  assert.strictEqual(JSON.stringify([...store]),saved,"壊れたバックアップは保存データを変えない");
+  console.log("PASS: 下期7単元の4択・記述・承認・取消・履歴、旧記録/PIN維持、旧新バックアップ復元、本体72,900回抽出");
+})().catch(error=>{console.error(error);process.exitCode=1});

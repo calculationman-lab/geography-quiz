@@ -1,7 +1,8 @@
 const fs=require("fs"),vm=require("vm"),assert=require("assert"),path=require("path");
 const context={window:{}};vm.createContext(context);vm.runInContext(fs.readFileSync(path.join(__dirname,"..","questions.js"),"utf8"),context);
+vm.runInContext(fs.readFileSync(path.join(__dirname,"..","lower-questions.js"),"utf8"),context);
 const questions=context.window.GEOGRAPHY_QUESTIONS;
-assert.strictEqual(questions.length,589,"問題数は589問");
+assert.strictEqual(questions.length,729,"問題数は729問");
 assert.strictEqual(questions.filter(q=>q.source==="夏期講習").length,139,"夏期講習は139問");
 assert.strictEqual(questions.filter(q=>q.source==="小4前期").length,450,"小4前期は450問");
 const ids=new Set();
@@ -31,4 +32,8 @@ const revisedUniqueQuestions={
 for(const [id,question] of Object.entries(revisedUniqueQuestions)){
   assert.strictEqual(questions.find(q=>q.id===id)?.question,question,`${id}: 唯一正解になる問題文`);
 }
-console.log("PASS: 589問（夏期139・前期450）、教材・単元タグ、正答1＋誤答5を検証");
+console.log("PASS: 729問（夏期139・前期450・下期140）、教材・単元タグ、正答1＋誤答5を検証");
+
+assert.strictEqual(questions.filter(q=>q.source==="小4下期").length,140);
+for(let unit=1;unit<=7;unit++)assert.strictEqual(questions.filter(q=>q.source==="小4下期"&&q.unit===unit).length,20);
+const kiso=questions.find(q=>q.id==="first-320");assert(kiso.choices.every(x=>x.endsWith("三川")));assert(kiso.question.includes("木曽川・長良川・揖斐川"));

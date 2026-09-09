@@ -10,7 +10,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="社会マスター">
-  <link rel="apple-touch-icon" href="./apple-touch-icon.png?v=20260815-v9-9">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png?v=20260909-v11-0">
 </head>
 <body>
   <main class="app-shell">
@@ -26,6 +26,10 @@
           <div class="unit-mastery-grid" id="unit-mastery-grid" aria-label="17単元の攻略状況"></div>
           <h3 class="mastery-grid-heading summer-heading">夏期講習7地域</h3>
           <div class="summer-mastery-grid" id="summer-mastery-grid" aria-label="夏期講習7地域の攻略状況"></div>
+          <h3 class="mastery-grid-heading">下期前半7単元</h3>
+          <p id="second-mastery-count"></p>
+          <div class="unit-mastery-grid" id="second-mastery-grid" aria-label="下期前半7単元の攻略状況"></div>
+          <p class="scope-note">下期は独立した攻略称号です。これまでのランク・称号の獲得条件は変わりません。</p>
           <div class="unit-mastery-detail" id="unit-mastery-detail">単元マークを押すと最高記録と称号を確認できます。</div>
           <div class="parent-review-row"><span id="parent-review-summary">親の承認待ち 0件</span><button id="parent-review-button" type="button">親の確認・承認</button></div>
           <div class="recent-title" id="recent-title"></div>
@@ -48,13 +52,21 @@
             <div class="scope-options">
               <button type="button" class="scope-button selected" data-scope="first" aria-pressed="true"><strong>小4前期</strong><span data-scope-count="first">450問</span></button>
               <button type="button" class="scope-button" data-scope="summer" aria-pressed="false"><strong>夏期講習</strong><span data-scope-count="summer">139問</span></button>
-              <button type="button" class="scope-button" data-scope="all" aria-pressed="false"><strong>全範囲</strong><span data-scope-count="all">589問</span></button>
+              <button type="button" class="scope-button" data-scope="second" aria-pressed="false"><strong>小4下期・前半</strong><span data-scope-count="second">140問</span></button>
+              <button type="button" class="scope-button" data-scope="all" aria-pressed="false"><strong>全範囲</strong><span data-scope-count="all">729問</span></button>
             </div>
           </fieldset>
           <section id="unit-selector" class="unit-selector">
             <div class="unit-heading"><h3>前期の単元を選ぶ</h3><span id="unit-selection-summary"></span></div>
             <div class="unit-actions"><button type="button" id="select-all-units" class="text-button">すべて選択</button><button type="button" id="clear-units" class="text-button">選択解除</button></div>
             <div id="unit-options" class="unit-options" aria-label="出題する単元"></div>
+          </section>
+          <section id="second-unit-selector" class="unit-selector hidden">
+            <div class="unit-heading"><h3>下期前半の単元を選ぶ</h3><span id="second-unit-selection-summary"></span></div>
+            <p class="scope-note">日本の農業1〜6・農業のまとめ。統計は教材に掲載された年の値です。</p>
+            <p class="scope-note">称号は「単元を1つ選択 → 全問チャレンジ」で挑戦できます。通常の20問では称号判定をしません。</p>
+            <div class="unit-actions"><button type="button" id="select-all-second-units" class="text-button">すべて選択</button><button type="button" id="clear-second-units" class="text-button">選択解除</button></div>
+            <div id="second-unit-options" class="unit-options" aria-label="出題する下期の単元"></div>
           </section>
           <section id="summer-region-selector" class="unit-selector hidden">
             <div class="unit-heading"><h3>夏期講習の地域を選ぶ</h3><span id="summer-region-selection-summary"></span></div>
@@ -92,7 +104,7 @@
           <p id="backup-status" class="backup-status" role="status" aria-live="polite"></p>
         </div>
       </section>
-      <p class="app-version">更新版 v9.10</p>
+      <p class="app-version">更新版 v11.0</p>
     </section>
     <section id="quiz-screen" class="screen hidden" aria-live="polite">
       <div class="quiz-card">
@@ -138,7 +150,7 @@
       </div>
     </section>
   </main>
-  <script src="./questions.js?v=20260815-v9-9"></script><script src="./app.js?v=20260815-v9-9"></script>
+  <script src="./questions.js?v=20260909-v11-0"></script><script src="./lower-questions.js?v=20260909-v11-0"></script><script src="./app.js?v=20260909-v11-0"></script>
   <script>if("serviceWorker" in navigator){let reloading=false;navigator.serviceWorker.addEventListener("controllerchange",()=>{if(reloading)return;reloading=true;location.reload()});window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js",{updateViaCache:"none"}).then(registration=>registration.update()).catch(console.error))}</script>
 </body>
 </html>

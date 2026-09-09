@@ -6,6 +6,7 @@ const path = require("path");
 const context = { window: {} };
 vm.createContext(context);
 vm.runInContext(fs.readFileSync(path.join(__dirname, "..", "questions.js"), "utf8"), context);
+vm.runInContext(fs.readFileSync(path.join(__dirname,"..","lower-questions.js"),"utf8"),context);
 const questions = context.window.GEOGRAPHY_QUESTIONS;
 
 const checks = [
@@ -61,4 +62,4 @@ for (const q of questions) {
   }
 }
 
-console.log("PASS: 全589問・誤答2,945個の回答形式と、589問×100回の正答混入を検証");
+console.log("PASS: 一部回答形式のパターン検査と、729問×100回の登録正答の包含・重複なしを検証（事実上の正解一意性はこのテストの対象外）");

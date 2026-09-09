@@ -1,7 +1,7 @@
 {
   "name": "社会マスター",
   "short_name": "社会マスター",
-  "description": "小4前期と夏期講習の社会を4択と紙に書く記述で学習できるクイズ",
+  "description": "小4前期・夏期講習・小4下期前半の社会を4択と紙に書く記述で学習できるクイズ",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
@@ -10,13 +10,13 @@
   "lang": "ja",
   "icons": [
     {
-      "src": "./icon-192.png?v=20260814-v9-3",
+      "src": "./icon-192.png?v=20260909-v11-0",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "./icon-512.png?v=20260814-v9-3",
+      "src": "./icon-512.png?v=20260909-v11-0",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"

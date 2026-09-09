@@ -1,9 +1,9 @@
-const CACHE="social-quiz-v9-10";
-const AUDIO_REVISION="20260830-v9-10";
-const ASSETS=["./","./index.html","./styles.css","./questions.js?v=20260830-v9-10","./app.js?v=20260830-v9-10",`./se-correct.mp3?v=${AUDIO_REVISION}`,`./se-wrong.mp3?v=${AUDIO_REVISION}`,"./manifest.webmanifest","./icon-192.png?v=20260830-v9-10","./icon-512.png?v=20260830-v9-10","./apple-touch-icon.png?v=20260830-v9-10"];
+const CACHE="social-quiz-v11-0";
+const AUDIO_REVISION="20260909-v11-0";
+const ASSETS=["./","./index.html","./styles.css","./questions.js?v=20260909-v11-0","./lower-questions.js?v=20260909-v11-0","./app.js?v=20260909-v11-0",`./se-correct.mp3?v=${AUDIO_REVISION}`,`./se-wrong.mp3?v=${AUDIO_REVISION}`,"./manifest.webmanifest","./icon-192.png?v=20260909-v11-0","./icon-512.png?v=20260909-v11-0","./apple-touch-icon.png?v=20260909-v11-0"];
 
 self.addEventListener("install",event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting())));
-self.addEventListener("activate",event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
+self.addEventListener("activate",event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith("social-quiz-")&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
 self.addEventListener("fetch",event=>{
   if(event.request.method!=="GET")return;
   const url=new URL(event.request.url);

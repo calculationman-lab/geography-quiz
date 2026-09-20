@@ -17,7 +17,7 @@ assert(html.includes('id="select-all-units"'),"全単元選択");
 assert(html.includes('id="clear-units"'),"単元選択解除");
 assert(html.includes("社会マスター"),"表示名");
 assert(app.includes('shuffle(pool).slice(0,Math.min(size,pool.length))'),"同一回の重複出題防止");
-assert(app.includes('scopeLabel:scopeLabel()'),"履歴へ単元範囲を保存");
+assert(app.includes('scopeLabel:state.sessionMode'),"履歴へ単元範囲を保存");
 assert(app.includes('social-quiz-progress-v1'),"旧履歴キーを維持");
 assert(app.includes('social-quiz-settings-v1'),"旧設定キーを維持");
 assert(html.includes('data-quiz-type="written"'),"記述モード選択");
@@ -34,6 +34,6 @@ assert(app.includes('mastery:loadMastery()'),"攻略データをバックアッ�
 for(const id of ["current-rank","unit-mastery-grid","summer-mastery-grid","summer-region-selector","achievement-banner","rank-toggle","rank-details"]){assert(html.includes(`id="${id}"`),`${id}: v9表示`)}
 assert(html.includes('id="rank-details" class="rank-details hidden"'),"ランク詳細は初期状態で閉じる");
 assert(app.includes('function toggleRankDetails()'),"ランク詳細の開閉処理");
-assert(sw.includes('social-quiz-v11-0'),"v11.0キャッシュ");
-assert(sw.includes('20260909-v11-0'),"v11.0更新識別子");
-console.log("PASS: v11.0ランク折りたたみ、前期・夏期称号、バックアップ、PWA更新を検証");
+assert(sw.includes('social-quiz-v11-2'),"v11.2キャッシュ");
+assert(sw.includes('20260920-v11-2'),"v11.2更新識別子");
+console.log("PASS: v11.2ランク折りたたみ、前期・夏期称号、バックアップ、PWA更新を検証");

@@ -31,6 +31,7 @@ const context={window:{scrollTo(){},GEOGRAPHY_QUESTIONS:null},document,localStor
 vm.createContext(context);
 vm.runInContext(fs.readFileSync(path.join(__dirname,"..","questions.js"),"utf8"),context);
 vm.runInContext(fs.readFileSync(path.join(__dirname,"..","lower-questions.js"),"utf8"),context);
+vm.runInContext(fs.readFileSync(path.join(__dirname,"..","weekly-review.js"),"utf8"),context);
 const appSource=fs.readFileSync(path.join(__dirname,"..","app.js"),"utf8");
 vm.runInContext(appSource.replace(/\}\)\(\);\s*$/, 'window.__test={makeRound,loadMastery,loadSettings,exportSave,importSave};})();'),context);
 

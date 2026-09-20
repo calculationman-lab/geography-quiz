@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <title>社会マスター</title>
   <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles.css?v=20260920-v11-2">
   <meta name="theme-color" content="#2457a7">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="社会マスター">
-  <link rel="apple-touch-icon" href="./apple-touch-icon.png?v=20260909-v11-0">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png?v=20260920-v11-2">
 </head>
 <body>
   <main class="app-shell">
@@ -89,6 +89,15 @@
           </div>
         </article>
       </div>
+      <section class="weekly-review-panel" aria-labelledby="weekly-heading">
+        <h2 id="weekly-heading">過去7日間のまちがいを復習</h2>
+        <p>全範囲から、同じ問題をまとめて出題します。</p>
+        <div class="weekly-review-actions">
+          <button id="weekly-choice-button" class="primary" type="button" disabled>4択で復習 <span id="weekly-choice-count">0問</span></button>
+          <button id="weekly-written-button" class="primary" type="button" disabled>記述の△・×を復習 <span id="weekly-written-count">0問</span></button>
+        </div>
+        <p class="scope-note">更新後に記録した誤答が対象です。正解し直しても、最後に間違えた時から7日間は練習できます。復習では称号は獲得しません。</p>
+      </section>
       <section class="history-section">
         <div class="section-heading"><h2>これまでの記録</h2><button id="clear-history-button" class="text-button">記録を消す</button></div>
         <h3 class="history-subheading">4択の記録</h3><div id="history-list" class="history-list"></div>
@@ -104,7 +113,7 @@
           <p id="backup-status" class="backup-status" role="status" aria-live="polite"></p>
         </div>
       </section>
-      <p class="app-version">更新版 v11.0</p>
+      <p class="app-version">更新版 v11.2</p>
     </section>
     <section id="quiz-screen" class="screen hidden" aria-live="polite">
       <div class="quiz-card">
@@ -150,7 +159,7 @@
       </div>
     </section>
   </main>
-  <script src="./questions.js?v=20260909-v11-0"></script><script src="./lower-questions.js?v=20260909-v11-0"></script><script src="./app.js?v=20260909-v11-0"></script>
+  <script src="./questions.js?v=20260920-v11-2"></script><script src="./lower-questions.js?v=20260920-v11-2"></script><script src="./weekly-review.js?v=20260920-v11-2"></script><script src="./app.js?v=20260920-v11-2"></script>
   <script>if("serviceWorker" in navigator){let reloading=false;navigator.serviceWorker.addEventListener("controllerchange",()=>{if(reloading)return;reloading=true;location.reload()});window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js",{updateViaCache:"none"}).then(registration=>registration.update()).catch(console.error))}</script>
 </body>
 </html>

@@ -1,0 +1,613 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-20",
+  "questionCount": 729,
+  "sourceFiles": [
+    {
+      "file": "questions.js",
+      "sha256": "6595C6DFD4A6FCCF4FCFA4D21065643B4B2203E85A9C3CE9EC7FEFF4028C6DF7"
+    },
+    {
+      "file": "lower-questions.js",
+      "sha256": "9FC24E76DD05E2CF24F4139DC3EE076ADCE0AF510A10C213BE7DA0EC0D43125B"
+    }
+  ],
+  "links": [
+    {
+      "questionId": "summer-008",
+      "expected": {
+        "question": "庄内平野を流れる川は何ですか。",
+        "answer": "最上川",
+        "source": "夏期講習",
+        "unit": null,
+        "region": "北海道・東北"
+      },
+      "targets": [
+        {
+          "placeId": "river-mogami",
+          "mapQuestionId": "locate-river-mogami",
+          "relation": "answer",
+          "note": "",
+          "label": "最上川"
+        }
+      ]
+    },
+    {
+      "questionId": "summer-009",
+      "expected": {
+        "question": "新潟県で稲作が盛んな、日本海側の広い平野は何ですか。",
+        "answer": "越後平野",
+        "source": "夏期講習",
+        "unit": null,
+        "region": "中部"
+      },
+      "targets": [
+        {
+          "placeId": "plain-echigo",
+          "mapQuestionId": "locate-plain-echigo",
+          "relation": "answer",
+          "note": "",
+          "label": "越後平野"
+        }
+      ]
+    },
+    {
+      "questionId": "summer-011",
+      "expected": {
+        "question": "石川県金沢市にある日本三名園の1つは何ですか。",
+        "answer": "兼六園",
+        "source": "夏期講習",
+        "unit": null,
+        "region": "中部"
+      },
+      "targets": [
+        {
+          "placeId": "garden-kenrokuen",
+          "mapQuestionId": "locate-garden-kenrokuen",
+          "relation": "answer",
+          "note": "",
+          "label": "兼六園"
+        }
+      ]
+    },
+    {
+      "questionId": "summer-013",
+      "expected": {
+        "question": "静岡県と山梨県の県境にある世界遺産の山は何ですか。",
+        "answer": "富士山",
+        "source": "夏期講習",
+        "unit": null,
+        "region": "中部"
+      },
+      "targets": [
+        {
+          "placeId": "mount-fuji",
+          "mapQuestionId": "locate-mount-fuji",
+          "relation": "answer",
+          "note": "",
+          "label": "富士山"
+        }
+      ]
+    },
+    {
+      "questionId": "summer-018",
+      "expected": {
+        "question": "日本最大の流域面積をもつ川は何ですか。",
+        "answer": "利根川",
+        "source": "夏期講習",
+        "unit": null,
+        "region": "関東"
+      },
+      "targets": [
+        {
+          "placeId": "river-tone",
+          "mapQuestionId": "locate-river-tone",
+          "relation": "answer",
+          "note": "",
+          "label": "利根川"
+        }
+      ]
+    },
+    {
+      "questionId": "summer-019",
+      "expected": {
+        "question": "日本で2番目に大きい湖は何ですか。",
+        "answer": "霞ヶ浦",
+        "source": "夏期講習",
+        "unit": null,
+        "region": "関東"
+      },
+      "targets": [
+        {
+          "placeId": "lake-kasumigaura",
+          "mapQuestionId": "locate-lake-kasumigaura",
+          "relation": "answer",
+          "note": "地図では霞ヶ浦の西浦を代表地点で示します。",
+          "label": "霞ヶ浦（西浦）"
+        }
+      ]
+    },
+    {
+      "questionId": "summer-020",
+      "expected": {
+        "question": "日本三名園のうち茨城県にあるものは何ですか。",
+        "answer": "偕楽園",
+        "source": "夏期講習",
+        "unit": null,
+        "region": "関東"
+      },
+      "targets": [
+        {
+          "placeId": "garden-kairakuen",
+          "mapQuestionId": "locate-garden-kairakuen",
+          "relation": "answer",
+          "note": "",
+          "label": "偕楽園"
+        }
+      ]
+    },
+    {
+      "questionId": "summer-025",
+      "expected": {
+        "question": "琵琶湖から流れ出し、のちに淀川へつながる川は何ですか。",
+        "answer": "瀬田川",
+        "source": "夏期講習",
+        "unit": null,
+        "region": "近畿"
+      },
+      "targets": [
+        {
+          "placeId": "lake-biwa",
+          "mapQuestionId": "locate-lake-biwa",
+          "relation": "context",
+          "note": "問題に出てきた琵琶湖の場所を探します。瀬田川の位置を示すピンではありません。",
+          "label": "琵琶湖"
+        }
+      ]
+    },
+    {
+      "questionId": "summer-026",
+      "expected": {
+        "question": "京都府にある日本三景の1つは何ですか。",
+        "answer": "天橋立",
+        "source": "夏期講習",
+        "unit": null,
+        "region": "近畿"
+      },
+      "targets": [
+        {
+          "placeId": "view-amanohashidate",
+          "mapQuestionId": "locate-view-amanohashidate",
+          "relation": "answer",
+          "note": "",
+          "label": "天橋立"
+        }
+      ]
+    },
+    {
+      "questionId": "summer-043",
+      "expected": {
+        "question": "日本最後の清流と呼ばれる、高知県を流れる川は何ですか。",
+        "answer": "四万十川",
+        "source": "夏期講習",
+        "unit": null,
+        "region": "四国"
+      },
+      "targets": [
+        {
+          "placeId": "river-shimanto",
+          "mapQuestionId": "locate-river-shimanto",
+          "relation": "answer",
+          "note": "",
+          "label": "四万十川"
+        }
+      ]
+    },
+    {
+      "questionId": "summer-050",
+      "expected": {
+        "question": "佐賀県南部を中心に広がり、筑後川が流れる平野は何ですか。",
+        "answer": "筑紫平野",
+        "source": "夏期講習",
+        "unit": null,
+        "region": "九州・沖縄"
+      },
+      "targets": [
+        {
+          "placeId": "plain-tsukushi",
+          "mapQuestionId": "locate-plain-tsukushi",
+          "relation": "answer",
+          "note": "",
+          "label": "筑紫平野"
+        }
+      ]
+    },
+    {
+      "questionId": "summer-052",
+      "expected": {
+        "question": "世界最大級のカルデラを持つ熊本県の火山は何ですか。",
+        "answer": "阿蘇山",
+        "source": "夏期講習",
+        "unit": null,
+        "region": "九州・沖縄"
+      },
+      "targets": [
+        {
+          "placeId": "mount-aso",
+          "mapQuestionId": "locate-mount-aso",
+          "relation": "answer",
+          "note": "阿蘇山は高岳のピンで示します。カルデラ全体の範囲ではありません。",
+          "label": "阿蘇山（高岳）"
+        }
+      ]
+    },
+    {
+      "questionId": "summer-062",
+      "expected": {
+        "question": "京浜工業地帯で、鉄鋼・石油化学工業がさかんな神奈川県の都市はどこですか。",
+        "answer": "川崎市",
+        "source": "夏期講習",
+        "unit": null,
+        "region": "関東"
+      },
+      "targets": [
+        {
+          "placeId": "industry-keihin",
+          "mapQuestionId": "locate-industry-keihin",
+          "relation": "context",
+          "note": "問題に出てきた京浜工業地帯を、川崎市の代表地点で見ます。",
+          "label": "京浜工業地帯"
+        }
+      ]
+    },
+    {
+      "questionId": "summer-065",
+      "expected": {
+        "question": "三重県四日市市も含まれる日本の工業地帯は何ですか。",
+        "answer": "中京工業地帯",
+        "source": "夏期講習",
+        "unit": null,
+        "region": "近畿"
+      },
+      "targets": [
+        {
+          "placeId": "industry-chukyo",
+          "mapQuestionId": "locate-industry-chukyo",
+          "relation": "answer",
+          "note": "",
+          "label": "中京工業地帯"
+        }
+      ]
+    },
+    {
+      "questionId": "summer-089",
+      "expected": {
+        "question": "長野県内を流れ、新潟県に入ると信濃川と呼ばれる川は何ですか。",
+        "answer": "千曲川",
+        "source": "夏期講習",
+        "unit": null,
+        "region": "中部"
+      },
+      "targets": [
+        {
+          "placeId": "river-shinano",
+          "mapQuestionId": "locate-river-shinano",
+          "relation": "context",
+          "note": "問題に出てきた信濃川の代表地点を探します。千曲川の上流地点を示すピンではありません。",
+          "label": "信濃川"
+        }
+      ]
+    },
+    {
+      "questionId": "summer-101",
+      "expected": {
+        "question": "利根川上流にあり、首都圏の重要な水源となっているダムは何ですか。",
+        "answer": "矢木沢ダム",
+        "source": "夏期講習",
+        "unit": null,
+        "region": "関東"
+      },
+      "targets": [
+        {
+          "placeId": "river-tone",
+          "mapQuestionId": "locate-river-tone",
+          "relation": "context",
+          "note": "問題に出てきた利根川の代表地点を探します。矢木沢ダムの位置を示すピンではありません。",
+          "label": "利根川"
+        }
+      ]
+    },
+    {
+      "questionId": "summer-102",
+      "expected": {
+        "question": "茨城県と千葉県の県境を流れる大きな川は何ですか。",
+        "answer": "利根川",
+        "source": "夏期講習",
+        "unit": null,
+        "region": "関東"
+      },
+      "targets": [
+        {
+          "placeId": "river-tone",
+          "mapQuestionId": "locate-river-tone",
+          "relation": "answer",
+          "note": "",
+          "label": "利根川"
+        }
+      ]
+    },
+    {
+      "questionId": "summer-107",
+      "expected": {
+        "question": "東京都と神奈川県を中心に広がる工業地帯は何ですか。",
+        "answer": "京浜工業地帯",
+        "source": "夏期講習",
+        "unit": null,
+        "region": "関東"
+      },
+      "targets": [
+        {
+          "placeId": "industry-keihin",
+          "mapQuestionId": "locate-industry-keihin",
+          "relation": "answer",
+          "note": "",
+          "label": "京浜工業地帯"
+        }
+      ]
+    },
+    {
+      "questionId": "summer-115",
+      "expected": {
+        "question": "大阪府と兵庫県に広がり、機械類の生産がさかんな工業地帯は何ですか。",
+        "answer": "阪神工業地帯",
+        "source": "夏期講習",
+        "unit": null,
+        "region": "近畿"
+      },
+      "targets": [
+        {
+          "placeId": "industry-hanshin",
+          "mapQuestionId": "locate-industry-hanshin",
+          "relation": "answer",
+          "note": "",
+          "label": "阪神工業地帯"
+        }
+      ]
+    },
+    {
+      "questionId": "summer-134",
+      "expected": {
+        "question": "福岡県や佐賀県に広がる筑紫平野でさかんな農業は何ですか。",
+        "answer": "二毛作",
+        "source": "夏期講習",
+        "unit": null,
+        "region": "九州・沖縄"
+      },
+      "targets": [
+        {
+          "placeId": "plain-tsukushi",
+          "mapQuestionId": "locate-plain-tsukushi",
+          "relation": "context",
+          "note": "",
+          "label": "筑紫平野"
+        }
+      ]
+    },
+    {
+      "questionId": "first-105",
+      "expected": {
+        "question": "日本で最も高い山は何ですか。",
+        "answer": "富士山",
+        "source": "小4前期",
+        "unit": 5,
+        "region": "日本"
+      },
+      "targets": [
+        {
+          "placeId": "mount-fuji",
+          "mapQuestionId": "locate-mount-fuji",
+          "relation": "answer",
+          "note": "",
+          "label": "富士山"
+        }
+      ]
+    },
+    {
+      "questionId": "first-106",
+      "expected": {
+        "question": "日本で最も長い川は何ですか。",
+        "answer": "信濃川",
+        "source": "小4前期",
+        "unit": 5,
+        "region": "日本"
+      },
+      "targets": [
+        {
+          "placeId": "river-shinano",
+          "mapQuestionId": "locate-river-shinano",
+          "relation": "answer",
+          "note": "",
+          "label": "信濃川"
+        }
+      ]
+    },
+    {
+      "questionId": "first-107",
+      "expected": {
+        "question": "日本で最も大きい湖は何ですか。",
+        "answer": "琵琶湖",
+        "source": "小4前期",
+        "unit": 5,
+        "region": "日本"
+      },
+      "targets": [
+        {
+          "placeId": "lake-biwa",
+          "mapQuestionId": "locate-lake-biwa",
+          "relation": "answer",
+          "note": "",
+          "label": "琵琶湖"
+        }
+      ]
+    },
+    {
+      "questionId": "first-331",
+      "expected": {
+        "question": "輪中が多く見られる平野を何といいますか。",
+        "answer": "濃尾平野",
+        "source": "小4前期",
+        "unit": 13,
+        "region": "濃尾平野"
+      },
+      "targets": [
+        {
+          "placeId": "plain-nobi",
+          "mapQuestionId": "locate-plain-nobi",
+          "relation": "answer",
+          "note": "",
+          "label": "濃尾平野"
+        }
+      ]
+    },
+    {
+      "questionId": "first-372",
+      "expected": {
+        "question": "山梨県の甲府盆地で特に生産が盛んな、房に実る果物は何ですか。",
+        "answer": "ぶどう",
+        "source": "小4前期",
+        "unit": 15,
+        "region": "山梨県"
+      },
+      "targets": [
+        {
+          "placeId": "basin-kofu",
+          "mapQuestionId": "locate-basin-kofu",
+          "relation": "context",
+          "note": "",
+          "label": "甲府盆地"
+        }
+      ]
+    },
+    {
+      "questionId": "first-373",
+      "expected": {
+        "question": "山形盆地で生産が盛んな果物は何ですか。",
+        "answer": "さくらんぼ",
+        "source": "小4前期",
+        "unit": 15,
+        "region": "山形県"
+      },
+      "targets": [
+        {
+          "placeId": "basin-yamagata",
+          "mapQuestionId": "locate-basin-yamagata",
+          "relation": "context",
+          "note": "",
+          "label": "山形盆地"
+        }
+      ]
+    },
+    {
+      "questionId": "first-383",
+      "expected": {
+        "question": "甲府盆地がある都道府県はどこですか。",
+        "answer": "山梨県",
+        "source": "小4前期",
+        "unit": 15,
+        "region": "山梨県"
+      },
+      "targets": [
+        {
+          "placeId": "basin-kofu",
+          "mapQuestionId": "locate-basin-kofu",
+          "relation": "context",
+          "note": "",
+          "label": "甲府盆地"
+        }
+      ]
+    },
+    {
+      "questionId": "first-384",
+      "expected": {
+        "question": "甲府盆地でぶどうとともに栽培が盛んな果物は何ですか。",
+        "answer": "もも",
+        "source": "小4前期",
+        "unit": 15,
+        "region": "山梨県"
+      },
+      "targets": [
+        {
+          "placeId": "basin-kofu",
+          "mapQuestionId": "locate-basin-kofu",
+          "relation": "context",
+          "note": "",
+          "label": "甲府盆地"
+        }
+      ]
+    },
+    {
+      "questionId": "first-385",
+      "expected": {
+        "question": "山形盆地がある都道府県はどこですか。",
+        "answer": "山形県",
+        "source": "小4前期",
+        "unit": 15,
+        "region": "山形県"
+      },
+      "targets": [
+        {
+          "placeId": "basin-yamagata",
+          "mapQuestionId": "locate-basin-yamagata",
+          "relation": "context",
+          "note": "",
+          "label": "山形盆地"
+        }
+      ]
+    },
+    {
+      "questionId": "second-011",
+      "expected": {
+        "question": "新潟県の越後平野を流れ、米づくりに利用される、日本で最も長い川は何ですか。",
+        "answer": "信濃川",
+        "source": "小4下期",
+        "unit": 1,
+        "region": "日本の農業"
+      },
+      "targets": [
+        {
+          "placeId": "river-shinano",
+          "mapQuestionId": "locate-river-shinano",
+          "relation": "answer",
+          "note": "",
+          "label": "信濃川"
+        },
+        {
+          "placeId": "plain-echigo",
+          "mapQuestionId": "locate-plain-echigo",
+          "relation": "context",
+          "note": "",
+          "label": "越後平野"
+        }
+      ]
+    },
+    {
+      "questionId": "second-012",
+      "expected": {
+        "question": "山形県の庄内平野を流れ、米づくりに利用される川は何ですか。",
+        "answer": "最上川",
+        "source": "小4下期",
+        "unit": 1,
+        "region": "日本の農業"
+      },
+      "targets": [
+        {
+          "placeId": "river-mogami",
+          "mapQuestionId": "locate-river-mogami",
+          "relation": "answer",
+          "note": "",
+          "label": "最上川"
+        }
+      ]
+    }
+  ]
+}

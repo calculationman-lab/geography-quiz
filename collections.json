@@ -1,0 +1,818 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-20",
+  "categories": [
+    {
+      "id": "garden",
+      "name": "庭園",
+      "symbol": "花",
+      "color": "#a25873"
+    },
+    {
+      "id": "scenic",
+      "name": "景勝地",
+      "symbol": "景",
+      "color": "#337b79"
+    },
+    {
+      "id": "metro",
+      "name": "都市圏",
+      "symbol": "都",
+      "color": "#775b9e"
+    },
+    {
+      "id": "industry",
+      "name": "工業地帯",
+      "symbol": "工",
+      "color": "#a26a35"
+    }
+  ],
+  "sources": [
+    {
+      "id": "mountain-index",
+      "url": "https://www.gsi.go.jp/kihonjohochousa/kihonjohochousa41139.html",
+      "retrieved": "2026-09-20",
+      "sha256": "846F6A6D511749036733B36D88EF8FA025F83A3057DA819F67253FF463AFEBF3",
+      "title": "国土地理院 日本の主な山岳標高"
+    },
+    {
+      "id": "area-index",
+      "url": "https://www.gsi.go.jp/KOKUJYOHO/MENCHO-title.htm",
+      "retrieved": "2026-09-20",
+      "sha256": "5197D9CAD502E53BFDEB7CF0787A86EDA4DB541D38A610D2FB0B8A3885B53D38",
+      "title": "国土地理院 全国都道府県市区町村別面積調"
+    },
+    {
+      "id": "river-lengths",
+      "url": "https://www.hrr.mlit.go.jp/chikuma/contact/faq.html",
+      "retrieved": "2026-09-20",
+      "sha256": "47D4861E3CFC0192F55A57019CA8082624B2258B5EE20376623C5971674302D4",
+      "title": "国土交通省 千曲川河川事務所 FAQ"
+    },
+    {
+      "id": "gardens",
+      "url": "https://www.pref.ibaraki.jp/bugai/koho/kenmin/shizenkeikanaki.html",
+      "retrieved": "2026-09-20",
+      "sha256": "01BC07BFB18822B48E1859511FBE37006AC20FFB8A259E4E36A61381CCF64797",
+      "title": "茨城県 偕楽園の紹介"
+    },
+    {
+      "id": "views",
+      "url": "https://www.pref.kyoto.jp/tango/tango-doboku/hashitate.html",
+      "retrieved": "2026-09-20",
+      "sha256": "EDF6A0D4EF500CDCD34F73FA252761FE1495A514EA04CBCD90F028626E746F36",
+      "title": "京都府 日本三景天橋立"
+    },
+    {
+      "id": "metros",
+      "url": "https://www.mlit.go.jp/totikensangyo/H30kouji05.html",
+      "retrieved": "2026-09-20",
+      "sha256": "E79AADD1D6ABB6115236162A0EF4E14CB4427C8E3C8F54812FB2DF98B8198770",
+      "title": "国土交通省 用途・圏域等の用語の定義（平成30年地価公示）"
+    },
+    {
+      "id": "industry",
+      "url": "https://www.city.yokkaichi.lg.jp/www/contents/1607674272258/simple/503kokuji252.pdf",
+      "retrieved": "2026-09-20",
+      "sha256": "B4465230A279D9850157592C9D914CA5626DBF4EB5A7C14698D11C3FC03633A8",
+      "title": "四日市市 主な工業地帯・工業地域の中核市等 表5.1.1"
+    },
+    {
+      "id": "mountain-values",
+      "url": "https://www.gsi.go.jp/KOKUJYOHO/MOUNTAIN/1003zan20260331.csv",
+      "retrieved": "2026-09-20",
+      "sha256": "461F7C5FDDC3D4A947A6ACB3335E5F73E3DFB3E1F0D8A8ACB285E1BCAC2CA8FC",
+      "title": "国土地理院 山岳標高一覧（2026年3月31日版）"
+    },
+    {
+      "id": "lake-areas",
+      "url": "https://www.gsi.go.jp/KOKUJYOHO/MENCHO/backnumber/GSI-menseki20260401.pdf",
+      "retrieved": "2026-09-20",
+      "sha256": "802A6C092AFE4952AB1CA12F8249BC96A3A14A5CD13BD06A6A2784ACC3E0FAA6",
+      "title": "国土地理院 面積調（2026年4月1日時点）付2・81頁"
+    },
+    {
+      "id": "coordinate-garden-kenrokuen",
+      "title": "国土地理院 地名検索：兼六園（特）",
+      "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%85%BC%E5%85%AD%E5%9C%92",
+      "retrieved": "2026-09-20",
+      "sha256": "98FC5B0DC005726BBF6BFCBD181CA5E35E103DA6E0CD283FDD8130645900722C",
+      "selectedTitle": "兼六園（特）",
+      "selectedAddressCode": "17201"
+    },
+    {
+      "id": "coordinate-garden-kairakuen",
+      "title": "国土地理院 地名検索：常磐公園(偕楽園)",
+      "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%81%95%E6%A5%BD%E5%9C%92",
+      "retrieved": "2026-09-20",
+      "sha256": "DA8695F0AA77321CC0E14C6EA3BF5FA7FA3A743FDD26E7712071769D9C422273",
+      "selectedTitle": "常磐公園(偕楽園)",
+      "selectedAddressCode": "8201"
+    },
+    {
+      "id": "coordinate-garden-korakuen",
+      "title": "国土地理院 地名検索：岡山後楽園（特）",
+      "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%B2%A1%E5%B1%B1%E5%BE%8C%E6%A5%BD%E5%9C%92",
+      "retrieved": "2026-09-20",
+      "sha256": "BC576BDFF1B1DFC10121A96D8FA77F7AE3DA2D5D397B74D6C52966A238B50BC3",
+      "selectedTitle": "岡山後楽園（特）",
+      "selectedAddressCode": "33101"
+    },
+    {
+      "id": "coordinate-view-amanohashidate",
+      "title": "国土地理院 地名検索：天橋立（特）",
+      "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%A4%A9%E6%A9%8B%E7%AB%8B",
+      "retrieved": "2026-09-20",
+      "sha256": "544BAC5570C3ED1CC3E1172923AA8FF18ECBC5FB10EC1D92AB49B9069BA4D576",
+      "selectedTitle": "天橋立（特）",
+      "selectedAddressCode": "26205"
+    },
+    {
+      "id": "coordinate-view-miyajima",
+      "title": "国土地理院 地名検索：厳島神社",
+      "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8E%B3%E5%B3%B6%E7%A5%9E%E7%A4%BE",
+      "retrieved": "2026-09-20",
+      "sha256": "D21E5FD2DFEB1CF0AFBDC95E7124869E8277F2ADD53596BAB3FC01C751EAF69C",
+      "selectedTitle": "厳島神社",
+      "selectedAddressCode": "34213"
+    },
+    {
+      "id": "coordinate-metro-tokyo",
+      "title": "国土地理院 地名検索：東京都庁舎",
+      "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%BA%81",
+      "retrieved": "2026-09-20",
+      "sha256": "D051AA000FD87BCF3CB0FB5492A95FDC68737BBF171F3123119613CDA5F897A4",
+      "selectedTitle": "東京都庁舎",
+      "selectedAddressCode": "13104"
+    },
+    {
+      "id": "coordinate-metro-nagoya",
+      "title": "国土地理院 地名検索：名古屋市役所",
+      "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E5%BD%B9%E6%89%80",
+      "retrieved": "2026-09-20",
+      "sha256": "0A6C61A1404379353F2CC17F29F55B7C763743C819B96853E727E9730872BAF2",
+      "selectedTitle": "名古屋市役所",
+      "selectedAddressCode": "23106"
+    },
+    {
+      "id": "coordinate-metro-osaka",
+      "title": "国土地理院 地名検索：大阪市役所",
+      "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%A4%A7%E9%98%AA%E5%B8%82%E5%BD%B9%E6%89%80",
+      "retrieved": "2026-09-20",
+      "sha256": "8511868ACFEFC0C33AA6AA309BCA516ED1FA41763BD07545777233F19AE2105D",
+      "selectedTitle": "大阪市役所",
+      "selectedAddressCode": "27127"
+    },
+    {
+      "id": "coordinate-industry-keihin",
+      "title": "国土地理院 地名検索：川崎市役所",
+      "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%B7%9D%E5%B4%8E%E5%B8%82%E5%BD%B9%E6%89%80",
+      "retrieved": "2026-09-20",
+      "sha256": "AB6217D0072586F64DC901B9EC085C943E95165F163043D8F16A74A6E46FAA08",
+      "selectedTitle": "川崎市役所",
+      "selectedAddressCode": "14131"
+    },
+    {
+      "id": "coordinate-industry-chukyo",
+      "title": "国土地理院 地名検索：名古屋市役所",
+      "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E5%BD%B9%E6%89%80",
+      "retrieved": "2026-09-20",
+      "sha256": "0A6C61A1404379353F2CC17F29F55B7C763743C819B96853E727E9730872BAF2",
+      "selectedTitle": "名古屋市役所",
+      "selectedAddressCode": "23106"
+    },
+    {
+      "id": "coordinate-industry-hanshin",
+      "title": "国土地理院 地名検索：大阪市役所",
+      "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%A4%A7%E9%98%AA%E5%B8%82%E5%BD%B9%E6%89%80",
+      "retrieved": "2026-09-20",
+      "sha256": "8511868ACFEFC0C33AA6AA309BCA516ED1FA41763BD07545777233F19AE2105D",
+      "selectedTitle": "大阪市役所",
+      "selectedAddressCode": "27127"
+    },
+    {
+      "id": "coordinate-matsushima",
+      "url": "https://www.gsi.go.jp/kikaku/tenkei_tohoku.html",
+      "retrieved": "2026-09-20",
+      "sha256": "afd020994b5ea965d175b24f4a91a5d6af447f0d78890d072589451a29c8c7eb",
+      "title": "国土地理院 日本の典型地形・東北 松島 五大堂"
+    },
+    {
+      "id": "coordinate-ishikari",
+      "title": "国土地理院 地名検索：石狩川",
+      "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E7%9F%B3%E7%8B%A9%E5%B7%9D",
+      "retrieved": "2026-09-20",
+      "sha256": "73A27387C4F3EC028BBACC1F4D9E2E47DECFA455249247BF2F77666C275FE852",
+      "selectedTitle": "石狩川",
+      "selectedAddressCode": "1204"
+    }
+  ],
+  "places": [
+    {
+      "id": "mount-kitadake",
+      "category": "mountain",
+      "name": "北岳",
+      "reading": "きただけ",
+      "aliases": [],
+      "locationLabel": "山梨県",
+      "description": "山頂の位置と、出典の標高を確かめよう。",
+      "latitudeDeg": 35.674314,
+      "longitudeDeg": 138.238828,
+      "heightMeters": 3193,
+      "waterSurfaceMeters": null,
+      "anchorKind": "summit",
+      "anchorLabel": "北岳",
+      "coordinateDatum": "GSI geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "mountain-values",
+      "sourceIds": [
+        "mountain-values"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#16/35.674314/138.238828/",
+      "coordinateMethod": "official-source-extraction",
+      "quizTags": [
+        "mountain",
+        "mount-kitadake"
+      ]
+    },
+    {
+      "id": "mount-okuhotaka",
+      "category": "mountain",
+      "name": "奥穂高岳",
+      "reading": "おくほたかだけ",
+      "aliases": [],
+      "locationLabel": "長野県 岐阜県",
+      "description": "山頂の位置と、出典の標高を確かめよう。",
+      "latitudeDeg": 36.289226,
+      "longitudeDeg": 137.647988,
+      "heightMeters": 3190,
+      "waterSurfaceMeters": null,
+      "anchorKind": "summit",
+      "anchorLabel": "奥穂高岳",
+      "coordinateDatum": "GSI geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "mountain-values",
+      "sourceIds": [
+        "mountain-values"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#16/36.289226/137.647988/",
+      "coordinateMethod": "official-source-extraction",
+      "quizTags": [
+        "mountain",
+        "mount-okuhotaka"
+      ]
+    },
+    {
+      "id": "mount-ainodake",
+      "category": "mountain",
+      "name": "間ノ岳",
+      "reading": "あいのたけ",
+      "aliases": [],
+      "locationLabel": "山梨県 静岡県",
+      "description": "山頂の位置と、出典の標高を確かめよう。",
+      "latitudeDeg": 35.646012,
+      "longitudeDeg": 138.228324,
+      "heightMeters": 3190,
+      "waterSurfaceMeters": null,
+      "anchorKind": "summit",
+      "anchorLabel": "間ノ岳",
+      "coordinateDatum": "GSI geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "mountain-values",
+      "sourceIds": [
+        "mountain-values"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#16/35.646012/138.228324/",
+      "coordinateMethod": "official-source-extraction",
+      "quizTags": [
+        "mountain",
+        "mount-ainodake"
+      ]
+    },
+    {
+      "id": "garden-kenrokuen",
+      "category": "garden",
+      "name": "兼六園",
+      "reading": "けんろくえん",
+      "aliases": [],
+      "locationLabel": "石川県金沢市",
+      "description": "日本三名園の一つ。石川県の位置と合わせて覚えよう。",
+      "latitudeDeg": 36.5624276544444,
+      "longitudeDeg": 136.660856564722,
+      "heightMeters": null,
+      "waterSurfaceMeters": null,
+      "anchorKind": "representative",
+      "anchorLabel": "兼六園（特）",
+      "coordinateDatum": "GSI geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "coordinate-garden-kenrokuen",
+      "sourceIds": [
+        "coordinate-garden-kenrokuen"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#16/36.5624276544444/136.660856564722/",
+      "coordinateMethod": "official-source-extraction",
+      "quizTags": [
+        "garden",
+        "garden-kenrokuen"
+      ]
+    },
+    {
+      "id": "garden-kairakuen",
+      "category": "garden",
+      "name": "偕楽園",
+      "reading": "かいらくえん",
+      "aliases": [],
+      "locationLabel": "茨城県水戸市",
+      "description": "日本三名園の一つ。茨城県の位置と合わせて覚えよう。",
+      "latitudeDeg": 36.3753412844444,
+      "longitudeDeg": 140.453176025556,
+      "heightMeters": null,
+      "waterSurfaceMeters": null,
+      "anchorKind": "representative",
+      "anchorLabel": "常磐公園(偕楽園)",
+      "coordinateDatum": "GSI geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "coordinate-garden-kairakuen",
+      "sourceIds": [
+        "coordinate-garden-kairakuen"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#16/36.3753412844444/140.453176025556/",
+      "coordinateMethod": "official-source-extraction",
+      "quizTags": [
+        "garden",
+        "garden-kairakuen"
+      ]
+    },
+    {
+      "id": "garden-korakuen",
+      "category": "garden",
+      "name": "後楽園",
+      "reading": "こうらくえん",
+      "aliases": [],
+      "locationLabel": "岡山県岡山市",
+      "description": "日本三名園の一つ。岡山県の位置と合わせて覚えよう。",
+      "latitudeDeg": 34.6678703055556,
+      "longitudeDeg": 133.93573225,
+      "heightMeters": null,
+      "waterSurfaceMeters": null,
+      "anchorKind": "representative",
+      "anchorLabel": "岡山後楽園（特）",
+      "coordinateDatum": "GSI geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "coordinate-garden-korakuen",
+      "sourceIds": [
+        "coordinate-garden-korakuen"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#16/34.6678703055556/133.93573225/",
+      "coordinateMethod": "official-source-extraction",
+      "quizTags": [
+        "garden",
+        "garden-korakuen"
+      ]
+    },
+    {
+      "id": "view-amanohashidate",
+      "category": "scenic",
+      "name": "天橋立",
+      "reading": "あまのはしだて",
+      "aliases": [],
+      "locationLabel": "京都府宮津市",
+      "description": "日本三景の一つ。海と陸がつくる景色に注目しよう。",
+      "latitudeDeg": 35.5705681188889,
+      "longitudeDeg": 135.193552687778,
+      "heightMeters": null,
+      "waterSurfaceMeters": 0,
+      "anchorKind": "representative",
+      "anchorLabel": "天橋立（特）",
+      "coordinateDatum": "GSI geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "coordinate-view-amanohashidate",
+      "sourceIds": [
+        "coordinate-view-amanohashidate"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#16/35.5705681188889/135.193552687778/",
+      "coordinateMethod": "official-source-extraction",
+      "quizTags": [
+        "scenic",
+        "view-amanohashidate"
+      ]
+    },
+    {
+      "id": "view-miyajima",
+      "category": "scenic",
+      "name": "宮島",
+      "reading": "みやじま",
+      "aliases": [],
+      "locationLabel": "広島県廿日市市",
+      "description": "日本三景の一つ。ピンは厳島神社付近の代表地点。",
+      "latitudeDeg": 34.2957765316667,
+      "longitudeDeg": 132.319870533333,
+      "heightMeters": null,
+      "waterSurfaceMeters": 0,
+      "anchorKind": "representative",
+      "anchorLabel": "厳島神社",
+      "coordinateDatum": "GSI geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "coordinate-view-miyajima",
+      "sourceIds": [
+        "coordinate-view-miyajima"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#16/34.2957765316667/132.319870533333/",
+      "coordinateMethod": "official-source-extraction",
+      "quizTags": [
+        "scenic",
+        "view-miyajima"
+      ]
+    },
+    {
+      "id": "metro-tokyo",
+      "category": "metro",
+      "name": "東京圏",
+      "reading": "とうきょうけん",
+      "aliases": [],
+      "locationLabel": "東京都・周辺",
+      "description": "東京を中心とする都市圏。ピンは東京都庁舎で、都市圏全体の範囲は表しません。",
+      "latitudeDeg": 35.68950067,
+      "longitudeDeg": 139.69172242,
+      "heightMeters": null,
+      "waterSurfaceMeters": null,
+      "anchorKind": "representative",
+      "anchorLabel": "東京都庁舎",
+      "coordinateDatum": "GSI geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "coordinate-metro-tokyo",
+      "sourceIds": [
+        "coordinate-metro-tokyo"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#16/35.68950067/139.69172242/",
+      "coordinateMethod": "official-source-extraction",
+      "quizTags": [
+        "metro",
+        "metro-tokyo"
+      ]
+    },
+    {
+      "id": "metro-nagoya",
+      "category": "metro",
+      "name": "名古屋圏",
+      "reading": "なごやけん",
+      "aliases": [],
+      "locationLabel": "愛知県・周辺",
+      "description": "名古屋を中心とする都市圏。ピンは名古屋市役所で、都市圏全体の範囲は表しません。",
+      "latitudeDeg": 35.18143742,
+      "longitudeDeg": 136.90657204,
+      "heightMeters": null,
+      "waterSurfaceMeters": null,
+      "anchorKind": "representative",
+      "anchorLabel": "名古屋市役所",
+      "coordinateDatum": "GSI geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "coordinate-metro-nagoya",
+      "sourceIds": [
+        "coordinate-metro-nagoya"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#16/35.18143742/136.90657204/",
+      "coordinateMethod": "official-source-extraction",
+      "quizTags": [
+        "metro",
+        "metro-nagoya"
+      ]
+    },
+    {
+      "id": "metro-osaka",
+      "category": "metro",
+      "name": "大阪圏",
+      "reading": "おおさかけん",
+      "aliases": [],
+      "locationLabel": "大阪府・周辺",
+      "description": "大阪を中心とする都市圏。ピンは大阪市役所で、都市圏全体の範囲は表しません。",
+      "latitudeDeg": 34.69388889,
+      "longitudeDeg": 135.5022222,
+      "heightMeters": null,
+      "waterSurfaceMeters": null,
+      "anchorKind": "representative",
+      "anchorLabel": "大阪市役所",
+      "coordinateDatum": "GSI geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "coordinate-metro-osaka",
+      "sourceIds": [
+        "coordinate-metro-osaka"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#16/34.69388889/135.5022222/",
+      "coordinateMethod": "official-source-extraction",
+      "quizTags": [
+        "metro",
+        "metro-osaka"
+      ]
+    },
+    {
+      "id": "industry-keihin",
+      "category": "industry",
+      "name": "京浜工業地帯",
+      "reading": "けいひんこうぎょうちたい",
+      "aliases": [],
+      "locationLabel": "東京・川崎・横浜など",
+      "description": "東京・川崎・横浜などに広がる工業地帯。ピンは川崎市役所の代表地点です。",
+      "latitudeDeg": 35.530865,
+      "longitudeDeg": 139.70303086,
+      "heightMeters": null,
+      "waterSurfaceMeters": null,
+      "anchorKind": "representative",
+      "anchorLabel": "川崎市役所",
+      "coordinateDatum": "GSI geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "coordinate-industry-keihin",
+      "sourceIds": [
+        "coordinate-industry-keihin"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#16/35.530865/139.70303086/",
+      "coordinateMethod": "official-source-extraction",
+      "quizTags": [
+        "industry",
+        "industry-keihin"
+      ]
+    },
+    {
+      "id": "industry-chukyo",
+      "category": "industry",
+      "name": "中京工業地帯",
+      "reading": "ちゅうきょうこうぎょうちたい",
+      "aliases": [],
+      "locationLabel": "名古屋・豊田・四日市など",
+      "description": "名古屋・豊田・四日市などに広がる工業地帯。ピンは名古屋市役所の代表地点です。",
+      "latitudeDeg": 35.18143742,
+      "longitudeDeg": 136.90657204,
+      "heightMeters": null,
+      "waterSurfaceMeters": null,
+      "anchorKind": "representative",
+      "anchorLabel": "名古屋市役所",
+      "coordinateDatum": "GSI geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "coordinate-industry-chukyo",
+      "sourceIds": [
+        "coordinate-industry-chukyo"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#16/35.18143742/136.90657204/",
+      "coordinateMethod": "official-source-extraction",
+      "quizTags": [
+        "industry",
+        "industry-chukyo"
+      ]
+    },
+    {
+      "id": "industry-hanshin",
+      "category": "industry",
+      "name": "阪神工業地帯",
+      "reading": "はんしんこうぎょうちたい",
+      "aliases": [],
+      "locationLabel": "大阪・神戸など",
+      "description": "大阪・神戸などに広がる工業地帯。ピンは大阪市役所の代表地点です。",
+      "latitudeDeg": 34.69388889,
+      "longitudeDeg": 135.5022222,
+      "heightMeters": null,
+      "waterSurfaceMeters": null,
+      "anchorKind": "representative",
+      "anchorLabel": "大阪市役所",
+      "coordinateDatum": "GSI geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "coordinate-industry-hanshin",
+      "sourceIds": [
+        "coordinate-industry-hanshin"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#16/34.69388889/135.5022222/",
+      "coordinateMethod": "official-source-extraction",
+      "quizTags": [
+        "industry",
+        "industry-hanshin"
+      ]
+    },
+    {
+      "id": "view-matsushima",
+      "category": "scenic",
+      "name": "松島",
+      "reading": "まつしま",
+      "aliases": [],
+      "locationLabel": "宮城県松島町",
+      "description": "日本三景の一つ。ピンは五大堂付近の代表地点で、湾や島々の全体は表しません。",
+      "latitudeDeg": 38.36972,
+      "longitudeDeg": 141.064368,
+      "heightMeters": null,
+      "waterSurfaceMeters": 0,
+      "anchorKind": "representative",
+      "anchorLabel": "松島 五大堂",
+      "coordinateDatum": "GSI geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "coordinate-matsushima",
+      "sourceIds": [
+        "coordinate-matsushima"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#16/38.36972/141.064368/",
+      "coordinateMethod": "official-source-extraction",
+      "quizTags": [
+        "scenic",
+        "view-matsushima"
+      ]
+    },
+    {
+      "id": "river-ishikari",
+      "category": "river",
+      "name": "石狩川",
+      "reading": "いしかりがわ",
+      "aliases": [],
+      "locationLabel": "北海道旭川市付近",
+      "description": "北海道を流れる川。ピンは旭川市付近の代表地点で、全流路は表しません。",
+      "latitudeDeg": 43.7861061388889,
+      "longitudeDeg": 142.320730138889,
+      "heightMeters": null,
+      "waterSurfaceMeters": null,
+      "anchorKind": "representative",
+      "anchorLabel": "石狩川（旭川市付近）",
+      "coordinateDatum": "GSI geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "coordinate-ishikari",
+      "sourceIds": [
+        "coordinate-ishikari"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#16/43.7861061388889/142.320730138889/",
+      "coordinateMethod": "official-source-extraction",
+      "quizTags": [
+        "river",
+        "river-ishikari"
+      ]
+    }
+  ],
+  "collections": [
+    {
+      "id": "mountains",
+      "kind": "ranking",
+      "title": "高い山 3位まで",
+      "metric": "標高",
+      "unit": "m",
+      "precision": "1",
+      "displayDecimals": 0,
+      "referenceDate": "2026-03-31",
+      "sourceIds": [
+        "mountain-values"
+      ],
+      "scope": "日本の主な山岳標高一覧に掲載された山の最高地点",
+      "note": "同じ標高は同率。同率3位を含め、4つの山を表示します。",
+      "topRank": 3,
+      "order": "descending",
+      "tieRule": "competition",
+      "entries": [
+        {
+          "placeId": "mount-fuji",
+          "value": "3776"
+        },
+        {
+          "placeId": "mount-kitadake",
+          "value": "3193"
+        },
+        {
+          "placeId": "mount-okuhotaka",
+          "value": "3190"
+        },
+        {
+          "placeId": "mount-ainodake",
+          "value": "3190"
+        }
+      ]
+    },
+    {
+      "id": "rivers",
+      "kind": "ranking",
+      "title": "長い川 3位まで",
+      "metric": "幹川流路延長",
+      "unit": "km",
+      "precision": "1",
+      "displayDecimals": 0,
+      "referenceDate": "2026-09-20閲覧（資料年の記載なし）",
+      "sourceIds": [
+        "river-lengths"
+      ],
+      "scope": "日本の河川。信濃川は千曲川を含む",
+      "note": "長さを比べます。流域面積の順位とは異なります。",
+      "topRank": 3,
+      "order": "descending",
+      "tieRule": "competition",
+      "entries": [
+        {
+          "placeId": "river-shinano",
+          "value": "367"
+        },
+        {
+          "placeId": "river-tone",
+          "value": "322"
+        },
+        {
+          "placeId": "river-ishikari",
+          "value": "268"
+        }
+      ]
+    },
+    {
+      "id": "lakes",
+      "kind": "ranking",
+      "title": "大きな湖 3位まで",
+      "metric": "湖沼面積",
+      "unit": "km²",
+      "precision": "0.01",
+      "displayDecimals": 2,
+      "referenceDate": "2026-04-01",
+      "sourceIds": [
+        "lake-areas"
+      ],
+      "scope": "国土地理院「湖沼面積20傑」の区分（霞ヶ浦は西浦。北浦は別の湖沼として集計）",
+      "note": "面積を比べます。深さの順位ではありません。",
+      "topRank": 3,
+      "order": "descending",
+      "tieRule": "competition",
+      "entries": [
+        {
+          "placeId": "lake-biwa",
+          "value": "669.22"
+        },
+        {
+          "placeId": "lake-kasumigaura",
+          "value": "168.20"
+        },
+        {
+          "placeId": "lake-saroma",
+          "value": "151.63"
+        }
+      ]
+    },
+    {
+      "id": "gardens",
+      "kind": "representative-set",
+      "title": "日本三名園",
+      "scope": "日本三名園として学ぶ3項目（順不同）",
+      "referenceDate": "2015-12-28更新",
+      "sourceIds": [
+        "gardens"
+      ],
+      "note": "代表的な3つの庭園。大きさや美しさの順位は付けません。",
+      "entries": [
+        {
+          "placeId": "garden-kairakuen"
+        },
+        {
+          "placeId": "garden-kenrokuen"
+        },
+        {
+          "placeId": "garden-korakuen"
+        }
+      ]
+    },
+    {
+      "id": "views",
+      "kind": "representative-set",
+      "title": "日本三景",
+      "scope": "日本三景として学ぶ3項目（順不同）",
+      "referenceDate": "2020-12-15更新",
+      "sourceIds": [
+        "views"
+      ],
+      "note": "代表的な3つの景勝地。ピンはそれぞれの代表地点です。",
+      "entries": [
+        {
+          "placeId": "view-matsushima"
+        },
+        {
+          "placeId": "view-amanohashidate"
+        },
+        {
+          "placeId": "view-miyajima"
+        }
+      ]
+    },
+    {
+      "id": "metros",
+      "kind": "representative-set",
+      "title": "三大都市圏",
+      "scope": "三大都市圏として学ぶ3項目（順不同）",
+      "referenceDate": "2018年地価公示",
+      "sourceIds": [
+        "metros"
+      ],
+      "note": "東京圏・名古屋圏・大阪圏の呼称を採用。圏域の定義は資料によって異なります。ピンは代表都市の庁舎です。",
+      "entries": [
+        {
+          "placeId": "metro-tokyo"
+        },
+        {
+          "placeId": "metro-nagoya"
+        },
+        {
+          "placeId": "metro-osaka"
+        }
+      ]
+    },
+    {
+      "id": "industries",
+      "kind": "representative-set",
+      "title": "三大工業地帯",
+      "scope": "三大工業地帯として学ぶ3項目（順不同）",
+      "referenceDate": "2020年公開資料（2026-09-20閲覧）",
+      "sourceIds": [
+        "industry"
+      ],
+      "note": "学習で扱う京浜・中京・阪神の組。生産額の上位3件を示すランキングではありません。ピンは代表都市の庁舎です。",
+      "entries": [
+        {
+          "placeId": "industry-keihin"
+        },
+        {
+          "placeId": "industry-chukyo"
+        },
+        {
+          "placeId": "industry-hanshin"
+        }
+      ]
+    }
+  ]
+}

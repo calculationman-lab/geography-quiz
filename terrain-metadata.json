@@ -1,0 +1,375 @@
+{
+  "schemaVersion": 1,
+  "terrainState": "real-terrain",
+  "boundaryId": "JPN-ADM1-47310658",
+  "boundaryYear": 2017,
+  "boundarySha256": "f18eeeb978d992a7147f636642932913731c231f298cb514bf7a3bd41a1aacc0",
+  "config": {
+    "schemaVersion": 1,
+    "projectionId": "EPSG:3857",
+    "inputDatum": "WGS84",
+    "originLongitudeDeg": 138,
+    "originLatitudeDeg": 37,
+    "metersToWorld": 0.0001,
+    "verticalExaggeration": 1,
+    "displayExaggeration": 8,
+    "axis": {
+      "x": "east",
+      "y": "up",
+      "z": "south"
+    },
+    "demZoom": 8,
+    "simplificationMeters": 150,
+    "maximumTriangleAreaM2": 3000000,
+    "projectionToleranceMeters": 0.01,
+    "modelToleranceMeters": 0.5
+  },
+  "prefectures": [
+    {
+      "id": "JP-01",
+      "name": "北海道",
+      "regionId": "hokkaido",
+      "vertices": 45106,
+      "triangles": 83613
+    },
+    {
+      "id": "JP-02",
+      "name": "青森県",
+      "regionId": "tohoku",
+      "vertices": 6302,
+      "triangles": 10702
+    },
+    {
+      "id": "JP-03",
+      "name": "岩手県",
+      "regionId": "tohoku",
+      "vertices": 8908,
+      "triangles": 15653
+    },
+    {
+      "id": "JP-04",
+      "name": "宮城県",
+      "regionId": "tohoku",
+      "vertices": 5243,
+      "triangles": 8332
+    },
+    {
+      "id": "JP-05",
+      "name": "秋田県",
+      "regionId": "tohoku",
+      "vertices": 6318,
+      "triangles": 11356
+    },
+    {
+      "id": "JP-06",
+      "name": "山形県",
+      "regionId": "tohoku",
+      "vertices": 4780,
+      "triangles": 8667
+    },
+    {
+      "id": "JP-07",
+      "name": "福島県",
+      "regionId": "tohoku",
+      "vertices": 7734,
+      "triangles": 13399
+    },
+    {
+      "id": "JP-08",
+      "name": "茨城県",
+      "regionId": "kanto",
+      "vertices": 3908,
+      "triangles": 6292
+    },
+    {
+      "id": "JP-09",
+      "name": "栃木県",
+      "regionId": "kanto",
+      "vertices": 3221,
+      "triangles": 5766
+    },
+    {
+      "id": "JP-10",
+      "name": "群馬県",
+      "regionId": "kanto",
+      "vertices": 3294,
+      "triangles": 5764
+    },
+    {
+      "id": "JP-11",
+      "name": "埼玉県",
+      "regionId": "kanto",
+      "vertices": 2012,
+      "triangles": 3481
+    },
+    {
+      "id": "JP-12",
+      "name": "千葉県",
+      "regionId": "kanto",
+      "vertices": 5340,
+      "triangles": 7578
+    },
+    {
+      "id": "JP-13",
+      "name": "東京都",
+      "regionId": "kanto",
+      "vertices": 2518,
+      "triangles": 3351
+    },
+    {
+      "id": "JP-14",
+      "name": "神奈川県",
+      "regionId": "kanto",
+      "vertices": 2593,
+      "triangles": 3634
+    },
+    {
+      "id": "JP-15",
+      "name": "新潟県",
+      "regionId": "chubu",
+      "vertices": 10034,
+      "triangles": 15250
+    },
+    {
+      "id": "JP-16",
+      "name": "富山県",
+      "regionId": "chubu",
+      "vertices": 2480,
+      "triangles": 4160
+    },
+    {
+      "id": "JP-17",
+      "name": "石川県",
+      "regionId": "chubu",
+      "vertices": 3113,
+      "triangles": 4838
+    },
+    {
+      "id": "JP-18",
+      "name": "福井県",
+      "regionId": "chubu",
+      "vertices": 3053,
+      "triangles": 4724
+    },
+    {
+      "id": "JP-19",
+      "name": "山梨県",
+      "regionId": "chubu",
+      "vertices": 2197,
+      "triangles": 3882
+    },
+    {
+      "id": "JP-20",
+      "name": "長野県",
+      "regionId": "chubu",
+      "vertices": 6540,
+      "triangles": 11834
+    },
+    {
+      "id": "JP-21",
+      "name": "岐阜県",
+      "regionId": "chubu",
+      "vertices": 5238,
+      "triangles": 9355
+    },
+    {
+      "id": "JP-22",
+      "name": "静岡県",
+      "regionId": "chubu",
+      "vertices": 4538,
+      "triangles": 7543
+    },
+    {
+      "id": "JP-23",
+      "name": "愛知県",
+      "regionId": "chubu",
+      "vertices": 3448,
+      "triangles": 5455
+    },
+    {
+      "id": "JP-24",
+      "name": "三重県",
+      "regionId": "kinki",
+      "vertices": 4836,
+      "triangles": 7129
+    },
+    {
+      "id": "JP-25",
+      "name": "滋賀県",
+      "regionId": "kinki",
+      "vertices": 2121,
+      "triangles": 3648
+    },
+    {
+      "id": "JP-26",
+      "name": "京都府",
+      "regionId": "kinki",
+      "vertices": 3108,
+      "triangles": 4920
+    },
+    {
+      "id": "JP-27",
+      "name": "大阪府",
+      "regionId": "kinki",
+      "vertices": 1934,
+      "triangles": 2688
+    },
+    {
+      "id": "JP-28",
+      "name": "兵庫県",
+      "regionId": "kinki",
+      "vertices": 6078,
+      "triangles": 9435
+    },
+    {
+      "id": "JP-29",
+      "name": "奈良県",
+      "regionId": "kinki",
+      "vertices": 2048,
+      "triangles": 3431
+    },
+    {
+      "id": "JP-30",
+      "name": "和歌山県",
+      "regionId": "kinki",
+      "vertices": 3573,
+      "triangles": 5440
+    },
+    {
+      "id": "JP-31",
+      "name": "鳥取県",
+      "regionId": "chugoku-shikoku",
+      "vertices": 2289,
+      "triangles": 3647
+    },
+    {
+      "id": "JP-32",
+      "name": "島根県",
+      "regionId": "chugoku-shikoku",
+      "vertices": 4857,
+      "triangles": 7530
+    },
+    {
+      "id": "JP-33",
+      "name": "岡山県",
+      "regionId": "chugoku-shikoku",
+      "vertices": 4244,
+      "triangles": 7000
+    },
+    {
+      "id": "JP-34",
+      "name": "広島県",
+      "regionId": "chugoku-shikoku",
+      "vertices": 6170,
+      "triangles": 9504
+    },
+    {
+      "id": "JP-35",
+      "name": "山口県",
+      "regionId": "chugoku-shikoku",
+      "vertices": 5019,
+      "triangles": 7394
+    },
+    {
+      "id": "JP-36",
+      "name": "徳島県",
+      "regionId": "chugoku-shikoku",
+      "vertices": 2787,
+      "triangles": 4365
+    },
+    {
+      "id": "JP-37",
+      "name": "香川県",
+      "regionId": "chugoku-shikoku",
+      "vertices": 2519,
+      "triangles": 3299
+    },
+    {
+      "id": "JP-38",
+      "name": "愛媛県",
+      "regionId": "chugoku-shikoku",
+      "vertices": 5412,
+      "triangles": 7597
+    },
+    {
+      "id": "JP-39",
+      "name": "高知県",
+      "regionId": "chugoku-shikoku",
+      "vertices": 4627,
+      "triangles": 7316
+    },
+    {
+      "id": "JP-40",
+      "name": "福岡県",
+      "regionId": "kyushu-okinawa",
+      "vertices": 3530,
+      "triangles": 5423
+    },
+    {
+      "id": "JP-41",
+      "name": "佐賀県",
+      "regionId": "kyushu-okinawa",
+      "vertices": 1788,
+      "triangles": 2693
+    },
+    {
+      "id": "JP-42",
+      "name": "長崎県",
+      "regionId": "kyushu-okinawa",
+      "vertices": 9337,
+      "triangles": 11185
+    },
+    {
+      "id": "JP-43",
+      "name": "熊本県",
+      "regionId": "kyushu-okinawa",
+      "vertices": 5294,
+      "triangles": 8052
+    },
+    {
+      "id": "JP-44",
+      "name": "大分県",
+      "regionId": "kyushu-okinawa",
+      "vertices": 4270,
+      "triangles": 6675
+    },
+    {
+      "id": "JP-45",
+      "name": "宮崎県",
+      "regionId": "kyushu-okinawa",
+      "vertices": 4257,
+      "triangles": 7043
+    },
+    {
+      "id": "JP-46",
+      "name": "鹿児島県",
+      "regionId": "kyushu-okinawa",
+      "vertices": 8372,
+      "triangles": 11748
+    },
+    {
+      "id": "JP-47",
+      "name": "沖縄県",
+      "regionId": "kyushu-okinawa",
+      "vertices": 3608,
+      "triangles": 4390
+    }
+  ],
+  "elevationSamplingCounts": {
+    "dem10b": 236526,
+    "dem10b_near_coast": 1242,
+    "demgm": 0,
+    "demgm_near_coast": 0
+  },
+  "heightRangeMeters": [
+    -27.85,
+    3663.53
+  ],
+  "tileCount": 86,
+  "boundaryAreaChangeFraction": 4.868228602183375e-05,
+  "tilePixelSizeProjectedMeters": 611.49622628141,
+  "triangleCount": 406181,
+  "vertexCount": 249996,
+  "coverageNote": "採用した境界データの範囲を表示。境界は2017年の資料に基づき、地形は学習用に簡略化。国境・領有権の判断や測量用途には使いません。",
+  "missingDataPolicy": "DEM10Bの当該画素、周囲3画素以内の有効値平均、DEMGMの同手順の順。全て欠損なら生成を停止。海岸付近の補間と低解像度資料への切替は件数を記録。"
+}

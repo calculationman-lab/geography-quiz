@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "projectionId": "EPSG:3857",
+  "inputDatum": "WGS84",
+  "originLongitudeDeg": 138,
+  "originLatitudeDeg": 37,
+  "metersToWorld": 0.0001,
+  "verticalExaggeration": 1,
+  "displayExaggeration": 8,
+  "axis": {"x": "east", "y": "up", "z": "south"},
+  "demZoom": 8,
+  "simplificationMeters": 150,
+  "maximumTriangleAreaM2": 3000000,
+  "projectionToleranceMeters": 0.01,
+  "modelToleranceMeters": 0.5
+}

@@ -3,163 +3,66 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <title>社会マスター</title>
-  <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="stylesheet" href="./styles.css?v=20260920-v11-2">
-  <meta name="theme-color" content="#2457a7">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="社会マスター">
-  <link rel="apple-touch-icon" href="./apple-touch-icon.png?v=20260920-v11-2">
+  <meta name="theme-color" content="#264f43">
+  <title>3D日本地図｜社会マスター</title>
+  <link rel="icon" href="../icon-192.png?v=20260920-v11-2">
+  <link rel="stylesheet" href="./map.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
 </head>
 <body>
-  <main class="app-shell">
-    <section id="home-screen" class="screen">
-      <header class="hero"><button id="open-settings-button" class="settings-button" type="button" aria-label="設定を開く">⚙<span>設定</span></button><h1>社会マスター</h1><p>4択と記述で社会をマスターしよう！</p></header>
-      <section class="rank-card" aria-labelledby="rank-heading">
-        <div class="rank-emblem" id="rank-emblem" aria-hidden="true">🧭</div>
-        <div class="rank-main"><p id="rank-heading">現在のランク</p><h2 id="current-rank">はじまりの旅人</h2><button id="rank-toggle" class="rank-toggle" type="button" aria-expanded="false" aria-controls="rank-details"><span id="rank-progress">日本地理 攻略ランク</span><span id="rank-toggle-icon" aria-hidden="true">▼</span></button></div>
-        <div id="rank-details" class="rank-details hidden">
-          <div class="mastery-counts"><span id="choice-mastery-count">前期4択 0／17</span><span id="written-mastery-count">前期記述 0／17</span><span id="summer-choice-mastery-count">夏期4択 0／7</span><span id="summer-written-mastery-count">夏期記述 0／7</span></div>
-          <div class="rank-next" id="next-rank"></div>
-          <h3 class="mastery-grid-heading">前期17単元</h3>
-          <div class="unit-mastery-grid" id="unit-mastery-grid" aria-label="17単元の攻略状況"></div>
-          <h3 class="mastery-grid-heading summer-heading">夏期講習7地域</h3>
-          <div class="summer-mastery-grid" id="summer-mastery-grid" aria-label="夏期講習7地域の攻略状況"></div>
-          <h3 class="mastery-grid-heading">下期前半7単元</h3>
-          <p id="second-mastery-count"></p>
-          <div class="unit-mastery-grid" id="second-mastery-grid" aria-label="下期前半7単元の攻略状況"></div>
-          <p class="scope-note">下期は独立した攻略称号です。これまでのランク・称号の獲得条件は変わりません。</p>
-          <div class="unit-mastery-detail" id="unit-mastery-detail">単元マークを押すと最高記録と称号を確認できます。</div>
-          <div class="parent-review-row"><span id="parent-review-summary">親の承認待ち 0件</span><button id="parent-review-button" type="button">親の確認・承認</button></div>
-          <div class="recent-title" id="recent-title"></div>
-        </div>
+  <header class="site-header"><a href="../index.html" class="back-link"><span aria-hidden="true">←</span> 社会マスター</a><span class="edition">立体で学ぶ、日本の地理</span></header>
+  <main>
+    <div class="page-heading"><div><p class="eyebrow">日本のすがたを見てみよう</p><h1>3D日本地図<span class="phase-tag">地図で探してクイズ</span></h1></div><p class="intro">回して、近づいて。<br>山地と平野、島々のつながりを発見しよう。</p></div>
+    <section id="linked-context" class="linked-context" hidden aria-label="通常問題からの地図練習"><strong id="linked-source"></strong><p id="linked-note"></p><p id="linked-credit"></p><button id="linked-repeat" hidden>もう一度、地図で場所を探す</button><button id="linked-return">社会マスターへ戻る</button></section>
+    <div class="explorer">
+      <aside class="region-panel" aria-labelledby="regions-heading">
+        <h2 id="regions-heading">どの地方を見る？</h2>
+        <button id="all-regions" class="region-button all selected" aria-pressed="true" disabled><span class="region-dot all-dot" aria-hidden="true"></span>日本全国<span class="arrow" aria-hidden="true">↗</span></button>
+        <div id="regions" class="region-list"></div>
+        <div class="selection-card" aria-live="polite"><p class="small-label">いま見ている地方</p><h3 id="selection-name">日本全国</h3><p id="selection-detail">7つの地方を選んでみよう。</p><button id="focus-region" class="focus-button" disabled>この地方を大きく</button></div>
+        <div class="height-control"><label for="height-mode">地形の高さ</label><select id="height-mode" disabled><option value="8">見やすく強調（8倍）</option><option value="1">強調しない（1倍）</option></select></div>
+      </aside>
+      <section class="map-panel" aria-label="日本列島の3D表示">
+        <div class="map-toolbar"><span id="view-label">日本全国</span><div class="toolbar-actions"><button id="zoom-in" aria-label="拡大" disabled>＋</button><button id="zoom-out" aria-label="縮小" disabled>−</button><button id="reset-view" disabled>視点をリセット</button></div></div>
+        <div id="quiz-map-strip" class="quiz-map-strip" hidden><span id="quiz-map-counter"></span><strong id="quiz-map-prompt"></strong><p id="quiz-map-feedback" role="status"></p></div><div id="map-stage" class="map-stage"><div id="map-canvas" class="canvas-host"></div><div id="pin-overlay" class="pin-overlay"><svg id="pin-lines" aria-hidden="true"></svg><div id="pin-buttons"></div></div><span id="selected-place-caption" class="selected-place-caption" hidden></span><div id="load-status" class="load-status" role="status"><span class="spinner" aria-hidden="true"></span><strong id="load-title">日本の地形を読み込んでいます</strong><span id="load-detail">少し待ってね。</span><button id="retry" hidden>もう一度読み込む</button></div><div class="map-compass" aria-hidden="true"><span id="north-arrow">↑</span><span>北</span></div><span id="height-caption" class="height-caption">高さを8倍に強調</span></div>
+        <div class="map-help"><span><strong>回転</strong> ドラッグ・指1本</span><span><strong>拡大・縮小</strong> ホイール・指2本</span><span><strong>地方を選ぶ</strong> 地図をタップ</span></div>
       </section>
-      <div class="today-card" id="today-status"></div>
-      <div class="mode-grid">
-        <article class="mode-card geography-card">
-          <div class="mode-icon" aria-hidden="true">🗾</div>
-          <div><p class="mode-label">地理</p><h2>日本の地理クイズ</h2><p>選択範囲の<span id="question-total">450</span>問から挑戦する問題数を選ぼう</p></div>
-          <fieldset class="quiz-type-selector">
-            <legend>学習方法</legend>
-            <div class="quiz-type-options">
-              <button type="button" class="quiz-type-button selected" data-quiz-type="choice" aria-pressed="true"><strong>4択モード</strong><span>選んで自動採点</span></button>
-              <button type="button" class="quiz-type-button" data-quiz-type="written" aria-pressed="false"><strong>記述モード</strong><span>紙に書いて自己判定</span></button>
-            </div>
-          </fieldset>
-          <fieldset class="scope-selector">
-            <legend>出題範囲</legend>
-            <div class="scope-options">
-              <button type="button" class="scope-button selected" data-scope="first" aria-pressed="true"><strong>小4前期</strong><span data-scope-count="first">450問</span></button>
-              <button type="button" class="scope-button" data-scope="summer" aria-pressed="false"><strong>夏期講習</strong><span data-scope-count="summer">139問</span></button>
-              <button type="button" class="scope-button" data-scope="second" aria-pressed="false"><strong>小4下期・前半</strong><span data-scope-count="second">140問</span></button>
-              <button type="button" class="scope-button" data-scope="all" aria-pressed="false"><strong>全範囲</strong><span data-scope-count="all">729問</span></button>
-            </div>
-          </fieldset>
-          <section id="unit-selector" class="unit-selector">
-            <div class="unit-heading"><h3>前期の単元を選ぶ</h3><span id="unit-selection-summary"></span></div>
-            <div class="unit-actions"><button type="button" id="select-all-units" class="text-button">すべて選択</button><button type="button" id="clear-units" class="text-button">選択解除</button></div>
-            <div id="unit-options" class="unit-options" aria-label="出題する単元"></div>
-          </section>
-          <section id="second-unit-selector" class="unit-selector hidden">
-            <div class="unit-heading"><h3>下期前半の単元を選ぶ</h3><span id="second-unit-selection-summary"></span></div>
-            <p class="scope-note">日本の農業1〜6・農業のまとめ。統計は教材に掲載された年の値です。</p>
-            <p class="scope-note">称号は「単元を1つ選択 → 全問チャレンジ」で挑戦できます。通常の20問では称号判定をしません。</p>
-            <div class="unit-actions"><button type="button" id="select-all-second-units" class="text-button">すべて選択</button><button type="button" id="clear-second-units" class="text-button">選択解除</button></div>
-            <div id="second-unit-options" class="unit-options" aria-label="出題する下期の単元"></div>
-          </section>
-          <section id="summer-region-selector" class="unit-selector hidden">
-            <div class="unit-heading"><h3>夏期講習の地域を選ぶ</h3><span id="summer-region-selection-summary"></span></div>
-            <div class="unit-actions"><button type="button" id="select-all-summer-regions" class="text-button">すべて選択</button><button type="button" id="clear-summer-regions" class="text-button">選択解除</button></div>
-            <div id="summer-region-options" class="unit-options summer-region-options" aria-label="出題する夏期講習の地域"></div>
-          </section>
-          <div id="choice-challenge-options" class="challenge-options" aria-label="4択で挑戦する問題数">
-            <button class="challenge-button primary" data-question-count="20"><strong>20問</strong><span>毎日の学習に</span></button>
-            <button class="challenge-button primary" data-question-count="50"><strong>50問</strong><span>しっかり練習</span></button>
-            <button class="challenge-button primary full-challenge" data-question-count="all"><strong>全問チャレンジ</strong><span id="all-question-label">450問すべて</span></button>
-          </div>
-          <div id="written-challenge-options" class="challenge-options hidden" aria-label="記述で挑戦する問題数">
-            <button class="challenge-button primary written-start" data-written-count="10"><strong>10問</strong><span>短時間で記述練習</span></button>
-            <button class="challenge-button primary written-start" data-written-count="20"><strong>20問</strong><span>しっかり記述練習</span></button>
-            <button class="challenge-button primary full-challenge written-start" data-written-count="all"><strong>全問チャレンジ</strong><span id="written-all-question-label">450問すべて</span></button>
-          </div>
-          <div class="sound-settings">
-            <label class="sound-toggle"><input id="sound-enabled" type="checkbox" checked><span>効果音 ON</span></label>
-            <label class="volume-control"><span>音量</span><input id="sound-volume" type="range" min="0" max="100" value="70" step="5"><output id="sound-volume-value">70%</output></label>
-          </div>
+      <aside class="places-panel" aria-label="学習と地図クイズ">
+        <button id="quiz-launch" class="quiz-launch" disabled>地図クイズに挑戦 →</button><p id="quiz-launch-status" role="status"></p>
+        <section id="quiz-panel" hidden aria-labelledby="quiz-heading">
+          <div class="quiz-panel-heading"><h2 id="quiz-heading">地図クイズ</h2><button id="quiz-close">終了して図鑑へ</button></div>
+          <p id="quiz-save-status" role="status"></p><button id="quiz-reload" hidden>再読み込み</button>
+          <div id="quiz-lobby"><p>ピンや陸地を選んで回答。初回正解をつなげよう。</p><label for="quiz-topic">テーマ</label><select id="quiz-topic"></select><label for="quiz-count">問題数</label><select id="quiz-count"><option value="5">5問</option><option value="10" selected>10問</option><option value="all">テーマの全問</option></select><button id="quiz-start" class="quiz-primary">はじめる</button><button id="quiz-resume" hidden>続きから再開</button><button id="quiz-discard" hidden>続きの挑戦を終了する</button></div>
+          <div id="quiz-play" hidden><p id="quiz-counter"></p><h3 id="quiz-prompt" tabindex="-1"></h3><p id="quiz-streak"></p><details id="quiz-context"><summary>出題の条件</summary><p id="quiz-context-text"></p></details><p class="quiz-help">地図の記号と同じ候補で回答できます。「見る」は場所の確認だけです。</p><div id="quiz-choices" class="quiz-choices"></div><div id="quiz-feedback" tabindex="-1" role="status"></div><div id="quiz-explanation" hidden><p id="quiz-answer-names"></p><p id="quiz-explanation-text"></p><div id="quiz-sources"></div><button id="quiz-focus">正解の場所を見る</button></div><div class="quiz-actions"><button id="quiz-reveal">答えを見る</button><button id="quiz-next" class="quiz-primary" hidden>次の問題</button><button id="quiz-quit">この挑戦を終了</button></div></div>
+          <div id="quiz-result" hidden tabindex="-1"><h3>今回の結果</h3><p id="quiz-result-summary"></p><p id="quiz-new-titles"></p><button id="quiz-again" class="quiz-primary">もう一度挑戦</button></div>
+          <details id="quiz-achievements"><summary>地図の記録と称号</summary><p id="quiz-totals"></p><div id="quiz-titles"></div><p class="quiz-help">地図専用の記録です。間違えた後や答えを見た問題は、初回正解・連続正解に数えません。</p><button id="quiz-export">地図の記録を書き出す</button></details>
+        </section>
+        <div id="overlap-picker" class="overlap-picker" aria-label="重なった地点の候補" hidden><div><strong>どの地点を見る？</strong><button id="close-overlap" aria-label="候補を閉じる">×</button></div><div id="overlap-list"></div></div>
+        <div id="study-panel">
+        <div class="places-heading"><h2 id="places-heading">テーマで学ぼう</h2><span id="place-count" role="status"></span></div>
+        <p class="places-intro">地形の特徴や、日本を代表する場所を探そう。</p>
+        <div id="study-modes" class="study-modes" aria-label="学習テーマの種類"><button data-mode="terrain" aria-pressed="true" disabled>地形</button><button data-mode="ranking" aria-pressed="false" disabled>ランキング</button><button data-mode="sets" aria-pressed="false" disabled>三大○○</button></div>
+        <p id="collections-status" role="status">学習テーマを準備しています。</p>
+        <section id="collection-controls" hidden aria-label="学習テーマ"><div id="collection-choices" class="collection-choices"></div><h3 id="collection-title"></h3><p id="collection-note"></p><details id="collection-metadata"><summary>比べ方と出典</summary><dl><dt>対象</dt><dd id="collection-scope"></dd><dt>指標・単位・精度</dt><dd id="collection-metric"></dd><dt>基準日・資料年</dt><dd id="collection-date"></dd></dl><div id="collection-sources"></div></details><p class="collection-legend">順位の数字はランキングの単独ピンに表示。「＋数字」は重なった地点数です。</p></section>
+        <p id="places-status" role="status">地点を準備しています。</p>
+        <div id="terrain-controls"><div id="place-categories" class="place-categories" aria-label="地形の分類"></div>
+        <label class="search-label" for="place-search">名前で探す</label><input id="place-search" type="search" placeholder="富士山・ふじさん" autocomplete="off" disabled></div>
+        <div id="place-list" class="place-list" aria-label="地点一覧"></div><p id="place-no-results" hidden></p>
+
+        <div id="place-empty" class="place-empty">ピンの数字は、近くにある地点の数です。一覧からも選べます。</div>
+        <article id="place-detail" class="place-detail" aria-live="polite" hidden>
+          <p id="place-kind"></p><p id="place-collection"></p><h3 id="place-name" tabindex="-1"></h3><p id="place-reading"></p><p id="place-description"></p><p id="place-height"></p>
+          <div class="place-actions"><button id="focus-place">この地点を大きく</button><button id="clear-place" aria-label="地点の選択を解除">解除</button></div>
+          <p id="place-anchor-note" class="place-note"></p>
+          <p class="place-source-links"><a id="place-source" target="_blank" rel="noopener">出典</a><a id="place-source-map" target="_blank" rel="noopener">地理院地図で見る</a></p>
         </article>
-      </div>
-      <section class="weekly-review-panel" aria-labelledby="weekly-heading">
-        <h2 id="weekly-heading">過去7日間のまちがいを復習</h2>
-        <p>全範囲から、同じ問題をまとめて出題します。</p>
-        <div class="weekly-review-actions">
-          <button id="weekly-choice-button" class="primary" type="button" disabled>4択で復習 <span id="weekly-choice-count">0問</span></button>
-          <button id="weekly-written-button" class="primary" type="button" disabled>記述の△・×を復習 <span id="weekly-written-count">0問</span></button>
         </div>
-        <p class="scope-note">更新後に記録した誤答が対象です。正解し直しても、最後に間違えた時から7日間は練習できます。復習では称号は獲得しません。</p>
-      </section>
-      <section class="history-section">
-        <div class="section-heading"><h2>これまでの記録</h2><button id="clear-history-button" class="text-button">記録を消す</button></div>
-        <h3 class="history-subheading">4択の記録</h3><div id="history-list" class="history-list"></div>
-        <h3 class="history-subheading written-heading">記述の記録</h3><div id="written-history-list" class="history-list"></div>
-        <div class="backup-panel">
-          <h3>セーブデータのバックアップ</h3>
-          <p>アイコンの追加し直しや端末変更の前に、記録と設定をファイルへ保存できます。</p>
-          <div class="backup-actions">
-            <button id="export-save-button" type="button" class="secondary">バックアップを保存</button>
-            <button id="import-save-button" type="button" class="secondary">バックアップを読み込む</button>
-            <input id="import-save-file" class="visually-hidden" type="file" accept="application/json,.json">
-          </div>
-          <p id="backup-status" class="backup-status" role="status" aria-live="polite"></p>
-        </div>
-      </section>
-      <p class="app-version">更新版 v11.2</p>
-    </section>
-    <section id="quiz-screen" class="screen hidden" aria-live="polite">
-      <div class="quiz-card">
-        <div class="quiz-meta"><button id="quit-button" class="back-button" aria-label="クイズをやめてTOPへ戻る">← TOP</button><span id="region" class="tag"></span><span id="progress"></span></div>
-        <div class="progress-track"><div id="progress-bar" class="progress-bar"></div></div>
-        <h1 id="question" class="question"></h1><div id="choices" class="choices"></div>
-        <div id="written-panel" class="written-panel hidden"><p id="written-instruction">紙やノートに答えを書いてから、答えを見てください。</p><button id="reveal-answer-button" class="primary">答えを見る</button><div id="written-answer" class="written-answer hidden"></div><div id="self-grade-buttons" class="self-grade-buttons hidden"><button data-self-grade="correct" class="grade-button grade-correct"><strong>○</strong><span>漢字まで正しい</span></button><button data-self-grade="partial" class="grade-button grade-partial"><strong>△</strong><span>漢字・表記ミス</span></button><button data-self-grade="wrong" class="grade-button grade-wrong"><strong>×</strong><span>思い出せなかった</span></button></div></div>
-        <div id="feedback" class="feedback hidden"></div>
-        <button id="next-button" class="primary hidden">次の問題</button>
-      </div>
-    </section>
-    <section id="result-screen" class="screen hidden">
-      <div class="result-card">
-        <p class="eyebrow">結果発表</p><h1 id="result-title"></h1><div class="score-ring"><strong id="result-score"></strong><span id="result-rate"></span></div><div id="written-result-summary" class="written-result-summary hidden"></div><p id="result-time" class="result-time"></p>
-        <div id="achievement-banner" class="achievement-banner hidden"></div>
-        <div id="wrong-section" class="wrong-section"></div><button id="review-button" class="secondary hidden"></button><button id="home-button" class="primary">TOPへ戻る</button>
-      </div>
-    </section>
-    <section id="parent-panel" class="parent-panel hidden" aria-labelledby="parent-panel-title">
-      <div class="parent-panel-card">
-        <div class="parent-panel-heading"><h2 id="parent-panel-title">親の確認・承認</h2><button id="close-parent-panel" type="button" aria-label="閉じる">×</button></div>
-        <p>記述の全問○を確認して、承認・却下・取消できます。</p>
-        <p id="parent-panel-status" class="parent-panel-status" role="status"></p>
-        <div id="parent-review-list" class="parent-review-list"></div>
-        <button id="change-parent-pin" type="button" class="secondary">暗証番号を変更</button>
-      </div>
-    </section>
-    <section id="settings-panel" class="parent-panel hidden" aria-labelledby="settings-panel-title">
-      <div class="parent-panel-card settings-panel-card">
-        <div class="parent-panel-heading"><h2 id="settings-panel-title">⚙ 設定</h2><button id="close-settings-button" type="button" aria-label="閉じる">×</button></div>
-        <section class="settings-section">
-          <h3>親用4桁暗証番号</h3>
-          <p id="parent-pin-status" class="setting-status">未設定</p>
-          <p class="setting-help">記述問題の全問○を承認・却下・取り消すために使います。</p>
-          <div class="settings-actions"><button id="set-parent-pin" type="button" class="primary">暗証番号を設定する</button><button id="settings-parent-review" type="button" class="secondary">記述の承認管理</button></div>
-          <p id="settings-status" class="parent-panel-status" role="status" aria-live="polite"></p>
-        </section>
-        <section class="settings-section backup-panel">
-          <h3>セーブデータのバックアップ</h3>
-          <p>端末変更やホーム画面アイコンの追加し直しの前に、記録・設定・称号を保存できます。</p>
-          <div class="backup-actions"><button id="settings-export-save-button" type="button" class="secondary">バックアップを保存</button><button id="settings-import-save-button" type="button" class="secondary">バックアップを読み込む</button></div><p id="settings-backup-status" class="backup-status" role="status" aria-live="polite"></p>
-        </section>
-      </div>
-    </section>
+      </aside>
+    </div>
+    <p class="attribution">地形：<a href="https://maps.gsi.go.jp/development/demtile.html">国土地理院</a>を加工　／　境界：© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>・geoBoundaries（<a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL</a>）</p>
+    <details class="sources"><summary>地図の出典と表示について</summary><p>標高：<a href="https://maps.gsi.go.jp/development/ichiran.html#dem" target="_blank" rel="noopener">国土地理院の標高タイル</a>を加工して作成。境界：<a href="https://www.geoboundaries.org/api/current/gbOpen/JPN/ADM1/" target="_blank" rel="noopener">geoBoundaries / © OpenStreetMap contributors</a>（2017年、ODbL 1.0）。海岸線・地形は軽く動くよう簡略化しています。小さな島も元の位置に配置し、別の場所へ移していません。</p><p>採用した境界データの範囲を表示しており、国境・領有権の判断や測量のための地図ではありません。「高さを8倍に強調」は見やすさのための表示です。実際の標高・距離を測る用途には使えません。</p><p><a href="./SOURCES.md">資料・加工方法・ライセンス</a></p></details>
   </main>
-  <script src="./questions.js?v=20260920-v11-2"></script><script src="./lower-questions.js?v=20260920-v11-2"></script><script src="./weekly-review.js?v=20260920-v11-2"></script><script src="./app.js?v=20260920-v11-2"></script>
-  <script>if("serviceWorker" in navigator){let reloading=false;navigator.serviceWorker.addEventListener("controllerchange",()=>{if(reloading)return;reloading=true;location.reload()});window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js",{updateViaCache:"none"}).then(registration=>registration.update()).catch(console.error))}</script>
+  <script type="module" src="./map.mjs"></script>
+  <script nomodule>document.getElementById('load-title').textContent='このブラウザーでは3D地図を開けません';document.getElementById('load-detail').textContent='新しいSafari、Chrome、Edgeでお試しください。';</script>
 </body>
 </html>

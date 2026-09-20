@@ -1,0 +1,1542 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-20",
+  "categories": [],
+  "sources": [
+    {
+      "id": "ritsurin",
+      "url": "https://www.my-kagawa.jp/ritsuringarden/feature/ritsuringarden/garden",
+      "retrieved": "2026-09-20",
+      "sha256": "96FDC60F8064859339CB4A15B8225727DACD26EC1B93FC2EB91DB91FFE6316D7",
+      "title": "庭園の公式案内：栗林公園"
+    },
+    {
+      "id": "coordinate-ritsurin",
+      "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%A0%97%E6%9E%97%E5%85%AC%E5%9C%92",
+      "retrieved": "2026-09-20",
+      "sha256": "940993744D628ACBDE4D6C2E310267447D62E00904C9525F851041AAAFFAC8C3",
+      "title": "国土地理院 地名検索：栗林公園",
+      "selectedTitle": "栗林公園（特）",
+      "selectedAddressCode": "37201"
+    },
+    {
+      "id": "koishikawa",
+      "url": "https://www.tokyo-park.or.jp/park/koishikawakorakuen/",
+      "retrieved": "2026-09-20",
+      "sha256": "7D09D39A9F0C3762210A2A18FDC9BF76FCABD41EFD9468102506F4DF20153031",
+      "title": "庭園の公式案内：小石川後楽園"
+    },
+    {
+      "id": "coordinate-koishikawa",
+      "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%B0%8F%E7%9F%B3%E5%B7%9D%E5%BE%8C%E6%A5%BD%E5%9C%92",
+      "retrieved": "2026-09-20",
+      "sha256": "E6DD8A37087F6A87AC360BB6A877B13D662AC1F1CA27699DE03CD266F7DAC634",
+      "title": "国土地理院 地名検索：小石川後楽園",
+      "selectedTitle": "小石川後楽園（特）",
+      "selectedAddressCode": "13105"
+    },
+    {
+      "id": "rikugien",
+      "url": "https://www.tokyo-park.or.jp/park/rikugien/",
+      "retrieved": "2026-09-20",
+      "sha256": "F76CF2C966AF147FB1EAE74D63A9E743D8CC8862A457F28194996B3635923722",
+      "title": "庭園の公式案内：六義園"
+    },
+    {
+      "id": "coordinate-rikugien",
+      "url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%85%AD%E7%BE%A9%E5%9C%92",
+      "retrieved": "2026-09-20",
+      "sha256": "E272DCE03D84B99D646229FF04C9296C2B820B4A078C3BDB7D2379DEE8ECA7FE",
+      "title": "国土地理院 地名検索：六義園",
+      "selectedTitle": "六義園（特）",
+      "selectedAddressCode": "13105"
+    }
+  ],
+  "places": [
+    {
+      "id": "garden-ritsurin",
+      "category": "garden",
+      "name": "栗林公園",
+      "reading": "りつりんこうえん",
+      "aliases": [],
+      "locationLabel": "香川県高松市",
+      "description": "香川県高松市にある庭園。日本三名園の組合せと比べてみよう。",
+      "latitudeDeg": 34.3303816666667,
+      "longitudeDeg": 134.043620916667,
+      "heightMeters": null,
+      "waterSurfaceMeters": null,
+      "anchorKind": "representative",
+      "anchorLabel": "栗林公園",
+      "coordinateDatum": "GSI geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "coordinate-ritsurin",
+      "sourceIds": [
+        "coordinate-ritsurin",
+        "ritsurin"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#16/34.3303816666667/134.043620916667/",
+      "coordinateMethod": "official-source-extraction",
+      "quizTags": [
+        "garden",
+        "garden-ritsurin"
+      ]
+    },
+    {
+      "id": "garden-koishikawa",
+      "category": "garden",
+      "name": "小石川後楽園",
+      "reading": "こいしかわこうらくえん",
+      "aliases": [],
+      "locationLabel": "東京都文京区",
+      "description": "東京都文京区にある庭園。日本三名園の組合せと比べてみよう。",
+      "latitudeDeg": 35.7048041388889,
+      "longitudeDeg": 139.749859666667,
+      "heightMeters": null,
+      "waterSurfaceMeters": null,
+      "anchorKind": "representative",
+      "anchorLabel": "小石川後楽園",
+      "coordinateDatum": "GSI geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "coordinate-koishikawa",
+      "sourceIds": [
+        "coordinate-koishikawa",
+        "koishikawa"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#16/35.7048041388889/139.749859666667/",
+      "coordinateMethod": "official-source-extraction",
+      "quizTags": [
+        "garden",
+        "garden-koishikawa"
+      ]
+    },
+    {
+      "id": "garden-rikugien",
+      "category": "garden",
+      "name": "六義園",
+      "reading": "りくぎえん",
+      "aliases": [],
+      "locationLabel": "東京都文京区",
+      "description": "東京都文京区にある庭園。日本三名園の組合せと比べてみよう。",
+      "latitudeDeg": 35.7327692330556,
+      "longitudeDeg": 139.7451468,
+      "heightMeters": null,
+      "waterSurfaceMeters": null,
+      "anchorKind": "representative",
+      "anchorLabel": "六義園",
+      "coordinateDatum": "GSI geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "coordinate-rikugien",
+      "sourceIds": [
+        "coordinate-rikugien",
+        "rikugien"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#16/35.7327692330556/139.7451468/",
+      "coordinateMethod": "official-source-extraction",
+      "quizTags": [
+        "garden",
+        "garden-rikugien"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "mix",
+      "name": "おまかせ"
+    },
+    {
+      "id": "regions",
+      "name": "地図7区分"
+    },
+    {
+      "id": "mountain",
+      "name": "山"
+    },
+    {
+      "id": "plain",
+      "name": "平野"
+    },
+    {
+      "id": "river",
+      "name": "川"
+    },
+    {
+      "id": "lake",
+      "name": "湖"
+    },
+    {
+      "id": "basin",
+      "name": "盆地"
+    },
+    {
+      "id": "rankings",
+      "name": "ランキング"
+    },
+    {
+      "id": "sets",
+      "name": "三大○○"
+    }
+  ],
+  "questions": [
+    {
+      "id": "region-hokkaido",
+      "topic": "regions",
+      "targetType": "region",
+      "answerFormat": "map-any-one",
+      "prompt": "北海道を地図で選ぼう。",
+      "correctIds": [
+        "hokkaido"
+      ],
+      "candidateIds": [
+        "hokkaido",
+        "tohoku",
+        "kanto",
+        "chubu",
+        "kinki",
+        "chugoku-shikoku",
+        "kyushu-okinawa"
+      ],
+      "explanation": "地図では7区分を使います。九州・沖縄には沖縄を含め、中国・四国は一つの区分です。",
+      "sourceIds": [],
+      "context": "地図7区分。地図の陸地をタップ、または同じ記号の候補を選びます。"
+    },
+    {
+      "id": "region-tohoku",
+      "topic": "regions",
+      "targetType": "region",
+      "answerFormat": "map-any-one",
+      "prompt": "東北を地図で選ぼう。",
+      "correctIds": [
+        "tohoku"
+      ],
+      "candidateIds": [
+        "hokkaido",
+        "tohoku",
+        "kanto",
+        "chubu",
+        "kinki",
+        "chugoku-shikoku",
+        "kyushu-okinawa"
+      ],
+      "explanation": "地図では7区分を使います。九州・沖縄には沖縄を含め、中国・四国は一つの区分です。",
+      "sourceIds": [],
+      "context": "地図7区分。地図の陸地をタップ、または同じ記号の候補を選びます。"
+    },
+    {
+      "id": "region-kanto",
+      "topic": "regions",
+      "targetType": "region",
+      "answerFormat": "map-any-one",
+      "prompt": "関東を地図で選ぼう。",
+      "correctIds": [
+        "kanto"
+      ],
+      "candidateIds": [
+        "hokkaido",
+        "tohoku",
+        "kanto",
+        "chubu",
+        "kinki",
+        "chugoku-shikoku",
+        "kyushu-okinawa"
+      ],
+      "explanation": "地図では7区分を使います。九州・沖縄には沖縄を含め、中国・四国は一つの区分です。",
+      "sourceIds": [],
+      "context": "地図7区分。地図の陸地をタップ、または同じ記号の候補を選びます。"
+    },
+    {
+      "id": "region-chubu",
+      "topic": "regions",
+      "targetType": "region",
+      "answerFormat": "map-any-one",
+      "prompt": "中部を地図で選ぼう。",
+      "correctIds": [
+        "chubu"
+      ],
+      "candidateIds": [
+        "hokkaido",
+        "tohoku",
+        "kanto",
+        "chubu",
+        "kinki",
+        "chugoku-shikoku",
+        "kyushu-okinawa"
+      ],
+      "explanation": "地図では7区分を使います。九州・沖縄には沖縄を含め、中国・四国は一つの区分です。",
+      "sourceIds": [],
+      "context": "地図7区分。地図の陸地をタップ、または同じ記号の候補を選びます。"
+    },
+    {
+      "id": "region-kinki",
+      "topic": "regions",
+      "targetType": "region",
+      "answerFormat": "map-any-one",
+      "prompt": "近畿を地図で選ぼう。",
+      "correctIds": [
+        "kinki"
+      ],
+      "candidateIds": [
+        "hokkaido",
+        "tohoku",
+        "kanto",
+        "chubu",
+        "kinki",
+        "chugoku-shikoku",
+        "kyushu-okinawa"
+      ],
+      "explanation": "地図では7区分を使います。九州・沖縄には沖縄を含め、中国・四国は一つの区分です。",
+      "sourceIds": [],
+      "context": "地図7区分。地図の陸地をタップ、または同じ記号の候補を選びます。"
+    },
+    {
+      "id": "region-chugoku-shikoku",
+      "topic": "regions",
+      "targetType": "region",
+      "answerFormat": "map-any-one",
+      "prompt": "中国・四国を地図で選ぼう。",
+      "correctIds": [
+        "chugoku-shikoku"
+      ],
+      "candidateIds": [
+        "hokkaido",
+        "tohoku",
+        "kanto",
+        "chubu",
+        "kinki",
+        "chugoku-shikoku",
+        "kyushu-okinawa"
+      ],
+      "explanation": "地図では7区分を使います。九州・沖縄には沖縄を含め、中国・四国は一つの区分です。",
+      "sourceIds": [],
+      "context": "地図7区分。地図の陸地をタップ、または同じ記号の候補を選びます。"
+    },
+    {
+      "id": "region-kyushu-okinawa",
+      "topic": "regions",
+      "targetType": "region",
+      "answerFormat": "map-any-one",
+      "prompt": "九州・沖縄を地図で選ぼう。",
+      "correctIds": [
+        "kyushu-okinawa"
+      ],
+      "candidateIds": [
+        "hokkaido",
+        "tohoku",
+        "kanto",
+        "chubu",
+        "kinki",
+        "chugoku-shikoku",
+        "kyushu-okinawa"
+      ],
+      "explanation": "地図では7区分を使います。九州・沖縄には沖縄を含め、中国・四国は一つの区分です。",
+      "sourceIds": [],
+      "context": "地図7区分。地図の陸地をタップ、または同じ記号の候補を選びます。"
+    },
+    {
+      "id": "locate-mount-fuji",
+      "topic": "mountain",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "富士山のピンを選ぼう。",
+      "correctIds": [
+        "mount-fuji"
+      ],
+      "candidateIds": [
+        "mount-fuji",
+        "mount-asahidake",
+        "mount-daisen",
+        "mount-aso",
+        "mount-kitadake",
+        "mount-okuhotaka",
+        "mount-ainodake"
+      ],
+      "explanation": "富士山：山梨県・静岡県。山梨県と静岡県にまたがる山。ピンは剣ヶ峯。",
+      "sourceIds": [
+        "mountains"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "mountain"
+    },
+    {
+      "id": "locate-mount-asahidake",
+      "topic": "mountain",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "大雪山（旭岳）のピンを選ぼう。",
+      "correctIds": [
+        "mount-asahidake"
+      ],
+      "candidateIds": [
+        "mount-fuji",
+        "mount-asahidake",
+        "mount-daisen",
+        "mount-aso",
+        "mount-kitadake",
+        "mount-okuhotaka",
+        "mount-ainodake"
+      ],
+      "explanation": "大雪山（旭岳）：北海道。大雪山の山々の一つ。ピンは旭岳の山頂。",
+      "sourceIds": [
+        "mountains"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "mountain"
+    },
+    {
+      "id": "locate-mount-daisen",
+      "topic": "mountain",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "大山のピンを選ぼう。",
+      "correctIds": [
+        "mount-daisen"
+      ],
+      "candidateIds": [
+        "mount-fuji",
+        "mount-asahidake",
+        "mount-daisen",
+        "mount-aso",
+        "mount-kitadake",
+        "mount-okuhotaka",
+        "mount-ainodake"
+      ],
+      "explanation": "大山：鳥取県。中国地方の山。ピンは剣ヶ峰。",
+      "sourceIds": [
+        "mountains"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "mountain"
+    },
+    {
+      "id": "locate-mount-aso",
+      "topic": "mountain",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "阿蘇山（高岳）のピンを選ぼう。",
+      "correctIds": [
+        "mount-aso"
+      ],
+      "candidateIds": [
+        "mount-fuji",
+        "mount-asahidake",
+        "mount-daisen",
+        "mount-aso",
+        "mount-kitadake",
+        "mount-okuhotaka",
+        "mount-ainodake"
+      ],
+      "explanation": "阿蘇山（高岳）：熊本県。阿蘇の山々の一つ。ピンは高岳の山頂。",
+      "sourceIds": [
+        "mountains"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "mountain"
+    },
+    {
+      "id": "locate-plain-kanto",
+      "topic": "plain",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "関東平野のピンを選ぼう。",
+      "correctIds": [
+        "plain-kanto"
+      ],
+      "candidateIds": [
+        "plain-kanto",
+        "plain-nobi",
+        "plain-echigo",
+        "plain-tsukushi"
+      ],
+      "explanation": "関東平野：関東地方。関東地方に広がる平野。周囲の山地と比べてみよう。",
+      "sourceIds": [
+        "large"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "plain"
+    },
+    {
+      "id": "locate-plain-nobi",
+      "topic": "plain",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "濃尾平野のピンを選ぼう。",
+      "correctIds": [
+        "plain-nobi"
+      ],
+      "candidateIds": [
+        "plain-kanto",
+        "plain-nobi",
+        "plain-echigo",
+        "plain-tsukushi"
+      ],
+      "explanation": "濃尾平野：中部地方。川が運んだ土砂の堆積でできた平野の例。",
+      "sourceIds": [
+        "large"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "plain"
+    },
+    {
+      "id": "locate-plain-echigo",
+      "topic": "plain",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "越後平野のピンを選ぼう。",
+      "correctIds": [
+        "plain-echigo"
+      ],
+      "candidateIds": [
+        "plain-kanto",
+        "plain-nobi",
+        "plain-echigo",
+        "plain-tsukushi"
+      ],
+      "explanation": "越後平野：新潟県。日本海側に広がる平野。山地と海の位置も見てみよう。",
+      "sourceIds": [
+        "large"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "plain"
+    },
+    {
+      "id": "locate-plain-tsukushi",
+      "topic": "plain",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "筑紫平野のピンを選ぼう。",
+      "correctIds": [
+        "plain-tsukushi"
+      ],
+      "candidateIds": [
+        "plain-kanto",
+        "plain-nobi",
+        "plain-echigo",
+        "plain-tsukushi"
+      ],
+      "explanation": "筑紫平野：九州地方。ピンは筑紫平野の東部。平らな土地の広がりを見てみよう。",
+      "sourceIds": [
+        "kyushu"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "plain"
+    },
+    {
+      "id": "locate-river-shinano",
+      "topic": "river",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "信濃川のピンを選ぼう。",
+      "correctIds": [
+        "river-shinano"
+      ],
+      "candidateIds": [
+        "river-shinano",
+        "river-tone",
+        "river-mogami",
+        "river-shimanto",
+        "river-ishikari"
+      ],
+      "explanation": "信濃川：新潟県・小千谷付近。信濃川沿いの代表地点。川全体の流路を示すピンではありません。",
+      "sourceIds": [
+        "hokuriku"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "river"
+    },
+    {
+      "id": "locate-river-tone",
+      "topic": "river",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "利根川のピンを選ぼう。",
+      "correctIds": [
+        "river-tone"
+      ],
+      "candidateIds": [
+        "river-shinano",
+        "river-tone",
+        "river-mogami",
+        "river-shimanto",
+        "river-ishikari"
+      ],
+      "explanation": "利根川：関東地方・下流付近。利根川下流の代表地点。川全体の流路を示すピンではありません。",
+      "sourceIds": [
+        "kanto"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "river"
+    },
+    {
+      "id": "locate-river-mogami",
+      "topic": "river",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "最上川のピンを選ぼう。",
+      "correctIds": [
+        "river-mogami"
+      ],
+      "candidateIds": [
+        "river-shinano",
+        "river-tone",
+        "river-mogami",
+        "river-shimanto",
+        "river-ishikari"
+      ],
+      "explanation": "最上川：山形県・中流付近。山形盆地北部の最上川沿い。川と盆地の位置関係を見てみよう。",
+      "sourceIds": [
+        "tohoku"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "river"
+    },
+    {
+      "id": "locate-river-shimanto",
+      "topic": "river",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "四万十川のピンを選ぼう。",
+      "correctIds": [
+        "river-shimanto"
+      ],
+      "candidateIds": [
+        "river-shinano",
+        "river-tone",
+        "river-mogami",
+        "river-shimanto",
+        "river-ishikari"
+      ],
+      "explanation": "四万十川：高知県。川が大きく曲がって流れる場所の代表地点。",
+      "sourceIds": [
+        "shikoku"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "river"
+    },
+    {
+      "id": "locate-lake-biwa",
+      "topic": "lake",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "琵琶湖のピンを選ぼう。",
+      "correctIds": [
+        "lake-biwa"
+      ],
+      "candidateIds": [
+        "lake-biwa",
+        "lake-kasumigaura",
+        "lake-saroma",
+        "lake-inawashiro"
+      ],
+      "explanation": "琵琶湖：滋賀県。滋賀県にある湖。ピンは湖内の代表地点。",
+      "sourceIds": [
+        "lakes"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "lake"
+    },
+    {
+      "id": "locate-lake-kasumigaura",
+      "topic": "lake",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "霞ヶ浦（西浦）のピンを選ぼう。",
+      "correctIds": [
+        "lake-kasumigaura"
+      ],
+      "candidateIds": [
+        "lake-biwa",
+        "lake-kasumigaura",
+        "lake-saroma",
+        "lake-inawashiro"
+      ],
+      "explanation": "霞ヶ浦（西浦）：茨城県。ここでは西浦にピンを置いています。北浦などを含む広い呼び方とは区別します。",
+      "sourceIds": [
+        "lakes"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "lake"
+    },
+    {
+      "id": "locate-lake-saroma",
+      "topic": "lake",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "サロマ湖のピンを選ぼう。",
+      "correctIds": [
+        "lake-saroma"
+      ],
+      "candidateIds": [
+        "lake-biwa",
+        "lake-kasumigaura",
+        "lake-saroma",
+        "lake-inawashiro"
+      ],
+      "explanation": "サロマ湖：北海道。北海道にある湖。ピンは湖内の代表地点。",
+      "sourceIds": [
+        "lakes"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "lake"
+    },
+    {
+      "id": "locate-lake-inawashiro",
+      "topic": "lake",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "猪苗代湖のピンを選ぼう。",
+      "correctIds": [
+        "lake-inawashiro"
+      ],
+      "candidateIds": [
+        "lake-biwa",
+        "lake-kasumigaura",
+        "lake-saroma",
+        "lake-inawashiro"
+      ],
+      "explanation": "猪苗代湖：福島県。福島県にある湖。ピンは湖内の代表地点。",
+      "sourceIds": [
+        "lakes"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "lake"
+    },
+    {
+      "id": "locate-basin-yokote",
+      "topic": "basin",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "横手盆地のピンを選ぼう。",
+      "correctIds": [
+        "basin-yokote"
+      ],
+      "candidateIds": [
+        "basin-yokote",
+        "basin-yamagata",
+        "basin-kofu",
+        "basin-matsumoto"
+      ],
+      "explanation": "横手盆地：秋田県。周囲の山地に囲まれた土地の広がりを見てみよう。",
+      "sourceIds": [
+        "tohoku"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "basin"
+    },
+    {
+      "id": "locate-basin-yamagata",
+      "topic": "basin",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "山形盆地のピンを選ぼう。",
+      "correctIds": [
+        "basin-yamagata"
+      ],
+      "candidateIds": [
+        "basin-yokote",
+        "basin-yamagata",
+        "basin-kofu",
+        "basin-matsumoto"
+      ],
+      "explanation": "山形盆地：山形県。ピンは盆地の北部。最上川の代表地点と同じ場所です。",
+      "sourceIds": [
+        "tohoku"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "basin"
+    },
+    {
+      "id": "locate-basin-kofu",
+      "topic": "basin",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "甲府盆地のピンを選ぼう。",
+      "correctIds": [
+        "basin-kofu"
+      ],
+      "candidateIds": [
+        "basin-yokote",
+        "basin-yamagata",
+        "basin-kofu",
+        "basin-matsumoto"
+      ],
+      "explanation": "甲府盆地：山梨県。ピンは盆地の東部。周囲の山地との位置関係を見てみよう。",
+      "sourceIds": [
+        "kanto"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "basin"
+    },
+    {
+      "id": "locate-basin-matsumoto",
+      "topic": "basin",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "松本盆地のピンを選ぼう。",
+      "correctIds": [
+        "basin-matsumoto"
+      ],
+      "candidateIds": [
+        "basin-yokote",
+        "basin-yamagata",
+        "basin-kofu",
+        "basin-matsumoto"
+      ],
+      "explanation": "松本盆地：長野県。ピンは盆地の北部。山地に挟まれた土地を見てみよう。",
+      "sourceIds": [
+        "kanto"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "basin"
+    },
+    {
+      "id": "locate-mount-kitadake",
+      "topic": "mountain",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "北岳のピンを選ぼう。",
+      "correctIds": [
+        "mount-kitadake"
+      ],
+      "candidateIds": [
+        "mount-fuji",
+        "mount-asahidake",
+        "mount-daisen",
+        "mount-aso",
+        "mount-kitadake",
+        "mount-okuhotaka",
+        "mount-ainodake"
+      ],
+      "explanation": "北岳：山梨県。山頂の位置と、出典の標高を確かめよう。",
+      "sourceIds": [
+        "mountain-values"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "mountain"
+    },
+    {
+      "id": "locate-mount-okuhotaka",
+      "topic": "mountain",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "奥穂高岳のピンを選ぼう。",
+      "correctIds": [
+        "mount-okuhotaka"
+      ],
+      "candidateIds": [
+        "mount-fuji",
+        "mount-asahidake",
+        "mount-daisen",
+        "mount-aso",
+        "mount-kitadake",
+        "mount-okuhotaka",
+        "mount-ainodake"
+      ],
+      "explanation": "奥穂高岳：長野県 岐阜県。山頂の位置と、出典の標高を確かめよう。",
+      "sourceIds": [
+        "mountain-values"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "mountain"
+    },
+    {
+      "id": "locate-mount-ainodake",
+      "topic": "mountain",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "間ノ岳のピンを選ぼう。",
+      "correctIds": [
+        "mount-ainodake"
+      ],
+      "candidateIds": [
+        "mount-fuji",
+        "mount-asahidake",
+        "mount-daisen",
+        "mount-aso",
+        "mount-kitadake",
+        "mount-okuhotaka",
+        "mount-ainodake"
+      ],
+      "explanation": "間ノ岳：山梨県 静岡県。山頂の位置と、出典の標高を確かめよう。",
+      "sourceIds": [
+        "mountain-values"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "mountain"
+    },
+    {
+      "id": "locate-garden-kenrokuen",
+      "topic": "sets",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "兼六園のピンを選ぼう。",
+      "correctIds": [
+        "garden-kenrokuen"
+      ],
+      "candidateIds": [
+        "garden-kenrokuen",
+        "garden-kairakuen",
+        "garden-korakuen",
+        "garden-ritsurin",
+        "garden-koishikawa",
+        "garden-rikugien"
+      ],
+      "explanation": "兼六園：石川県金沢市。日本三名園の一つ。石川県の位置と合わせて覚えよう。",
+      "sourceIds": [
+        "coordinate-garden-kenrokuen"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "garden"
+    },
+    {
+      "id": "locate-garden-kairakuen",
+      "topic": "sets",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "偕楽園のピンを選ぼう。",
+      "correctIds": [
+        "garden-kairakuen"
+      ],
+      "candidateIds": [
+        "garden-kenrokuen",
+        "garden-kairakuen",
+        "garden-korakuen",
+        "garden-ritsurin",
+        "garden-koishikawa",
+        "garden-rikugien"
+      ],
+      "explanation": "偕楽園：茨城県水戸市。日本三名園の一つ。茨城県の位置と合わせて覚えよう。",
+      "sourceIds": [
+        "coordinate-garden-kairakuen"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "garden"
+    },
+    {
+      "id": "locate-garden-korakuen",
+      "topic": "sets",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "後楽園のピンを選ぼう。",
+      "correctIds": [
+        "garden-korakuen"
+      ],
+      "candidateIds": [
+        "garden-kenrokuen",
+        "garden-kairakuen",
+        "garden-korakuen",
+        "garden-ritsurin",
+        "garden-koishikawa",
+        "garden-rikugien"
+      ],
+      "explanation": "後楽園：岡山県岡山市。日本三名園の一つ。岡山県の位置と合わせて覚えよう。",
+      "sourceIds": [
+        "coordinate-garden-korakuen"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "garden"
+    },
+    {
+      "id": "locate-view-amanohashidate",
+      "topic": "sets",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "天橋立のピンを選ぼう。",
+      "correctIds": [
+        "view-amanohashidate"
+      ],
+      "candidateIds": [
+        "view-amanohashidate",
+        "view-miyajima",
+        "view-matsushima"
+      ],
+      "explanation": "天橋立：京都府宮津市。日本三景の一つ。海と陸がつくる景色に注目しよう。",
+      "sourceIds": [
+        "coordinate-view-amanohashidate"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "scenic"
+    },
+    {
+      "id": "locate-view-miyajima",
+      "topic": "sets",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "宮島のピンを選ぼう。",
+      "correctIds": [
+        "view-miyajima"
+      ],
+      "candidateIds": [
+        "view-amanohashidate",
+        "view-miyajima",
+        "view-matsushima"
+      ],
+      "explanation": "宮島：広島県廿日市市。日本三景の一つ。ピンは厳島神社付近の代表地点。",
+      "sourceIds": [
+        "coordinate-view-miyajima"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "scenic"
+    },
+    {
+      "id": "locate-metro-tokyo",
+      "topic": "sets",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "東京圏のピンを選ぼう。",
+      "correctIds": [
+        "metro-tokyo"
+      ],
+      "candidateIds": [
+        "metro-tokyo",
+        "metro-nagoya",
+        "metro-osaka"
+      ],
+      "explanation": "東京圏：東京都・周辺。東京を中心とする都市圏。ピンは東京都庁舎で、都市圏全体の範囲は表しません。",
+      "sourceIds": [
+        "coordinate-metro-tokyo"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "metro"
+    },
+    {
+      "id": "locate-metro-nagoya",
+      "topic": "sets",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "名古屋圏のピンを選ぼう。",
+      "correctIds": [
+        "metro-nagoya"
+      ],
+      "candidateIds": [
+        "metro-tokyo",
+        "metro-nagoya",
+        "metro-osaka"
+      ],
+      "explanation": "名古屋圏：愛知県・周辺。名古屋を中心とする都市圏。ピンは名古屋市役所で、都市圏全体の範囲は表しません。",
+      "sourceIds": [
+        "coordinate-metro-nagoya"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "metro"
+    },
+    {
+      "id": "locate-metro-osaka",
+      "topic": "sets",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "大阪圏のピンを選ぼう。",
+      "correctIds": [
+        "metro-osaka"
+      ],
+      "candidateIds": [
+        "metro-tokyo",
+        "metro-nagoya",
+        "metro-osaka"
+      ],
+      "explanation": "大阪圏：大阪府・周辺。大阪を中心とする都市圏。ピンは大阪市役所で、都市圏全体の範囲は表しません。",
+      "sourceIds": [
+        "coordinate-metro-osaka"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "metro"
+    },
+    {
+      "id": "locate-industry-keihin",
+      "topic": "sets",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "京浜工業地帯のピンを選ぼう。",
+      "correctIds": [
+        "industry-keihin"
+      ],
+      "candidateIds": [
+        "industry-keihin",
+        "industry-chukyo",
+        "industry-hanshin"
+      ],
+      "explanation": "京浜工業地帯：東京・川崎・横浜など。東京・川崎・横浜などに広がる工業地帯。ピンは川崎市役所の代表地点です。",
+      "sourceIds": [
+        "coordinate-industry-keihin"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "industry"
+    },
+    {
+      "id": "locate-industry-chukyo",
+      "topic": "sets",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "中京工業地帯のピンを選ぼう。",
+      "correctIds": [
+        "industry-chukyo"
+      ],
+      "candidateIds": [
+        "industry-keihin",
+        "industry-chukyo",
+        "industry-hanshin"
+      ],
+      "explanation": "中京工業地帯：名古屋・豊田・四日市など。名古屋・豊田・四日市などに広がる工業地帯。ピンは名古屋市役所の代表地点です。",
+      "sourceIds": [
+        "coordinate-industry-chukyo"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "industry"
+    },
+    {
+      "id": "locate-industry-hanshin",
+      "topic": "sets",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "阪神工業地帯のピンを選ぼう。",
+      "correctIds": [
+        "industry-hanshin"
+      ],
+      "candidateIds": [
+        "industry-keihin",
+        "industry-chukyo",
+        "industry-hanshin"
+      ],
+      "explanation": "阪神工業地帯：大阪・神戸など。大阪・神戸などに広がる工業地帯。ピンは大阪市役所の代表地点です。",
+      "sourceIds": [
+        "coordinate-industry-hanshin"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "industry"
+    },
+    {
+      "id": "locate-view-matsushima",
+      "topic": "sets",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "松島のピンを選ぼう。",
+      "correctIds": [
+        "view-matsushima"
+      ],
+      "candidateIds": [
+        "view-amanohashidate",
+        "view-miyajima",
+        "view-matsushima"
+      ],
+      "explanation": "松島：宮城県松島町。日本三景の一つ。ピンは五大堂付近の代表地点で、湾や島々の全体は表しません。",
+      "sourceIds": [
+        "coordinate-matsushima"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "scenic"
+    },
+    {
+      "id": "locate-river-ishikari",
+      "topic": "river",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "石狩川のピンを選ぼう。",
+      "correctIds": [
+        "river-ishikari"
+      ],
+      "candidateIds": [
+        "river-shinano",
+        "river-tone",
+        "river-mogami",
+        "river-shimanto",
+        "river-ishikari"
+      ],
+      "explanation": "石狩川：北海道旭川市付近。北海道を流れる川。ピンは旭川市付近の代表地点で、全流路は表しません。",
+      "sourceIds": [
+        "coordinate-ishikari"
+      ],
+      "context": "ピンは代表地点です。名前を隠した記号から1つ選びます。",
+      "candidateCategory": "river"
+    },
+    {
+      "id": "rank-mountains-1",
+      "topic": "rankings",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "標高で1位の山を1つ選ぼう。",
+      "correctIds": [
+        "mount-fuji"
+      ],
+      "candidateIds": [
+        "mount-fuji",
+        "mount-asahidake",
+        "mount-daisen",
+        "mount-aso",
+        "mount-kitadake",
+        "mount-okuhotaka",
+        "mount-ainodake"
+      ],
+      "explanation": "1位は富士山。標高は3776 mです。",
+      "sourceIds": [
+        "mountain-values"
+      ],
+      "context": "日本の主な山岳標高一覧に掲載された山の最高地点。標高（m）、採用精度1、2026-03-31。",
+      "candidateCategory": "mountain",
+      "rankingId": "mountains",
+      "rank": 1
+    },
+    {
+      "id": "rank-mountains-2",
+      "topic": "rankings",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "標高で2位の山を1つ選ぼう。",
+      "correctIds": [
+        "mount-kitadake"
+      ],
+      "candidateIds": [
+        "mount-fuji",
+        "mount-asahidake",
+        "mount-daisen",
+        "mount-aso",
+        "mount-kitadake",
+        "mount-okuhotaka",
+        "mount-ainodake"
+      ],
+      "explanation": "2位は北岳。標高は3193 mです。",
+      "sourceIds": [
+        "mountain-values"
+      ],
+      "context": "日本の主な山岳標高一覧に掲載された山の最高地点。標高（m）、採用精度1、2026-03-31。",
+      "candidateCategory": "mountain",
+      "rankingId": "mountains",
+      "rank": 2
+    },
+    {
+      "id": "rank-mountains-3",
+      "topic": "rankings",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "標高で同率3位の山を1つ選ぼう。",
+      "correctIds": [
+        "mount-okuhotaka",
+        "mount-ainodake"
+      ],
+      "candidateIds": [
+        "mount-fuji",
+        "mount-asahidake",
+        "mount-daisen",
+        "mount-aso",
+        "mount-kitadake",
+        "mount-okuhotaka",
+        "mount-ainodake"
+      ],
+      "explanation": "同率3位は奥穂高岳・間ノ岳。標高は3190 mです。どちらを選んでも正解です。",
+      "sourceIds": [
+        "mountain-values"
+      ],
+      "context": "日本の主な山岳標高一覧に掲載された山の最高地点。標高（m）、採用精度1、2026-03-31。",
+      "candidateCategory": "mountain",
+      "rankingId": "mountains",
+      "rank": 3
+    },
+    {
+      "id": "rank-rivers-1",
+      "topic": "rankings",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "幹川流路延長で1位の川を1つ選ぼう。",
+      "correctIds": [
+        "river-shinano"
+      ],
+      "candidateIds": [
+        "river-shinano",
+        "river-tone",
+        "river-mogami",
+        "river-shimanto",
+        "river-ishikari"
+      ],
+      "explanation": "1位は信濃川。幹川流路延長は367 kmです。",
+      "sourceIds": [
+        "river-lengths"
+      ],
+      "context": "日本の河川。信濃川は千曲川を含む。幹川流路延長（km）、採用精度1、2026-09-20閲覧（資料年の記載なし）。",
+      "candidateCategory": "river",
+      "rankingId": "rivers",
+      "rank": 1
+    },
+    {
+      "id": "rank-rivers-2",
+      "topic": "rankings",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "幹川流路延長で2位の川を1つ選ぼう。",
+      "correctIds": [
+        "river-tone"
+      ],
+      "candidateIds": [
+        "river-shinano",
+        "river-tone",
+        "river-mogami",
+        "river-shimanto",
+        "river-ishikari"
+      ],
+      "explanation": "2位は利根川。幹川流路延長は322 kmです。",
+      "sourceIds": [
+        "river-lengths"
+      ],
+      "context": "日本の河川。信濃川は千曲川を含む。幹川流路延長（km）、採用精度1、2026-09-20閲覧（資料年の記載なし）。",
+      "candidateCategory": "river",
+      "rankingId": "rivers",
+      "rank": 2
+    },
+    {
+      "id": "rank-rivers-3",
+      "topic": "rankings",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "幹川流路延長で3位の川を1つ選ぼう。",
+      "correctIds": [
+        "river-ishikari"
+      ],
+      "candidateIds": [
+        "river-shinano",
+        "river-tone",
+        "river-mogami",
+        "river-shimanto",
+        "river-ishikari"
+      ],
+      "explanation": "3位は石狩川。幹川流路延長は268 kmです。",
+      "sourceIds": [
+        "river-lengths"
+      ],
+      "context": "日本の河川。信濃川は千曲川を含む。幹川流路延長（km）、採用精度1、2026-09-20閲覧（資料年の記載なし）。",
+      "candidateCategory": "river",
+      "rankingId": "rivers",
+      "rank": 3
+    },
+    {
+      "id": "rank-lakes-1",
+      "topic": "rankings",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "湖沼面積で1位の湖を1つ選ぼう。",
+      "correctIds": [
+        "lake-biwa"
+      ],
+      "candidateIds": [
+        "lake-biwa",
+        "lake-kasumigaura",
+        "lake-saroma",
+        "lake-inawashiro"
+      ],
+      "explanation": "1位は琵琶湖。湖沼面積は669.22 km²です。",
+      "sourceIds": [
+        "lake-areas"
+      ],
+      "context": "国土地理院「湖沼面積20傑」の区分（霞ヶ浦は西浦。北浦は別の湖沼として集計）。湖沼面積（km²）、採用精度0.01、2026-04-01。",
+      "candidateCategory": "lake",
+      "rankingId": "lakes",
+      "rank": 1
+    },
+    {
+      "id": "rank-lakes-2",
+      "topic": "rankings",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "湖沼面積で2位の湖を1つ選ぼう。",
+      "correctIds": [
+        "lake-kasumigaura"
+      ],
+      "candidateIds": [
+        "lake-biwa",
+        "lake-kasumigaura",
+        "lake-saroma",
+        "lake-inawashiro"
+      ],
+      "explanation": "2位は霞ヶ浦（西浦）。湖沼面積は168.20 km²です。",
+      "sourceIds": [
+        "lake-areas"
+      ],
+      "context": "国土地理院「湖沼面積20傑」の区分（霞ヶ浦は西浦。北浦は別の湖沼として集計）。湖沼面積（km²）、採用精度0.01、2026-04-01。",
+      "candidateCategory": "lake",
+      "rankingId": "lakes",
+      "rank": 2
+    },
+    {
+      "id": "rank-lakes-3",
+      "topic": "rankings",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "湖沼面積で3位の湖を1つ選ぼう。",
+      "correctIds": [
+        "lake-saroma"
+      ],
+      "candidateIds": [
+        "lake-biwa",
+        "lake-kasumigaura",
+        "lake-saroma",
+        "lake-inawashiro"
+      ],
+      "explanation": "3位はサロマ湖。湖沼面積は151.63 km²です。",
+      "sourceIds": [
+        "lake-areas"
+      ],
+      "context": "国土地理院「湖沼面積20傑」の区分（霞ヶ浦は西浦。北浦は別の湖沼として集計）。湖沼面積（km²）、採用精度0.01、2026-04-01。",
+      "candidateCategory": "lake",
+      "rankingId": "lakes",
+      "rank": 3
+    },
+    {
+      "id": "set-gardens-any",
+      "topic": "sets",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "日本三名園の1つを選ぼう。",
+      "correctIds": [
+        "garden-kairakuen",
+        "garden-kenrokuen",
+        "garden-korakuen"
+      ],
+      "candidateIds": [
+        "garden-kenrokuen",
+        "garden-kairakuen",
+        "garden-korakuen",
+        "garden-ritsurin",
+        "garden-koishikawa",
+        "garden-rikugien"
+      ],
+      "explanation": "偕楽園・兼六園・後楽園のどれを選んでも正解です。小石川後楽園と岡山の後楽園は別の庭園です。",
+      "sourceIds": [
+        "gardens"
+      ],
+      "context": "庭園のピンから1つ選びます。三名園には順位を付けません。",
+      "candidateCategory": "garden",
+      "setId": "gardens"
+    },
+    {
+      "id": "set-views-miyagi",
+      "topic": "sets",
+      "targetType": "place",
+      "answerFormat": "map-any-one",
+      "prompt": "日本三景のうち、宮城県にあるものを選ぼう。",
+      "correctIds": [
+        "view-matsushima"
+      ],
+      "candidateIds": [
+        "view-matsushima",
+        "view-amanohashidate",
+        "view-miyajima"
+      ],
+      "explanation": "宮城県は松島。天橋立は京都府、宮島は広島県です。",
+      "sourceIds": [
+        "views"
+      ],
+      "context": "景勝地の代表地点を1つ選びます。",
+      "candidateCategory": "scenic"
+    }
+  ],
+  "titles": [
+    {
+      "id": "map-regions",
+      "name": "地図7区分マスター",
+      "requiredQuestionIds": [
+        "region-hokkaido",
+        "region-tohoku",
+        "region-kanto",
+        "region-chubu",
+        "region-kinki",
+        "region-chugoku-shikoku",
+        "region-kyushu-okinawa"
+      ],
+      "description": "このテーマの7問すべてで初回正解（複数回の挑戦で達成可）"
+    },
+    {
+      "id": "map-mountain",
+      "name": "地図・山マスター",
+      "requiredQuestionIds": [
+        "locate-mount-fuji",
+        "locate-mount-asahidake",
+        "locate-mount-daisen",
+        "locate-mount-aso",
+        "locate-mount-kitadake",
+        "locate-mount-okuhotaka",
+        "locate-mount-ainodake"
+      ],
+      "description": "このテーマの7問すべてで初回正解（複数回の挑戦で達成可）"
+    },
+    {
+      "id": "map-plain",
+      "name": "地図・平野マスター",
+      "requiredQuestionIds": [
+        "locate-plain-kanto",
+        "locate-plain-nobi",
+        "locate-plain-echigo",
+        "locate-plain-tsukushi"
+      ],
+      "description": "このテーマの4問すべてで初回正解（複数回の挑戦で達成可）"
+    },
+    {
+      "id": "map-river",
+      "name": "地図・河川マスター",
+      "requiredQuestionIds": [
+        "locate-river-shinano",
+        "locate-river-tone",
+        "locate-river-mogami",
+        "locate-river-shimanto",
+        "locate-river-ishikari"
+      ],
+      "description": "このテーマの5問すべてで初回正解（複数回の挑戦で達成可）"
+    },
+    {
+      "id": "map-lake",
+      "name": "地図・湖マスター",
+      "requiredQuestionIds": [
+        "locate-lake-biwa",
+        "locate-lake-kasumigaura",
+        "locate-lake-saroma",
+        "locate-lake-inawashiro"
+      ],
+      "description": "このテーマの4問すべてで初回正解（複数回の挑戦で達成可）"
+    },
+    {
+      "id": "map-basin",
+      "name": "地図・盆地マスター",
+      "requiredQuestionIds": [
+        "locate-basin-yokote",
+        "locate-basin-yamagata",
+        "locate-basin-kofu",
+        "locate-basin-matsumoto"
+      ],
+      "description": "このテーマの4問すべてで初回正解（複数回の挑戦で達成可）"
+    },
+    {
+      "id": "map-rankings",
+      "name": "地図・ランキングマスター",
+      "requiredQuestionIds": [
+        "rank-mountains-1",
+        "rank-mountains-2",
+        "rank-mountains-3",
+        "rank-rivers-1",
+        "rank-rivers-2",
+        "rank-rivers-3",
+        "rank-lakes-1",
+        "rank-lakes-2",
+        "rank-lakes-3"
+      ],
+      "description": "このテーマの9問すべてで初回正解（複数回の挑戦で達成可）"
+    },
+    {
+      "id": "map-sets",
+      "name": "地図・三大○○マスター",
+      "requiredQuestionIds": [
+        "locate-garden-kenrokuen",
+        "locate-garden-kairakuen",
+        "locate-garden-korakuen",
+        "locate-view-amanohashidate",
+        "locate-view-miyajima",
+        "locate-metro-tokyo",
+        "locate-metro-nagoya",
+        "locate-metro-osaka",
+        "locate-industry-keihin",
+        "locate-industry-chukyo",
+        "locate-industry-hanshin",
+        "locate-view-matsushima",
+        "set-gardens-any",
+        "set-views-miyagi"
+      ],
+      "description": "このテーマの14問すべてで初回正解（複数回の挑戦で達成可）"
+    },
+    {
+      "id": "map-streak-10",
+      "name": "3D地図10問連続正解",
+      "requiredStreak": 10,
+      "description": "1回の挑戦で10問続けて初回正解"
+    }
+  ]
+}

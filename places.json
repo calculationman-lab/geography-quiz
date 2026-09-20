@@ -1,0 +1,617 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-20",
+  "scope": "Phase 2 representative features; no ranking or quiz",
+  "categories": [
+    {
+      "id": "mountain",
+      "name": "山",
+      "symbol": "▲",
+      "color": "#886245"
+    },
+    {
+      "id": "plain",
+      "name": "平野",
+      "symbol": "▰",
+      "color": "#688247"
+    },
+    {
+      "id": "river",
+      "name": "川",
+      "symbol": "≈",
+      "color": "#347a9a"
+    },
+    {
+      "id": "lake",
+      "name": "湖",
+      "symbol": "●",
+      "color": "#366ba0"
+    },
+    {
+      "id": "basin",
+      "name": "盆地",
+      "symbol": "∪",
+      "color": "#946879"
+    }
+  ],
+  "sources": [
+    {
+      "id": "mountains",
+      "url": "https://maps.gsi.go.jp/3d/mountain/mountain.html",
+      "retrieved": "2026-09-20",
+      "sha256": "e791bd24b343efd7021e5b10c593f47ba445c777c8352a79660c3249998ccfc1",
+      "title": "国土地理院・日本の主な山岳"
+    },
+    {
+      "id": "large",
+      "url": "https://www.gsi.go.jp/kikaku/tenkei_daichikei.html",
+      "retrieved": "2026-09-20",
+      "sha256": "0e42f831a39976d7410895e6691c87d4ea9a48c87b611dd7f9e2dffeb50b1559",
+      "title": "国土地理院・日本の典型地形"
+    },
+    {
+      "id": "tohoku",
+      "url": "https://www.gsi.go.jp/kikaku/tenkei_tohoku.html",
+      "retrieved": "2026-09-20",
+      "sha256": "afd020994b5ea965d175b24f4a91a5d6af447f0d78890d072589451a29c8c7eb",
+      "title": "国土地理院・日本の典型地形"
+    },
+    {
+      "id": "kanto",
+      "url": "https://www.gsi.go.jp/kikaku/tenkei_kanto.html",
+      "retrieved": "2026-09-20",
+      "sha256": "fc3bebd83e77138de3c63ed40680db1081488a85831d278cf2f9b82c323baed5",
+      "title": "国土地理院・日本の典型地形"
+    },
+    {
+      "id": "kyushu",
+      "url": "https://www.gsi.go.jp/kikaku/tenkei_kyushu.html",
+      "retrieved": "2026-09-20",
+      "sha256": "bf61e989a3c680cb825f3dc47e518f5bf2ff3779afa92e6911ca4d7d3a68bc0c",
+      "title": "国土地理院・日本の典型地形"
+    },
+    {
+      "id": "lakes",
+      "url": "https://www.gsi.go.jp/kankyochiri/koshouchousa-list.html",
+      "retrieved": "2026-09-20",
+      "sha256": "894a747660b3e803033549276b232ce7394fd2b7a1c40280502dd68aaf1dabf1",
+      "title": "国土地理院・調査実施湖沼一覧"
+    },
+    {
+      "id": "hokuriku",
+      "url": "https://www.gsi.go.jp/kikaku/tenkei_hokuriku.html",
+      "retrieved": "2026-09-20",
+      "sha256": "522f6d984d76edb959a7de19b0dd816fb24a946248db979ea2697e6e6287215b",
+      "title": "国土地理院・日本の典型地形"
+    },
+    {
+      "id": "shikoku",
+      "url": "https://www.gsi.go.jp/kikaku/tenkei_shikoku.html",
+      "retrieved": "2026-09-20",
+      "sha256": "9e424d654b0ddecc190498217e14c498bd2fdce42156f38fb511690593f33157",
+      "title": "国土地理院・日本の典型地形"
+    }
+  ],
+  "places": [
+    {
+      "id": "mount-fuji",
+      "category": "mountain",
+      "name": "富士山",
+      "reading": "ふじさん",
+      "aliases": [],
+      "locationLabel": "山梨県・静岡県",
+      "description": "山梨県と静岡県にまたがる山。ピンは剣ヶ峯。",
+      "latitudeDeg": 35.36083333333333,
+      "longitudeDeg": 138.7275,
+      "heightMeters": 3776,
+      "waterSurfaceMeters": null,
+      "anchorKind": "summit",
+      "anchorLabel": "富士山（剣ヶ峯）",
+      "coordinateDatum": "GSI web map geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "mountains",
+      "sourceIds": [
+        "mountains"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#15/35.36083333333333/138.7275/",
+      "coordinateMethod": "unchanged-gsi-map-link",
+      "quizTags": [
+        "mountain",
+        "mount-fuji"
+      ]
+    },
+    {
+      "id": "mount-asahidake",
+      "category": "mountain",
+      "name": "大雪山（旭岳）",
+      "reading": "たいせつざん あさひだけ",
+      "aliases": [],
+      "locationLabel": "北海道",
+      "description": "大雪山の山々の一つ。ピンは旭岳の山頂。",
+      "latitudeDeg": 43.66361111111111,
+      "longitudeDeg": 142.85416666666666,
+      "heightMeters": 2291,
+      "waterSurfaceMeters": null,
+      "anchorKind": "summit",
+      "anchorLabel": "大雪山（旭岳）",
+      "coordinateDatum": "GSI web map geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "mountains",
+      "sourceIds": [
+        "mountains"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#15/43.66361111111111/142.85416666666666/",
+      "coordinateMethod": "unchanged-gsi-map-link",
+      "quizTags": [
+        "mountain",
+        "mount-asahidake"
+      ]
+    },
+    {
+      "id": "mount-daisen",
+      "category": "mountain",
+      "name": "大山",
+      "reading": "だいせん",
+      "aliases": [],
+      "locationLabel": "鳥取県",
+      "description": "中国地方の山。ピンは剣ヶ峰。",
+      "latitudeDeg": 35.37111111111111,
+      "longitudeDeg": 133.54611111111112,
+      "heightMeters": 1729,
+      "waterSurfaceMeters": null,
+      "anchorKind": "summit",
+      "anchorLabel": "大山（剣ヶ峰）",
+      "coordinateDatum": "GSI web map geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "mountains",
+      "sourceIds": [
+        "mountains"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#15/35.37111111111111/133.54611111111112/",
+      "coordinateMethod": "unchanged-gsi-map-link",
+      "quizTags": [
+        "mountain",
+        "mount-daisen"
+      ]
+    },
+    {
+      "id": "mount-aso",
+      "category": "mountain",
+      "name": "阿蘇山（高岳）",
+      "reading": "あそさん たかだけ",
+      "aliases": [],
+      "locationLabel": "熊本県",
+      "description": "阿蘇の山々の一つ。ピンは高岳の山頂。",
+      "latitudeDeg": 32.88444444444444,
+      "longitudeDeg": 131.1038888888889,
+      "heightMeters": 1592,
+      "waterSurfaceMeters": null,
+      "anchorKind": "summit",
+      "anchorLabel": "阿蘇山（高岳）",
+      "coordinateDatum": "GSI web map geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "mountains",
+      "sourceIds": [
+        "mountains"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#15/32.88444444444444/131.1038888888889/",
+      "coordinateMethod": "unchanged-gsi-map-link",
+      "quizTags": [
+        "mountain",
+        "mount-aso"
+      ]
+    },
+    {
+      "id": "plain-kanto",
+      "category": "plain",
+      "name": "関東平野",
+      "reading": "かんとうへいや",
+      "aliases": [],
+      "locationLabel": "関東地方",
+      "description": "関東地方に広がる平野。周囲の山地と比べてみよう。",
+      "latitudeDeg": 36.060756,
+      "longitudeDeg": 139.732361,
+      "heightMeters": null,
+      "waterSurfaceMeters": null,
+      "anchorKind": "representative",
+      "anchorLabel": "関東平野",
+      "coordinateDatum": "GSI web map geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "large",
+      "sourceIds": [
+        "large"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/?ll=36.060756,139.732361&z=10&base=std&vs=c1j0l0u0",
+      "coordinateMethod": "unchanged-gsi-map-link",
+      "quizTags": [
+        "plain",
+        "plain-kanto"
+      ]
+    },
+    {
+      "id": "plain-nobi",
+      "category": "plain",
+      "name": "濃尾平野",
+      "reading": "のうびへいや",
+      "aliases": [],
+      "locationLabel": "中部地方",
+      "description": "川が運んだ土砂の堆積でできた平野の例。",
+      "latitudeDeg": 35.260759,
+      "longitudeDeg": 136.753693,
+      "heightMeters": null,
+      "waterSurfaceMeters": null,
+      "anchorKind": "representative",
+      "anchorLabel": "濃尾平野",
+      "coordinateDatum": "GSI web map geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "large",
+      "sourceIds": [
+        "large"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/?ll=35.260759,136.753693&z=10&base=std&vs=c1j0l0u0",
+      "coordinateMethod": "unchanged-gsi-map-link",
+      "quizTags": [
+        "plain",
+        "plain-nobi"
+      ]
+    },
+    {
+      "id": "plain-echigo",
+      "category": "plain",
+      "name": "越後平野",
+      "reading": "えちごへいや",
+      "aliases": [],
+      "locationLabel": "新潟県",
+      "description": "日本海側に広がる平野。山地と海の位置も見てみよう。",
+      "latitudeDeg": 37.814666,
+      "longitudeDeg": 139.020996,
+      "heightMeters": null,
+      "waterSurfaceMeters": null,
+      "anchorKind": "representative",
+      "anchorLabel": "越後平野",
+      "coordinateDatum": "GSI web map geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "large",
+      "sourceIds": [
+        "large"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/?ll=37.814666,139.020996&z=10&base=std&vs=c1j0l0u0",
+      "coordinateMethod": "unchanged-gsi-map-link",
+      "quizTags": [
+        "plain",
+        "plain-echigo"
+      ]
+    },
+    {
+      "id": "plain-tsukushi",
+      "category": "plain",
+      "name": "筑紫平野",
+      "reading": "つくしへいや",
+      "aliases": [],
+      "locationLabel": "九州地方",
+      "description": "ピンは筑紫平野の東部。平らな土地の広がりを見てみよう。",
+      "latitudeDeg": 33.347041949,
+      "longitudeDeg": 130.611929006,
+      "heightMeters": null,
+      "waterSurfaceMeters": null,
+      "anchorKind": "representative",
+      "anchorLabel": "筑紫平野東部",
+      "coordinateDatum": "GSI web map geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "kyushu",
+      "sourceIds": [
+        "kyushu"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#12/33.347041949/130.611929006/&base=std&ls=std%7Ctenkei_kasen&disp=11&lcd=tenkei_kasen&vs=c1j0l0u0f0",
+      "coordinateMethod": "unchanged-gsi-map-link",
+      "quizTags": [
+        "plain",
+        "plain-tsukushi"
+      ]
+    },
+    {
+      "id": "river-shinano",
+      "category": "river",
+      "name": "信濃川",
+      "reading": "しなのがわ",
+      "aliases": [],
+      "locationLabel": "新潟県・小千谷付近",
+      "description": "信濃川沿いの代表地点。川全体の流路を示すピンではありません。",
+      "latitudeDeg": 37.279016599,
+      "longitudeDeg": 138.811671597,
+      "heightMeters": null,
+      "waterSurfaceMeters": null,
+      "anchorKind": "representative",
+      "anchorLabel": "信濃川小千谷付近",
+      "coordinateDatum": "GSI web map geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "hokuriku",
+      "sourceIds": [
+        "hokuriku"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#12/37.279016599/138.811671597/&base=std&ls=std%7Ctenkei_kasen&disp=11&lcd=tenkei_kasen&vs=c1j0l0u0f0",
+      "coordinateMethod": "unchanged-gsi-map-link",
+      "quizTags": [
+        "river",
+        "river-shinano"
+      ]
+    },
+    {
+      "id": "river-tone",
+      "category": "river",
+      "name": "利根川",
+      "reading": "とねがわ",
+      "aliases": [],
+      "locationLabel": "関東地方・下流付近",
+      "description": "利根川下流の代表地点。川全体の流路を示すピンではありません。",
+      "latitudeDeg": 35.882809915,
+      "longitudeDeg": 140.288711637,
+      "heightMeters": null,
+      "waterSurfaceMeters": null,
+      "anchorKind": "representative",
+      "anchorLabel": "利根川下流",
+      "coordinateDatum": "GSI web map geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "kanto",
+      "sourceIds": [
+        "kanto"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#12/35.882809915/140.288711637/&base=std&ls=std%7Ctenkei_kasen&disp=11&lcd=tenkei_kasen&vs=c1j0l0u0f0",
+      "coordinateMethod": "unchanged-gsi-map-link",
+      "quizTags": [
+        "river",
+        "river-tone"
+      ]
+    },
+    {
+      "id": "river-mogami",
+      "category": "river",
+      "name": "最上川",
+      "reading": "もがみがわ",
+      "aliases": [],
+      "locationLabel": "山形県・中流付近",
+      "description": "山形盆地北部の最上川沿い。川と盆地の位置関係を見てみよう。",
+      "latitudeDeg": 38.349503545,
+      "longitudeDeg": 140.28713813,
+      "heightMeters": null,
+      "waterSurfaceMeters": null,
+      "anchorKind": "representative",
+      "anchorLabel": "最上川中流（山形盆地北部）",
+      "coordinateDatum": "GSI web map geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "tohoku",
+      "sourceIds": [
+        "tohoku"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#12/38.349503545/140.28713813/&base=std&ls=std%7Ctenkei_kasen&disp=11&lcd=tenkei_kasen&vs=c1j0l0u0f0",
+      "coordinateMethod": "unchanged-gsi-map-link",
+      "quizTags": [
+        "river",
+        "river-mogami"
+      ]
+    },
+    {
+      "id": "river-shimanto",
+      "category": "river",
+      "name": "四万十川",
+      "reading": "しまんとがわ",
+      "aliases": [],
+      "locationLabel": "高知県",
+      "description": "川が大きく曲がって流れる場所の代表地点。",
+      "latitudeDeg": 33.217083524,
+      "longitudeDeg": 132.871043658,
+      "heightMeters": null,
+      "waterSurfaceMeters": null,
+      "anchorKind": "representative",
+      "anchorLabel": "四万十川の穿入蛇行",
+      "coordinateDatum": "GSI web map geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "shikoku",
+      "sourceIds": [
+        "shikoku"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#12/33.217083524/132.871043658/&base=std&ls=std%7Ctenkei_kasen&disp=11&lcd=tenkei_kasen&vs=c1j0l0u0f0",
+      "coordinateMethod": "unchanged-gsi-map-link",
+      "quizTags": [
+        "river",
+        "river-shimanto"
+      ]
+    },
+    {
+      "id": "lake-biwa",
+      "category": "lake",
+      "name": "琵琶湖",
+      "reading": "びわこ",
+      "aliases": [],
+      "locationLabel": "滋賀県",
+      "description": "滋賀県にある湖。ピンは湖内の代表地点。",
+      "latitudeDeg": 35.262441,
+      "longitudeDeg": 136.079407,
+      "heightMeters": null,
+      "waterSurfaceMeters": 84.547,
+      "anchorKind": "representative",
+      "anchorLabel": "琵琶湖",
+      "coordinateDatum": "GSI web map geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "lakes",
+      "sourceIds": [
+        "lakes"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#12/35.262441/136.079407/&base=std&ls=std%7Clake1&blend=1&disp=11&vs=c1j0h0k0l0u0t0z0r0s0m0f0&d=m",
+      "coordinateMethod": "unchanged-gsi-map-link",
+      "quizTags": [
+        "lake",
+        "lake-biwa"
+      ]
+    },
+    {
+      "id": "lake-kasumigaura",
+      "category": "lake",
+      "name": "霞ヶ浦（西浦）",
+      "reading": "かすみがうら にしうら",
+      "aliases": [],
+      "locationLabel": "茨城県",
+      "description": "ここでは西浦にピンを置いています。北浦などを含む広い呼び方とは区別します。",
+      "latitudeDeg": 36.034895,
+      "longitudeDeg": 140.392104,
+      "heightMeters": null,
+      "waterSurfaceMeters": 0.16,
+      "anchorKind": "representative",
+      "anchorLabel": "霞ヶ浦",
+      "coordinateDatum": "GSI web map geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "lakes",
+      "sourceIds": [
+        "lakes"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#13/36.034895/140.392104/&base=std&ls=std%7Clakedata&blend=0&disp=11&vs=c1j0h0k0l0u0t0z0r0s0m0f0&d=m",
+      "coordinateMethod": "unchanged-gsi-map-link",
+      "quizTags": [
+        "lake",
+        "lake-kasumigaura"
+      ]
+    },
+    {
+      "id": "lake-saroma",
+      "category": "lake",
+      "name": "サロマ湖",
+      "reading": "さろまこ",
+      "aliases": [],
+      "locationLabel": "北海道",
+      "description": "北海道にある湖。ピンは湖内の代表地点。",
+      "latitudeDeg": 44.142428,
+      "longitudeDeg": 143.792496,
+      "heightMeters": null,
+      "waterSurfaceMeters": 0,
+      "anchorKind": "representative",
+      "anchorLabel": "サロマ湖",
+      "coordinateDatum": "GSI web map geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "lakes",
+      "sourceIds": [
+        "lakes"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#13/44.142428/143.792496/&base=std&ls=std%7Clake1&blend=1&disp=11&vs=c1j0h0k0l0u0t0z0r0s0m0f0&d=m",
+      "coordinateMethod": "unchanged-gsi-map-link",
+      "quizTags": [
+        "lake",
+        "lake-saroma"
+      ]
+    },
+    {
+      "id": "lake-inawashiro",
+      "category": "lake",
+      "name": "猪苗代湖",
+      "reading": "いなわしろこ",
+      "aliases": [],
+      "locationLabel": "福島県",
+      "description": "福島県にある湖。ピンは湖内の代表地点。",
+      "latitudeDeg": 37.473496,
+      "longitudeDeg": 140.095081,
+      "heightMeters": null,
+      "waterSurfaceMeters": 514,
+      "anchorKind": "representative",
+      "anchorLabel": "猪苗代湖",
+      "coordinateDatum": "GSI web map geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "lakes",
+      "sourceIds": [
+        "lakes"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#13/37.473496/140.095081/&base=std&ls=std%7Clakedata&blend=0&disp=11&vs=c1g1j0h0k0l0u0t0z0r0s0m0f0&d=m",
+      "coordinateMethod": "unchanged-gsi-map-link",
+      "quizTags": [
+        "lake",
+        "lake-inawashiro"
+      ]
+    },
+    {
+      "id": "basin-yokote",
+      "category": "basin",
+      "name": "横手盆地",
+      "reading": "よこてぼんち",
+      "aliases": [],
+      "locationLabel": "秋田県",
+      "description": "周囲の山地に囲まれた土地の広がりを見てみよう。",
+      "latitudeDeg": 39.38862634,
+      "longitudeDeg": 140.520938559,
+      "heightMeters": null,
+      "waterSurfaceMeters": null,
+      "anchorKind": "representative",
+      "anchorLabel": "横手盆地",
+      "coordinateDatum": "GSI web map geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "tohoku",
+      "sourceIds": [
+        "tohoku"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#12/39.38862634/140.520938559/&base=std&ls=std%7Ctenkei_chikaku&disp=11&lcd=tenkei_chikaku&vs=c1j0l0u0f0",
+      "coordinateMethod": "unchanged-gsi-map-link",
+      "quizTags": [
+        "basin",
+        "basin-yokote"
+      ]
+    },
+    {
+      "id": "basin-yamagata",
+      "category": "basin",
+      "name": "山形盆地",
+      "reading": "やまがたぼんち",
+      "aliases": [],
+      "locationLabel": "山形県",
+      "description": "ピンは盆地の北部。最上川の代表地点と同じ場所です。",
+      "latitudeDeg": 38.349503545,
+      "longitudeDeg": 140.28713813,
+      "heightMeters": null,
+      "waterSurfaceMeters": null,
+      "anchorKind": "representative",
+      "anchorLabel": "最上川中流（山形盆地北部）",
+      "coordinateDatum": "GSI web map geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "tohoku",
+      "sourceIds": [
+        "tohoku"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#12/38.349503545/140.28713813/&base=std&ls=std%7Ctenkei_kasen&disp=11&lcd=tenkei_kasen&vs=c1j0l0u0f0",
+      "coordinateMethod": "unchanged-gsi-map-link",
+      "quizTags": [
+        "basin",
+        "basin-yamagata"
+      ]
+    },
+    {
+      "id": "basin-kofu",
+      "category": "basin",
+      "name": "甲府盆地",
+      "reading": "こうふぼんち",
+      "aliases": [],
+      "locationLabel": "山梨県",
+      "description": "ピンは盆地の東部。周囲の山地との位置関係を見てみよう。",
+      "latitudeDeg": 35.654483805,
+      "longitudeDeg": 138.669441683,
+      "heightMeters": null,
+      "waterSurfaceMeters": null,
+      "anchorKind": "representative",
+      "anchorLabel": "甲府盆地東部",
+      "coordinateDatum": "GSI web map geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "kanto",
+      "sourceIds": [
+        "kanto"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#12/35.654483805/138.669441683/&base=std&ls=std%7Ctenkei_kasen&disp=11&lcd=tenkei_kasen&vs=c1j0l0u0f0",
+      "coordinateMethod": "unchanged-gsi-map-link",
+      "quizTags": [
+        "basin",
+        "basin-kofu"
+      ]
+    },
+    {
+      "id": "basin-matsumoto",
+      "category": "basin",
+      "name": "松本盆地",
+      "reading": "まつもとぼんち",
+      "aliases": [],
+      "locationLabel": "長野県",
+      "description": "ピンは盆地の北部。山地に挟まれた土地を見てみよう。",
+      "latitudeDeg": 36.492033724,
+      "longitudeDeg": 137.836540314,
+      "heightMeters": null,
+      "waterSurfaceMeters": null,
+      "anchorKind": "representative",
+      "anchorLabel": "松本盆地北部",
+      "coordinateDatum": "GSI web map geographic coordinates (WGS84 compatible)",
+      "coordinateSourceId": "kanto",
+      "sourceIds": [
+        "kanto"
+      ],
+      "sourceMapUrl": "https://maps.gsi.go.jp/#12/36.492033724/137.836540314/&base=std&ls=std%7Ctenkei_kasen&disp=11&lcd=tenkei_kasen&vs=c1j0l0u0f0",
+      "coordinateMethod": "unchanged-gsi-map-link",
+      "quizTags": [
+        "basin",
+        "basin-matsumoto"
+      ]
+    }
+  ]
+}

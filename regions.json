@@ -1,0 +1,9 @@
+[
+  {"id":"hokkaido","name":"北海道","color":"#7599ce","prefectures":[1],"summerRegions":["北海道・東北"]},
+  {"id":"tohoku","name":"東北","color":"#83bba3","prefectures":[2,3,4,5,6,7],"summerRegions":["北海道・東北"]},
+  {"id":"kanto","name":"関東","color":"#ddad69","prefectures":[8,9,10,11,12,13,14],"summerRegions":["関東"]},
+  {"id":"chubu","name":"中部","color":"#9bb35c","prefectures":[15,16,17,18,19,20,21,22,23],"summerRegions":["中部"]},
+  {"id":"kinki","name":"近畿","color":"#c68c9c","prefectures":[24,25,26,27,28,29,30],"summerRegions":["近畿"]},
+  {"id":"chugoku-shikoku","name":"中国・四国","color":"#aa94c3","prefectures":[31,32,33,34,35,36,37,38,39],"summerRegions":["中国","四国"]},
+  {"id":"kyushu-okinawa","name":"九州・沖縄","color":"#db9571","prefectures":[40,41,42,43,44,45,46,47],"summerRegions":["九州・沖縄"]}
+]

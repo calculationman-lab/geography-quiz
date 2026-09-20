@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#264f43">
+  <title>3D日本地図｜社会マスター</title>
+  <link rel="icon" href="../icon-192.png?v=20260920-v11-2">
+  <link rel="stylesheet" href="./map.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+  <header class="site-header"><a href="../index.html" class="back-link"><span aria-hidden="true">←</span> 社会マスター</a><span class="edition">立体で学ぶ、日本の地理</span></header>
+  <main>
+    <div class="page-heading"><div><p class="eyebrow">日本のすがたを見てみよう</p><h1>3D日本地図<span class="phase-tag">地図で探してクイズ</span></h1></div><p class="intro">回して、近づいて。<br>山地と平野、島々のつながりを発見しよう。</p></div>
+    <section id="linked-context" class="linked-context" hidden aria-label="通常問題からの地図練習"><strong id="linked-source"></strong><p id="linked-note"></p><p id="linked-credit"></p><button id="linked-repeat" hidden>もう一度、地図で場所を探す</button><button id="linked-return">社会マスターへ戻る</button></section>
+    <div class="explorer">
+      <aside class="region-panel" aria-labelledby="regions-heading">
+        <h2 id="regions-heading">どの地方を見る？</h2>
+        <button id="all-regions" class="region-button all selected" aria-pressed="true" disabled><span class="region-dot all-dot" aria-hidden="true"></span>日本全国<span class="arrow" aria-hidden="true">↗</span></button>
+        <div id="regions" class="region-list"></div>
+        <div class="selection-card" aria-live="polite"><p class="small-label">いま見ている地方</p><h3 id="selection-name">日本全国</h3><p id="selection-detail">7つの地方を選んでみよう。</p><button id="focus-region" class="focus-button" disabled>この地方を大きく</button></div>
+        <div class="height-control"><label for="height-mode">地形の高さ</label><select id="height-mode" disabled><option value="8">見やすく強調（8倍）</option><option value="1">強調しない（1倍）</option></select></div>
+      </aside>
+      <section class="map-panel" aria-label="日本列島の3D表示">
+        <div class="map-toolbar"><span id="view-label">日本全国</span><div class="toolbar-actions"><button id="zoom-in" aria-label="拡大" disabled>＋</button><button id="zoom-out" aria-label="縮小" disabled>−</button><button id="reset-view" disabled>視点をリセット</button></div></div>
+        <div id="quiz-map-strip" class="quiz-map-strip" hidden><span id="quiz-map-counter"></span><strong id="quiz-map-prompt"></strong><p id="quiz-map-feedback" role="status"></p></div><div id="map-stage" class="map-stage"><div id="map-canvas" class="canvas-host"></div><div id="pin-overlay" class="pin-overlay"><svg id="pin-lines" aria-hidden="true"></svg><div id="pin-buttons"></div></div><span id="selected-place-caption" class="selected-place-caption" hidden></span><div id="load-status" class="load-status" role="status"><span class="spinner" aria-hidden="true"></span><strong id="load-title">日本の地形を読み込んでいます</strong><span id="load-detail">少し待ってね。</span><button id="retry" hidden>もう一度読み込む</button></div><div class="map-compass" aria-hidden="true"><span id="north-arrow">↑</span><span>北</span></div><span id="height-caption" class="height-caption">高さを8倍に強調</span></div>
+        <div class="map-help"><span><strong>回転</strong> ドラッグ・指1本</span><span><strong>拡大・縮小</strong> ホイール・指2本</span><span><strong>地方を選ぶ</strong> 地図をタップ</span></div>
+      </section>
+      <aside class="places-panel" aria-label="学習と地図クイズ">
+        <button id="quiz-launch" class="quiz-launch" disabled>地図クイズに挑戦 →</button><p id="quiz-launch-status" role="status"></p>
+        <section id="quiz-panel" hidden aria-labelledby="quiz-heading">
+          <div class="quiz-panel-heading"><h2 id="quiz-heading">地図クイズ</h2><button id="quiz-close">終了して図鑑へ</button></div>
+          <p id="quiz-save-status" role="status"></p><button id="quiz-reload" hidden>再読み込み</button>
+          <div id="quiz-lobby"><p>ピンや陸地を選んで回答。初回正解をつなげよう。</p><label for="quiz-topic">テーマ</label><select id="quiz-topic"></select><label for="quiz-count">問題数</label><select id="quiz-count"><option value="5">5問</option><option value="10" selected>10問</option><option value="all">テーマの全問</option></select><button id="quiz-start" class="quiz-primary">はじめる</button><button id="quiz-resume" hidden>続きから再開</button><button id="quiz-discard" hidden>続きの挑戦を終了する</button></div>
+          <div id="quiz-play" hidden><p id="quiz-counter"></p><h3 id="quiz-prompt" tabindex="-1"></h3><p id="quiz-streak"></p><details id="quiz-context"><summary>出題の条件</summary><p id="quiz-context-text"></p></details><p class="quiz-help">地図の記号と同じ候補で回答できます。「見る」は場所の確認だけです。</p><div id="quiz-choices" class="quiz-choices"></div><div id="quiz-feedback" tabindex="-1" role="status"></div><div id="quiz-explanation" hidden><p id="quiz-answer-names"></p><p id="quiz-explanation-text"></p><div id="quiz-sources"></div><button id="quiz-focus">正解の場所を見る</button></div><div class="quiz-actions"><button id="quiz-reveal">答えを見る</button><button id="quiz-next" class="quiz-primary" hidden>次の問題</button><button id="quiz-quit">この挑戦を終了</button></div></div>
+          <div id="quiz-result" hidden tabindex="-1"><h3>今回の結果</h3><p id="quiz-result-summary"></p><p id="quiz-new-titles"></p><button id="quiz-again" class="quiz-primary">もう一度挑戦</button></div>
+          <details id="quiz-achievements"><summary>地図の記録と称号</summary><p id="quiz-totals"></p><div id="quiz-titles"></div><p class="quiz-help">地図専用の記録です。間違えた後や答えを見た問題は、初回正解・連続正解に数えません。</p><button id="quiz-export">地図の記録を書き出す</button></details>
+        </section>
+        <div id="overlap-picker" class="overlap-picker" aria-label="重なった地点の候補" hidden><div><strong>どの地点を見る？</strong><button id="close-overlap" aria-label="候補を閉じる">×</button></div><div id="overlap-list"></div></div>
+        <div id="study-panel">
+        <div class="places-heading"><h2 id="places-heading">テーマで学ぼう</h2><span id="place-count" role="status"></span></div>
+        <p class="places-intro">地形の特徴や、日本を代表する場所を探そう。</p>
+        <div id="study-modes" class="study-modes" aria-label="学習テーマの種類"><button data-mode="terrain" aria-pressed="true" disabled>地形</button><button data-mode="ranking" aria-pressed="false" disabled>ランキング</button><button data-mode="sets" aria-pressed="false" disabled>三大○○</button></div>
+        <p id="collections-status" role="status">学習テーマを準備しています。</p>
+        <section id="collection-controls" hidden aria-label="学習テーマ"><div id="collection-choices" class="collection-choices"></div><h3 id="collection-title"></h3><p id="collection-note"></p><details id="collection-metadata"><summary>比べ方と出典</summary><dl><dt>対象</dt><dd id="collection-scope"></dd><dt>指標・単位・精度</dt><dd id="collection-metric"></dd><dt>基準日・資料年</dt><dd id="collection-date"></dd></dl><div id="collection-sources"></div></details><p class="collection-legend">順位の数字はランキングの単独ピンに表示。「＋数字」は重なった地点数です。</p></section>
+        <p id="places-status" role="status">地点を準備しています。</p>
+        <div id="terrain-controls"><div id="place-categories" class="place-categories" aria-label="地形の分類"></div>
+        <label class="search-label" for="place-search">名前で探す</label><input id="place-search" type="search" placeholder="富士山・ふじさん" autocomplete="off" disabled></div>
+        <div id="place-list" class="place-list" aria-label="地点一覧"></div><p id="place-no-results" hidden></p>
+
+        <div id="place-empty" class="place-empty">ピンの数字は、近くにある地点の数です。一覧からも選べます。</div>
+        <article id="place-detail" class="place-detail" aria-live="polite" hidden>
+          <p id="place-kind"></p><p id="place-collection"></p><h3 id="place-name" tabindex="-1"></h3><p id="place-reading"></p><p id="place-description"></p><p id="place-height"></p>
+          <div class="place-actions"><button id="focus-place">この地点を大きく</button><button id="clear-place" aria-label="地点の選択を解除">解除</button></div>
+          <p id="place-anchor-note" class="place-note"></p>
+          <p class="place-source-links"><a id="place-source" target="_blank" rel="noopener">出典</a><a id="place-source-map" target="_blank" rel="noopener">地理院地図で見る</a></p>
+        </article>
+        </div>
+      </aside>
+    </div>
+    <p class="attribution">地形：<a href="https://maps.gsi.go.jp/development/demtile.html">国土地理院</a>を加工　／　境界：© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>・geoBoundaries（<a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL</a>）</p>
+    <details class="sources"><summary>地図の出典と表示について</summary><p>標高：<a href="https://maps.gsi.go.jp/development/ichiran.html#dem" target="_blank" rel="noopener">国土地理院の標高タイル</a>を加工して作成。境界：<a href="https://www.geoboundaries.org/api/current/gbOpen/JPN/ADM1/" target="_blank" rel="noopener">geoBoundaries / © OpenStreetMap contributors</a>（2017年、ODbL 1.0）。海岸線・地形は軽く動くよう簡略化しています。小さな島も元の位置に配置し、別の場所へ移していません。</p><p>採用した境界データの範囲を表示しており、国境・領有権の判断や測量のための地図ではありません。「高さを8倍に強調」は見やすさのための表示です。実際の標高・距離を測る用途には使えません。</p><p><a href="./SOURCES.md">資料・加工方法・ライセンス</a></p></details>
+  </main>
+  <script type="module" src="./map.mjs"></script>
+  <script nomodule>document.getElementById('load-title').textContent='このブラウザーでは3D地図を開けません';document.getElementById('load-detail').textContent='新しいSafari、Chrome、Edgeでお試しください。';</script>
+</body>
+</html>

@@ -24,3 +24,11 @@ test("exam countdown uses calendar days and accepts leap day",()=>{
   assert.equal(Countdown.dateValue("2027-02-29"),null);
   assert.equal(Countdown.dateValue("2028-2-9"),null);
 });
+
+test("2026 grade four implies the 2029 exam and 2023 enrollment",()=>{
+  const today=new Date(2026,8,26);
+  assert.equal(Countdown.examDays("2029-02-03",today),861);
+  assert.deepEqual(Countdown.schoolDays(2023,today),{
+    total:2192,elapsed:1274,remaining:918,elapsedPercent:1274/2192*100
+  });
+});

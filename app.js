@@ -3,7 +3,7 @@
   const QUESTIONS=window.GEOGRAPHY_QUESTIONS||[];
   const STORAGE_KEY="social-quiz-progress-v1",SETTINGS_KEY="social-quiz-settings-v1",MASTERY_KEY="social-quiz-mastery-v1";
   const countdown=window.SchoolCountdown;
-  const DEFAULT_EXAM_DATE="",DEFAULT_ENROLLMENT_YEAR=null;
+  const DEFAULT_EXAM_DATE="2029-02-03",DEFAULT_ENROLLMENT_YEAR=2023;
   const SCOPE_LABELS={first:"小4前期",second:"小4下期（前半）",summer:"夏期講習",all:"全範囲"},TYPE_LABELS={choice:"4択",written:"記述"};
   const UNIT_TITLES={1:"くらしの開拓者",2:"都市と郷土の覇者",3:"地図記号の覇者",4:"方位と縮尺の覇者",5:"日本列島の覇者",6:"世界の中の日本の覇者",7:"時差の覇者",8:"四十七都道府県の覇者",9:"気候の覇者",10:"南国の覇者",11:"北の大地の覇者",12:"雪国の覇者",13:"低地の覇者",14:"海辺の覇者",15:"盆地の覇者",16:"高原の覇者",17:"国土の覇者"};
   const SUMMER_TITLES={"北海道・東北":"北国の覇者","関東":"東国の覇者","中部":"日本の屋根の覇者","近畿":"古都の覇者","中国":"山陰山陽の覇者","四国":"四国の覇者","九州・沖縄":"南海の覇者"};

@@ -38,6 +38,8 @@ vm.runInContext(appSource.replace(/\}\)\(\);\s*$/, 'window.__test={makeRound,loa
 assert.strictEqual(elements["history-list"].children.length,1,"v5履歴を表示");
 assert.strictEqual(elements["sound-enabled"].checked,false,"v5効果音設定を維持");
 assert.strictEqual(elements["sound-volume"].value,35,"v5音量設定を維持");
+assert.strictEqual(context.window.__test.loadSettings().examDate,"2029-02-03","旧設定でも入試日を初期表示");
+assert.strictEqual(context.window.__test.loadSettings().enrollmentYear,2023,"旧設定でも入学年度を初期表示");
 assert.strictEqual(elements["question-total"].textContent,450,"初期範囲は前期");
 assert.strictEqual(elements["unit-options"].children.length,17,"前期17単元を表示");
 assert(elements["rank-details"].classList.contains("hidden"),"攻略詳細は初期状態で閉じる");

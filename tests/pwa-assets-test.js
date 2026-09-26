@@ -1,0 +1,20 @@
+const fs=require('fs'),path=require('path'),vm=require('vm'),assert=require('assert');
+const root=path.join(__dirname,'..'),html=fs.readFileSync(path.join(root,'index.html'),'utf8'),events={},deleted=[],cached=new Map();
+let addedAssets=[];const oldCaches=['social-quiz-v9-10','social-quiz-v11-0','social-quiz-v11-1','social-quiz-v11-2','social-quiz-v11-2-map3d-p1','social-quiz-v11-2-map3d-p2','social-quiz-v11-2-map3d-p3','social-quiz-v11-2-map3d-p4','social-quiz-v11-2-map3d-p5','social-quiz-v11-2-map3d-p5-r1'];
+const ctx={self:{addEventListener:(name,fn)=>events[name]=fn,skipWaiting:async()=>{},clients:{claim:async()=>{}}},caches:{open:async()=>({addAll:async requests=>{addedAssets=requests.map(x=>x.url);for(const asset of addedAssets){const p=path.join(root,asset.split('?')[0]==='./'?'index.html':asset.split('?')[0]);assert(fs.existsSync(p),`オフライン資産が存在: ${asset}`);cached.set(asset,true)}}}),keys:async()=>[...oldCaches,'social-quiz-v11-3-countdown','another-app-cache'],delete:async key=>deleted.push(key)},Request:class{constructor(url,options){this.url=url;this.cache=options.cache}},URL,console};
+vm.createContext(ctx);vm.runInContext(fs.readFileSync(path.join(root,'sw.js'),'utf8'),ctx);
+(async()=>{
+  let pending;events.install({waitUntil:p=>pending=p});await pending;
+  for(const m of html.matchAll(/<script src="([^"]+)"/g))assert(cached.has(m[1]),`HTMLとキャッシュのURL一致: ${m[1]}`);
+  const scripts=[...html.matchAll(/<script src="([^"]+)"/g)].map(m=>m[1]);
+  const weeklyIndex=scripts.findIndex(src=>src.startsWith('./weekly-review.js?'));
+  assert(weeklyIndex>=0&&weeklyIndex<scripts.findIndex(src=>src.startsWith('./app.js?')),'復習スクリプトをapp.jsより先に読み込む');
+  for(const m of html.matchAll(/<link rel="(?:stylesheet|apple-touch-icon)" href="([^"]+)"/g))assert(cached.has(m[1]),`CSS・アイコンとキャッシュのURL一致: ${m[1]}`);
+  for(const asset of ['./styles.css?v=20260926-v11-3','./countdown.js?v=20260926-v11-3','./app.js?v=20260926-v11-3'])assert(cached.has(asset),`更新資産を先読み: ${asset}`);
+  for(const icon of JSON.parse(fs.readFileSync(path.join(root,'manifest.webmanifest'),'utf8')).icons)assert(cached.has(icon.src));
+  assert(addedAssets.some(x=>x.includes('lower-questions.js')));
+  events.activate({waitUntil:p=>pending=p});await pending;
+  assert.deepStrictEqual(deleted,oldCaches,'このアプリの旧キャッシュだけ削除');
+  const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);assert.strictEqual(new Set(ids).size,ids.length,'DOM ID重複なし');
+  console.log('PASS: PWA資産の存在・HTML/manifestとのURL一致・旧キャッシュ更新対象（実ブラウザーのオフライン動作は未検証）');
+})().catch(e=>{console.error(e);process.exitCode=1});

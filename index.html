@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <title>社会マスター</title>
   <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="stylesheet" href="./styles.css?v=20260920-v11-2">
+  <link rel="stylesheet" href="./styles.css?v=20260926-v11-3">
   <link rel="stylesheet" href="./map3d/entry.css">
   <link rel="stylesheet" href="./map3d/question-links.css">
   <meta name="theme-color" content="#2457a7">
@@ -18,6 +18,15 @@
   <main class="app-shell">
     <section id="home-screen" class="screen">
       <header class="hero"><button id="open-settings-button" class="settings-button" type="button" aria-label="設定を開く">⚙<span>設定</span></button><h1>社会マスター</h1><p>4択と記述で社会をマスターしよう！</p></header>
+      <section class="countdown-card" aria-label="受験と小学校生活のカウントダウン">
+        <p class="countdown-exam-label">小石川 入試まで</p>
+        <p class="countdown-exam-value">あと <strong id="exam-days">--</strong> 日</p>
+        <div class="countdown-ring" id="school-days-ring" role="img" aria-label="小学校生活の残り期間">
+          <div class="countdown-ring-core"><span>小学校生活</span><strong>あと <span id="school-days">--</span> 日</strong></div>
+        </div>
+        <p class="countdown-progress" id="school-days-progress">入学年度を設定してください</p>
+        <button id="start-today-button" class="primary countdown-start" type="button">今日の学習を始める</button>
+      </section>
       <section class="rank-card" aria-labelledby="rank-heading">
         <div class="rank-emblem" id="rank-emblem" aria-hidden="true">🧭</div>
         <div class="rank-main"><p id="rank-heading">現在のランク</p><h2 id="current-rank">はじまりの旅人</h2><button id="rank-toggle" class="rank-toggle" type="button" aria-expanded="false" aria-controls="rank-details"><span id="rank-progress">日本地理 攻略ランク</span><span id="rank-toggle-icon" aria-hidden="true">▼</span></button></div>
@@ -117,7 +126,7 @@
           <p id="backup-status" class="backup-status" role="status" aria-live="polite"></p>
         </div>
       </section>
-      <p class="app-version">更新版 v11.2 ＋ 3D地図 Phase 5</p>
+      <p class="app-version">更新版 v11.3 ＋ 3D地図 Phase 5</p>
     </section>
     <section id="quiz-screen" class="screen hidden" aria-live="polite">
       <div class="quiz-card">
@@ -150,6 +159,16 @@
       <div class="parent-panel-card settings-panel-card">
         <div class="parent-panel-heading"><h2 id="settings-panel-title">⚙ 設定</h2><button id="close-settings-button" type="button" aria-label="閉じる">×</button></div>
         <section class="settings-section">
+          <h3>カウントダウンの日付</h3>
+          <p class="setting-help">小学校生活は入学年度の4月1日から6年後の3月31日までで計算します。</p>
+          <form id="countdown-settings-form" class="countdown-settings-form">
+            <label>小石川の試験日 <input id="exam-date-input" type="date" required></label>
+            <label>小学校の入学年度 <input id="enrollment-year-input" type="number" min="1900" max="2100" step="1" inputmode="numeric" required></label>
+            <button type="submit" class="primary">日付を保存</button>
+          </form>
+          <p id="countdown-settings-status" class="parent-panel-status" role="status" aria-live="polite"></p>
+        </section>
+        <section class="settings-section">
           <h3>親用4桁暗証番号</h3>
           <p id="parent-pin-status" class="setting-status">未設定</p>
           <p class="setting-help">記述問題の全問○を承認・却下・取り消すために使います。</p>
@@ -165,7 +184,7 @@
     </section>
   </main>
   <dialog id="map-learning-dialog" aria-labelledby="map-learning-title"><header class="map-learning-header"><h2 id="map-learning-title">地図で場所を探す</h2><button id="map-learning-close" type="button">元の問題へ戻る</button></header><p id="map-learning-status" role="status"></p><iframe id="map-learning-frame" title="関連する場所の3D地図練習" hidden></iframe></dialog>
-  <script src="./questions.js?v=20260920-v11-2"></script><script src="./lower-questions.js?v=20260920-v11-2"></script><script src="./weekly-review.js?v=20260920-v11-2"></script><script src="./app.js?v=20260920-v11-2"></script>
+  <script src="./questions.js?v=20260920-v11-2"></script><script src="./lower-questions.js?v=20260920-v11-2"></script><script src="./weekly-review.js?v=20260920-v11-2"></script><script src="./countdown.js?v=20260926-v11-3"></script><script src="./app.js?v=20260926-v11-3"></script>
   <script>if("serviceWorker" in navigator){let reloading=false;navigator.serviceWorker.addEventListener("controllerchange",()=>{if(reloading)return;reloading=true;location.reload()});window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js",{updateViaCache:"none"}).then(registration=>registration.update()).catch(console.error))}</script>
 <script type="module" src="./map3d/quiz-home.mjs"></script>
 <script type="module" src="./map3d/question-links.mjs"></script>

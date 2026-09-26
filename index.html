@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <title>社会マスター</title>
   <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="stylesheet" href="./styles.css?v=20260926-v11-3">
+  <link rel="stylesheet" href="./styles.css?v=20260926-v11-3-r2">
   <link rel="stylesheet" href="./map3d/entry.css">
   <link rel="stylesheet" href="./map3d/question-links.css">
   <meta name="theme-color" content="#2457a7">
@@ -22,9 +22,8 @@
         <p class="countdown-exam-label">小石川 入試まで</p>
         <p class="countdown-exam-value">あと <strong id="exam-days">--</strong> 日</p>
         <div class="countdown-ring" id="school-days-ring" role="img" aria-label="小学校生活の残り期間">
-          <div class="countdown-ring-core"><span>小学校生活</span><strong>あと <span id="school-days">--</span> 日</strong></div>
+          <div class="countdown-ring-core"><span>小学校生活</span><strong>あと <span id="school-days">--</span> 日</strong><span class="countdown-progress" id="school-days-progress">入学年度を設定してください</span></div>
         </div>
-        <p class="countdown-progress" id="school-days-progress">入学年度を設定してください</p>
         <button id="start-today-button" class="primary countdown-start" type="button">今日の学習を始める</button>
       </section>
       <section class="rank-card" aria-labelledby="rank-heading">

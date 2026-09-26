@@ -160,7 +160,7 @@
         <div class="parent-panel-heading"><h2 id="settings-panel-title">⚙ 設定</h2><button id="close-settings-button" type="button" aria-label="閉じる">×</button></div>
         <section class="settings-section">
           <h3>カウントダウンの日付</h3>
-          <p class="setting-help">小学校生活は入学年度の4月1日から6年後の3月31日までで計算します。</p>
+          <p class="setting-help">小学校生活は入学年度の4月1日から小石川の試験日までで計算します。試験当日は残り0日です。</p>
           <form id="countdown-settings-form" class="countdown-settings-form">
             <label>小石川の試験日 <input id="exam-date-input" type="date" required></label>
             <label>小学校の入学年度 <input id="enrollment-year-input" type="number" min="1900" max="2100" step="1" inputmode="numeric" required></label>
@@ -184,7 +184,7 @@
     </section>
   </main>
   <dialog id="map-learning-dialog" aria-labelledby="map-learning-title"><header class="map-learning-header"><h2 id="map-learning-title">地図で場所を探す</h2><button id="map-learning-close" type="button">元の問題へ戻る</button></header><p id="map-learning-status" role="status"></p><iframe id="map-learning-frame" title="関連する場所の3D地図練習" hidden></iframe></dialog>
-  <script src="./questions.js?v=20260920-v11-2"></script><script src="./lower-questions.js?v=20260920-v11-2"></script><script src="./weekly-review.js?v=20260920-v11-2"></script><script src="./countdown.js?v=20260926-v11-3"></script><script src="./app.js?v=20260926-v11-3"></script>
+  <script src="./questions.js?v=20260920-v11-2"></script><script src="./lower-questions.js?v=20260920-v11-2"></script><script src="./weekly-review.js?v=20260920-v11-2"></script><script src="./countdown.js?v=20260926-v11-3-r1"></script><script src="./app.js?v=20260926-v11-3-r1"></script>
   <script>if("serviceWorker" in navigator){let reloading=false;navigator.serviceWorker.addEventListener("controllerchange",()=>{if(reloading)return;reloading=true;location.reload()});window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js",{updateViaCache:"none"}).then(registration=>registration.update()).catch(console.error))}</script>
 <script type="module" src="./map3d/quiz-home.mjs"></script>
 <script type="module" src="./map3d/question-links.mjs"></script>

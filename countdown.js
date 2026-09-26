@@ -19,11 +19,12 @@
     return Date.UTC(date.getFullYear(),date.getMonth(),date.getDate());
   }
   function daysBetween(start,end){return Math.round((end-start)/DAY)}
-  function schoolDays(enrollmentYear,today=new Date()){
-    const year=yearValue(enrollmentYear);
-    if(year===null)return null;
-    const start=Date.UTC(year,3,1),endExclusive=Date.UTC(year+6,3,1);
-    const total=daysBetween(start,endExclusive);
+  function schoolDays(enrollmentYear,examDate,today=new Date()){
+    const year=yearValue(enrollmentYear),end=dateValue(examDate);
+    if(year===null||end===null)return null;
+    const start=Date.UTC(year,3,1);
+    if(end<=start)return null;
+    const total=daysBetween(start,end);
     const elapsed=Math.max(0,Math.min(total,daysBetween(start,todayValue(today))));
     return{total,elapsed,remaining:total-elapsed,elapsedPercent:elapsed/total*100};
   }

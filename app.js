@@ -31,7 +31,7 @@
   function playSound(correct){if(!settings.soundEnabled||settings.soundVolume<=0)return;const x=correct?sounds.correct:sounds.wrong;x.pause();x.currentTime=0;x.volume=settings.soundVolume;const p=x.play();if(p?.catch)p.catch(()=>{})}
   function renderSoundSettings(){$("sound-enabled").checked=settings.soundEnabled;$("sound-enabled").nextElementSibling.textContent=settings.soundEnabled?"効果音 ON":"効果音 OFF";$("sound-volume").value=Math.round(settings.soundVolume*100);$("sound-volume-value").textContent=`${Math.round(settings.soundVolume*100)}%`}
   function renderCountdown(){
-    const examDays=countdown.examDays(settings.examDate),school=countdown.schoolDays(settings.enrollmentYear);
+    const examDays=countdown.examDays(settings.examDate),school=countdown.schoolDays(settings.enrollmentYear,settings.examDate);
     $("exam-days").textContent=examDays===null?"--":String(examDays);
     $("school-days").textContent=school?String(school.remaining):"--";
     $("school-days-progress").textContent=school?`全${school.total}日のうち ${school.elapsed}日が終了`:"設定から入学年度を入力してください";
@@ -47,7 +47,7 @@
   function saveCountdownSettings(event){
     event.preventDefault();
     const examDate=$("exam-date-input").value,year=countdown.yearValue($("enrollment-year-input").value);
-    if(countdown.dateValue(examDate)===null||year===null){$("countdown-settings-status").textContent="日付と入学年度を確認してください。";return}
+    if(countdown.schoolDays(year,examDate)===null){$("countdown-settings-status").textContent="試験日と入学年度を確認してください。";return}
     settings.examDate=examDate;settings.enrollmentYear=year;saveSettings();renderCountdown();
     $("countdown-settings-status").textContent="カウントダウンの日付を保存しました。";
   }

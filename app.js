@@ -34,7 +34,7 @@
     const examDays=countdown.examDays(settings.examDate),school=countdown.schoolDays(settings.enrollmentYear,settings.examDate);
     $("exam-days").textContent=examDays===null?"--":String(examDays);
     $("school-days").textContent=school?String(school.remaining):"--";
-    $("school-days-progress").textContent=school?`全${school.total}日のうち ${school.elapsed}日が終了`:"設定から入学年度を入力してください";
+    $("school-days-progress").textContent=school?`全${school.total}日のうち\n${school.elapsed}日が終了`:"設定から入学年度を入力してください";
     $("school-days-ring").style.setProperty("--elapsed-percent",`${school?school.elapsedPercent:0}%`);
     $("school-days-ring").setAttribute("aria-label",school?`小学校生活、全${school.total}日のうち${school.elapsed}日が終了、あと${school.remaining}日`:"小学校生活の入学年度を設定してください");
   }

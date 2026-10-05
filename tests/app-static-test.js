@@ -34,9 +34,9 @@ assert(app.includes('mastery:loadMastery()'),"攻略データをバックアッ�
 for(const id of ["current-rank","unit-mastery-grid","summer-mastery-grid","summer-region-selector","achievement-banner","rank-toggle","rank-details"]){assert(html.includes(`id="${id}"`),`${id}: v9表示`)}
 assert(html.includes('id="rank-details" class="rank-details hidden"'),"ランク詳細は初期状態で閉じる");
 assert(app.includes('function toggleRankDetails()'),"ランク詳細の開閉処理");
-assert(sw.includes('social-quiz-v11-4-lower-complete-r1'),"v11.4キャッシュ");
-assert(sw.includes('20261005-v11-4'),"v11.4更新識別子");
+assert(sw.includes('social-quiz-v11-5-reading-figures-r2'),"v11.5キャッシュ");
+assert(sw.includes('20261006-v11-5-r2'),"v11.5更新識別子");
 assert(html.includes('id="school-days-ring"')&&html.includes('id="countdown-settings-form"'),"カウントダウン表示と設定");
 assert(/class="countdown-ring-core"[^>]*>.*id="school-days-progress"[^<]*<\/span><\/div>/.test(html),"経過日数は円の中央に表示");
 assert(app.includes('日のうち\\n${school.elapsed}日が終了'),"経過日数を円内で2行表示");
-console.log("PASS: v11.4カウントダウン、ランク折りたたみ、称号、バックアップ、PWA更新を検証");
+console.log("PASS: v11.5カウントダウン、ランク折りたたみ、称号、バックアップ、PWA更新を検証");

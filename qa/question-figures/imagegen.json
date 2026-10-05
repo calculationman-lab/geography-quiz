@@ -1,0 +1,62 @@
+[
+  {
+    "asset": "forest-composition",
+    "path": "assets/diagrams/forest-composition.webp",
+    "originalFile": "exec-66a811cf-57ba-4bc6-b847-e8ab3a7d7a6f.png",
+    "prompt": "Use case: scientific-educational. Create a precise Japanese primary-school question figure: a flat, clean 2D PIE CHART with a large circle and five sectors; white background, textbook-quality geometry, readable Japanese sans-serif, neutral equal label styling. Landscape 1536x1024. Exact title \"日本の森林の構成（2017年）\". Exact sector labels and percentages: \"針葉樹の人工林 39%\", \"針葉樹の天然林 9%\", \"広葉樹の人工林 1%\", \"広葉樹の天然林 45%\", \"その他 6%\". The pie sectors must exactly match 39/9/1/45/6 percent of the same circle, summing100%, clockwise in that order beginning at12o'clock. Use five distinct muted flat colors. Label outside with leader lines, especially the thin1% sector; never overlap text. Include small footer \"日本の森林面積を100%とする\". ONLY raw labels and data: do NOT add artificial/natural totals, conifer/broadleaf totals, comparisons, difference calculations, answer, highlightedcorrectsegment, instructions, logos, watermark, or decorative trees. All given values legible; chart labels must exactly correspond to their sectors.",
+    "generator": "built-in image_gen",
+    "visualReview": "All data labels, years, units and row/category alignment checked against original PDF page renders; no computed answers or conclusions in figure.",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 92310,
+    "sha256": "c6ae6698b5885b1ba272df46e19095f44fe9ff7a2b4ec9acfa597d0785cfc32c"
+  },
+  {
+    "asset": "auto-production-table",
+    "path": "assets/diagrams/auto-production-table.webp",
+    "originalFile": "exec-39fd865e-2005-4aa9-a5a7-cc38a31044fe.png",
+    "prompt": "Use case: scientific-educational. Create a Japanese social-studies QUESTION DATA TABLE, flat 2D textbook infographic on white, landscape1536x1024, large crisp readable Japanese sans-serif and numerals. Exact title \"日本のメーカーによる海外自動車生産\". Right aligned header \"単位：千台\". Five year columns in chronological order1995年,2000年,2005年,2010年,2021年. EXACT rows/cells: アジア:1883,1674,3964,7127,10049; 北アメリカ:2595,2992,4081,3390,3443; ヨーロッパ:642,953,1545,1356,1232. Include a neutral thin teal grid, muted header shading, generous margins, all15numbers precisely under correctyear. Footer \"教材の資料から3地域・5年を抜粋\". No total row because other world regions are not listed. Do NOT display any differences, converted units, proportions, rankings, arrows, trend conclusions, answers, or highlight anycell. No other text orillustrations. Exact data is the essential invariant.",
+    "generator": "built-in image_gen",
+    "visualReview": "All data labels, years, units and row/category alignment checked against original PDF page renders; no computed answers or conclusions in figure.",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 125432,
+    "sha256": "5ffb4f7b5b62a4a87b4a66d22a282f92db729de90be5ca981cada689182874df"
+  },
+  {
+    "asset": "power-composition",
+    "path": "assets/diagrams/power-composition.webp",
+    "originalFile": "exec-a8621364-0362-48f0-96cc-79372af98591.png",
+    "prompt": "Use case: scientific-educational. Create an exact Japanese social-studies question figure: THREE horizontal100% STACKED BANDS on white, clean flat2D textbook style, landscape1536x1024, generous Japanese sans-serif labels. Exacttitle \"発電のエネルギー源の変化\". Bandyearsleft:1950年,2000年,2020年. Order ofsegmentsidenticaleveryyear: 水力 (blue), 火力 (orange), 原子力 (green), 新エネルギー (gold). EXACT data:1950:[81.7,18.3,0,0];2000:[8.9,61.3,29.5,0.3];2020:[9.1,83.2,3.9,3.8]. Eachbar samewidth, proportions exactly match values; nonzero labels say theirgiven numbers with%, tiny0.3 and3.9/3.8 mayhave outsideleaderlabels clearly tiedtocorrectsegment;0%zeroareasneednotdraw. Put bottom scale0%,20%,40%,60%,80%,100% evenlyspaced. Clear coloredlegend water/thermal/nuclear/newenergy. Include smallnote \"新エネルギーは教材の分類。各年の発電量全体を100%とする\". Do NOT add yearly generation total amounts, comparisons, differences, rankings, trends, answerlabels, or highlightedcorrectvalue. Avoidenergy-supplydata; these aregeneration shares. Alltextandnumbers mustbefaithfulandreadable.",
+    "generator": "built-in image_gen",
+    "visualReview": "All data labels, years, units and row/category alignment checked against original PDF page renders; no computed answers or conclusions in figure.",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 90716,
+    "sha256": "5e483a7f7600d993a23284ce437bcd5832dbdf82fdb29d13111ae72dbf6ba14e"
+  },
+  {
+    "asset": "internet-age",
+    "path": "assets/diagrams/internet-age.webp",
+    "originalFile": "exec-94439fb9-054a-41bb-b7b0-dce93d7c74de.png",
+    "prompt": "Use case: scientific-educational. Create a Japanese elementary social-studies question BAR CHART on white, flat2D cleartextbook style, landscape1536x1024. Exacttitle \"年齢別インターネット利用率（2021年）\". Yaxis \"利用率（%）\",0to100withticks0,20,40,60,80,100, uniformly spaced.9verticalbarsofequalwidth, ALLsame mutedtealcolor,nospecialhighlight. Category labels readable below, EXACTlefttoright:6〜12歳,13〜19歳,20〜29歳,30〜39歳,40〜49歳,50〜59歳,60〜69歳,70〜79歳,80歳以上. EXACTvaluesrespectively:84.7,98.7,98.4,97.9,97.7,95.2,84.4,59.4,27.6. Eachbarheightaccuratetoscale, exactgivenvalueprintedaboveeachbarincluding \"%\"suffix. Footer \"教材掲載の2021年調査の値\". DoNOTaddaverage, differences, countoftargetagegroups, conclusions, populationcounts, usercounts, answers, icons, photos, watermark. No80%thresholdspeciallineorhighestbarhighlight.",
+    "generator": "built-in image_gen",
+    "visualReview": "All data labels, years, units and row/category alignment checked against original PDF page renders; no computed answers or conclusions in figure.",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 80166,
+    "sha256": "5bc5a1689b80696bf710575ba223db6b7bd4e1cbb64d2ad89b701db02b6c5d7b"
+  },
+  {
+    "asset": "internet-income",
+    "path": "assets/diagrams/internet-income.webp",
+    "originalFile": "exec-cbfeff9a-6bd2-4681-9ded-7cbacae18d32.png",
+    "prompt": "Use case: scientific-educational. Create a precise Japanese primary-school question BAR CHART onwhite, flat2D neutraltextbookgraphics, landscape1536x1024. Exacttitle \"世帯年収別インターネット利用率（2021年）\". Yaxis \"利用率（%）\",0to100uniformticks0,20,40,60,80,100. SIXverticalbars samewidthand same mutedbluecolor. Exactcategorieslefttoright, use2linesperlabelsolegible:200万円未満;200〜400万円未満;400〜600万円未満;600〜800万円未満;800〜1000万円未満;1000万円以上. EXACTvalues:55.8,72.9,86.0,92.6,92.0,93.4. Barsproportionalandvaluesprintedaboveeachincluding% andthetrailing .0for86.0and92.0. Footer \"教材掲載の2021年調査の値\". DoNOTadddifferences, average, usercounts, causalityclaims, rankings, trendconclusions, answer, highlightedbar, icon orwatermark. Dataandlabels arethegiveninformation; noanswerorcalculationonfigure.",
+    "generator": "built-in image_gen",
+    "visualReview": "All data labels, years, units and row/category alignment checked against original PDF page renders; no computed answers or conclusions in figure.",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 77672,
+    "sha256": "a36f57c6e65ba39db18eabd9fc83cfea96c8275f76d4f16776a35688597cfcf1"
+  }
+]

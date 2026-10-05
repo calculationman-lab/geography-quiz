@@ -85,7 +85,18 @@
     "physicalIPad": false
   },
   "publication": {
-    "status": "pending",
-    "url": "https://calculationman-lab.github.io/geography-quiz/"
+    "status": "verified",
+    "url": "https://calculationman-lab.github.io/geography-quiz/",
+    "appCommit": "287d567b6f490e9a7bef1c9183873b6b12af5e77",
+    "actionsRun": "37312439212",
+    "actionsStatus": "Success",
+    "publicVersion": "v11.4",
+    "lowerQuestions": 415,
+    "totalQuestions": 1004,
+    "selectedLowerUnits": 16,
+    "cachedUpgrade": "v11.3 to v11.4",
+    "publicFigure": "line-data.webp loaded at 1536px",
+    "publicGrading": "20 marked correct",
+    "physicalIPadVerified": false
   }
 }

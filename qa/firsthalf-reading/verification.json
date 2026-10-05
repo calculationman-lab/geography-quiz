@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-06",
+  "version": "v11.6",
+  "tests": [
+    {
+      "test": "data-test.js",
+      "exitCode": 0,
+      "output": "PASS: 1032問（夏期139・前期450・下期443）、教材・単元タグ、正答1＋誤答5を検証"
+    },
+    {
+      "test": "compat-test.js",
+      "exitCode": 0,
+      "output": "PASS: 旧版互換、前期・夏期の4択／記述制覇、称号・極称号・ランクを検証\nPASS: 下期16単元の4択・記述・承認・取消・履歴、旧記録/PIN維持、旧新バックアップ復元、本体103,200回抽出"
+    },
+    {
+      "test": "countdown-test.js",
+      "exitCode": 0,
+      "output": "✔ school span runs from enrollment April 1 until the exam date (1.4361ms)\n✔ days before enrollment do not exceed the full school span (0.1024ms)\n✔ exam date must follow enrollment (0.0589ms)\n✔ exam countdown uses calendar days and accepts leap day (0.0866ms)\n✔ 2026 grade four implies the 2029 exam and 2023 enrollment (0.0945ms)\nℹ tests 5\nℹ suites 0\nℹ pass 5\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 5.1769"
+    },
+    {
+      "test": "lower-content-test.js",
+      "exitCode": 0,
+      "output": "PASS: 下期140問の出典ページ・解説・指定回答形式・統計年・計算値（意味や難易度の自動保証ではない）"
+    },
+    {
+      "test": "lower-complete-test.js",
+      "exitCode": 0,
+      "output": "PASS: 追加295問、出典・計算値・重複文なし、19種類の資料図を全65問で解答前に表示\nPASS: 全図の4択・記述の表示時期、前問の消去、拡大・閉じる、旧単元選択の移行"
+    },
+    {
+      "test": "pwa-assets-test.js",
+      "exitCode": 0,
+      "output": "PASS: PWA資産の存在・HTML/manifestとのURL一致・旧キャッシュ更新対象（実ブラウザーのオフライン動作は未検証）"
+    },
+    {
+      "test": "app-static-test.js",
+      "exitCode": 0,
+      "output": "PASS: v11.6カウントダウン、ランク折りたたみ、称号、バックアップ、PWA更新を検証"
+    },
+    {
+      "test": "figure-reading-test.js",
+      "exitCode": 0,
+      "output": "PASS: 新20問の計算・比較・例外の読み取りを原資料の値から独立検算。装飾図を除外"
+    },
+    {
+      "test": "firsthalf-reading-test.js",
+      "exitCode": 0,
+      "output": "PASS: 前半148問・図19問、新規8問と既存8問を原資料から独立検算。入力値は図から読み、後半図46問を維持"
+    },
+    {
+      "test": "distractor-quality-test.js",
+      "exitCode": 0,
+      "output": "PASS: 一部回答形式のパターン検査と、1032問×100回の登録正答の包含・重複なしを検証（事実上の正解一意性はこのテストの対象外）"
+    }
+  ],
+  "inspection": {
+    "originalPdfPages": 56,
+    "generatedFigures": 7,
+    "choiceBeforeAnswer": true,
+    "zoomAndClose": true,
+    "choiceCorrectFeedback": true,
+    "writtenBeforeReveal": true
+  },
+  "knownTestRepair": "Distance-format detector matched km²; split area and distance patterns and reran successfully.",
+  "notVerified": [
+    "real iPad install and touch",
+    "real-browser offline behavior"
+  ]
+}

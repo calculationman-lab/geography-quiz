@@ -37,6 +37,7 @@ vm.runInContext(fs.readFileSync(path.join(__dirname,"..","questions.js"),"utf8")
 vm.runInContext(fs.readFileSync(path.join(__dirname,"..","lower-questions.js"),"utf8"),context);
 vm.runInContext(fs.readFileSync(path.join(__dirname,"..","weekly-review.js"),"utf8"),context);
 vm.runInContext(fs.readFileSync(path.join(__dirname,"..","lower-later-questions.js"),"utf8"),context);
+vm.runInContext(fs.readFileSync(path.join(__dirname,"..","lower-reading-questions.js"),"utf8"),context);
 vm.runInContext(fs.readFileSync(path.join(__dirname,"..","question-diagrams.js"),"utf8"),context);
 const appSource=fs.readFileSync(path.join(__dirname,"..","app.js"),"utf8");
 vm.runInContext(appSource.replace(/\}\)\(\);\s*$/, 'window.__test={makeRound,loadMastery,loadSettings,exportSave,importSave};})();'),context);
@@ -90,7 +91,7 @@ assert(elements.region.textContent.startsWith("復習・夏期・"),"復習タ�
 elements["quit-button"].click();
 scopeButtons.find(x=>x.dataset.scope==="all").click();
 countButtons.find(x=>x.dataset.questionCount==="all").click();
-assert.strictEqual(elements.progress.textContent,"1 / 1024","全範囲1024問を開始");
+assert.strictEqual(elements.progress.textContent,"1 / 1032","全範囲1032問を開始");
 elements["quit-button"].click();
 typeButtons.find(x=>x.dataset.quizType==="written").click();
 writtenCountButtons.find(x=>x.dataset.writtenCount==="10").click();
@@ -182,7 +183,7 @@ console.log("PASS: 旧版互換、前期・夏期の4択／記述制覇、称号
 // v11: 下期の記録は前期・夏期と別に保存する。
 const legacyUnits=JSON.stringify(mastery.units),legacySummer=JSON.stringify(mastery.summerRegions),legacyPin=mastery.parentPinHash;
 scopeButtons.find(x=>x.dataset.scope==="second").click();
-assert.strictEqual(elements["question-total"].textContent,435);
+assert.strictEqual(elements["question-total"].textContent,443);
 assert.strictEqual(elements["second-unit-options"].children.length,16);
 assert(!elements["second-unit-selector"].classList.contains("hidden"));
 assert(elements["unit-selector"].classList.contains("hidden"));
@@ -190,7 +191,7 @@ elements["clear-second-units"].click();
 assert(countButtons.every(b=>b.disabled));
 assert(writtenCountButtons.every(b=>b.disabled));
 elements["second-unit-options"].children[0].click();
-assert.strictEqual(elements["question-total"].textContent,20);
+assert.strictEqual(elements["question-total"].textContent,21);
 typeButtons.find(x=>x.dataset.quizType==="choice").click();
 
 function completeChoice(count,wrongFirst=false){
@@ -206,7 +207,7 @@ function completeChoice(count,wrongFirst=false){
 countButtons.find(x=>x.dataset.questionCount==="20").click();completeChoice(20);
 assert.strictEqual(context.window.__test.loadMastery().secondUnits["1"],undefined,"20問ボタンでは称号判定しない");
 elements["home-button"].click();
-countButtons.find(x=>x.dataset.questionCount==="all").click();completeChoice(20,true);
+countButtons.find(x=>x.dataset.questionCount==="all").click();completeChoice(21,true);
 assert(!context.window.__test.loadMastery().secondUnits["1"].choiceMastered,"1問不正解では称号なし");
 elements["review-button"].click();assert.strictEqual(elements.progress.textContent,"1 / 1");completeChoice(1);
 assert(!context.window.__test.loadMastery().secondUnits["1"].choiceMastered,"復習の正解で称号にしない");
@@ -252,7 +253,7 @@ elements["summer-mastery-grid"].children[7].click();assert(elements["unit-master
 // 全問が同じ単元でも通常20問や複数単元選択は制覇判定しない。
 const secondSnapshot=JSON.stringify(mastery.secondUnits);
 elements["select-all-second-units"].click();typeButtons.find(x=>x.dataset.quizType==="choice").click();
-countButtons.find(x=>x.dataset.questionCount==="all").click();completeChoice(435);
+countButtons.find(x=>x.dataset.questionCount==="all").click();completeChoice(443);
 assert.strictEqual(JSON.stringify(context.window.__test.loadMastery().secondUnits),secondSnapshot);
 elements["home-button"].click();
 
@@ -263,7 +264,7 @@ assert.strictEqual(context.window.__test.loadMastery().secondUnits["1"].writtenM
 assert.strictEqual(JSON.stringify(context.window.__test.loadMastery().units),legacyUnits);
 assert.strictEqual(JSON.stringify(context.window.__test.loadMastery().summerRegions),legacySummer);
 
-// アプリ本体の makeRound を全1024問で100回ずつ検査する。
+// アプリ本体の makeRound を全1032問で100回ずつ検査する。
 for(const q of context.window.GEOGRAPHY_QUESTIONS){
   for(let i=0;i<100;i++){
     const round=context.window.__test.makeRound(q);
@@ -299,5 +300,5 @@ document.body={append(){}};Element.prototype.remove=function(){};
   const saved=JSON.stringify([...store]);
   await context.window.__test.importSave({text:async()=>"not json"});
   assert.strictEqual(JSON.stringify([...store]),saved,"壊れたバックアップは保存データを変えない");
-  console.log("PASS: 下期16単元の4択・記述・承認・取消・履歴、旧記録/PIN維持、旧新バックアップ復元、本体102,400回抽出");
+  console.log("PASS: 下期16単元の4択・記述・承認・取消・履歴、旧記録/PIN維持、旧新バックアップ復元、本体103,200回抽出");
 })().catch(error=>{console.error(error);process.exitCode=1});

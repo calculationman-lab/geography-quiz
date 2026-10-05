@@ -1,7 +1,7 @@
 const fs=require('fs'),vm=require('vm'),path=require('path'),assert=require('assert'),crypto=require('crypto');
 const root=path.join(__dirname,'..'),c={window:{}};vm.createContext(c);
-for(const file of ['questions.js','lower-questions.js','lower-later-questions.js','question-diagrams.js'])vm.runInContext(fs.readFileSync(path.join(root,file),'utf8'),c);
-const qs=c.window.GEOGRAPHY_QUESTIONS,added=qs.filter(q=>q.objective),diagrams=c.window.QuestionDiagrams;
+for(const file of ['questions.js','lower-questions.js','lower-later-questions.js','lower-reading-questions.js','question-diagrams.js'])vm.runInContext(fs.readFileSync(path.join(root,file),'utf8'),c);
+const qs=c.window.GEOGRAPHY_QUESTIONS,added=qs.filter(q=>q.objective&&q.unit>=8),diagrams=c.window.QuestionDiagrams;
 assert.strictEqual(added.length,295);
 assert.strictEqual(new Set(qs.map(q=>q.question.normalize('NFKC').replace(/\s/g,''))).size,qs.length,'正規化した問題文が完全重複しない');
 assert.strictEqual(new Set(added.map(q=>q.objective)).size,added.length,'追加した学習内容の識別子が重複しない');
@@ -17,18 +17,18 @@ for(const q of added){
 }
 const expected={'forest-artificial-share':'40％','forest-type-compare':'針葉樹が2ポイント多い','forest-workers-change':'4.4万人','fish-nori-share':'47.0％','fish-pearl-gap':'9.7ポイント','fish-scallop-remaining':'31.9％','shipment-structure-read':'71.0%','chukyo-machine-read':'68.1%','crude-import-read':'83.7%','yen-import-calculation':'200円','yen-export-price':'1万2000ドル','trade-balance-calc':'15兆円の貿易赤字','cars-unit-conversion':'1004.9万台','cars-asia-increase':'229万台','bar-figure-difference':'15','bar-figure-total':'70','bar-figure-share':'50%','line-figure-net':'20'};
 for(const [key,value]of Object.entries(expected))assert.strictEqual(added.find(q=>q.objective===key).answer,value,key);
-const metadata=[...JSON.parse(fs.readFileSync(path.join(root,'qa/lower-complete/imagegen.json'),'utf8')),...JSON.parse(fs.readFileSync(path.join(root,'qa/question-figures/imagegen.json'),'utf8'))];
-assert.strictEqual(metadata.length,19,'最初の14図と読み取り用の5資料図');
+const metadata=[...JSON.parse(fs.readFileSync(path.join(root,'qa/lower-complete/imagegen.json'),'utf8')),...JSON.parse(fs.readFileSync(path.join(root,'qa/question-figures/imagegen.json'),'utf8')),...JSON.parse(fs.readFileSync(path.join(root,'qa/firsthalf-reading/imagegen.json'),'utf8'))];
+assert.strictEqual(metadata.length,26,'最初の14図と後半5・前半7の資料図');
 for(const m of metadata){const data=fs.readFileSync(path.join(root,m.path));assert.strictEqual(data.toString('ascii',0,4),'RIFF');assert.strictEqual(data.toString('ascii',8,12),'WEBP');assert.strictEqual(crypto.createHash('sha256').update(data).digest('hex'),m.sha256);assert(m.width>=1500&&m.height>=700);assert(m.prompt&&m.generator==='built-in image_gen');}
 let before=0,after=0;
 for(const q of qs){const pre=diagrams.get(q,false),post=diagrams.get(q,true);if(pre)before++;else if(post)after++;if(post){assert(metadata.some(m=>m.asset===post.asset));if(post.phase==='explanation')assert.strictEqual(pre,null,'解説図は解答前に返さない');}}
-assert.strictEqual(before,49,'図を読む49問で、解答前に図を返す');
+assert.strictEqual(before,65,'図を読む65問で、解答前に図を返す');
 assert.strictEqual(after,0,'解答後だけの図をなくす');
-assert.strictEqual(new Set(Object.values(diagrams.registry).map(d=>d.asset)).size,12,'使用する図は12種類');
+assert.strictEqual(new Set(Object.values(diagrams.registry).map(d=>d.asset)).size,19,'使用する図は19種類');
 for(const q of qs){const d=diagrams.get(q,false);if(!d)continue;assert.strictEqual(d.phase,'question');assert.strictEqual(diagrams.get(q,true),d);assert(!/解説|正解/.test(d.alt),`${q.id}: 問題図の代替文`);}
 assert.strictEqual(diagrams.get(added.find(q=>q.objective==='forest-thinning-purpose'),false),null,'文章だけで解ける問題に図を添えない');
 assert.strictEqual(diagrams.get(added.find(q=>q.objective==='urban-recovery-reason'),false),null,'結果を疑問符にしただけの無意味な図を使わない');
-console.log(`PASS: 追加${added.length}問、出典・計算値・重複文なし、12種類の資料図を全${before}問で解答前に表示`);
+console.log(`PASS: 追加${added.length}問、出典・計算値・重複文なし、19種類の資料図を全${before}問で解答前に表示`);
 
 let harness=fs.readFileSync(path.join(__dirname,'compat-test.js'),'utf8').split('assert.strictEqual(elements["history-list"]')[0];
 harness=harness.replace('makeRound,loadMastery,loadSettings,exportSave,importSave','makeRound,loadMastery,loadSettings,exportSave,importSave,state,renderQuestion,renderDiagram,answerChoice,revealWrittenAnswer');

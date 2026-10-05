@@ -8,6 +8,7 @@ vm.createContext(context);
 vm.runInContext(fs.readFileSync(path.join(__dirname, "..", "questions.js"), "utf8"), context);
 vm.runInContext(fs.readFileSync(path.join(__dirname,"..","lower-questions.js"),"utf8"),context);
 vm.runInContext(fs.readFileSync(path.join(__dirname,"..","lower-later-questions.js"),"utf8"),context);
+vm.runInContext(fs.readFileSync(path.join(__dirname,"..","lower-reading-questions.js"),"utf8"),context);
 const questions = context.window.GEOGRAPHY_QUESTIONS;
 
 const checks = [
@@ -15,7 +16,8 @@ const checks = [
   [q => /(?:何|どの)村/.test(q.question), x => /村$/.test(x), "村名"],
   [q => /何工場/.test(q.question), x => /(工場|製鉄所|造船所)$/.test(x), "工場名"],
   [q => /何時間/.test(q.question), x => /^[0-9.]+時間$/.test(x), "時間"],
-  [q => /何km/.test(q.question), x => /^約?[0-9,.]+(?:万[0-9,.]*)?km$/.test(x), "km"],
+  [q => /何km(?!²)/.test(q.question), x => /^約?[0-9,.]+(?:万[0-9,.]*)?km$/.test(x), "km"],
+  [q => /何km²/.test(q.question), x => /^約?[0-9,.]+(?:万[0-9,.]*)?km²$/.test(x), "km²"],
   [q => /何m/.test(q.question), x => /^約?[0-9,.]+(?:万[0-9,.]*)?m$/.test(x), "m"],
   [q => /時間帯/.test(q.question), x => /^(早朝|朝|午前|正午|午後|夕方|夜|深夜)$/.test(x), "時間帯"],
   [q => /季節はいつ/.test(q.question), x => /^(春|夏|秋|冬|梅雨|初夏|晩秋|真冬)$/.test(x), "季節"],
@@ -63,4 +65,4 @@ for (const q of questions) {
   }
 }
 
-console.log("PASS: 一部回答形式のパターン検査と、1024問×100回の登録正答の包含・重複なしを検証（事実上の正解一意性はこのテストの対象外）");
+console.log("PASS: 一部回答形式のパターン検査と、1032問×100回の登録正答の包含・重複なしを検証（事実上の正解一意性はこのテストの対象外）");

@@ -1,0 +1,75 @@
+{
+  "baselineCommit": "a67ab58b5e5ecc51353381d7d1d39441e1e3e289",
+  "previousTotal": 1024,
+  "currentTotal": 1032,
+  "changes": [
+    {
+      "id": "second-099",
+      "fields": [
+        "question",
+        "explanation"
+      ]
+    },
+    {
+      "id": "second-114",
+      "fields": [
+        "question",
+        "explanation"
+      ]
+    },
+    {
+      "id": "second-115",
+      "fields": [
+        "question",
+        "explanation"
+      ]
+    },
+    {
+      "id": "second-132",
+      "fields": [
+        "question",
+        "explanation"
+      ]
+    },
+    {
+      "id": "second-133",
+      "fields": [
+        "question",
+        "explanation"
+      ]
+    },
+    {
+      "id": "second-134",
+      "fields": [
+        "question",
+        "explanation"
+      ]
+    },
+    {
+      "id": "second-135",
+      "fields": [
+        "question",
+        "explanation"
+      ]
+    },
+    {
+      "id": "second-136",
+      "fields": [
+        "question",
+        "explanation"
+      ]
+    }
+  ],
+  "added": [
+    "second-436",
+    "second-437",
+    "second-438",
+    "second-439",
+    "second-440",
+    "second-441",
+    "second-442",
+    "second-443"
+  ],
+  "existingAnswersAndChoicesPreserved": true,
+  "laterQuestionsPreserved": true
+}

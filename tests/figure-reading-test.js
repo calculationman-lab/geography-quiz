@@ -1,6 +1,6 @@
 const fs=require('fs'),vm=require('vm'),path=require('path'),assert=require('assert');
 const root=path.join(__dirname,'..'),c={window:{}};vm.createContext(c);
-for(const f of ['questions.js','lower-questions.js','lower-later-questions.js','question-diagrams.js'])vm.runInContext(fs.readFileSync(path.join(root,f),'utf8'),c);
+for(const f of ['questions.js','lower-questions.js','lower-later-questions.js','lower-reading-questions.js','question-diagrams.js'])vm.runInContext(fs.readFileSync(path.join(root,f),'utf8'),c);
 const qs=c.window.GEOGRAPHY_QUESTIONS,reg=c.window.QuestionDiagrams;
 const byObjective=k=>qs.find(q=>q.objective===k);
 const rounded=n=>Math.round(n*10)/10;

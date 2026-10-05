@@ -17,6 +17,13 @@
   add('power-composition','各年の発電量全体を100%とする帯グラフ。水力・火力・原子力・新エネルギーの順に、1950年81.7・18.3・0・0%、2000年8.9・61.3・29.5・0.3%、2020年9.1・83.2・3.9・3.8%。新エネルギーは教材の分類。','凡例と帯を対応させ、割合と量の違いを考える',['percent-v-amount','power-gap-year','power-nuclear-point-drop','power-nonthermal-total','power-largest-point-rise'],[],41);
   add('internet-age','2021年の年齢別インターネット利用率。6〜12歳84.7%、13〜19歳98.7%、20〜29歳98.4%、30〜39歳97.9%、40〜49歳97.7%、50〜59歳95.2%、60〜69歳84.4%、70〜79歳59.4%、80歳以上27.6%。','最大・最小、条件に合う区分、全体の形を読む',['internet-threshold-age','internet-age-not-users','internet-age-range','internet-age-ninety-count','internet-age-shape','internet-oldest-nonusers'],[],71);
   add('internet-income','2021年の世帯年収別インターネット利用率。200万円未満55.8%、200〜400万円未満72.9%、400〜600万円未満86.0%、600〜800万円未満92.6%、800〜1000万円未満92.0%、1000万円以上93.4%。','例外・条件に合う区分を見つけ、割合を世帯数に直す',['internet-income','internet-income-exception','internet-income-count-estimate','internet-income-nearest-ninety'],[],71);
+  add('rice-production-consumption','米の生産量と消費量の折れ線。生産量は上下し、消費量は長期的に下がる。数量の線は教材から概数で再構成。','同じ年の2本の線を比較する',['agri-rice-line-compare'],[],2);
+  add('crop-import-shares','小麦・大豆・とうもろこしの輸入先の帯グラフ。各作物の輸入量を100%とする。アメリカ合衆国の割合は順に44.2%、75.9%、72.8%。','同じ国の区分を複数の帯で比較する',['agri-import-dependence'],[],9);
+  add('meat-virtual-water','肉1kgあたりに必要な水。牛肉20.6t、豚肉5.9t、鶏肉4.5t。','肉の重さと1kgあたりの値を組み合わせる',['agri-water-mass-compare'],[],26);
+  add('farmland-denominators','国土全体の耕地12%、それ以外88%。耕地全体の田54%、畑26%、果樹園・茶畑など6%、牧草地14%。上と下の帯で全体が異なる。','2段階の割合と分母を読む',['agri-land-nested-share'],[],33);
+  add('farm-population-age','棒は左軸の農業就業人口（万人）：1990年482、2000年389、2010年261、2019年168。線は右軸の65歳以上の割合で、教材から概数で再構成。','万人と%の2つの縦軸を読み分ける',['agri-workforce-dual-axes'],['second-099'],40);
+  add('food-self-sufficiency-table','1960年・2021年の食料自給率（%）。米102・98、小麦39・17、大豆28・7、野菜100・79、果実100・39。','年の列を対応させ、順序・差・残りを比較する',['agri-self-sufficiency-decline'],['second-114','second-115','second-132'],45);
+  add('food-consumption-change','1人1日あたりの消費量（g）、1965年・2022年の順に、米306・139、小麦79・87、肉類24・93、果物78・91、野菜249・241、牛乳・乳製品103・257。','凡例・品目・年を対応させ、増減量と倍率を区別する',['agri-consumption-threefold','agri-consumption-max-increase'],['second-133','second-134','second-135','second-136'],55);
   const registry=Object.fromEntries(entries);
   window.QuestionDiagrams={registry,get(q){return registry[q?.objective]||registry[q?.id]||null;}};
 })();

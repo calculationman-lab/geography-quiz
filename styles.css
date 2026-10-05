@@ -668,3 +668,13 @@ button {
     transition: none !important;
   }
 }
+
+/* Learning figures stay inside the quiz card, with a keyboard-accessible enlargement. */
+.question-figure{margin:18px 0;padding:12px;border:1px solid #d5e0ed;border-radius:14px;background:#fff}
+.question-figure button{display:block;width:100%;border:0;background:#fff;padding:0;cursor:zoom-in}
+.question-figure img{display:block;width:100%;max-height:420px;object-fit:contain}
+.question-figure figcaption{margin-top:8px;color:#536477;font-size:13px;text-align:center}
+#figure-zoom-dialog{width:min(96vw,1400px);max-height:94vh;border:0;border-radius:14px;padding:16px}
+#figure-zoom-dialog::backdrop{background:rgba(18,30,48,.75)}
+#figure-zoom-dialog img{display:block;width:100%;max-height:82vh;object-fit:contain}
+#figure-zoom-close{display:block;margin:0 0 10px auto;min-height:44px;padding:8px 22px}

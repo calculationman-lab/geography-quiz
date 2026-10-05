@@ -1,0 +1,242 @@
+[
+  {
+    "id": "second-158",
+    "objective": "forest-thinning-purpose",
+    "question": "人工林で間伐を行う主な目的はどれですか。",
+    "answer": "日光が入りやすくなり、残る木を健康に育てる",
+    "oldId": "first-278",
+    "oldQuestion": "輪作を行う主な目的は何ですか。",
+    "oldAnswer": "同じ作物を続けて作ることによる土地の力の低下を防ぐため",
+    "score": 0.4090909090909091
+  },
+  {
+    "id": "second-412",
+    "objective": "line-figure-claim",
+    "question": "図の仮の資料について正しい説明は？",
+    "answer": "途中で減る年もあるが、始めより終わりの値が大きい",
+    "oldId": "first-142",
+    "oldQuestion": "緯線について正しい説明はどれですか。",
+    "oldAnswer": "互いに平行である",
+    "score": 0.4090909090909091
+  },
+  {
+    "id": "second-412",
+    "objective": "line-figure-claim",
+    "question": "図の仮の資料について正しい説明は？",
+    "answer": "途中で減る年もあるが、始めより終わりの値が大きい",
+    "oldId": "first-143",
+    "oldQuestion": "経線について正しい説明はどれですか。",
+    "oldAnswer": "北極と南極で交わる",
+    "score": 0.4090909090909091
+  },
+  {
+    "id": "second-171",
+    "objective": "forest-workers-change",
+    "question": "教材の資料では、林業で働く人は1990年10.8万人、2020年6.4万人です。何万人減りましたか。",
+    "answer": "4.4万人",
+    "oldId": "second-099",
+    "oldQuestion": "教材の農業就業人口は1990年482万人、2019年168万人です。何万人減りましたか。",
+    "oldAnswer": "314万人",
+    "score": 0.39285714285714285
+  },
+  {
+    "id": "second-412",
+    "objective": "line-figure-claim",
+    "question": "図の仮の資料について正しい説明は？",
+    "answer": "途中で減る年もあるが、始めより終わりの値が大きい",
+    "oldId": "first-210",
+    "oldQuestion": "北海道の梅雨について正しい説明はどれですか。",
+    "oldAnswer": "梅雨の影響を受けにくい",
+    "score": 0.34615384615384615
+  },
+  {
+    "id": "second-412",
+    "objective": "line-figure-claim",
+    "question": "図の仮の資料について正しい説明は？",
+    "answer": "途中で減る年もあるが、始めより終わりの値が大きい",
+    "oldId": "first-240",
+    "oldQuestion": "沖縄県の位置について正しい説明はどれですか。",
+    "oldAnswer": "日本の都道府県で最も南にある",
+    "score": 0.34615384615384615
+  },
+  {
+    "id": "second-173",
+    "objective": "forest-stat-denominator",
+    "question": "「林家の数」と「林業で働く人の数」を比較する際の注意として正しいものはどれですか。",
+    "answer": "前者は世帯数、後者は人数であり単位が違う",
+    "oldId": "first-304",
+    "oldQuestion": "雪室の特徴として正しいものはどれですか。",
+    "oldAnswer": "少ない電力で低温を保てる",
+    "score": 0.3333333333333333
+  },
+  {
+    "id": "second-173",
+    "objective": "forest-stat-denominator",
+    "question": "「林家の数」と「林業で働く人の数」を比較する際の注意として正しいものはどれですか。",
+    "answer": "前者は世帯数、後者は人数であり単位が違う",
+    "oldId": "second-085",
+    "oldQuestion": "教材の「専業農家」の説明として正しいものはどれですか。",
+    "oldAnswer": "農業以外の仕事に従事する世帯員がいない農家",
+    "score": 0.32558139534883723
+  },
+  {
+    "id": "second-412",
+    "objective": "line-figure-claim",
+    "question": "図の仮の資料について正しい説明は？",
+    "answer": "途中で減る年もあるが、始めより終わりの値が大きい",
+    "oldId": "second-119",
+    "oldQuestion": "フードマイレージについて、正しい説明はどれですか。",
+    "oldAnswer": "輸送重量と距離を使う指標で、二酸化炭素排出量そのものではない",
+    "score": 0.32142857142857145
+  },
+  {
+    "id": "second-148",
+    "objective": "forest-yoshino",
+    "question": "人工の三大美林の「吉野のすぎ」がある県はどこですか。",
+    "answer": "奈良県",
+    "oldId": "first-387",
+    "oldQuestion": "奈良盆地がある都道府県はどこですか。",
+    "oldAnswer": "奈良県",
+    "score": 0.26666666666666666
+  },
+  {
+    "id": "second-298",
+    "objective": "geothermal-method",
+    "question": "地下から取り出した蒸気や熱水を利用する発電方法は？",
+    "answer": "地熱発電",
+    "oldId": "summer-051",
+    "oldQuestion": "温泉地が多い大分県で、温泉を利用して行われる発電は何ですか。",
+    "oldAnswer": "地熱発電",
+    "score": 0.08888888888888889
+  },
+  {
+    "id": "second-326",
+    "objective": "trade-partner-2021",
+    "question": "教材の2021年の輸出入総額で、日本の最大の貿易相手国は？",
+    "answer": "中国",
+    "oldId": "first-147",
+    "oldQuestion": "日本の西に位置する大きな国はどこですか。",
+    "oldAnswer": "中国",
+    "score": 0.07317073170731707
+  },
+  {
+    "id": "second-242",
+    "objective": "hanshin-historical-lead",
+    "question": "教材で、第二次世界大戦前まで日本一だったと説明される工業地帯は？",
+    "answer": "阪神工業地帯",
+    "oldId": "summer-115",
+    "oldQuestion": "大阪府と兵庫県に広がり、機械類の生産がさかんな工業地帯は何ですか。",
+    "oldAnswer": "阪神工業地帯",
+    "score": 0.07272727272727272
+  },
+  {
+    "id": "second-244",
+    "objective": "kitakyushu-extent",
+    "question": "北九州工業地帯の中心になる都市は？",
+    "answer": "北九州市",
+    "oldId": "summer-049",
+    "oldQuestion": "福岡県の政令指定都市は、福岡市とどこですか。",
+    "oldAnswer": "北九州市",
+    "score": 0.06451612903225806
+  },
+  {
+    "id": "second-150",
+    "objective": "forest-owase",
+    "question": "人工の三大美林の「尾鷲のひのき」がある県はどこですか。",
+    "answer": "三重県",
+    "oldId": "second-069",
+    "oldQuestion": "ブランド牛の「松阪牛」の産地は何県ですか。",
+    "oldAnswer": "三重県",
+    "score": 0.05405405405405406
+  },
+  {
+    "id": "second-146",
+    "objective": "forest-aomori-hiba",
+    "question": "天然の三大美林の一つである「ひば」の代表的な産地はどの県ですか。",
+    "answer": "青森県",
+    "oldId": "second-051",
+    "oldQuestion": "教材の2021年の資料で、りんごの生産量が最も多い都道府県はどこですか。",
+    "oldAnswer": "青森県",
+    "score": 0.05172413793103448
+  },
+  {
+    "id": "second-307",
+    "objective": "tokai-first",
+    "question": "教材で、1960年代に初めて原子力発電が行われた東海村がある県は？",
+    "answer": "茨城県",
+    "oldId": "second-075",
+    "oldQuestion": "教材の2019年の資料で、採卵鶏の飼育羽数が最も多い都道府県はどこですか。",
+    "oldAnswer": "茨城県",
+    "score": 0.04918032786885246
+  },
+  {
+    "id": "second-147",
+    "objective": "forest-kiso-hinoki",
+    "question": "天然の三大美林の「木曽のひのき」は、教材ではどの県に示されていますか。",
+    "answer": "長野県",
+    "oldId": "first-386",
+    "oldQuestion": "長野盆地がある都道府県はどこですか。",
+    "oldAnswer": "長野県",
+    "score": 0.045454545454545456
+  },
+  {
+    "id": "second-238",
+    "objective": "chukyo-extent",
+    "question": "中京工業地帯は愛知県・三重県と、何県の南部に広がる？",
+    "answer": "岐阜県",
+    "oldId": "second-070",
+    "oldQuestion": "ブランド牛の「飛騨牛」の産地は何県ですか。",
+    "oldAnswer": "岐阜県",
+    "score": 0.02702702702702703
+  },
+  {
+    "id": "second-294",
+    "objective": "hydro-method",
+    "question": "水が落ちる力で水車を回す発電方法は？",
+    "answer": "水力発電",
+    "oldId": "summer-094",
+    "oldQuestion": "山梨県を流れる川の水を利用して行われる発電は何ですか。",
+    "oldAnswer": "水力発電",
+    "score": 0.02564102564102564
+  },
+  {
+    "id": "second-214",
+    "objective": "auto-shipment",
+    "question": "教材で、機械工業の中で最も出荷額が高いとされる製品は？",
+    "answer": "自動車",
+    "oldId": "summer-035",
+    "oldQuestion": "広島県の工業では何の生産がさかんですか。",
+    "oldAnswer": "自動車",
+    "score": 0.024390243902439025
+  },
+  {
+    "id": "second-214",
+    "objective": "auto-shipment",
+    "question": "教材で、機械工業の中で最も出荷額が高いとされる製品は？",
+    "answer": "自動車",
+    "oldId": "summer-061",
+    "oldQuestion": "静岡県の東海工業地域では、楽器・オートバイのほかに何の生産がさかんですか。",
+    "oldAnswer": "自動車",
+    "score": 0.017857142857142856
+  },
+  {
+    "id": "second-240",
+    "objective": "chukyo-national-share",
+    "question": "教材の2020年の全国工業生産額で、中京の割合18.0%、阪神10.7%、京浜7.6%。この3地域で最大なのは？",
+    "answer": "中京工業地帯",
+    "oldId": "summer-065",
+    "oldQuestion": "三重県四日市市も含まれる日本の工業地帯は何ですか。",
+    "oldAnswer": "中京工業地帯",
+    "score": 0.014084507042253521
+  },
+  {
+    "id": "second-407",
+    "objective": "bar-figure-difference",
+    "question": "図の仮の資料で、BとAの数量の差はいくつ？",
+    "answer": "15",
+    "oldId": "first-160",
+    "oldQuestion": "2地点の時差を求めるとき、経度差を何で割りますか。",
+    "oldAnswer": "15",
+    "score": 0
+  }
+]

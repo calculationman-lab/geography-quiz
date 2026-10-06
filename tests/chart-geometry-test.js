@@ -49,5 +49,6 @@ const diagrams=Object.values(c.window.QuestionDiagrams.registry);assert.strictEq
 for(const d of diagrams){assert(c.auditAssets.includes(d.src),'図の実ファイルをPWA先読み: '+d.src);assert(fs.existsSync(path.join(root,d.src)));}
 const q=c.window.GEOGRAPHY_QUESTIONS.find(q=>q.id==='second-434');assert.strictEqual(q.answer,'729人');assert(q.question.includes('1000人'));
 const manifest=JSON.parse(fs.readFileSync(path.join(root,'qa/diagram-audit-20261006/charts.json'),'utf8'));assert.strictEqual(manifest.length,12);
-for(const m of manifest)assert.strictEqual(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,m.path))).digest('hex'),m.sha256);
+// The generator records canonical UTF-8/LF; tolerate Git's Windows CRLF checkout.
+for(const m of manifest)assert.strictEqual(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,m.path),'utf8').replace(/\r\n/g,'\n')).digest('hex'),m.sha256);
 console.log('PASS: 12グラフの扇形角度・帯幅・棒高・折れ線座標・年の間隔・分母・19図のPWA参照を原資料の値から独立検証');

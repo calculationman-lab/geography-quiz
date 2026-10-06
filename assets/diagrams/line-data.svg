@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img"><title>読み取り練習用の仮の資料</title><style>text{font-family:system-ui,"Yu Gothic",Meiryo,sans-serif;fill:#172d3d}*{box-sizing:border-box}</style><rect width="1536" height="1024" fill="white"/>
+<text x="768" y="78" font-size="50" text-anchor="middle" font-weight="700">読み取り練習用の仮の資料</text>
+<line x1="185" y1="820" x2="1405" y2="820" stroke="#dce3e8" stroke-width="1.5" />
+<text x="163" y="830" font-size="30" text-anchor="end" font-weight="400">0</text>
+<line x1="177" y1="820" x2="185" y2="820" stroke="#293747" stroke-width="2" />
+<line x1="185" y1="731.428571" x2="1405" y2="731.428571" stroke="#dce3e8" stroke-width="1.5" />
+<text x="163" y="741.428571" font-size="30" text-anchor="end" font-weight="400">5</text>
+<line x1="177" y1="731.428571" x2="185" y2="731.428571" stroke="#293747" stroke-width="2" />
+<line x1="185" y1="642.857143" x2="1405" y2="642.857143" stroke="#dce3e8" stroke-width="1.5" />
+<text x="163" y="652.857143" font-size="30" text-anchor="end" font-weight="400">10</text>
+<line x1="177" y1="642.857143" x2="185" y2="642.857143" stroke="#293747" stroke-width="2" />
+<line x1="185" y1="554.285714" x2="1405" y2="554.285714" stroke="#dce3e8" stroke-width="1.5" />
+<text x="163" y="564.285714" font-size="30" text-anchor="end" font-weight="400">15</text>
+<line x1="177" y1="554.285714" x2="185" y2="554.285714" stroke="#293747" stroke-width="2" />
+<line x1="185" y1="465.714286" x2="1405" y2="465.714286" stroke="#dce3e8" stroke-width="1.5" />
+<text x="163" y="475.714286" font-size="30" text-anchor="end" font-weight="400">20</text>
+<line x1="177" y1="465.714286" x2="185" y2="465.714286" stroke="#293747" stroke-width="2" />
+<line x1="185" y1="377.142857" x2="1405" y2="377.142857" stroke="#dce3e8" stroke-width="1.5" />
+<text x="163" y="387.142857" font-size="30" text-anchor="end" font-weight="400">25</text>
+<line x1="177" y1="377.142857" x2="185" y2="377.142857" stroke="#293747" stroke-width="2" />
+<line x1="185" y1="288.571429" x2="1405" y2="288.571429" stroke="#dce3e8" stroke-width="1.5" />
+<text x="163" y="298.571429" font-size="30" text-anchor="end" font-weight="400">30</text>
+<line x1="177" y1="288.571429" x2="185" y2="288.571429" stroke="#293747" stroke-width="2" />
+<line x1="185" y1="200" x2="1405" y2="200" stroke="#dce3e8" stroke-width="1.5" />
+<text x="163" y="210" font-size="30" text-anchor="end" font-weight="400">35</text>
+<line x1="177" y1="200" x2="185" y2="200" stroke="#293747" stroke-width="2" />
+<line x1="185" y1="200" x2="185" y2="820" stroke="#293747" stroke-width="2" />
+<line x1="185" y1="820" x2="1405" y2="820" stroke="#293747" stroke-width="2" />
+<polyline points="185,642.857143 591.666667,465.714286 998.333333,554.285714 1405,288.571429" fill="none" stroke="#079c97" stroke-width="6" data-kind="practice-line"/>
+<circle cx="185" cy="642.857143" r="9" fill="#079c97"/>
+<text x="185" y="618.857143" font-size="35" text-anchor="middle" font-weight="400">10</text>
+<line x1="185" y1="820" x2="185" y2="835" stroke="#293747" stroke-width="2" />
+<text x="185" y="890" font-size="34" text-anchor="middle" font-weight="400">2020年</text>
+<circle cx="591.666667" cy="465.714286" r="9" fill="#079c97"/>
+<text x="591.666667" y="441.714286" font-size="35" text-anchor="middle" font-weight="400">20</text>
+<line x1="591.666667" y1="820" x2="591.666667" y2="835" stroke="#293747" stroke-width="2" />
+<text x="591.666667" y="890" font-size="34" text-anchor="middle" font-weight="400">2021年</text>
+<circle cx="998.333333" cy="554.285714" r="9" fill="#079c97"/>
+<text x="998.333333" y="530.285714" font-size="35" text-anchor="middle" font-weight="400">15</text>
+<line x1="998.333333" y1="820" x2="998.333333" y2="835" stroke="#293747" stroke-width="2" />
+<text x="998.333333" y="890" font-size="34" text-anchor="middle" font-weight="400">2022年</text>
+<circle cx="1405" cy="288.571429" r="9" fill="#079c97"/>
+<text x="1405" y="264.571429" font-size="35" text-anchor="middle" font-weight="400">30</text>
+<line x1="1405" y1="820" x2="1405" y2="835" stroke="#293747" stroke-width="2" />
+<text x="1405" y="890" font-size="34" text-anchor="middle" font-weight="400">2023年</text>
+</svg>

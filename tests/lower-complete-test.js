@@ -17,7 +17,9 @@ for(const q of added){
 }
 const expected={'forest-artificial-share':'40％','forest-type-compare':'針葉樹が2ポイント多い','forest-workers-change':'4.4万人','fish-nori-share':'47.0％','fish-pearl-gap':'9.7ポイント','fish-scallop-remaining':'31.9％','shipment-structure-read':'71.0%','chukyo-machine-read':'68.1%','crude-import-read':'83.7%','yen-import-calculation':'200円','yen-export-price':'1万2000ドル','trade-balance-calc':'15兆円の貿易赤字','cars-unit-conversion':'1004.9万台','cars-asia-increase':'229万台','bar-figure-difference':'15','bar-figure-total':'70','bar-figure-share':'50%','line-figure-net':'20'};
 for(const [key,value]of Object.entries(expected))assert.strictEqual(added.find(q=>q.objective===key).answer,value,key);
-const metadata=[...JSON.parse(fs.readFileSync(path.join(root,'qa/lower-complete/imagegen.json'),'utf8')),...JSON.parse(fs.readFileSync(path.join(root,'qa/question-figures/imagegen.json'),'utf8')),...JSON.parse(fs.readFileSync(path.join(root,'qa/firsthalf-reading/imagegen.json'),'utf8'))];
+const originalMetadata=[...JSON.parse(fs.readFileSync(path.join(root,'qa/lower-complete/imagegen.json'),'utf8')),...JSON.parse(fs.readFileSync(path.join(root,'qa/question-figures/imagegen.json'),'utf8')),...JSON.parse(fs.readFileSync(path.join(root,'qa/firsthalf-reading/imagegen.json'),'utf8'))];
+const repairs=JSON.parse(fs.readFileSync(path.join(root,'qa/diagram-audit-20261006/imagegen.json'),'utf8'));
+const metadata=originalMetadata.map(m=>repairs.find(r=>r.asset===m.asset)||m);
 assert.strictEqual(metadata.length,26,'最初の14図と後半5・前半7の資料図');
 for(const m of metadata){const data=fs.readFileSync(path.join(root,m.path));assert.strictEqual(data.toString('ascii',0,4),'RIFF');assert.strictEqual(data.toString('ascii',8,12),'WEBP');assert.strictEqual(crypto.createHash('sha256').update(data).digest('hex'),m.sha256);assert(m.width>=1500&&m.height>=700);assert(m.prompt&&m.generator==='built-in image_gen');}
 let before=0,after=0;

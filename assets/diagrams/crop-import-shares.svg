@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img"><title>小麦・大豆・とうもろこしの輸入先</title><style>text{font-family:system-ui,"Yu Gothic",Meiryo,sans-serif;fill:#172d3d}*{box-sizing:border-box}</style><rect width="1536" height="1024" fill="white"/>
+<text x="768" y="78" font-size="50" text-anchor="middle" font-weight="700">小麦・大豆・とうもろこしの輸入先</text>
+<rect x="70" y="127" width="36" height="28" fill="#079c97" />
+<text x="120" y="155" font-size="30" text-anchor="start" font-weight="400">アメリカ合衆国</text>
+<rect x="455" y="127" width="36" height="28" fill="#328ad4" />
+<text x="505" y="155" font-size="30" text-anchor="start" font-weight="400">カナダ</text>
+<rect x="705" y="127" width="36" height="28" fill="#ed8d34" />
+<text x="755" y="155" font-size="30" text-anchor="start" font-weight="400">オーストラリア</text>
+<rect x="70" y="177" width="36" height="28" fill="#f1c64f" />
+<text x="120" y="205" font-size="30" text-anchor="start" font-weight="400">ブラジル</text>
+<rect x="455" y="177" width="36" height="28" fill="#9873bf" />
+<text x="505" y="205" font-size="30" text-anchor="start" font-weight="400">アルゼンチン</text>
+<rect x="705" y="177" width="36" height="28" fill="#c4c9ce" />
+<text x="755" y="205" font-size="30" text-anchor="start" font-weight="400">その他</text>
+<text x="232" y="353" font-size="32" text-anchor="end" font-weight="600">小麦</text>
+<rect x="260" y="290" width="503.88" height="98" fill="#079c97" data-kind="segment" data-row="0" data-value="44.2" data-total-width="1140" data-category="アメリカ合衆国"/>
+<rect x="763.88" y="290" width="400.14" height="98" fill="#328ad4" data-kind="segment" data-row="0" data-value="35.1" data-total-width="1140" data-category="カナダ"/>
+<rect x="1164.02" y="290" width="234.84" height="98" fill="#ed8d34" data-kind="segment" data-row="0" data-value="20.6" data-total-width="1140" data-category="オーストラリア"/>
+<rect x="1398.86" y="290" width="1.14" height="98" fill="#c4c9ce" data-kind="segment" data-row="0" data-value="0.1" data-total-width="1140" data-category="その他"/>
+<text x="511.94" y="352" font-size="32" text-anchor="middle" font-weight="400">44.2%</text>
+<text x="963.95" y="352" font-size="32" text-anchor="middle" font-weight="400">35.1%</text>
+<text x="1281.44" y="352" font-size="32" text-anchor="middle" font-weight="400">20.6%</text>
+<polyline points="1399.43,360 1440,420" fill="none" stroke="#44515d" stroke-width="2.5"/>
+<circle cx="1399.43" cy="360" r="4" fill="#44515d"/>
+<text x="1440" y="455" font-size="29" text-anchor="middle" font-weight="400">0.1%</text>
+<text x="232" y="553" font-size="32" text-anchor="end" font-weight="600">大豆</text>
+<rect x="260" y="490" width="865.26" height="98" fill="#079c97" data-kind="segment" data-row="1" data-value="75.9" data-total-width="1140" data-category="アメリカ合衆国"/>
+<rect x="1125.26" y="490" width="172.14" height="98" fill="#f1c64f" data-kind="segment" data-row="1" data-value="15.1" data-total-width="1140" data-category="ブラジル"/>
+<rect x="1297.4" y="490" width="94.62" height="98" fill="#328ad4" data-kind="segment" data-row="1" data-value="8.3" data-total-width="1140" data-category="カナダ"/>
+<rect x="1392.02" y="490" width="7.98" height="98" fill="#c4c9ce" data-kind="segment" data-row="1" data-value="0.7" data-total-width="1140" data-category="その他"/>
+<text x="692.63" y="552" font-size="32" text-anchor="middle" font-weight="400">75.9%</text>
+<text x="1211.33" y="552" font-size="32" text-anchor="middle" font-weight="400">15.1%</text>
+<text x="1344.71" y="552" font-size="32" text-anchor="middle" font-weight="400">8.3%</text>
+<polyline points="1396.01,560 1440,620" fill="none" stroke="#44515d" stroke-width="2.5"/>
+<circle cx="1396.01" cy="560" r="4" fill="#44515d"/>
+<text x="1440" y="655" font-size="29" text-anchor="middle" font-weight="400">0.7%</text>
+<text x="232" y="753" font-size="32" text-anchor="end" font-weight="600">とうもろこし</text>
+<rect x="260" y="690" width="829.92" height="98" fill="#079c97" data-kind="segment" data-row="2" data-value="72.8" data-total-width="1140" data-category="アメリカ合衆国"/>
+<rect x="1089.92" y="690" width="175.56" height="98" fill="#f1c64f" data-kind="segment" data-row="2" data-value="15.4" data-total-width="1140" data-category="ブラジル"/>
+<rect x="1265.48" y="690" width="83.22" height="98" fill="#9873bf" data-kind="segment" data-row="2" data-value="7.3" data-total-width="1140" data-category="アルゼンチン"/>
+<rect x="1348.7" y="690" width="51.3" height="98" fill="#c4c9ce" data-kind="segment" data-row="2" data-value="4.5" data-total-width="1140" data-category="その他"/>
+<text x="674.96" y="752" font-size="32" text-anchor="middle" font-weight="400">72.8%</text>
+<text x="1177.7" y="752" font-size="32" text-anchor="middle" font-weight="400">15.4%</text>
+<text x="1307.09" y="752" font-size="32" text-anchor="middle" font-weight="400">7.3%</text>
+<polyline points="1374.35,760 1440,820" fill="none" stroke="#44515d" stroke-width="2.5"/>
+<circle cx="1374.35" cy="760" r="4" fill="#44515d"/>
+<text x="1440" y="855" font-size="29" text-anchor="middle" font-weight="400">4.5%</text>
+<line x1="260" y1="866" x2="1400" y2="866" stroke="#293747" stroke-width="2" />
+<line x1="260" y1="866" x2="260" y2="880" stroke="#293747" stroke-width="2" />
+<text x="260" y="917" font-size="30" text-anchor="middle" font-weight="400">0%</text>
+<line x1="488" y1="866" x2="488" y2="880" stroke="#293747" stroke-width="2" />
+<text x="488" y="917" font-size="30" text-anchor="middle" font-weight="400">20%</text>
+<line x1="716" y1="866" x2="716" y2="880" stroke="#293747" stroke-width="2" />
+<text x="716" y="917" font-size="30" text-anchor="middle" font-weight="400">40%</text>
+<line x1="944" y1="866" x2="944" y2="880" stroke="#293747" stroke-width="2" />
+<text x="944" y="917" font-size="30" text-anchor="middle" font-weight="400">60%</text>
+<line x1="1172" y1="866" x2="1172" y2="880" stroke="#293747" stroke-width="2" />
+<text x="1172" y="917" font-size="30" text-anchor="middle" font-weight="400">80%</text>
+<line x1="1400" y1="866" x2="1400" y2="880" stroke="#293747" stroke-width="2" />
+<text x="1400" y="917" font-size="30" text-anchor="middle" font-weight="400">100%</text>
+<text x="768" y="975" font-size="26" text-anchor="middle" font-weight="400">教材掲載の2023年版資料。各作物の輸入量を100%とする</text>
+</svg>

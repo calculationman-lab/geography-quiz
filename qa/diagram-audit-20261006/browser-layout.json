@@ -1,0 +1,62 @@
+[
+  {
+    "value": "bar-data",
+    "outside": [],
+    "overlaps": []
+  },
+  {
+    "value": "line-data",
+    "outside": [],
+    "overlaps": []
+  },
+  {
+    "value": "forest-composition",
+    "outside": [],
+    "overlaps": []
+  },
+  {
+    "value": "power-composition",
+    "outside": [],
+    "overlaps": []
+  },
+  {
+    "value": "crop-import-shares",
+    "outside": [],
+    "overlaps": []
+  },
+  {
+    "value": "farmland-denominators",
+    "outside": [],
+    "overlaps": []
+  },
+  {
+    "value": "farm-population-age",
+    "outside": [],
+    "overlaps": []
+  },
+  {
+    "value": "rice-production-consumption",
+    "outside": [],
+    "overlaps": []
+  },
+  {
+    "value": "internet-income",
+    "outside": [],
+    "overlaps": []
+  },
+  {
+    "value": "internet-age",
+    "outside": [],
+    "overlaps": []
+  },
+  {
+    "value": "meat-virtual-water",
+    "outside": [],
+    "overlaps": []
+  },
+  {
+    "value": "food-consumption-change",
+    "outside": [],
+    "overlaps": []
+  }
+]

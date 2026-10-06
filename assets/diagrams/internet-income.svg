@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img"><title>所属世帯年収別インターネット利用率（2021年）</title><style>text{font-family:system-ui,"Yu Gothic",Meiryo,sans-serif;fill:#172d3d}*{box-sizing:border-box}</style><rect width="1536" height="1024" fill="white"/>
+<text x="768" y="78" font-size="50" text-anchor="middle" font-weight="700">所属世帯年収別インターネット利用率（2021年）</text>
+<line x1="175" y1="770" x2="1425" y2="770" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="780" font-size="30" text-anchor="end" font-weight="400">0</text>
+<line x1="167" y1="770" x2="175" y2="770" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="654" x2="1425" y2="654" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="664" font-size="30" text-anchor="end" font-weight="400">20</text>
+<line x1="167" y1="654" x2="175" y2="654" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="538" x2="1425" y2="538" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="548" font-size="30" text-anchor="end" font-weight="400">40</text>
+<line x1="167" y1="538" x2="175" y2="538" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="422" x2="1425" y2="422" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="432" font-size="30" text-anchor="end" font-weight="400">60</text>
+<line x1="167" y1="422" x2="175" y2="422" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="306" x2="1425" y2="306" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="316" font-size="30" text-anchor="end" font-weight="400">80</text>
+<line x1="167" y1="306" x2="175" y2="306" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="190" x2="1425" y2="190" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="200" font-size="30" text-anchor="end" font-weight="400">100</text>
+<line x1="167" y1="190" x2="175" y2="190" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="190" x2="175" y2="770" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="770" x2="1425" y2="770" stroke="#293747" stroke-width="2" />
+<text x="55" y="140" font-size="28" text-anchor="start" font-weight="400">利用率（%）</text>
+<rect x="221.875" y="446.36" width="114.583333" height="323.64" fill="#328ad4" data-kind="bar" data-value="55.8" data-max="100" data-baseline="770" data-scale-height="580"/>
+<text x="279.166667" y="430.36" font-size="34" text-anchor="middle" font-weight="400">55.8%</text>
+<text x="279.166667" y="823" font-size="29" text-anchor="middle" font-weight="400">200万円</text>
+<text x="279.166667" y="868" font-size="29" text-anchor="middle" font-weight="400">未満</text>
+<rect x="430.208333" y="347.18" width="114.583333" height="422.82" fill="#328ad4" data-kind="bar" data-value="72.9" data-max="100" data-baseline="770" data-scale-height="580"/>
+<text x="487.5" y="331.18" font-size="34" text-anchor="middle" font-weight="400">72.9%</text>
+<text x="487.5" y="823" font-size="29" text-anchor="middle" font-weight="400">200〜400万円</text>
+<text x="487.5" y="868" font-size="29" text-anchor="middle" font-weight="400">未満</text>
+<rect x="638.541667" y="271.2" width="114.583333" height="498.8" fill="#328ad4" data-kind="bar" data-value="86" data-max="100" data-baseline="770" data-scale-height="580"/>
+<text x="695.833333" y="255.2" font-size="34" text-anchor="middle" font-weight="400">86.0%</text>
+<text x="695.833333" y="823" font-size="29" text-anchor="middle" font-weight="400">400〜600万円</text>
+<text x="695.833333" y="868" font-size="29" text-anchor="middle" font-weight="400">未満</text>
+<rect x="846.875" y="232.92" width="114.583333" height="537.08" fill="#328ad4" data-kind="bar" data-value="92.6" data-max="100" data-baseline="770" data-scale-height="580"/>
+<text x="904.166667" y="216.92" font-size="34" text-anchor="middle" font-weight="400">92.6%</text>
+<text x="904.166667" y="823" font-size="29" text-anchor="middle" font-weight="400">600〜800万円</text>
+<text x="904.166667" y="868" font-size="29" text-anchor="middle" font-weight="400">未満</text>
+<rect x="1055.208333" y="236.4" width="114.583333" height="533.6" fill="#328ad4" data-kind="bar" data-value="92" data-max="100" data-baseline="770" data-scale-height="580"/>
+<text x="1112.5" y="220.4" font-size="34" text-anchor="middle" font-weight="400">92.0%</text>
+<text x="1112.5" y="823" font-size="29" text-anchor="middle" font-weight="400">800〜1000万円</text>
+<text x="1112.5" y="868" font-size="29" text-anchor="middle" font-weight="400">未満</text>
+<rect x="1263.541667" y="228.28" width="114.583333" height="541.72" fill="#328ad4" data-kind="bar" data-value="93.4" data-max="100" data-baseline="770" data-scale-height="580"/>
+<text x="1320.833333" y="212.28" font-size="34" text-anchor="middle" font-weight="400">93.4%</text>
+<text x="1320.833333" y="823" font-size="29" text-anchor="middle" font-weight="400">1000万円</text>
+<text x="1320.833333" y="868" font-size="29" text-anchor="middle" font-weight="400">以上</text>
+<text x="768" y="944" font-size="26" text-anchor="middle" font-weight="400">対象：6歳以上の個人（無回答を除く）</text>
+<text x="768" y="979" font-size="26" text-anchor="middle" font-weight="400">世帯の年収で分類。利用率は人の割合</text>
+</svg>

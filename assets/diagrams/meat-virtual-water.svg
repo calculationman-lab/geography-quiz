@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img"><title>肉1kgの生産に必要な水</title><style>text{font-family:system-ui,"Yu Gothic",Meiryo,sans-serif;fill:#172d3d}*{box-sizing:border-box}</style><rect width="1536" height="1024" fill="white"/>
+<text x="768" y="78" font-size="50" text-anchor="middle" font-weight="700">肉1kgの生産に必要な水</text>
+<line x1="175" y1="770" x2="1425" y2="770" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="780" font-size="30" text-anchor="end" font-weight="400">0</text>
+<line x1="167" y1="770" x2="175" y2="770" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="654" x2="1425" y2="654" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="664" font-size="30" text-anchor="end" font-weight="400">5</text>
+<line x1="167" y1="654" x2="175" y2="654" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="538" x2="1425" y2="538" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="548" font-size="30" text-anchor="end" font-weight="400">10</text>
+<line x1="167" y1="538" x2="175" y2="538" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="422" x2="1425" y2="422" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="432" font-size="30" text-anchor="end" font-weight="400">15</text>
+<line x1="167" y1="422" x2="175" y2="422" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="306" x2="1425" y2="306" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="316" font-size="30" text-anchor="end" font-weight="400">20</text>
+<line x1="167" y1="306" x2="175" y2="306" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="190" x2="1425" y2="190" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="200" font-size="30" text-anchor="end" font-weight="400">25</text>
+<line x1="167" y1="190" x2="175" y2="190" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="190" x2="175" y2="770" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="770" x2="1425" y2="770" stroke="#293747" stroke-width="2" />
+<text x="175" y="160" font-size="30" text-anchor="start" font-weight="400">水の量（t）</text>
+<rect x="268.75" y="292.08" width="229.166667" height="477.92" fill="#328ad4" data-kind="bar" data-value="20.6" data-max="25" data-baseline="770" data-scale-height="580"/>
+<text x="383.333333" y="276.08" font-size="34" text-anchor="middle" font-weight="400">20.6</text>
+<text x="383.333333" y="823" font-size="29" text-anchor="middle" font-weight="400">牛肉</text>
+<rect x="685.416667" y="633.12" width="229.166667" height="136.88" fill="#328ad4" data-kind="bar" data-value="5.9" data-max="25" data-baseline="770" data-scale-height="580"/>
+<text x="800" y="617.12" font-size="34" text-anchor="middle" font-weight="400">5.9</text>
+<text x="800" y="823" font-size="29" text-anchor="middle" font-weight="400">豚肉</text>
+<rect x="1102.083333" y="665.6" width="229.166667" height="104.4" fill="#328ad4" data-kind="bar" data-value="4.5" data-max="25" data-baseline="770" data-scale-height="580"/>
+<text x="1216.666667" y="649.6" font-size="34" text-anchor="middle" font-weight="400">4.5</text>
+<text x="1216.666667" y="823" font-size="29" text-anchor="middle" font-weight="400">鶏肉</text>
+<text x="768" y="975" font-size="26" text-anchor="middle" font-weight="400">教材掲載の値。肉はいずれも1kgあたり</text>
+</svg>

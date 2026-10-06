@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img"><title>米の生産量と消費量</title><style>text{font-family:system-ui,"Yu Gothic",Meiryo,sans-serif;fill:#172d3d}*{box-sizing:border-box}</style><rect width="1536" height="1024" fill="white"/>
+<text x="768" y="78" font-size="50" text-anchor="middle" font-weight="700">米の生産量と消費量</text>
+<line x1="185" y1="795" x2="1415" y2="795" stroke="#dce3e8" stroke-width="1.5" />
+<text x="163" y="805" font-size="30" text-anchor="end" font-weight="400">800</text>
+<line x1="177" y1="795" x2="185" y2="795" stroke="#293747" stroke-width="2" />
+<line x1="185" y1="711.428571" x2="1415" y2="711.428571" stroke="#dce3e8" stroke-width="1.5" />
+<text x="163" y="721.428571" font-size="30" text-anchor="end" font-weight="400">900</text>
+<line x1="177" y1="711.428571" x2="185" y2="711.428571" stroke="#293747" stroke-width="2" />
+<line x1="185" y1="627.857143" x2="1415" y2="627.857143" stroke="#dce3e8" stroke-width="1.5" />
+<text x="163" y="637.857143" font-size="30" text-anchor="end" font-weight="400">1000</text>
+<line x1="177" y1="627.857143" x2="185" y2="627.857143" stroke="#293747" stroke-width="2" />
+<line x1="185" y1="544.285714" x2="1415" y2="544.285714" stroke="#dce3e8" stroke-width="1.5" />
+<text x="163" y="554.285714" font-size="30" text-anchor="end" font-weight="400">1100</text>
+<line x1="177" y1="544.285714" x2="185" y2="544.285714" stroke="#293747" stroke-width="2" />
+<line x1="185" y1="460.714286" x2="1415" y2="460.714286" stroke="#dce3e8" stroke-width="1.5" />
+<text x="163" y="470.714286" font-size="30" text-anchor="end" font-weight="400">1200</text>
+<line x1="177" y1="460.714286" x2="185" y2="460.714286" stroke="#293747" stroke-width="2" />
+<line x1="185" y1="377.142857" x2="1415" y2="377.142857" stroke="#dce3e8" stroke-width="1.5" />
+<text x="163" y="387.142857" font-size="30" text-anchor="end" font-weight="400">1300</text>
+<line x1="177" y1="377.142857" x2="185" y2="377.142857" stroke="#293747" stroke-width="2" />
+<line x1="185" y1="293.571429" x2="1415" y2="293.571429" stroke="#dce3e8" stroke-width="1.5" />
+<text x="163" y="303.571429" font-size="30" text-anchor="end" font-weight="400">1400</text>
+<line x1="177" y1="293.571429" x2="185" y2="293.571429" stroke="#293747" stroke-width="2" />
+<line x1="185" y1="210" x2="1415" y2="210" stroke="#dce3e8" stroke-width="1.5" />
+<text x="163" y="220" font-size="30" text-anchor="end" font-weight="400">1500</text>
+<line x1="177" y1="210" x2="185" y2="210" stroke="#293747" stroke-width="2" />
+<line x1="185" y1="210" x2="185" y2="795" stroke="#293747" stroke-width="2" />
+<line x1="185" y1="795" x2="1415" y2="795" stroke="#293747" stroke-width="2" />
+<text x="185" y="180" font-size="30" text-anchor="start" font-weight="400">万トン</text>
+<rect x="445" y="125" width="36" height="28" fill="#079c97" />
+<text x="495" y="153" font-size="30" text-anchor="start" font-weight="400">生産量</text>
+<rect x="845" y="125" width="36" height="28" fill="#ed8d34" />
+<text x="895" y="153" font-size="30" text-anchor="start" font-weight="400">消費量</text>
+<polyline points="185,387.171429 289.237288,423.107143 393.474576,400.542857 497.711864,352.071429 601.949153,636.214286 706.186441,485.785714 810.423729,577.714286 914.661017,552.642857 1018.898305,652.928571 1123.135593,694.714286 1227.372881,719.785714 1331.610169,728.142857 1415,753.214286" fill="none" stroke="#079c97" stroke-width="5" stroke-linejoin="round" data-kind="productionApproximate"/>
+<circle cx="185" cy="387.171429" r="5" fill="#079c97"/>
+<circle cx="289.237288" cy="423.107143" r="5" fill="#079c97"/>
+<circle cx="393.474576" cy="400.542857" r="5" fill="#079c97"/>
+<circle cx="497.711864" cy="352.071429" r="5" fill="#079c97"/>
+<circle cx="601.949153" cy="636.214286" r="5" fill="#079c97"/>
+<circle cx="706.186441" cy="485.785714" r="5" fill="#079c97"/>
+<circle cx="810.423729" cy="577.714286" r="5" fill="#079c97"/>
+<circle cx="914.661017" cy="552.642857" r="5" fill="#079c97"/>
+<circle cx="1018.898305" cy="652.928571" r="5" fill="#079c97"/>
+<circle cx="1123.135593" cy="694.714286" r="5" fill="#079c97"/>
+<circle cx="1227.372881" cy="719.785714" r="5" fill="#079c97"/>
+<circle cx="1331.610169" cy="728.142857" r="5" fill="#079c97"/>
+<circle cx="1415" cy="753.214286" r="5" fill="#079c97"/>
+<polyline points="185,403.885714 289.237288,377.142857 393.474576,460.714286 497.711864,460.714286 601.949153,510.857143 706.186441,535.928571 810.423729,577.714286 914.661017,594.428571 1018.898305,636.214286 1123.135593,669.642857 1227.372881,686.357143 1331.610169,711.428571 1415,740.678571" fill="none" stroke="#ed8d34" stroke-width="5" stroke-linejoin="round" data-kind="consumptionApproximate"/>
+<circle cx="185" cy="403.885714" r="5" fill="#ed8d34"/>
+<circle cx="289.237288" cy="377.142857" r="5" fill="#ed8d34"/>
+<circle cx="393.474576" cy="460.714286" r="5" fill="#ed8d34"/>
+<circle cx="497.711864" cy="460.714286" r="5" fill="#ed8d34"/>
+<circle cx="601.949153" cy="510.857143" r="5" fill="#ed8d34"/>
+<circle cx="706.186441" cy="535.928571" r="5" fill="#ed8d34"/>
+<circle cx="810.423729" cy="577.714286" r="5" fill="#ed8d34"/>
+<circle cx="914.661017" cy="594.428571" r="5" fill="#ed8d34"/>
+<circle cx="1018.898305" cy="636.214286" r="5" fill="#ed8d34"/>
+<circle cx="1123.135593" cy="669.642857" r="5" fill="#ed8d34"/>
+<circle cx="1227.372881" cy="686.357143" r="5" fill="#ed8d34"/>
+<circle cx="1331.610169" cy="711.428571" r="5" fill="#ed8d34"/>
+<circle cx="1415" cy="740.678571" r="5" fill="#ed8d34"/>
+<line x1="185" y1="795" x2="185" y2="808" stroke="#293747" stroke-width="2" />
+<text x="185" y="847" font-size="27" text-anchor="middle" font-weight="400">1960</text>
+<line x1="289.237288" y1="795" x2="289.237288" y2="808" stroke="#293747" stroke-width="2" />
+<text x="289.237288" y="847" font-size="27" text-anchor="middle" font-weight="400">1965</text>
+<line x1="393.474576" y1="795" x2="393.474576" y2="808" stroke="#293747" stroke-width="2" />
+<text x="393.474576" y="847" font-size="27" text-anchor="middle" font-weight="400">1970</text>
+<line x1="497.711864" y1="795" x2="497.711864" y2="808" stroke="#293747" stroke-width="2" />
+<text x="497.711864" y="847" font-size="27" text-anchor="middle" font-weight="400">1975</text>
+<line x1="601.949153" y1="795" x2="601.949153" y2="808" stroke="#293747" stroke-width="2" />
+<text x="601.949153" y="847" font-size="27" text-anchor="middle" font-weight="400">1980</text>
+<line x1="706.186441" y1="795" x2="706.186441" y2="808" stroke="#293747" stroke-width="2" />
+<text x="706.186441" y="847" font-size="27" text-anchor="middle" font-weight="400">1985</text>
+<line x1="810.423729" y1="795" x2="810.423729" y2="808" stroke="#293747" stroke-width="2" />
+<text x="810.423729" y="847" font-size="27" text-anchor="middle" font-weight="400">1990</text>
+<line x1="914.661017" y1="795" x2="914.661017" y2="808" stroke="#293747" stroke-width="2" />
+<text x="914.661017" y="847" font-size="27" text-anchor="middle" font-weight="400">1995</text>
+<line x1="1018.898305" y1="795" x2="1018.898305" y2="808" stroke="#293747" stroke-width="2" />
+<text x="1018.898305" y="847" font-size="27" text-anchor="middle" font-weight="400">2000</text>
+<line x1="1123.135593" y1="795" x2="1123.135593" y2="808" stroke="#293747" stroke-width="2" />
+<text x="1123.135593" y="847" font-size="27" text-anchor="middle" font-weight="400">2005</text>
+<line x1="1227.372881" y1="795" x2="1227.372881" y2="808" stroke="#293747" stroke-width="2" />
+<text x="1227.372881" y="847" font-size="27" text-anchor="middle" font-weight="400">2010</text>
+<line x1="1331.610169" y1="795" x2="1331.610169" y2="808" stroke="#293747" stroke-width="2" />
+<text x="1331.610169" y="879" font-size="27" text-anchor="middle" font-weight="400">2015</text>
+<line x1="1415" y1="795" x2="1415" y2="808" stroke="#293747" stroke-width="2" />
+<text x="1415" y="879" font-size="27" text-anchor="middle" font-weight="400">2019</text>
+<path d="M 169 815 l 8 -7 l 8 7 l 8 -7 l 8 7 M 169 830 l 8 -7 l 8 7 l 8 -7 l 8 7" fill="none" stroke="#293747" stroke-width="3"/>
+<text x="768" y="975" font-size="26" text-anchor="middle" font-weight="400">教材のグラフを再構成。線の位置は概数</text>
+</svg>

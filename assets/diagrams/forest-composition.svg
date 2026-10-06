@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img"><title>日本の森林の構成（2017年）</title><style>text{font-family:system-ui,"Yu Gothic",Meiryo,sans-serif;fill:#172d3d}*{box-sizing:border-box}</style><rect width="1536" height="1024" fill="white"/>
+<text x="768" y="78" font-size="50" text-anchor="middle" font-weight="700">日本の森林の構成（2017年）</text>
+<path d="M 768 480 L 768 195 A 285 285 0 0 1 949.665837 699.596274 Z" fill="#079c97" data-kind="sector" data-value="39" data-start-angle="-90" data-end-angle="50.4"/>
+<path d="M 768 480 L 949.665837 699.596274 A 285 285 0 0 1 803.719972 762.75269 Z" fill="#ed8d34" data-kind="sector" data-value="9" data-start-angle="50.4" data-end-angle="82.8"/>
+<path d="M 768 480 L 803.719972 762.75269 A 285 285 0 0 1 785.895298 764.437618 Z" fill="#328ad4" data-kind="sector" data-value="1" data-start-angle="82.8" data-end-angle="86.4"/>
+<path d="M 768 480 L 785.895298 764.437618 A 285 285 0 0 1 663.084502 215.013702 Z" fill="#f1c64f" data-kind="sector" data-value="45" data-start-angle="86.4" data-end-angle="248.4"/>
+<path d="M 768 480 L 663.084502 215.013702 A 285 285 0 0 1 768 195 Z" fill="#9873bf" data-kind="sector" data-value="6" data-start-angle="248.4" data-end-angle="270"/>
+<polyline points="1024.86045,387.524548 1075,302 1090,302" fill="none" stroke="#44515d" stroke-width="2.5"/>
+<circle cx="1024.86045" cy="387.524548" r="4" fill="#44515d"/>
+<text x="1105" y="275" font-size="34" text-anchor="start" font-weight="400">針葉樹の人工林</text>
+<text x="1105" y="322" font-size="34" text-anchor="start" font-weight="400">39%</text>
+<polyline points="876.421374,730.547013 1060,746 1080,746" fill="none" stroke="#44515d" stroke-width="2.5"/>
+<circle cx="876.421374" cy="730.547013" r="4" fill="#44515d"/>
+<text x="1100" y="718" font-size="34" text-anchor="start" font-weight="400">針葉樹の天然林</text>
+<text x="1100" y="765" font-size="34" text-anchor="start" font-weight="400">9%</text>
+<polyline points="793.69157,751.788416 820,830 945,830" fill="none" stroke="#44515d" stroke-width="2.5"/>
+<circle cx="793.69157" cy="751.788416" r="4" fill="#44515d"/>
+<text x="965" y="850" font-size="34" text-anchor="start" font-weight="400">広葉樹の人工林</text>
+<text x="965" y="897" font-size="34" text-anchor="start" font-weight="400">1%</text>
+<polyline points="501.574724,539.553105 432,490 395,490" fill="none" stroke="#44515d" stroke-width="2.5"/>
+<circle cx="501.574724" cy="539.553105" r="4" fill="#44515d"/>
+<text x="78" y="463" font-size="34" text-anchor="start" font-weight="400">広葉樹の天然林</text>
+<text x="78" y="510" font-size="34" text-anchor="start" font-weight="400">45%</text>
+<polyline points="716.844901,211.835581 600,185 465,185" fill="none" stroke="#44515d" stroke-width="2.5"/>
+<circle cx="716.844901" cy="211.835581" r="4" fill="#44515d"/>
+<text x="240" y="175" font-size="34" text-anchor="start" font-weight="400">その他</text>
+<text x="240" y="222" font-size="34" text-anchor="start" font-weight="400">6%</text>
+<text x="768" y="975" font-size="26" text-anchor="middle" font-weight="400">日本の森林面積を100%とする</text>
+</svg>

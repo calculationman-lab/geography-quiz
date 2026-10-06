@@ -1,0 +1,134 @@
+[
+  {
+    "asset": "bar-data",
+    "path": "assets/diagrams/bar-data.svg",
+    "generator": "source-data SVG",
+    "width": 1536,
+    "height": 1024,
+    "sourceFile": null,
+    "sourcePage": null,
+    "approximate": false,
+    "sha256": "4ebad9de66af810db6c5ccdef6c950b4d6b5fd16b0862ee51aa18d1bae3febec"
+  },
+  {
+    "asset": "line-data",
+    "path": "assets/diagrams/line-data.svg",
+    "generator": "source-data SVG",
+    "width": 1536,
+    "height": 1024,
+    "sourceFile": null,
+    "sourcePage": null,
+    "approximate": false,
+    "sha256": "bf54214fb3d13597fd7db005c25edf2da6cd25a185c5d750ab0338db7fce4ed6"
+  },
+  {
+    "asset": "forest-composition",
+    "path": "assets/diagrams/forest-composition.svg",
+    "generator": "source-data SVG",
+    "width": 1536,
+    "height": 1024,
+    "sourceFile": "社会４下期後半スキャン_20261004-0957.pdf",
+    "sourcePage": 1,
+    "approximate": false,
+    "sha256": "2fe30ad24b2457bff68ecbabbc8508a8a68f902b7ce842a4e4a99f1a23f7fb07"
+  },
+  {
+    "asset": "power-composition",
+    "path": "assets/diagrams/power-composition.svg",
+    "generator": "source-data SVG",
+    "width": 1536,
+    "height": 1024,
+    "sourceFile": "社会４下期後半スキャン_20261004-0957.pdf",
+    "sourcePage": 41,
+    "approximate": false,
+    "sha256": "03e694acd41425ab93fc657ff0f0d6e38d4d2ef9ef992ac990769c59a7f0fd68"
+  },
+  {
+    "asset": "crop-import-shares",
+    "path": "assets/diagrams/crop-import-shares.svg",
+    "generator": "source-data SVG",
+    "width": 1536,
+    "height": 1024,
+    "sourceFile": "スキャン_20260909-1959.pdf",
+    "sourcePage": 9,
+    "approximate": false,
+    "sha256": "010d7cb6c3df2ca59c9149534b0e87dca9fd7fe61a12ef99c02844f24998d35a"
+  },
+  {
+    "asset": "farmland-denominators",
+    "path": "assets/diagrams/farmland-denominators.svg",
+    "generator": "source-data SVG",
+    "width": 1536,
+    "height": 1024,
+    "sourceFile": "スキャン_20260909-1959.pdf",
+    "sourcePage": 33,
+    "approximate": false,
+    "sha256": "84efa59a784f1da7601f5d3413c87ebdb02f4c8be84c1daa827a048a2b0142ed"
+  },
+  {
+    "asset": "farm-population-age",
+    "path": "assets/diagrams/farm-population-age.svg",
+    "generator": "source-data SVG",
+    "width": 1536,
+    "height": 1024,
+    "sourceFile": "スキャン_20260909-1959.pdf",
+    "sourcePage": 40,
+    "approximate": true,
+    "sha256": "eddc33b460ae28bccc546c63235542fcc45a7917ae928c627d79f361636dadc4"
+  },
+  {
+    "asset": "rice-production-consumption",
+    "path": "assets/diagrams/rice-production-consumption.svg",
+    "generator": "source-data SVG",
+    "width": 1536,
+    "height": 1024,
+    "sourceFile": "スキャン_20260909-1959.pdf",
+    "sourcePage": 2,
+    "approximate": true,
+    "sha256": "56e94efe6a3d4797866e231adcf398a753abba4d58ee58fd3a660972958c5b4a"
+  },
+  {
+    "asset": "internet-income",
+    "path": "assets/diagrams/internet-income.svg",
+    "generator": "source-data SVG",
+    "width": 1536,
+    "height": 1024,
+    "sourceFile": "社会４下期後半スキャン_20261004-0957.pdf",
+    "sourcePage": 71,
+    "approximate": false,
+    "sha256": "f2146ce31cb0c6bae8a1c0c55a30187b6e3f3060ecfb41dd2bbe51c363f7cf72"
+  },
+  {
+    "asset": "internet-age",
+    "path": "assets/diagrams/internet-age.svg",
+    "generator": "source-data SVG",
+    "width": 1536,
+    "height": 1024,
+    "sourceFile": "社会４下期後半スキャン_20261004-0957.pdf",
+    "sourcePage": 71,
+    "approximate": false,
+    "sha256": "00618ae116259376fd9745c717a769f338846cd52d51ff34af7c381dfb4e29c4"
+  },
+  {
+    "asset": "meat-virtual-water",
+    "path": "assets/diagrams/meat-virtual-water.svg",
+    "generator": "source-data SVG",
+    "width": 1536,
+    "height": 1024,
+    "sourceFile": "スキャン_20260909-1959.pdf",
+    "sourcePage": 26,
+    "approximate": false,
+    "sha256": "2497737db9f47f5e55bd2000c0150be53b506c3add0fae46fac0388c28f7d675"
+  },
+  {
+    "asset": "food-consumption-change",
+    "path": "assets/diagrams/food-consumption-change.svg",
+    "generator": "source-data SVG",
+    "width": 1536,
+    "height": 1024,
+    "sourceFile": "スキャン_20260909-1959.pdf",
+    "sourcePage": 55,
+    "approximate": false,
+    "sha256": "2a28bebd3c7ea85f28da3aad1ffe71ee60ad609e568afcdcb37fcc9990ba69f5"
+  }
+]

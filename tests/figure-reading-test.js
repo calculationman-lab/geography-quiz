@@ -32,7 +32,9 @@ expect('internet-age-shape','初めは上がり、13〜19歳を頂点にその�
 expect('internet-oldest-nonusers',rounded(100-age.at(-1))+'％');
 const drops=income.slice(1).flatMap((n,i)=>n<income[i]?[i]:[]);assert.deepStrictEqual(drops,[3]);
 expect('internet-income-exception','600〜800万円未満→800〜1000万円未満');
-expect('internet-income-count-estimate',1000*income[1]/100+'世帯');
+expect('internet-income-count-estimate',1000*income[1]/100+'人');
+assert(byObjective('internet-income-count-estimate').question.includes('6歳以上の人が1000人'));
+assert(!byObjective('internet-income-count-estimate').choices.some(x=>x.includes('世帯')),'個人の利用率を世帯数に換算しない');
 assert.strictEqual(Math.max(...income.filter(n=>n<90)),income[2]);
 expect('internet-income-nearest-ninety','400〜600万円未満');
 // Figures supply the missing data; stems must not duplicate their numerical inputs.

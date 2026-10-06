@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img"><title>読み取り練習用の仮の資料</title><style>text{font-family:system-ui,"Yu Gothic",Meiryo,sans-serif;fill:#172d3d}*{box-sizing:border-box}</style><rect width="1536" height="1024" fill="white"/>
+<text x="768" y="78" font-size="50" text-anchor="middle" font-weight="700">読み取り練習用の仮の資料</text>
+<line x1="175" y1="770" x2="1425" y2="770" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="780" font-size="30" text-anchor="end" font-weight="400">0</text>
+<line x1="167" y1="770" x2="175" y2="770" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="697.5" x2="1425" y2="697.5" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="707.5" font-size="30" text-anchor="end" font-weight="400">5</text>
+<line x1="167" y1="697.5" x2="175" y2="697.5" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="625" x2="1425" y2="625" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="635" font-size="30" text-anchor="end" font-weight="400">10</text>
+<line x1="167" y1="625" x2="175" y2="625" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="552.5" x2="1425" y2="552.5" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="562.5" font-size="30" text-anchor="end" font-weight="400">15</text>
+<line x1="167" y1="552.5" x2="175" y2="552.5" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="480" x2="1425" y2="480" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="490" font-size="30" text-anchor="end" font-weight="400">20</text>
+<line x1="167" y1="480" x2="175" y2="480" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="407.5" x2="1425" y2="407.5" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="417.5" font-size="30" text-anchor="end" font-weight="400">25</text>
+<line x1="167" y1="407.5" x2="175" y2="407.5" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="335" x2="1425" y2="335" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="345" font-size="30" text-anchor="end" font-weight="400">30</text>
+<line x1="167" y1="335" x2="175" y2="335" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="262.5" x2="1425" y2="262.5" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="272.5" font-size="30" text-anchor="end" font-weight="400">35</text>
+<line x1="167" y1="262.5" x2="175" y2="262.5" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="190" x2="1425" y2="190" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="200" font-size="30" text-anchor="end" font-weight="400">40</text>
+<line x1="167" y1="190" x2="175" y2="190" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="190" x2="175" y2="770" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="770" x2="1425" y2="770" stroke="#293747" stroke-width="2" />
+<rect x="268.75" y="480" width="229.166667" height="290" fill="#328ad4" data-kind="bar" data-value="20" data-max="40" data-baseline="770" data-scale-height="580"/>
+<text x="383.333333" y="464" font-size="34" text-anchor="middle" font-weight="400">20</text>
+<text x="383.333333" y="823" font-size="29" text-anchor="middle" font-weight="400">A</text>
+<rect x="685.416667" y="262.5" width="229.166667" height="507.5" fill="#328ad4" data-kind="bar" data-value="35" data-max="40" data-baseline="770" data-scale-height="580"/>
+<text x="800" y="246.5" font-size="34" text-anchor="middle" font-weight="400">35</text>
+<text x="800" y="823" font-size="29" text-anchor="middle" font-weight="400">B</text>
+<rect x="1102.083333" y="552.5" width="229.166667" height="217.5" fill="#328ad4" data-kind="bar" data-value="15" data-max="40" data-baseline="770" data-scale-height="580"/>
+<text x="1216.666667" y="536.5" font-size="34" text-anchor="middle" font-weight="400">15</text>
+<text x="1216.666667" y="823" font-size="29" text-anchor="middle" font-weight="400">C</text>
+</svg>

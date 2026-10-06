@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img"><title>発電のエネルギー源の変化</title><style>text{font-family:system-ui,"Yu Gothic",Meiryo,sans-serif;fill:#172d3d}*{box-sizing:border-box}</style><rect width="1536" height="1024" fill="white"/>
+<text x="768" y="78" font-size="50" text-anchor="middle" font-weight="700">発電のエネルギー源の変化</text>
+<rect x="280" y="145" width="36" height="28" fill="#328ad4" />
+<text x="330" y="173" font-size="30" text-anchor="start" font-weight="400">水力</text>
+<rect x="555" y="145" width="36" height="28" fill="#ed8d34" />
+<text x="605" y="173" font-size="30" text-anchor="start" font-weight="400">火力</text>
+<rect x="830" y="145" width="36" height="28" fill="#65ac4b" />
+<text x="880" y="173" font-size="30" text-anchor="start" font-weight="400">原子力</text>
+<rect x="1105" y="145" width="36" height="28" fill="#f1c64f" />
+<text x="1155" y="173" font-size="30" text-anchor="start" font-weight="400">新エネルギー</text>
+<text x="190" y="357" font-size="35" text-anchor="end" font-weight="600">1950年</text>
+<rect x="220" y="290" width="972.23" height="105" fill="#328ad4" data-kind="segment" data-row="0" data-value="81.7" data-total-width="1190" data-category="水力"/>
+<text x="706.115" y="354.5" font-size="34" text-anchor="middle" font-weight="400">81.7%</text>
+<rect x="1192.23" y="290" width="217.77" height="105" fill="#ed8d34" data-kind="segment" data-row="0" data-value="18.3" data-total-width="1190" data-category="火力"/>
+<text x="1301.115" y="354.5" font-size="34" text-anchor="middle" font-weight="400">18.3%</text>
+<text x="190" y="567" font-size="35" text-anchor="end" font-weight="600">2000年</text>
+<rect x="220" y="500" width="105.91" height="105" fill="#328ad4" data-kind="segment" data-row="1" data-value="8.9" data-total-width="1190" data-category="水力"/>
+<text x="272.955" y="564.5" font-size="34" text-anchor="middle" font-weight="400">8.9%</text>
+<rect x="325.91" y="500" width="729.47" height="105" fill="#ed8d34" data-kind="segment" data-row="1" data-value="61.3" data-total-width="1190" data-category="火力"/>
+<text x="690.645" y="564.5" font-size="34" text-anchor="middle" font-weight="400">61.3%</text>
+<rect x="1055.38" y="500" width="351.05" height="105" fill="#65ac4b" data-kind="segment" data-row="1" data-value="29.5" data-total-width="1190" data-category="原子力"/>
+<text x="1230.905" y="564.5" font-size="34" text-anchor="middle" font-weight="400">29.5%</text>
+<rect x="1406.43" y="500" width="3.57" height="105" fill="#f1c64f" data-kind="segment" data-row="1" data-value="0.3" data-total-width="1190" data-category="新エネルギー"/>
+<text x="190" y="777" font-size="35" text-anchor="end" font-weight="600">2020年</text>
+<rect x="220" y="710" width="108.29" height="105" fill="#328ad4" data-kind="segment" data-row="2" data-value="9.1" data-total-width="1190" data-category="水力"/>
+<text x="274.145" y="774.5" font-size="34" text-anchor="middle" font-weight="400">9.1%</text>
+<rect x="328.29" y="710" width="990.08" height="105" fill="#ed8d34" data-kind="segment" data-row="2" data-value="83.2" data-total-width="1190" data-category="火力"/>
+<text x="823.33" y="774.5" font-size="34" text-anchor="middle" font-weight="400">83.2%</text>
+<rect x="1318.37" y="710" width="46.41" height="105" fill="#65ac4b" data-kind="segment" data-row="2" data-value="3.9" data-total-width="1190" data-category="原子力"/>
+<rect x="1364.78" y="710" width="45.22" height="105" fill="#f1c64f" data-kind="segment" data-row="2" data-value="3.8" data-total-width="1190" data-category="新エネルギー"/>
+<polyline points="1408.2,552 1440,475" fill="none" stroke="#44515d" stroke-width="2.5"/>
+<circle cx="1408.2" cy="552" r="4" fill="#44515d"/>
+<text x="1450" y="453" font-size="30" text-anchor="middle" font-weight="400">0.3%</text>
+<polyline points="1341.575,742 1290,671" fill="none" stroke="#44515d" stroke-width="2.5"/>
+<circle cx="1341.575" cy="742" r="4" fill="#44515d"/>
+<text x="1270" y="650" font-size="30" text-anchor="middle" font-weight="400">3.9%</text>
+<polyline points="1387.39,742 1453,671" fill="none" stroke="#44515d" stroke-width="2.5"/>
+<circle cx="1387.39" cy="742" r="4" fill="#44515d"/>
+<text x="1460" y="650" font-size="30" text-anchor="middle" font-weight="400">3.8%</text>
+<line x1="220" y1="857" x2="1410" y2="857" stroke="#293747" stroke-width="2" />
+<line x1="220" y1="857" x2="220" y2="871" stroke="#293747" stroke-width="2" />
+<text x="220" y="908" font-size="30" text-anchor="middle" font-weight="400">0%</text>
+<line x1="458" y1="857" x2="458" y2="871" stroke="#293747" stroke-width="2" />
+<text x="458" y="908" font-size="30" text-anchor="middle" font-weight="400">20%</text>
+<line x1="696" y1="857" x2="696" y2="871" stroke="#293747" stroke-width="2" />
+<text x="696" y="908" font-size="30" text-anchor="middle" font-weight="400">40%</text>
+<line x1="934" y1="857" x2="934" y2="871" stroke="#293747" stroke-width="2" />
+<text x="934" y="908" font-size="30" text-anchor="middle" font-weight="400">60%</text>
+<line x1="1172" y1="857" x2="1172" y2="871" stroke="#293747" stroke-width="2" />
+<text x="1172" y="908" font-size="30" text-anchor="middle" font-weight="400">80%</text>
+<line x1="1410" y1="857" x2="1410" y2="871" stroke="#293747" stroke-width="2" />
+<text x="1410" y="908" font-size="30" text-anchor="middle" font-weight="400">100%</text>
+<text x="768" y="975" font-size="26" text-anchor="middle" font-weight="400">新エネルギーは教材の分類。各年の発電量全体を100%とする</text>
+</svg>

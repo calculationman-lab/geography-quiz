@@ -1,0 +1,26 @@
+[
+  {
+    "asset": "farm-machines",
+    "path": "assets/diagrams/farm-machines.webp",
+    "generator": "built-in image_gen",
+    "originalFile": "exec-34bfede9-7344-45b6-9934-e5cde0c38e12.png",
+    "prompt": "Use case: precise-object-edit. Edit this Japanese grade4 question illustration. Keep landscape1536x1024, panels A and B and their machines, text, backgrounds, proportions exactly unchanged. Modify ONLY the upper/rear part of combine in panelC. The current picture mistakenly unloads grain onto its own machine. REMOVE pouring grain stream and golden pile on combine body. Replace the extended unloading auger with an auger folded and stowed along the side/rear of the combine; no unloading is inprogress. Grain tank enclosed, realistic smallJapanese crawler ricecombine harvesting. Preserve driver, frontreaping apparatus, golden uncutrice infront,cutstubblebehind,machineposition and panelC label. No newvehicle, no labels exceptoriginal A B C, no names, arrows or answertext.",
+    "width": 1536,
+    "height": 1024,
+    "correction": "自分の機体へ穀物を排出する描写を撤去。オーガを格納。",
+    "sha256": "18fd01932f0d49b672aa498b9516e99e91b2f1db2f0e4289988c4b448fec8571",
+    "bytes": 419380
+  },
+  {
+    "asset": "internet-income",
+    "path": "assets/diagrams/internet-income.webp",
+    "generator": "built-in image_gen",
+    "originalFile": "exec-5dd9d4e1-8f0e-48f2-bae6-5996c3148ad6.png",
+    "prompt": "Use case: text-localization. Precise textbook chart edit. Existing SIXbars, alltheirheights, coordinates, axes0to100%, values55.8%,72.9%,86.0%,92.6%,92.0%,93.4%, categories andcolors are CORRECT; preserveexactly. Modifyonlytitleandfooter toclarifysurveydenominator. Title exact「所属世帯年収別インターネット利用率（2021年）」, mayuse2lines solegible. Replacebottomfooterwith two neutral lines in cleanJapanese atbottommargin withoutoverlappingcategorylabels:「対象：6歳以上の個人（無回答を除く）」and「世帯の年収で分類。利用率は人の割合」. This isofficial2021household MEMBERsurveynotwholehousehold survey. DoNOTaddcountofusers, anyarithmetic, answer729, trendconclusions orrankings. Keepallbarsatcorrect values,startzero. Whitebackground,1536x1024 Japanese educational question figure.",
+    "width": 1536,
+    "height": 1024,
+    "correction": "所属世帯年収で分類した個人の利用率と明記。6歳以上、無回答除外。",
+    "sha256": "8608f7f504767fea66efd5bc757259d2969df530d725f44dfdebfbffd7e3110b",
+    "bytes": 83298
+  }
+]

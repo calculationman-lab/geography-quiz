@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img"><title>1人1日あたりの食料消費量</title><style>text{font-family:system-ui,"Yu Gothic",Meiryo,sans-serif;fill:#172d3d}*{box-sizing:border-box}</style><rect width="1536" height="1024" fill="white"/>
+<text x="768" y="78" font-size="50" text-anchor="middle" font-weight="700">1人1日あたりの食料消費量</text>
+<line x1="165" y1="780" x2="1425" y2="780" stroke="#dce3e8" stroke-width="1.5" />
+<text x="143" y="790" font-size="30" text-anchor="end" font-weight="400">0</text>
+<line x1="157" y1="780" x2="165" y2="780" stroke="#293747" stroke-width="2" />
+<line x1="165" y1="697.857143" x2="1425" y2="697.857143" stroke="#dce3e8" stroke-width="1.5" />
+<text x="143" y="707.857143" font-size="30" text-anchor="end" font-weight="400">50</text>
+<line x1="157" y1="697.857143" x2="165" y2="697.857143" stroke="#293747" stroke-width="2" />
+<line x1="165" y1="615.714286" x2="1425" y2="615.714286" stroke="#dce3e8" stroke-width="1.5" />
+<text x="143" y="625.714286" font-size="30" text-anchor="end" font-weight="400">100</text>
+<line x1="157" y1="615.714286" x2="165" y2="615.714286" stroke="#293747" stroke-width="2" />
+<line x1="165" y1="533.571429" x2="1425" y2="533.571429" stroke="#dce3e8" stroke-width="1.5" />
+<text x="143" y="543.571429" font-size="30" text-anchor="end" font-weight="400">150</text>
+<line x1="157" y1="533.571429" x2="165" y2="533.571429" stroke="#293747" stroke-width="2" />
+<line x1="165" y1="451.428571" x2="1425" y2="451.428571" stroke="#dce3e8" stroke-width="1.5" />
+<text x="143" y="461.428571" font-size="30" text-anchor="end" font-weight="400">200</text>
+<line x1="157" y1="451.428571" x2="165" y2="451.428571" stroke="#293747" stroke-width="2" />
+<line x1="165" y1="369.285714" x2="1425" y2="369.285714" stroke="#dce3e8" stroke-width="1.5" />
+<text x="143" y="379.285714" font-size="30" text-anchor="end" font-weight="400">250</text>
+<line x1="157" y1="369.285714" x2="165" y2="369.285714" stroke="#293747" stroke-width="2" />
+<line x1="165" y1="287.142857" x2="1425" y2="287.142857" stroke="#dce3e8" stroke-width="1.5" />
+<text x="143" y="297.142857" font-size="30" text-anchor="end" font-weight="400">300</text>
+<line x1="157" y1="287.142857" x2="165" y2="287.142857" stroke="#293747" stroke-width="2" />
+<line x1="165" y1="205" x2="1425" y2="205" stroke="#dce3e8" stroke-width="1.5" />
+<text x="143" y="215" font-size="30" text-anchor="end" font-weight="400">350</text>
+<line x1="157" y1="205" x2="165" y2="205" stroke="#293747" stroke-width="2" />
+<line x1="165" y1="205" x2="165" y2="780" stroke="#293747" stroke-width="2" />
+<line x1="165" y1="780" x2="1425" y2="780" stroke="#293747" stroke-width="2" />
+<text x="165" y="175" font-size="30" text-anchor="start" font-weight="400">消費量（g）</text>
+<rect x="515" y="122" width="36" height="28" fill="#079c97" />
+<text x="565" y="150" font-size="30" text-anchor="start" font-weight="400">1965年</text>
+<rect x="875" y="122" width="36" height="28" fill="#ed8d34" />
+<text x="925" y="150" font-size="30" text-anchor="start" font-weight="400">2022年</text>
+<rect x="208" y="277.285714" width="55" height="502.714286" fill="#079c97" data-kind="bar" data-row="0" data-value="306" data-max="350" data-baseline="780" data-scale-height="575"/>
+<text x="235.5" y="261.285714" font-size="30" text-anchor="middle" font-weight="400">306</text>
+<rect x="277" y="551.642857" width="55" height="228.357143" fill="#ed8d34" data-kind="bar" data-row="0" data-value="139" data-max="350" data-baseline="780" data-scale-height="575"/>
+<text x="304.5" y="535.642857" font-size="30" text-anchor="middle" font-weight="400">139</text>
+<text x="270" y="835" font-size="30" text-anchor="middle" font-weight="400">米</text>
+<rect x="418" y="650.214286" width="55" height="129.785714" fill="#079c97" data-kind="bar" data-row="1" data-value="79" data-max="350" data-baseline="780" data-scale-height="575"/>
+<text x="445.5" y="634.214286" font-size="30" text-anchor="middle" font-weight="400">79</text>
+<rect x="487" y="637.071429" width="55" height="142.928571" fill="#ed8d34" data-kind="bar" data-row="1" data-value="87" data-max="350" data-baseline="780" data-scale-height="575"/>
+<text x="514.5" y="621.071429" font-size="30" text-anchor="middle" font-weight="400">87</text>
+<text x="480" y="835" font-size="30" text-anchor="middle" font-weight="400">小麦</text>
+<rect x="628" y="740.571429" width="55" height="39.428571" fill="#079c97" data-kind="bar" data-row="2" data-value="24" data-max="350" data-baseline="780" data-scale-height="575"/>
+<text x="655.5" y="724.571429" font-size="30" text-anchor="middle" font-weight="400">24</text>
+<rect x="697" y="627.214286" width="55" height="152.785714" fill="#ed8d34" data-kind="bar" data-row="2" data-value="93" data-max="350" data-baseline="780" data-scale-height="575"/>
+<text x="724.5" y="611.214286" font-size="30" text-anchor="middle" font-weight="400">93</text>
+<text x="690" y="835" font-size="30" text-anchor="middle" font-weight="400">肉類</text>
+<rect x="838" y="651.857143" width="55" height="128.142857" fill="#079c97" data-kind="bar" data-row="3" data-value="78" data-max="350" data-baseline="780" data-scale-height="575"/>
+<text x="865.5" y="635.857143" font-size="30" text-anchor="middle" font-weight="400">78</text>
+<rect x="907" y="630.5" width="55" height="149.5" fill="#ed8d34" data-kind="bar" data-row="3" data-value="91" data-max="350" data-baseline="780" data-scale-height="575"/>
+<text x="934.5" y="614.5" font-size="30" text-anchor="middle" font-weight="400">91</text>
+<text x="900" y="835" font-size="30" text-anchor="middle" font-weight="400">果物</text>
+<rect x="1048" y="370.928571" width="55" height="409.071429" fill="#079c97" data-kind="bar" data-row="4" data-value="249" data-max="350" data-baseline="780" data-scale-height="575"/>
+<text x="1075.5" y="354.928571" font-size="30" text-anchor="middle" font-weight="400">249</text>
+<rect x="1117" y="384.071429" width="55" height="395.928571" fill="#ed8d34" data-kind="bar" data-row="4" data-value="241" data-max="350" data-baseline="780" data-scale-height="575"/>
+<text x="1144.5" y="368.071429" font-size="30" text-anchor="middle" font-weight="400">241</text>
+<text x="1110" y="835" font-size="30" text-anchor="middle" font-weight="400">野菜</text>
+<rect x="1258" y="610.785714" width="55" height="169.214286" fill="#079c97" data-kind="bar" data-row="5" data-value="103" data-max="350" data-baseline="780" data-scale-height="575"/>
+<text x="1285.5" y="594.785714" font-size="30" text-anchor="middle" font-weight="400">103</text>
+<rect x="1327" y="357.785714" width="55" height="422.214286" fill="#ed8d34" data-kind="bar" data-row="5" data-value="257" data-max="350" data-baseline="780" data-scale-height="575"/>
+<text x="1354.5" y="341.785714" font-size="30" text-anchor="middle" font-weight="400">257</text>
+<text x="1320" y="835" font-size="30" text-anchor="middle" font-weight="400">牛乳・</text>
+<text x="1320" y="877" font-size="30" text-anchor="middle" font-weight="400">乳製品</text>
+<text x="768" y="975" font-size="26" text-anchor="middle" font-weight="400">1人1日あたりの消費量。教材掲載の値</text>
+</svg>

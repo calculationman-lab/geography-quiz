@@ -10,7 +10,7 @@ vm.createContext(ctx);vm.runInContext(fs.readFileSync(path.join(root,'sw.js'),'u
   const weeklyIndex=scripts.findIndex(src=>src.startsWith('./weekly-review.js?'));
   assert(weeklyIndex>=0&&weeklyIndex<scripts.findIndex(src=>src.startsWith('./app.js?')),'復習スクリプトをapp.jsより先に読み込む');
   for(const m of html.matchAll(/<link rel="(?:stylesheet|apple-touch-icon)" href="([^"]+)"/g))assert(cached.has(m[1]),`CSS・アイコンとキャッシュのURL一致: ${m[1]}`);
-  for(const asset of ['./styles.css?v=20261006-v11-6-r1','./countdown.js?v=20260926-v11-3-r1','./app.js?v=20261006-v11-6-r1'])assert(cached.has(asset),`更新資産を先読み: ${asset}`);
+  for(const asset of ['./styles.css?v=20261006-v11-7-r1','./countdown.js?v=20260926-v11-3-r1','./app.js?v=20261006-v11-7-r1'])assert(cached.has(asset),`更新資産を先読み: ${asset}`);
   for(const icon of JSON.parse(fs.readFileSync(path.join(root,'manifest.webmanifest'),'utf8')).icons)assert(cached.has(icon.src));
   assert(addedAssets.some(x=>x.includes('lower-questions.js')));
   events.activate({waitUntil:p=>pending=p});await pending;

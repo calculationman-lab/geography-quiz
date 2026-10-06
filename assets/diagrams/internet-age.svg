@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img"><title>年齢別インターネット利用率（2021年）</title><style>text{font-family:system-ui,"Yu Gothic",Meiryo,sans-serif;fill:#172d3d}*{box-sizing:border-box}</style><rect width="1536" height="1024" fill="white"/>
+<text x="768" y="78" font-size="50" text-anchor="middle" font-weight="700">年齢別インターネット利用率（2021年）</text>
+<line x1="175" y1="775" x2="1425" y2="775" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="785" font-size="30" text-anchor="end" font-weight="400">0</text>
+<line x1="167" y1="775" x2="175" y2="775" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="658" x2="1425" y2="658" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="668" font-size="30" text-anchor="end" font-weight="400">20</text>
+<line x1="167" y1="658" x2="175" y2="658" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="541" x2="1425" y2="541" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="551" font-size="30" text-anchor="end" font-weight="400">40</text>
+<line x1="167" y1="541" x2="175" y2="541" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="424" x2="1425" y2="424" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="434" font-size="30" text-anchor="end" font-weight="400">60</text>
+<line x1="167" y1="424" x2="175" y2="424" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="307" x2="1425" y2="307" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="317" font-size="30" text-anchor="end" font-weight="400">80</text>
+<line x1="167" y1="307" x2="175" y2="307" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="190" x2="1425" y2="190" stroke="#dce3e8" stroke-width="1.5" />
+<text x="153" y="200" font-size="30" text-anchor="end" font-weight="400">100</text>
+<line x1="167" y1="190" x2="175" y2="190" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="190" x2="175" y2="775" stroke="#293747" stroke-width="2" />
+<line x1="175" y1="775" x2="1425" y2="775" stroke="#293747" stroke-width="2" />
+<text x="55" y="140" font-size="28" text-anchor="start" font-weight="400">利用率（%）</text>
+<rect x="206.25" y="279.505" width="76.388889" height="495.495" fill="#328ad4" data-kind="bar" data-value="84.7" data-max="100" data-baseline="775" data-scale-height="585"/>
+<text x="244.444444" y="263.505" font-size="28" text-anchor="middle" font-weight="400">84.7%</text>
+<text x="244.444444" y="828" font-size="27" text-anchor="middle" font-weight="400">6〜12</text>
+<text x="244.444444" y="873" font-size="27" text-anchor="middle" font-weight="400">歳</text>
+<rect x="345.138889" y="197.605" width="76.388889" height="577.395" fill="#328ad4" data-kind="bar" data-value="98.7" data-max="100" data-baseline="775" data-scale-height="585"/>
+<text x="383.333333" y="181.605" font-size="28" text-anchor="middle" font-weight="400">98.7%</text>
+<text x="383.333333" y="828" font-size="27" text-anchor="middle" font-weight="400">13〜19</text>
+<text x="383.333333" y="873" font-size="27" text-anchor="middle" font-weight="400">歳</text>
+<rect x="484.027778" y="199.36" width="76.388889" height="575.64" fill="#328ad4" data-kind="bar" data-value="98.4" data-max="100" data-baseline="775" data-scale-height="585"/>
+<text x="522.222222" y="183.36" font-size="28" text-anchor="middle" font-weight="400">98.4%</text>
+<text x="522.222222" y="828" font-size="27" text-anchor="middle" font-weight="400">20〜29</text>
+<text x="522.222222" y="873" font-size="27" text-anchor="middle" font-weight="400">歳</text>
+<rect x="622.916667" y="202.285" width="76.388889" height="572.715" fill="#328ad4" data-kind="bar" data-value="97.9" data-max="100" data-baseline="775" data-scale-height="585"/>
+<text x="661.111111" y="186.285" font-size="28" text-anchor="middle" font-weight="400">97.9%</text>
+<text x="661.111111" y="828" font-size="27" text-anchor="middle" font-weight="400">30〜39</text>
+<text x="661.111111" y="873" font-size="27" text-anchor="middle" font-weight="400">歳</text>
+<rect x="761.805556" y="203.455" width="76.388889" height="571.545" fill="#328ad4" data-kind="bar" data-value="97.7" data-max="100" data-baseline="775" data-scale-height="585"/>
+<text x="800" y="187.455" font-size="28" text-anchor="middle" font-weight="400">97.7%</text>
+<text x="800" y="828" font-size="27" text-anchor="middle" font-weight="400">40〜49</text>
+<text x="800" y="873" font-size="27" text-anchor="middle" font-weight="400">歳</text>
+<rect x="900.694444" y="218.08" width="76.388889" height="556.92" fill="#328ad4" data-kind="bar" data-value="95.2" data-max="100" data-baseline="775" data-scale-height="585"/>
+<text x="938.888889" y="202.08" font-size="28" text-anchor="middle" font-weight="400">95.2%</text>
+<text x="938.888889" y="828" font-size="27" text-anchor="middle" font-weight="400">50〜59</text>
+<text x="938.888889" y="873" font-size="27" text-anchor="middle" font-weight="400">歳</text>
+<rect x="1039.583333" y="281.26" width="76.388889" height="493.74" fill="#328ad4" data-kind="bar" data-value="84.4" data-max="100" data-baseline="775" data-scale-height="585"/>
+<text x="1077.777778" y="265.26" font-size="28" text-anchor="middle" font-weight="400">84.4%</text>
+<text x="1077.777778" y="828" font-size="27" text-anchor="middle" font-weight="400">60〜69</text>
+<text x="1077.777778" y="873" font-size="27" text-anchor="middle" font-weight="400">歳</text>
+<rect x="1178.472222" y="427.51" width="76.388889" height="347.49" fill="#328ad4" data-kind="bar" data-value="59.4" data-max="100" data-baseline="775" data-scale-height="585"/>
+<text x="1216.666667" y="411.51" font-size="28" text-anchor="middle" font-weight="400">59.4%</text>
+<text x="1216.666667" y="828" font-size="27" text-anchor="middle" font-weight="400">70〜79</text>
+<text x="1216.666667" y="873" font-size="27" text-anchor="middle" font-weight="400">歳</text>
+<rect x="1317.361111" y="613.54" width="76.388889" height="161.46" fill="#328ad4" data-kind="bar" data-value="27.6" data-max="100" data-baseline="775" data-scale-height="585"/>
+<text x="1355.555556" y="597.54" font-size="28" text-anchor="middle" font-weight="400">27.6%</text>
+<text x="1355.555556" y="828" font-size="27" text-anchor="middle" font-weight="400">80</text>
+<text x="1355.555556" y="873" font-size="27" text-anchor="middle" font-weight="400">歳以上</text>
+<text x="768" y="975" font-size="26" text-anchor="middle" font-weight="400">対象：6歳以上の個人（無回答を除く）。教材掲載の2021年調査の値</text>
+</svg>

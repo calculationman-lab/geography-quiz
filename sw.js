@@ -1,6 +1,6 @@
-const CACHE="social-quiz-v11-7-diagram-audit-r1";
+const CACHE="social-quiz-v11-7-1-ipad-layout-r1";
 const AUDIO_REVISION="20260920-v11-2";
-const ASSETS=["./","./index.html","./styles.css?v=20261006-v11-7-r1","./questions.js?v=20260920-v11-2","./lower-questions.js?v=20261006-v11-7-r1","./weekly-review.js?v=20260920-v11-2","./countdown.js?v=20260926-v11-3-r1","./app.js?v=20261006-v11-7-r1",`./se-correct.mp3?v=${AUDIO_REVISION}`,`./se-wrong.mp3?v=${AUDIO_REVISION}`,"./manifest.webmanifest","./icon-192.png?v=20260920-v11-2","./icon-512.png?v=20260920-v11-2","./apple-touch-icon.png?v=20260920-v11-2"];
+const ASSETS=["./","./index.html","./styles.css?v=20261016-v11-7-1-r1","./questions.js?v=20260920-v11-2","./lower-questions.js?v=20261006-v11-7-r1","./weekly-review.js?v=20260920-v11-2","./countdown.js?v=20260926-v11-3-r1","./app.js?v=20261006-v11-7-r1",`./se-correct.mp3?v=${AUDIO_REVISION}`,`./se-wrong.mp3?v=${AUDIO_REVISION}`,"./manifest.webmanifest","./icon-192.png?v=20260920-v11-2","./icon-512.png?v=20260920-v11-2","./apple-touch-icon.png?v=20260920-v11-2"];
 ASSETS.push("./lower-reading-questions.js?v=20261006-v11-7-r1","./lower-later-questions.js?v=20261006-v11-7-r1","./question-diagrams.js?v=20261006-v11-7-r1");
 ASSETS.push(...["forest-leaves","forest-jobs","fish-methods","farm-machines","farm-land","auto-production-table","food-self-sufficiency-table"].map(name=>"./assets/diagrams/"+name+".webp"));
 ASSETS.push(...["bar-data","line-data","forest-composition","power-composition","internet-age","internet-income","rice-production-consumption","crop-import-shares","meat-virtual-water","farmland-denominators","farm-population-age","food-consumption-change"].map(name=>"./assets/diagrams/"+name+".svg"));
